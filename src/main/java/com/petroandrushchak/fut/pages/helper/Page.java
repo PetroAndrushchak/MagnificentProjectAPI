@@ -1,0 +1,21 @@
+package com.petroandrushchak.fut.pages.helper;
+
+public enum Page {
+
+    EA_SIGN_IN_PAGE,
+    EA_SIGN_IN_VERIFICATION_PAGE,
+    FUT_WEP_APP_ANY_PAGE,
+    MAIN_PAGE,
+
+    HOME_PAGE,
+    SQUADS_PAGE,
+    TRANSFERS_PAGE,
+    SEARCH_TRANSFER_MARKET_PAGE,
+    TRANSFERS_LIST_PAGE,
+    TRANSFER_TARGETS_PAGE,
+    SEARCH_RESULTS_PAGE,
+    STORE_PAGE,
+    CLUB_PAGE,
+    SETTINGS_PAGE
+
+}

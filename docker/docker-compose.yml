@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  db:
+    image: 'postgres:13.1-alpine'
+    container_name: db
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./../db_volume:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=compose-postgres
+      - POSTGRES_PASSWORD=compose-postgres
+
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    hostname: mongo
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_DB_USERNAME=compose-mongo
+      - MONGO_DB_PASSWORD=compose-mongo
+    volumes:
+      - ./../db_mongo_volume:/data/db/
