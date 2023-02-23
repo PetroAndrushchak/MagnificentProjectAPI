@@ -6,7 +6,7 @@ import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 
-import static com.petroandrushchak.MagnificentProjectApiApplication.browserConfigs;
+import static com.petroandrushchak.configs.ProjectConfigurations.browserConfigs;
 
 @Slf4j
 @UtilityClass

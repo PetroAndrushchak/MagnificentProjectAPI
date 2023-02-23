@@ -1,8 +1,8 @@
 package com.petroandrushchak.exceptions;
 
-public class FutEaAccountNotFound extends RuntimeException {
+public class FutEaAccountNotFound extends NoSuchElementFoundException {
 
-    public FutEaAccountNotFound(String id) {
-        super("Could not find employee " + id);
+    public FutEaAccountNotFound(Long id) {
+        super("Could not find FUT EA Account with id: " + id);
     }
 }

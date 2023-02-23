@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 import static com.codeborne.selenide.Condition.not;
-import static com.petroandrushchak.MagnificentProjectApiApplication.browserConfigs;
+import static com.petroandrushchak.configs.ProjectConfigurations.browserConfigs;
 
 @Slf4j
 @UtilityClass

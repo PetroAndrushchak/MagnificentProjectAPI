@@ -38,17 +38,17 @@ class MagnificentProjectWebServiceApplicationTests {
                                                                   .withEaEmailPassword("cwyrptvvthdqgojs")
                                                                   .build();
 
-        Item itemsSearch = PlayerItem.anPlayerItem()
-                                     .withName("Lucas Digne")
-                                     .withRating("82")
-                                     .build();
+        PlayerItem playerItem = new PlayerItem();
+
+        playerItem.setName("Lucas Digne");
+        playerItem.setRating("82");
 
         long sellPrice = 1500;
 
         var searchPrices = FUTPriceHelper.createSearchPricesWithMaxBuyNowPrice(FUTPriceHelper.createPriceForSnippingFromSellPrice(sellPrice));
 
         var snippingModel = SnippingModel.anSnippingModel()
-                                         .withItemsSearch(itemsSearch)
+                                         .withItemsSearch(playerItem)
                                          .withSearchPrices(searchPrices)
                                          .withSellPrices(createSellPrices(sellPrice))
                                          .build();

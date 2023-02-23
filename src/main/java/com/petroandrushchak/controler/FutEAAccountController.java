@@ -1,8 +1,15 @@
 package com.petroandrushchak.controler;
 
-import com.petroandrushchak.exceptions.FutEaAccountNotFound;
+import com.petroandrushchak.entity.Status;
+import com.petroandrushchak.exceptions.WarningException;
+import com.petroandrushchak.process.BrowserProcessHelper;
+import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.service.FutAccountService;
+import com.petroandrushchak.steps.SnippingSteps;
+import com.petroandrushchak.steps.SnippingValidationsSteps;
 import com.petroandrushchak.view.FutEaAccountView;
+import com.petroandrushchak.view.BrowserProcessView;
+import com.petroandrushchak.view.SnippingView;
 import com.petroandrushchak.view.request.SnippingRequestBody;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -15,36 +22,72 @@ import java.util.List;
 @RestController
 public class FutEAAccountController {
 
-    @Autowired
-    FutAccountService futAccountService;
+    @Autowired FutAccountService futAccountService;
+    @Autowired BrowserProcessService browserProcessService;
+
+    @Autowired SnippingValidationsSteps snippingValidationsSteps;
+    @Autowired SnippingSteps snippingSteps;
+
+    @Autowired BrowserProcessHelper browserProcessHelper;
 
     @CrossOrigin(origins = "*")
     @GetMapping("/futAccounts")
     public List<FutEaAccountView> futAccounts() {
-
         return futAccountService.findAllFutAccounts();
-//        var futEaAccountView = FutEaAccountView.anFutEaAccount()
-//                                               .withEaEmailEmail("test")
-//                                               .withEaEmailPassword("test")
-//                                               .withEaLogin("test")
-//                                               .withEaPassword("test")
-//                                               .withId(1L)
-//                                               .withUsername("test")
-//                                               .build();
-//        return List.of(futEaAccountView);
     }
 
     @CrossOrigin(origins = "*")
     @PostMapping("/startSnipping")
-    public void startSnipping(@Valid @RequestBody SnippingRequestBody snippingRequestBody) {
+    public BrowserProcessView startSnipping(@Valid @RequestBody SnippingRequestBody snippingRequestBody) {
 
-        // logic to start snipping
-        log.info("Start snipping");
-        log.info(snippingRequestBody.toString());
+        snippingValidationsSteps.validateSnippingRequest(snippingRequestBody);
 
-        if (snippingRequestBody.getFutEaAccountId().equals("10")) {
-            throw new FutEaAccountNotFound(snippingRequestBody.getFutEaAccountId());
-        }
+        BrowserProcessView browserProcessView = snippingSteps.startSnipping(snippingRequestBody);
+        return browserProcessView;
+    }
+
+    @CrossOrigin(origins = "*")
+    @DeleteMapping("/cancelSnipping/{snippingId}")
+    public void cancelSnipping(@PathVariable Long snippingId) {
+
+        var browserProcessEntity = browserProcessService.getBrowserProcessEntity(snippingId);
+        if (browserProcessEntity.getStatus() != Status.IN_PROGRESS)
+            throw new WarningException("Snipping is not in IN_PROGRESS state. Snipping Id: " + snippingId);
+
+        browserProcessHelper.cancelRunningTask(snippingId);
+        browserProcessService.cancelBrowserProcess(snippingId);
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("/snipping/{snippingId}")
+    public SnippingView getSnippingStatus(@PathVariable Long snippingId) {
+        var entity = browserProcessService.getBrowserProcessEntity(snippingId);
+
+        return SnippingView.builder()
+                           .id(entity.getId())
+                           .status(entity.getStatus())
+                           .futAccountId(entity.getFutAccount().getId())
+                           .futEaAccountLogin(entity.getFutAccount().getEaLogin())
+                           .build();
+    }
+
+    @CrossOrigin(origins = "*")
+    @PutMapping("/resetBrowserProcess/{futAccountId}")
+    public void resetBrowserProcess(@PathVariable Long futAccountId) {
+        var futAccount = futAccountService.getFutAccountById(futAccountId);
+        var futAccountBrowserProcesses = browserProcessService.getBrowserProcessEntitiesForFutAccount(futAccount, Status.IN_PROGRESS);
+
+        futAccountBrowserProcesses.forEach(process -> {
+            var isTaskInRunningState = browserProcessHelper.isTaskRunning(process.getId());
+            if (isTaskInRunningState) {
+                throw new WarningException("There is a running task for fut account: " + futAccountId + ". Task id: " + process.getId() + ", firstly cancel it.");
+            }
+
+            browserProcessService.resetBrowserProcessForFutAccount(futAccount);
+
+        });
+
+
     }
 
 }

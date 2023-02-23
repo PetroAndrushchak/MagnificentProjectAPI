@@ -2,6 +2,7 @@ package com.petroandrushchak.view.request;
 
 import com.petroandrushchak.model.fut.PlayerItem;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.ToString;
@@ -12,7 +13,8 @@ public class SnippingRequestBody {
 
     @Valid
     @NotNull(message = "The Fut EA Account is required.")
-    String futEaAccountId;
+    @Min(value = 1, message = "The Fut EA Account must be greater than 0.")
+    Long futEaAccountId;
 
     @Valid
     @NotNull(message = "The player Item is required.")
