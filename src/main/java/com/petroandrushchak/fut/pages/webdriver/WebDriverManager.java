@@ -23,7 +23,14 @@ public class WebDriverManager {
     public static void closeWebDriver() {
         log.info("Closing WebDriver");
         if (WebDriverRunner.hasWebDriverStarted()) {
-            WebDriverRunner.closeWebDriver();
+
+            try {
+                WebDriverRunner.getWebDriver().quit();
+            } catch (Exception e) {
+                log.error("Error while closing WebDriver", e);
+                WebDriverRunner.closeWebDriver();
+            }
+
         } else {
             log.info("WebDriver is not started");
         }

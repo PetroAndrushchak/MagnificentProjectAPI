@@ -9,8 +9,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.filter.CommonsRequestLoggingFilter;
 
-import java.util.HashMap;
-import java.util.concurrent.Executor;
 
 @Configuration
 public class ProjectConfigurations {

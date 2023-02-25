@@ -86,8 +86,6 @@ public class FutEAAccountController {
             browserProcessService.resetBrowserProcessForFutAccount(futAccount);
 
         });
-
-
     }
 
 }

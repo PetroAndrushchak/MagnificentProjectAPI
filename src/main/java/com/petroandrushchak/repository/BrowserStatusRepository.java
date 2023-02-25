@@ -13,4 +13,6 @@ public interface BrowserStatusRepository extends JpaRepository<BrowserProcessEnt
 
    List<BrowserProcessEntity> findByFutAccountAndStatus(FutAccountEntity futAccountEntity, Status status);
 
+   List<BrowserProcessEntity> findByStatus(Status status);
+
 }
