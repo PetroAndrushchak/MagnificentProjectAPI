@@ -7,11 +7,10 @@ import lombok.*;
 @NoArgsConstructor
 public class PlayerItem extends Item {
 
-    Quality level;
+    String playerName;
 
-    String name;
-    int rating;
-    long id;
+    Integer rating;
+    Long id;
 
     Rarity rarity;
     Position position;
@@ -29,15 +28,15 @@ public class PlayerItem extends Item {
             sb.append("  \"level\": \"").append(level).append("\",\n");
         }
 
-        if (name != null) {
-            sb.append("  \"name\": \"").append(name).append("\",\n");
+        if (playerName != null) {
+            sb.append("  \"playerName\": \"").append(playerName).append("\",\n");
         }
 
-        if (rating != 0) {
+        if (rating != null) {
             sb.append("  \"rating\": ").append(rating).append(",\n");
         }
 
-        if (id != 0L) {
+        if (id != null) {
             sb.append("  \"id\": ").append(id).append(",\n");
         }
 

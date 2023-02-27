@@ -8,14 +8,13 @@ import lombok.ToString;
 public class PlayerItemRequestBody {
 
     String playerName;
-    long playerId;
-    int playerRating;
+    Long playerId;
+    Integer playerRating;
 
     String quality;
     String rarity;
     String position;
     String chemistryStyle;
-
 
     // Mapping From MongoDB
     String nation;
@@ -27,11 +26,11 @@ public class PlayerItemRequestBody {
     }
 
     public boolean isPlayerRatingPresent() {
-        return playerRating != 0;
+        return playerRating != null && playerRating != 0;
     }
 
     public boolean isPlayerIdPresent() {
-        return playerId != 0;
+        return playerId != null && playerId != 0;
     }
 
     public boolean isQualityPresent() {

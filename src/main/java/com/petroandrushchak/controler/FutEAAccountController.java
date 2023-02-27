@@ -2,13 +2,16 @@ package com.petroandrushchak.controler;
 
 import com.petroandrushchak.entity.Status;
 import com.petroandrushchak.exceptions.WarningException;
+import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
+import com.petroandrushchak.model.fut.Item;
+import com.petroandrushchak.model.fut.PlayerItem;
 import com.petroandrushchak.process.BrowserProcessHelper;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.service.FutAccountService;
 import com.petroandrushchak.steps.SnippingSteps;
 import com.petroandrushchak.steps.SnippingValidationsSteps;
-import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.BrowserProcessView;
+import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.SnippingView;
 import com.petroandrushchak.view.request.SnippingRequestBody;
 import jakarta.validation.Valid;
@@ -38,12 +41,14 @@ public class FutEAAccountController {
 
     @CrossOrigin(origins = "*")
     @PostMapping("/startSnipping")
-    public BrowserProcessView startSnipping(@Valid @RequestBody SnippingRequestBody snippingRequestBody) {
+    public Item startSnipping(@Valid @RequestBody SnippingRequestBody snippingRequestBody) {
 
-        snippingValidationsSteps.validateSnippingRequest(snippingRequestBody);
+        var futAccountView = snippingValidationsSteps.validateSnippingRequestFutAccount(snippingRequestBody);
+        var item = snippingValidationsSteps.validateSnippingRequestItem(snippingRequestBody);
 
-        BrowserProcessView browserProcessView = snippingSteps.startSnipping(snippingRequestBody);
-        return browserProcessView;
+      //  BrowserProcessView browserProcessView = snippingSteps.startSnipping(futAccountView, item);
+
+        return item;
     }
 
     @CrossOrigin(origins = "*")

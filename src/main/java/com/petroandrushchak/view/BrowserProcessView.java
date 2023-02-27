@@ -1,7 +1,7 @@
 package com.petroandrushchak.view;
 
 import com.petroandrushchak.entity.Status;
-import com.petroandrushchak.model.fut.PlayerItem;
+import com.petroandrushchak.model.fut.Item;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,7 +12,7 @@ public class BrowserProcessView {
 
     Long id;
     Long futEaAccountId;
-    PlayerItem playerItem;
+    Item item;
     Status status;
 
 }

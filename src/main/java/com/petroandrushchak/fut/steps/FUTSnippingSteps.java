@@ -28,7 +28,7 @@ public class FUTSnippingSteps {
 
         var playerSearch = (PlayerItem) snippingFilter.getItemsSearch();
 
-        searchTransferMarketPage.setPlayerName(playerSearch.getName(), playerSearch.getRating());
+        searchTransferMarketPage.setPlayerName(playerSearch.getPlayerName(), playerSearch.getRating());
 
         IntStream.range(1, NUMBER_OF_SNIPES).forEach($ -> {
             log.info("Snipping attempt " + $ + " ouf of " + NUMBER_OF_SNIPES);
@@ -40,7 +40,8 @@ public class FUTSnippingSteps {
                 log.info("Buying status: " + buyingStatus);
                 if (buyingStatus == ITEM_BUYING_BOUGHT_SUCCESSFULLY) {
                     long boughtPrice = searchResultPage.getItemBoughtPrice();
-                    log.info("Item is bought for " + boughtPrice + " , selling item for: " + snippingFilter.getSellPrices().getBuyNowPrice());
+                    log.info("Item is bought for " + boughtPrice + " , selling item for: " + snippingFilter.getSellPrices()
+                                                                                                           .getBuyNowPrice());
                     searchResultPage.sellItem(snippingFilter.getSellPrices());
                 }
             } else {

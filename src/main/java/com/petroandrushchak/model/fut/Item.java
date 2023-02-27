@@ -7,7 +7,4 @@ public abstract class Item {
 
     protected Quality level;
 
-    public boolean isLevelSet() {
-        return level != null;
-    }
 }
