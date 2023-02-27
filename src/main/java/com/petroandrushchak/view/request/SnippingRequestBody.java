@@ -1,6 +1,6 @@
 package com.petroandrushchak.view.request;
 
-import com.petroandrushchak.model.fut.PlayerItem;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -18,6 +18,7 @@ public class SnippingRequestBody {
 
     @Valid
     @NotNull(message = "The player Item is required.")
-    PlayerItem playerItem;
+    @JsonProperty(value = "playerItem")
+    PlayerItemRequestBody player;
 
 }

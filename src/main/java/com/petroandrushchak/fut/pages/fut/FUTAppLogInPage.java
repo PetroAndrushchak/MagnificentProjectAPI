@@ -21,7 +21,8 @@ import static org.awaitility.Awaitility.await;
 @Component
 public class FUTAppLogInPage extends BasePage<FUTAppLogInPage> {
 
-    private static final String PAGE_URL = "https://www.ea.com/fifa/ultimate-team/web-app/";
+   // private static final String PAGE_URL = "https://www.ea.com/fifa/ultimate-team/web-app/";
+   private static final String PAGE_URL = "https://www.google.com";
 
     SelenideElement logInButton = $(".call-to-action");
 
@@ -34,9 +35,9 @@ public class FUTAppLogInPage extends BasePage<FUTAppLogInPage> {
         log.info("Waiting for 60 seconds ... ");
 
         AtomicInteger i = new AtomicInteger();
-        await().atMost(Duration.ofSeconds(60))
+        await().atMost(Duration.ofSeconds(20))
                .pollInSameThread()
-               .pollInterval(Duration.ofSeconds(1))
+               .pollInterval(Duration.ofSeconds(5))
                .until(() -> {
                    if (Thread.currentThread().isInterrupted()) {
                        log.info("Thread is interrupted ... ");

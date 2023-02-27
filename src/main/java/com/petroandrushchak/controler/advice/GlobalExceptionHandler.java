@@ -1,6 +1,7 @@
 package com.petroandrushchak.controler.advice;
 
 import com.petroandrushchak.exceptions.BrowserProcessFutAccountBlocked;
+import com.petroandrushchak.exceptions.ItemMappingException;
 import com.petroandrushchak.exceptions.NoSuchElementFoundException;
 import com.petroandrushchak.exceptions.WarningException;
 import lombok.extern.slf4j.Slf4j;
@@ -57,6 +58,13 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<Object> handleWarningException(WarningException warningException, WebRequest request) {
         log.error("Warning occurred", warningException);
         return buildErrorResponse(warningException, HttpStatus.EXPECTATION_FAILED, request);
+    }
+
+    @ExceptionHandler(ItemMappingException.class)
+    @ResponseStatus(HttpStatus.EXPECTATION_FAILED)
+    public ResponseEntity<Object> handleItemMappingException(ItemMappingException itemMappingException, WebRequest request) {
+        log.error("Item Mapping Exception", itemMappingException);
+        return buildErrorResponse(itemMappingException, HttpStatus.EXPECTATION_FAILED, request);
     }
 
     private ResponseEntity<Object> buildErrorResponse(Exception exception,

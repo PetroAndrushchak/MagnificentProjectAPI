@@ -34,9 +34,9 @@ public class FUTSearchTransferMarketPage extends BasePage<FUTSearchTransferMarke
 
     SelenideElement searchButton = $(".call-to-action");
 
-    public void setPlayerName(String playerName, String playerRating) {
+    public void setPlayerName(String playerName, int playerRating) {
         enterPlayerName(playerName);
-        selectPlayerFromTheList(playerName, playerRating);
+        selectPlayerFromTheList(playerName, String.valueOf(playerRating));
     }
 
     @RealPerson

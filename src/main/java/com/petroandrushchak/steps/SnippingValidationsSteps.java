@@ -1,6 +1,7 @@
 package com.petroandrushchak.steps;
 
 import com.petroandrushchak.exceptions.BrowserProcessFutAccountBlocked;
+import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.service.FutAccountService;
 import com.petroandrushchak.view.request.SnippingRequestBody;
@@ -31,6 +32,16 @@ public class SnippingValidationsSteps {
         if (isBrowserProcessRunningForFutAccount) {
             throw new BrowserProcessFutAccountBlocked(snippingRequestBody.getFutEaAccountId());
         }
+
+        //Step 3: Validate fields which are preset are valida from Mongo DB
+        //Player Name, Player Rating, Player id
+        // nationality;
+        // league;
+        // club;
+
+        //Step 3: Validate mapping for Fut Player Item
+        var playerItemView = PlayerItemMapper.INSTANCE.playerItemRequestToView(snippingRequestBody.getPlayer());
+        log.info("Player Item View: " + playerItemView);
     }
 
 

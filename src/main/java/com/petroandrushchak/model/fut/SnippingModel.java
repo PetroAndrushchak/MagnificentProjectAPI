@@ -20,7 +20,7 @@ public class SnippingModel {
     public static SnippingModel playerModel(String playerName, int playerRating, long sellPrice) {
         PlayerItem playerItem = new PlayerItem();
         playerItem.setName(playerName);
-        playerItem.setRating(String.valueOf(playerRating));
+        playerItem.setRating(playerRating);
         var searchPrices = FUTPriceHelper.createSearchPricesWithMaxBuyNowPrice(FUTPriceHelper.createPriceForSnippingFromSellPrice(sellPrice));
 
         return anSnippingModel()
