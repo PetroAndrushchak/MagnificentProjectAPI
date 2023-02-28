@@ -17,7 +17,10 @@ public class PlayerItemRequestBody {
     String chemistryStyle;
 
     // Mapping From MongoDB
-    String nation;
+    Long nationId;
+    String nationAbbreviation;
+    String nationName;
+
     String league;
     String club;
 
@@ -50,9 +53,18 @@ public class PlayerItemRequestBody {
         return chemistryStyle != null && !chemistryStyle.isEmpty();
     }
 
-    public boolean isNationPresent() {
-        return nation != null && !nation.isEmpty();
+    public boolean isNationIdPresent() {
+        return nationId != null && nationId != 0;
     }
+
+    public boolean isNationAbbreviationPresent() {
+        return nationAbbreviation != null && !nationAbbreviation.isEmpty();
+    }
+
+    public boolean isNationNamePresent() {
+        return nationName != null && !nationName.isEmpty();
+    }
+
 
     public boolean isLeaguePresent() {
         return league != null && !league.isEmpty();

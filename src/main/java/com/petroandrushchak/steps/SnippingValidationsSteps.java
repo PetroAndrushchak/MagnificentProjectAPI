@@ -5,18 +5,20 @@ import com.petroandrushchak.exceptions.BrowserProcessFutAccountBlocked;
 import com.petroandrushchak.exceptions.ItemMappingException;
 import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
 import com.petroandrushchak.model.fut.Item;
+import com.petroandrushchak.model.fut.Nation;
+import com.petroandrushchak.repository.mongo.FUTNationRepository;
 import com.petroandrushchak.repository.mongo.FUTPlayersRepository;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.service.FutAccountService;
 import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.request.PlayerItemRequestBody;
 import com.petroandrushchak.view.request.SnippingRequestBody;
-import com.petroandrushchak.view.response.SnippingResponseBody;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -29,6 +31,7 @@ public class SnippingValidationsSteps {
     BrowserProcessService browserProcessService;
 
     @Autowired FUTPlayersRepository futPlayersRepository;
+    @Autowired FUTNationRepository futNationRepository;
 
     public FutEaAccountView validateSnippingRequestFutAccount(SnippingRequestBody snippingRequestBody) {
 
@@ -50,19 +53,94 @@ public class SnippingValidationsSteps {
 
     public Item validateSnippingRequestItem(SnippingRequestBody snippingRequestBody) {
 
-        //Step 3: Validate fields which are preset are valida from Mongo DB
+        //Step 1: Validate fields which are preset are valid from Mongo DB
         FutEaDbPlayer futEaDbPlayer = validatePlayerNameRatingPlayerId(snippingRequestBody.getPlayer());
+        Optional<Nation> nation = validatePlayerNation(snippingRequestBody.getPlayer());
 
 
-        // nationality;
+        //Step 2: Validate Nation (if present
+
         // league;
         // club;
 
         //Step 3: Validate mapping for Fut Player Item
-        var playerItemView = PlayerItemMapper.INSTANCE.playerItemRequestToView(snippingRequestBody.getPlayer(), futEaDbPlayer);
+        var playerItemView = PlayerItemMapper.INSTANCE.playerItemRequestToView(snippingRequestBody.getPlayer(), futEaDbPlayer, nation);
         log.info("Player Item View: " + playerItemView);
 
         return playerItemView;
+    }
+
+    private Optional<Nation> validatePlayerNation(PlayerItemRequestBody playerItem) {
+        log.info("Validating Player Nation: " + playerItem);
+
+        var isNationIdPresent = playerItem.isNationIdPresent();
+        var isNationNamePresent = playerItem.isNationNamePresent();
+        var isNationAbbreviationPresent = playerItem.isNationAbbreviationPresent();
+
+        if (isNationIdPresent) {
+            var foundNationNamesResult = futNationRepository.getNationNamesById(playerItem.getNationId());
+            var foundNationAbbreviationsResult = futNationRepository.getNationAbbreviationsById(playerItem.getNationId());
+
+            if (foundNationNamesResult.isEmpty())
+                throw new ItemMappingException("Nation Id", "Nation with id: " + playerItem.getNationId() + " not found in DB");
+            if (foundNationNamesResult.size() > 1)
+                throw new ItemMappingException("Nation Id", "Nation with id: " + playerItem.getNationId() + " found more than 1 in DB");
+            if (foundNationAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Nation Id", "Nation with id: " + playerItem.getNationId() + " not found in DB");
+            if (foundNationAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Nation Id", "Nation with id: " + playerItem.getNationId() + " found more than 1 in DB");
+
+            var nationName = foundNationNamesResult.get(0);
+            var nationAbbreviation = foundNationAbbreviationsResult.get(0);
+
+            if (isNationNamePresent && !playerItem.getNationName().equals(nationName)) {
+                throw new ItemMappingException("Nation Name", "Nation with id: " + playerItem.getNationId() + " found in DB with name: " + nationName);
+            }
+
+            if (isNationAbbreviationPresent && !playerItem.getNationAbbreviation().equals(nationAbbreviation)) {
+                throw new ItemMappingException("Nation Abbreviation", "Nation with id: " + playerItem.getNationId() + " found in DB with abbreviation: " + nationAbbreviation);
+            }
+
+            return Optional.of(new Nation(playerItem.getNationId(), nationAbbreviation, nationName));
+        } else if (isNationAbbreviationPresent) {
+            var foundNationIdsResult = futNationRepository.getNationIdsByAbbreviation(playerItem.getNationAbbreviation());
+
+            if (foundNationIdsResult.isEmpty()) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
+            if (foundNationIdsResult.size() > 1) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
+
+            var nationId = foundNationIdsResult.get(0);
+
+            var foundNationNamesResult = futNationRepository.getNationNamesById(nationId);
+            if (foundNationNamesResult.isEmpty()) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
+            if (foundNationNamesResult.size() > 1) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
+
+            var nationName = foundNationNamesResult.get(0);
+
+            if (isNationNamePresent && !playerItem.getNationName().equals(nationName))
+                throw new ItemMappingException("Nation Name", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found in DB with name: " + nationName);
+
+
+            return Optional.of(new Nation(nationId, playerItem.getNationAbbreviation(), nationName));
+
+        } else if (isNationNamePresent) {
+            var foundNationIdsResult = futNationRepository.getNationIdsByName(playerItem.getNationName());
+
+            if (foundNationIdsResult.isEmpty()) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
+            if (foundNationIdsResult.size() > 1) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
+
+            var nationId = foundNationIdsResult.get(0);
+
+            var foundNationAbbreviationsResult = futNationRepository.getNationAbbreviationsById(nationId);
+            if (foundNationAbbreviationsResult.isEmpty()) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
+            if (foundNationAbbreviationsResult.size() > 1) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
+
+            var nationAbbreviation = foundNationAbbreviationsResult.get(0);
+
+            return Optional.of(new Nation(nationId, nationAbbreviation, playerItem.getNationName()));
+
+        } else {
+            return Optional.empty();
+        }
     }
 
     private FutEaDbPlayer validatePlayerNameRatingPlayerId(PlayerItemRequestBody playerItem) {

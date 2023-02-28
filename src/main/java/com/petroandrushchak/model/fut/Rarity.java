@@ -1,5 +1,6 @@
 package com.petroandrushchak.model.fut;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.petroandrushchak.exceptions.ItemMappingException;
 
 public enum Rarity {
@@ -49,6 +50,7 @@ public enum Rarity {
         throw new ItemMappingException("Rarity", "Rarity is not found for api key: " + value);
     }
 
+    @JsonValue
     public String getValue() {
         return apiKey;
     }

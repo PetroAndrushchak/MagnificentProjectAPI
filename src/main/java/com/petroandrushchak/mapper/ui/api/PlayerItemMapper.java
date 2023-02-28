@@ -8,13 +8,14 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Mapper
 public interface PlayerItemMapper {
 
     PlayerItemMapper INSTANCE = Mappers.getMapper(PlayerItemMapper.class);
 
-    default PlayerItem playerItemRequestToView(PlayerItemRequestBody playerItemRequestBody, FutEaDbPlayer futEaDbPlayer) {
+    default PlayerItem playerItemRequestToView(PlayerItemRequestBody playerItemRequestBody, FutEaDbPlayer futEaDbPlayer, Optional<Nation> nation) {
 
         var playerItem = new PlayerItem();
 
@@ -58,6 +59,7 @@ public interface PlayerItemMapper {
 
 
         //TODO Other fields
+        nation.ifPresent(playerItem::setNation);
 
 
         return playerItem;

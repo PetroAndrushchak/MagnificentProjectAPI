@@ -16,7 +16,7 @@ public class PlayerItem extends Item {
     Position position;
     ChemistryStyle chemistryStyle;
 
-    String nationality;
+    Nation nation;
     String league;
     String club;
 
@@ -52,8 +52,8 @@ public class PlayerItem extends Item {
             sb.append("  \"chemistryStyle\": \"").append(chemistryStyle).append("\",\n");
         }
 
-        if (nationality != null) {
-            sb.append("  \"nationality\": \"").append(nationality).append("\",\n");
+        if (nation != null) {
+            sb.append("  \"nationality\": \"").append(nation).append("\",\n");
         }
 
         if (league != null) {

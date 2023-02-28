@@ -1,5 +1,6 @@
 package com.petroandrushchak.model.fut;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.petroandrushchak.exceptions.ItemMappingException;
 
 public enum Quality {
@@ -24,6 +25,7 @@ public enum Quality {
         throw new ItemMappingException("Quality", "Quality is not found for api key: " + value);
     }
 
+    @JsonValue
     public String getValue() {
         return apiKey;
     }
