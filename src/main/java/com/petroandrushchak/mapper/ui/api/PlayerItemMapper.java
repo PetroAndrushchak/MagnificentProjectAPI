@@ -15,7 +15,11 @@ public interface PlayerItemMapper {
 
     PlayerItemMapper INSTANCE = Mappers.getMapper(PlayerItemMapper.class);
 
-    default PlayerItem playerItemRequestToView(PlayerItemRequestBody playerItemRequestBody, FutEaDbPlayer futEaDbPlayer, Optional<Nation> nation) {
+    default PlayerItem playerItemRequestToView(PlayerItemRequestBody playerItemRequestBody,
+                                               FutEaDbPlayer futEaDbPlayer,
+                                               Optional<Nation> nation,
+                                               Optional<League> league,
+                                               Optional<Club> club) {
 
         var playerItem = new PlayerItem();
 
@@ -60,6 +64,8 @@ public interface PlayerItemMapper {
 
         //TODO Other fields
         nation.ifPresent(playerItem::setNation);
+        league.ifPresent(playerItem::setLeague);
+        club.ifPresent(playerItem::setClub);
 
 
         return playerItem;

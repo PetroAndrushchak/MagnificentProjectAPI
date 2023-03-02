@@ -17,8 +17,8 @@ public class PlayerItem extends Item {
     ChemistryStyle chemistryStyle;
 
     Nation nation;
-    String league;
-    String club;
+    League league;
+    Club club;
 
     @Override
     public String toString() {

@@ -4,8 +4,12 @@ import com.petroandrushchak.entity.mongo.FutEaDbPlayer;
 import com.petroandrushchak.exceptions.BrowserProcessFutAccountBlocked;
 import com.petroandrushchak.exceptions.ItemMappingException;
 import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
+import com.petroandrushchak.model.fut.Club;
 import com.petroandrushchak.model.fut.Item;
+import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
+import com.petroandrushchak.repository.mongo.FUTClubRepository;
+import com.petroandrushchak.repository.mongo.FUTLeagueRepository;
 import com.petroandrushchak.repository.mongo.FUTNationRepository;
 import com.petroandrushchak.repository.mongo.FUTPlayersRepository;
 import com.petroandrushchak.service.BrowserProcessService;
@@ -24,14 +28,14 @@ import java.util.Optional;
 @Component
 public class SnippingValidationsSteps {
 
-    @Autowired
-    FutAccountService futAccountService;
+    @Autowired FutAccountService futAccountService;
 
-    @Autowired
-    BrowserProcessService browserProcessService;
+    @Autowired BrowserProcessService browserProcessService;
 
     @Autowired FUTPlayersRepository futPlayersRepository;
     @Autowired FUTNationRepository futNationRepository;
+    @Autowired FUTLeagueRepository futLeagueRepository;
+    @Autowired FUTClubRepository futClubRepository;
 
     public FutEaAccountView validateSnippingRequestFutAccount(SnippingRequestBody snippingRequestBody) {
 
@@ -56,18 +60,118 @@ public class SnippingValidationsSteps {
         //Step 1: Validate fields which are preset are valid from Mongo DB
         FutEaDbPlayer futEaDbPlayer = validatePlayerNameRatingPlayerId(snippingRequestBody.getPlayer());
         Optional<Nation> nation = validatePlayerNation(snippingRequestBody.getPlayer());
+        Optional<League> league = validatePlayerLeague(snippingRequestBody.getPlayer());
+        Optional<Club> club = validatePlayerClub(snippingRequestBody.getPlayer());
 
-
-        //Step 2: Validate Nation (if present
-
-        // league;
+        //Step 2: Validate
         // club;
 
         //Step 3: Validate mapping for Fut Player Item
-        var playerItemView = PlayerItemMapper.INSTANCE.playerItemRequestToView(snippingRequestBody.getPlayer(), futEaDbPlayer, nation);
+        var playerItemView = PlayerItemMapper.INSTANCE.playerItemRequestToView(snippingRequestBody.getPlayer(), futEaDbPlayer, nation, league, club);
         log.info("Player Item View: " + playerItemView);
 
         return playerItemView;
+    }
+
+    private Optional<Club> validatePlayerClub(PlayerItemRequestBody player) {
+        log.info("Validating Player Club: " + player);
+
+        var isClubIdPresent = player.isClubIdPresent();
+        var isClubShortAbbreviationPresent = player.isClubShortAbbreviationPresent();
+        var isClubMediumAbbreviationPresent = player.isClubMediumAbbreviationPresent();
+
+        if (isClubIdPresent) {
+            var foundClubShortAbbreviationsResult = futClubRepository.getClubShortNamesById(player.getClubId());
+            var foundClubMediumAbbreviationsResult = futClubRepository.getClubMediumNamesById(player.getClubId());
+            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(player.getClubId());
+
+            if (foundClubShortAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
+            if (foundClubShortAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
+            if (foundClubMediumAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
+            if (foundClubMediumAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
+            if (foundClubLongAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
+            if (foundClubLongAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
+
+            var clubShortAbbreviation = foundClubShortAbbreviationsResult.get(0);
+            var clubMediumAbbreviation = foundClubMediumAbbreviationsResult.get(0);
+            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
+
+            if (isClubShortAbbreviationPresent && !player.getClubShortAbbreviation().equals(clubShortAbbreviation)) {
+                throw new ItemMappingException("Club Short Abbreviation", "Club with id: " + player.getClubId() + " found in DB with short abbreviation: " + clubShortAbbreviation);
+            }
+
+            if (isClubMediumAbbreviationPresent && !player.getClubMediumAbbreviation().equals(clubMediumAbbreviation)) {
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with id: " + player.getClubId() + " found in DB with medium abbreviation: " + clubMediumAbbreviation);
+            }
+
+            return Optional.of(new Club(player.getClubId(), clubShortAbbreviation, clubMediumAbbreviation, clubLongAbbreviation));
+        } else if (isClubShortAbbreviationPresent) {
+
+            var foundClubIdsResult = futClubRepository.getClubIdsByShortName(player.getClubShortAbbreviation());
+
+            if (foundClubIdsResult.isEmpty())
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
+            if (foundClubIdsResult.size() > 1)
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
+
+            var clubId = foundClubIdsResult.get(0);
+
+            var foundClubMediumAbbreviationsResult = futClubRepository.getClubMediumNamesById(clubId);
+            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(clubId);
+
+            if (foundClubMediumAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
+            if (foundClubMediumAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
+            if (foundClubLongAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
+            if (foundClubLongAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
+
+            var clubMediumAbbreviation = foundClubMediumAbbreviationsResult.get(0);
+            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
+
+            if (isClubMediumAbbreviationPresent && !player.getClubMediumAbbreviation().equals(clubMediumAbbreviation)) {
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found in DB with medium abbreviation: " + clubMediumAbbreviation);
+            }
+
+            return Optional.of(new Club(clubId, player.getClubShortAbbreviation(), clubMediumAbbreviation, clubLongAbbreviation));
+        } else if (isClubMediumAbbreviationPresent) {
+
+            var foundClubIdsResult = futClubRepository.getClubIdsByMediumName(player.getClubMediumAbbreviation());
+
+            if (foundClubIdsResult.isEmpty())
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
+            if (foundClubIdsResult.size() > 1)
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
+
+            var clubId = foundClubIdsResult.get(0);
+
+            var foundClubShortAbbreviationsResult = futClubRepository.getClubShortNamesById(clubId);
+            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(clubId);
+
+            if (foundClubShortAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
+            if (foundClubShortAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
+            if (foundClubLongAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
+            if (foundClubLongAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
+
+            var clubShortAbbreviation = foundClubShortAbbreviationsResult.get(0);
+            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
+
+            return Optional.of(new Club(clubId, clubShortAbbreviation, player.getClubMediumAbbreviation(), clubLongAbbreviation));
+        }
+
+        return Optional.empty();
     }
 
     private Optional<Nation> validatePlayerNation(PlayerItemRequestBody playerItem) {
@@ -105,14 +209,18 @@ public class SnippingValidationsSteps {
         } else if (isNationAbbreviationPresent) {
             var foundNationIdsResult = futNationRepository.getNationIdsByAbbreviation(playerItem.getNationAbbreviation());
 
-            if (foundNationIdsResult.isEmpty()) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
-            if (foundNationIdsResult.size() > 1) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
+            if (foundNationIdsResult.isEmpty())
+                throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
+            if (foundNationIdsResult.size() > 1)
+                throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
 
             var nationId = foundNationIdsResult.get(0);
 
             var foundNationNamesResult = futNationRepository.getNationNamesById(nationId);
-            if (foundNationNamesResult.isEmpty()) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
-            if (foundNationNamesResult.size() > 1) throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
+            if (foundNationNamesResult.isEmpty())
+                throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " not found in DB");
+            if (foundNationNamesResult.size() > 1)
+                throw new ItemMappingException("Nation Abbreviation", "Nation with abbreviation: " + playerItem.getNationAbbreviation() + " found more than 1 in DB");
 
             var nationName = foundNationNamesResult.get(0);
 
@@ -125,14 +233,18 @@ public class SnippingValidationsSteps {
         } else if (isNationNamePresent) {
             var foundNationIdsResult = futNationRepository.getNationIdsByName(playerItem.getNationName());
 
-            if (foundNationIdsResult.isEmpty()) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
-            if (foundNationIdsResult.size() > 1) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
+            if (foundNationIdsResult.isEmpty())
+                throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
+            if (foundNationIdsResult.size() > 1)
+                throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
 
             var nationId = foundNationIdsResult.get(0);
 
             var foundNationAbbreviationsResult = futNationRepository.getNationAbbreviationsById(nationId);
-            if (foundNationAbbreviationsResult.isEmpty()) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
-            if (foundNationAbbreviationsResult.size() > 1) throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
+            if (foundNationAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " not found in DB");
+            if (foundNationAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("Nation Name", "Nation with name: " + playerItem.getNationName() + " found more than 1 in DB");
 
             var nationAbbreviation = foundNationAbbreviationsResult.get(0);
 
@@ -141,6 +253,89 @@ public class SnippingValidationsSteps {
         } else {
             return Optional.empty();
         }
+    }
+
+    private Optional<League> validatePlayerLeague(PlayerItemRequestBody playerItem) {
+        log.info("Validating Player League: " + playerItem);
+
+        var isLeagueIdPresent = playerItem.isLeagueIdPresent();
+        var isLeagueNamePresent = playerItem.isLeagueFullNamePresent();
+        var isLeagueShortAbbreviationPresent = playerItem.isLeagueShortAbbreviationPresent();
+
+        if (isLeagueIdPresent) {
+            var foundLeagueFullNamesResult = futLeagueRepository.getLeagueFullNameById(playerItem.getLeagueId());
+            var foundLeagueShortAbbreviationsResult = futLeagueRepository.getLeagueShortAbbreviationById(playerItem.getLeagueId());
+
+            if (foundLeagueFullNamesResult.isEmpty())
+                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " not found in DB");
+            if (foundLeagueFullNamesResult.size() > 1)
+                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " found more than 1 in DB");
+            if (foundLeagueShortAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " not found in DB");
+            if (foundLeagueShortAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " found more than 1 in DB");
+
+            var leagueFullName = foundLeagueFullNamesResult.get(0);
+            var leagueShortAbbreviation = foundLeagueShortAbbreviationsResult.get(0);
+
+            if (isLeagueNamePresent && !playerItem.getLeagueFullName().equals(leagueFullName)) {
+                throw new ItemMappingException("League Name", "League with id: " + playerItem.getLeagueId() + " found in DB with name: " + leagueFullName);
+            }
+
+            if (isLeagueShortAbbreviationPresent && !playerItem.getLeagueShortAbbreviation()
+                                                               .equals(leagueShortAbbreviation)) {
+                throw new ItemMappingException("League Abbreviation", "League with id: " + playerItem.getLeagueId() + " found in DB with abbreviation: " + leagueShortAbbreviation);
+            }
+
+            return Optional.of(new League(playerItem.getLeagueId(), leagueFullName, leagueShortAbbreviation));
+        } else if (isLeagueShortAbbreviationPresent) {
+            var foundLeagueIdsResult = futLeagueRepository.getLeagueIdsByShortAbbreviation(playerItem.getLeagueShortAbbreviation());
+
+            if (foundLeagueIdsResult.isEmpty())
+                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " not found in DB");
+            if (foundLeagueIdsResult.size() > 1)
+                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " found more than 1 in DB");
+
+            var leagueId = foundLeagueIdsResult.get(0);
+
+            var foundLeagueFullNamesResult = futLeagueRepository.getLeagueFullNameById(leagueId);
+            if (foundLeagueFullNamesResult.isEmpty())
+                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " not found in DB");
+            if (foundLeagueFullNamesResult.size() > 1)
+                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " found more than 1 in DB");
+
+            var leagueFullName = foundLeagueFullNamesResult.get(0);
+
+            if (isLeagueNamePresent && !playerItem.getLeagueFullName().equals(leagueFullName)) {
+                throw new ItemMappingException("League Name", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " found in DB with name: " + leagueFullName);
+            }
+
+            return Optional.of(new League(leagueId, leagueFullName, playerItem.getLeagueShortAbbreviation()));
+
+        } else if (isLeagueNamePresent) {
+            var foundLeagueIdsResult = futLeagueRepository.getLeagueIdsByFullName(playerItem.getLeagueFullName());
+
+            if (foundLeagueIdsResult.isEmpty())
+                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " not found in DB");
+            if (foundLeagueIdsResult.size() > 1)
+                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " found more than 1 in DB");
+
+            var leagueId = foundLeagueIdsResult.get(0);
+
+            var foundLeagueShortAbbreviationsResult = futLeagueRepository.getLeagueShortAbbreviationById(leagueId);
+            if (foundLeagueShortAbbreviationsResult.isEmpty())
+                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " not found in DB");
+            if (foundLeagueShortAbbreviationsResult.size() > 1)
+                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " found more than 1 in DB");
+
+            var leagueShortAbbreviation = foundLeagueShortAbbreviationsResult.get(0);
+
+            return Optional.of(new League(leagueId, playerItem.getLeagueFullName(), leagueShortAbbreviation));
+
+        } else {
+            return Optional.empty();
+        }
+
     }
 
     private FutEaDbPlayer validatePlayerNameRatingPlayerId(PlayerItemRequestBody playerItem) {

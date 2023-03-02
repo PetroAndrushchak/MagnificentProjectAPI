@@ -21,8 +21,13 @@ public class PlayerItemRequestBody {
     String nationAbbreviation;
     String nationName;
 
-    String league;
-    String club;
+    Long leagueId;
+    String leagueFullName;
+    String leagueShortAbbreviation;
+
+    Long clubId;
+    String clubShortAbbreviation;
+    String clubMediumAbbreviation;
 
     public boolean isPlayerNamePresent() {
         return playerName != null && !playerName.isEmpty();
@@ -65,13 +70,29 @@ public class PlayerItemRequestBody {
         return nationName != null && !nationName.isEmpty();
     }
 
-
-    public boolean isLeaguePresent() {
-        return league != null && !league.isEmpty();
+    public boolean isLeagueIdPresent() {
+        return leagueId != null && leagueId != 0;
     }
 
-    public boolean isClubPresent() {
-        return club != null && !club.isEmpty();
+    public boolean isLeagueFullNamePresent() {
+        return leagueFullName != null && !leagueFullName.isEmpty();
     }
+
+    public boolean isLeagueShortAbbreviationPresent() {
+        return leagueShortAbbreviation != null && !leagueShortAbbreviation.isEmpty();
+    }
+
+    public boolean isClubIdPresent() {
+        return clubId != null && clubId != 0;
+    }
+
+    public boolean isClubShortAbbreviationPresent() {
+        return clubShortAbbreviation != null && !clubShortAbbreviation.isEmpty();
+    }
+
+    public boolean isClubMediumAbbreviationPresent() {
+        return clubMediumAbbreviation != null && !clubMediumAbbreviation.isEmpty();
+    }
+
 
 }
