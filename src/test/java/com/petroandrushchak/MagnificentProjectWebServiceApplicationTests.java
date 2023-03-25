@@ -40,8 +40,8 @@ class MagnificentProjectWebServiceApplicationTests {
 
         PlayerItem playerItem = new PlayerItem();
 
-        playerItem.setName("Lucas Digne");
-        playerItem.setRating("82");
+        playerItem.setPlayerName("Lucas Digne");
+        playerItem.setRating(82);
 
         long sellPrice = 1500;
 

@@ -84,4 +84,10 @@ public class Waiter {
         Thread.sleep(duration.toMillis());
     }
 
+    @SneakyThrows
+    public static void waitRandomTimeFromTwoToThreeMinutes() {
+        var randomSecondsToWait = RandomHelper.getRandomNumber(2000, 3000);
+        Thread.sleep(randomSecondsToWait);
+    }
+
 }
