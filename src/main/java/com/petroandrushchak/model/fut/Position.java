@@ -24,13 +24,25 @@ public enum Position {
     ST("st"),
     LW("lw");
 
+    public boolean isDefender() {
+        return this == RWB || this == RB || this == CB || this == LB || this == LWB;
+    }
+
+    public boolean isMidfielder() {
+        return this == CDM || this == RM || this == CM || this == LM || this == CAM;
+    }
+
+    public boolean isAttacker() {
+        return this == CF || this == RW || this == ST || this == LW;
+    }
+
     private final String apiKey;
 
     Position(String value) {
         this.apiKey = value;
     }
 
-    public static Position fromApiKey(String value) {
+    public static Position fromKey(String value) {
         for (Position enumValue : values()) {
             if (enumValue.apiKey.equalsIgnoreCase(value)) {
                 return enumValue;

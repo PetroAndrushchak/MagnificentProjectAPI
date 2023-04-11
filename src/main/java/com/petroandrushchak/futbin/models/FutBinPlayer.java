@@ -1,5 +1,8 @@
 package com.petroandrushchak.futbin.models;
 
+import com.petroandrushchak.model.fut.Position;
+import com.petroandrushchak.model.fut.Quality;
+import com.petroandrushchak.model.fut.Rarity;
 import lombok.Data;
 
 import java.util.List;
@@ -7,25 +10,23 @@ import java.util.List;
 @Data
 public class FutBinPlayer {
 
-    String id;
-    String name;
+    Long id;
+    String playerName;
+    Integer rating;
 
-    String clubId;
-    String clubName;
+    Long clubId;
+    Long nationId;
+    Long leagueId;
 
-    String nationId;
-    String nationName;
+    Quality quality;
+    Rarity rarity;
 
-    String leagueId;
-    String leagueName;
+    List<Position> positions;
 
-    String qualityAndRarity;
+    public boolean isPlayerHasPosition(Position position) {
+        return positions.contains(position);
+    }
 
-    String rating;
-
-    List<String> positions;
-
-    String priceText;
-
+    long price;
 
 }

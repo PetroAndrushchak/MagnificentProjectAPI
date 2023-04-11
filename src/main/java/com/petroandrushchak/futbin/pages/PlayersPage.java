@@ -2,14 +2,17 @@ package com.petroandrushchak.futbin.pages;
 
 import com.codeborne.selenide.*;
 import com.petroandrushchak.aop.RealPerson;
-import com.petroandrushchak.futbin.models.FutBinPlayer;
+import com.petroandrushchak.aop.RetryStep;
+import com.petroandrushchak.futbin.models.FutBinRawPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayersSearchFilter;
 import com.petroandrushchak.futbin.models.MinMaxPrice;
 import com.petroandrushchak.futbin.models.Version;
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,43 +37,52 @@ public class PlayersPage {
 
     ElementsCollection playerTableRows = $$("tr[class *='player_tr']");
 
-    SelenideElement playerNameLink = $("a[class *='player_name_players']");
-    SelenideElement playerClubLink = $("a[href *='&club']");
-    SelenideElement playerNationLink = $("a[href *='&nation']");
-    SelenideElement playerLeagueLink = $("a[href *='&league']");
+    By playerNameLinkBy = By.cssSelector("a[class *='player_name_players']");
+    By playerClubLinkBy = By.cssSelector("a[href *='&club']");
+    By playerNationLinkBy = By.cssSelector("a[href *='&nation']");
+    By playerLeagueLinkBy = By.cssSelector("a[href *='&league']");
 
-    SelenideElement playerRatingLabel = $("td > .rating");
-    SelenideElement playerPositionElement = $("td:has(span[class *='rating']) + td");
+    By playerRatingLabelBy = By.cssSelector("td > .rating");
+    By playerPositionElementBy = By.cssSelector("td:has(span[class *='rating']) + td");
 
-    SelenideElement playerPriceLabel = $("span:has(img[src *='coins'] )");
+    By playerPriceLabelBy = By.cssSelector("span:has(img[src *='coins'] )");
 
-    public List<FutBinPlayer> parsePlayersDisplayedOnThePage() {
-        return playerTableRows.asDynamicIterable().stream()
+    public List<FutBinRawPlayer> parsePlayersDisplayedOnThePage() {
+        log.info("Parsing players displayed on the page");
+        var result =  playerTableRows.asDynamicIterable().stream()
                               .map(this::parsePlayerFromRow)
                               .toList();
+
+        log.info("Found {} players", result.size());
+        return result;
     }
 
-    @RealPerson
-    private FutBinPlayer parsePlayerFromRow(SelenideElement playerRow) {
-        var futBinPlayer = new FutBinPlayer();
+   // @RealPerson
+    private FutBinRawPlayer parsePlayerFromRow(SelenideElement playerRow) {
+        var futBinPlayer = new FutBinRawPlayer();
 
+        var playerNameLink = playerRow.$(playerNameLinkBy);
         String playerName = playerNameLink.getText();
         String playerId = getPlayerIdFromPlayerNameLink(playerNameLink.getAttribute("href"));
 
+        var playerClubLink = playerRow.$(playerClubLinkBy);
         String clubId = getPlayerClubIdFromPlayerClubLink(playerClubLink.getAttribute("href"));
         String clubName = playerClubLink.getAttribute("data-original-title");
 
+        var playerNationLink = playerRow.$(playerNationLinkBy);
         String nationId = getPlayerNationIdFromPlayerNationLink(playerNationLink.getAttribute("href"));
         String nationName = playerNationLink.getAttribute("data-original-title");
 
+        var playerLeagueLink = playerRow.$(playerLeagueLinkBy);
         String leagueId = getPlayerLeagueIdFromPlayerLeagueLink(playerLeagueLink.getAttribute("href"));
         String leagueName = playerLeagueLink.getAttribute("data-original-title");
 
-        String playerRating = playerRatingLabel.getText();
+        String playerRating = playerRow.$(playerRatingLabelBy).getText();
+        String qualityAndRarity = getPlayerQualityAndRarity(playerRow.$(playerRatingLabelBy));
 
-        List<String> playerPositions = getPlayerAllPositions(playerPositionElement);
+        List<String> playerPositions = getPlayerAllPositions(playerRow.$(playerPositionElementBy));
 
-        String playerPrice = playerPriceLabel.getText();
+        String playerPrice = playerRow.$(playerPriceLabelBy).getText();
 
         // Setting Value
         futBinPlayer.setId(playerId);
@@ -86,6 +98,7 @@ public class PlayersPage {
         futBinPlayer.setLeagueName(leagueName);
 
         futBinPlayer.setRating(playerRating);
+        futBinPlayer.setQualityAndRarity(qualityAndRarity);
 
         futBinPlayer.setPositions(playerPositions);
         futBinPlayer.setPriceText(playerPrice);
@@ -139,26 +152,16 @@ public class PlayersPage {
     }
 
     private List<String> getPlayerAllPositions(SelenideElement selenideElement) {
-        String allPositions =  selenideElement.$$("div").asDynamicIterable()
-                       .stream().map(SelenideElement::getText)
-                       .collect(Collectors.joining(","));
+        String allPositions = selenideElement.$$("div").asDynamicIterable()
+                                             .stream().map(SelenideElement::getText)
+                                             .collect(Collectors.joining(","));
         return List.of(allPositions.split(","));
     }
 
-    public static void main(String[] args) {
-
-        String inputString = "/23/player/62/pele";
-        String pattern = "/[0-9]+/player/([0-9]+)/[a-zA-Z]+";
-        Pattern r = Pattern.compile(pattern);
-        Matcher m = r.matcher(inputString);
-        if (m.find()) {
-            String value = m.group(1);
-            System.out.println(value); // prints "62"
-        } else {
-            System.out.println("Value not found");
-        }
+    private String getPlayerQualityAndRarity(SelenideElement selenideElement) {
+        var className = selenideElement.getAttribute("class");
+        return className.substring(className.indexOf("ut23") + 4);
     }
-
 
     @RealPerson
     public void setSearchFiltersForPage(FutBinPlayersSearchFilter searchFilter, int pageNumber) {
@@ -177,11 +180,11 @@ public class PlayersPage {
         WebDriverRunner.getWebDriver().get(PLAYERS_PAGE_URL);
     }
 
-    @RealPerson
+   // @RealPerson
     public int getTotalNumberOfPages() {
         log.info("Waiting for pagination buttons to be displayed");
         currentlyVisiblePaginationButtons.shouldHave(sizeGreaterThan(0));
-        var mapNumber = currentlyVisiblePaginationButtons.asFixedIterable()
+        var mapNumber = currentlyVisiblePaginationButtons.asDynamicIterable()
                                                          .stream().map(element -> element.getText())
                                                          .map(Integer::parseInt)
                                                          .max(Integer::compareTo)
@@ -198,21 +201,31 @@ public class PlayersPage {
         return this;
     }
 
-    @RealPerson
+   // @RealPerson
     public void paginationButtonForPageNumberShouldBeSelected(int pageNumber) {
         var element = getElementForPageNumber(pageNumber);
         log.info("Waiting for pagination button with page number: {} to be displayed", pageNumber);
-        element.parent().shouldHave(Condition.attribute("class", "page-item active"));
+        element.parent().shouldHave(Condition.attribute("class", "page-item active"), Duration.ofSeconds(30));
     }
 
+    public boolean isPaginationButtonForPageNumberDisplayed(int pageNumber) {
+        var element = getElementForPageNumber(pageNumber);
+        log.info("Waiting for pagination button with page number: {} to be displayed", pageNumber);
+       return element.parent().is(Condition.attribute("class", "page-item active"));
+    }
+
+
+    @RetryStep
     public SelenideElement getElementForPageNumber(int pageNumber) {
-        var result = currentlyVisiblePaginationButtons.asFixedIterable()
+        currentlyVisiblePaginationButtons.shouldHave(sizeGreaterThan(1));
+
+        var result = currentlyVisiblePaginationButtons.asDynamicIterable()
                                                       .stream()
                                                       .filter(element -> element.getText()
                                                                                 .equals(String.valueOf(pageNumber)))
                                                       .toList();
         if (result.size() != 1) {
-            throw new RuntimeException("There is no element for page number: " + pageNumber);
+            throw new RuntimeException("There is no element for page number: " + pageNumber + " size: " + result.size());
         } else {
             return result.get(0);
         }
@@ -260,6 +273,11 @@ public class PlayersPage {
 
     private String createPageQueryParam(int pageNumber) {
         return String.valueOf(pageNumber);
+    }
+
+    public void waitUntilNextPageIsOpened(int i) {
+        log.info("Waiting for pagination button with page number: {} to be displayed", i);
+        paginationButtonForPageNumberShouldBeSelected(i);
     }
 
 

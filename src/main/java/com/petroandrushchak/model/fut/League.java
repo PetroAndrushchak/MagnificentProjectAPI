@@ -11,7 +11,6 @@ public class League {
     String leagueFullName;
     String leagueShortAbbreviation;
 
-
     //League FullAbbreviation can also be address, that value is stored in DB
 
 }
