@@ -4,6 +4,8 @@ import com.petroandrushchak.fut.model.SearchResultState;
 import com.petroandrushchak.fut.pages.fut.FUTSearchResultPage;
 import com.petroandrushchak.fut.pages.fut.FUTSearchTransferMarketPage;
 import com.petroandrushchak.fut.pages.helper.BrowserHelper;
+import com.petroandrushchak.model.fut.Item;
+import com.petroandrushchak.model.fut.PlayerItem;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,6 +19,46 @@ public class TransferMarketSteps {
 
     @Autowired FUTSearchTransferMarketPage searchTransferMarketPage;
     @Autowired FUTSearchResultPage searchResultPage;
+
+    public void setItemSearchAttributes(Item item) {
+        if (item instanceof PlayerItem playerItem) {
+            setPlayerSearchAttributes(playerItem);
+        }
+    }
+
+    private void setPlayerSearchAttributes(PlayerItem playerItem) {
+        if (playerItem.isPlayerNamePresent()) {
+            searchTransferMarketPage.setPlayerName(playerItem.getPlayerName(), playerItem.getRating());
+        }
+
+        if (playerItem.isQualityPresent()) {
+            searchTransferMarketPage.selectQuality(playerItem.getQuality());
+        }
+
+        if (playerItem.isRarityPresent()) {
+            searchTransferMarketPage.selectRarity(playerItem.getRarity());
+        }
+
+        if (playerItem.isPositionPresent()) {
+            searchTransferMarketPage.selectPosition(playerItem.getPosition());
+        }
+
+        if (playerItem.isChemistryStylePresent()) {
+            searchTransferMarketPage.selectChemistryStyle(playerItem.getChemistryStyle());
+        }
+
+        if (playerItem.isNationPresent()) {
+            searchTransferMarketPage.selectNation(playerItem.getNation());
+        }
+
+        if (playerItem.isLeaguePresent()) {
+            searchTransferMarketPage.selectLeague(playerItem.getLeague());
+        }
+
+        if (playerItem.isClubPresent()) {
+            searchTransferMarketPage.selectClub(playerItem.getClub());
+        }
+    }
 
     public boolean isItemsFoundAfterSearch() {
         log.info("Checking search result .. ");

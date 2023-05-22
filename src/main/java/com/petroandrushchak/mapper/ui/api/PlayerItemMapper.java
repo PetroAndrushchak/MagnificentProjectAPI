@@ -55,7 +55,7 @@ public interface PlayerItemMapper {
         }
 
 
-        if (isPlayerQualityPresent) playerItem.setLevel(Quality.fromApiKey(playerItemRequestBody.getQuality()));
+        if (isPlayerQualityPresent) playerItem.setQuality(Quality.fromApiKey(playerItemRequestBody.getQuality()));
         if (isPlayerRarityPresent) playerItem.setRarity(Rarity.fromApiKey(playerItemRequestBody.getRarity()));
         if (isPlayerPositionPresent) playerItem.setPosition(Position.fromKey(playerItemRequestBody.getPosition()));
         if (isPlayerChemistryStylePresent)

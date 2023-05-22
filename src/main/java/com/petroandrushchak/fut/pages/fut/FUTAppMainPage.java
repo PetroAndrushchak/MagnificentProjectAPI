@@ -6,6 +6,8 @@ import com.petroandrushchak.fut.pages.BasePage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Selenide.$;
 
 @Slf4j
@@ -21,7 +23,7 @@ public class FUTAppMainPage extends BasePage<FUTAppMainPage> {
 
     @Override
     public FUTAppMainPage waitUntilLoaded() {
-        clubInfoLabel.shouldBe(Condition.visible);
+        clubInfoLabel.shouldBe(Condition.visible, Duration.ofMinutes(1));
         return this;
     }
 }

@@ -27,13 +27,6 @@ import static com.petroandrushchak.model.fut.snipping.filters.AttributeType.*;
 @Component
 public class FutBinSnippingFiltersSteps {
 
-    @Autowired FutBinService futBinService;
-    @Autowired FutBinMappingSteps futBinMappingSteps;
-
-    @Autowired FutNationService futNationService;
-    @Autowired FutLeagueService futLeagueService;
-    @Autowired FutClubService futClubService;
-
     public FutBinPlayersAttributes getUniquePlayersAttributes(List<FutBinPlayer> futBinPlayers) {
         var futBinPlayersAttributes = new FutBinPlayersAttributes();
 

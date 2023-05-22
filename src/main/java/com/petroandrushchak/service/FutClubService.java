@@ -29,7 +29,15 @@ public class FutClubService {
             var clubsMediumNames = getClubMediumName(result.getClubMediumAbbreviationNames(), id);
             return new Club(id, clubsShortNames, clubsMediumNames, clubsLongAbbreviationNames);
         }).toList();
+    }
 
+    public Club getClubById(int id) {
+        var result = futClubRepository.findAll();
+
+        var clubsLongAbbreviationNames = getCLubLongAbbreviation(result.getClubLongAbbreviationNames(), (long) id);
+        var clubsShortNames = getClubShortName(result.getClubShortAbbreviationNames(), (long) id);
+        var clubsMediumNames = getClubMediumName(result.getClubMediumAbbreviationNames(), (long) id);
+        return new Club((long) id, clubsShortNames, clubsMediumNames, clubsLongAbbreviationNames);
     }
 
     public List<Club> getAllClubs() {

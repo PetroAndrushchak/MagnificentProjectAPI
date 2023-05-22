@@ -32,7 +32,7 @@ public class FindSnippingFiltersTest {
     @Test
     void findSnippingFiltersBaseOnPlayersResults() {
 
-        List<AttributeType> attributeTypes = List.of(POSITION, NATION, LEAGUE, CLUB);
+        List<AttributeType> attributeTypes = List.of(POSITION, NATION, CLUB);
 
         List<FutBinRawPlayer> futBinRawPlayers = futBinService.parsePlayersFromFile();
         List<FutBinPlayer> futBinPlayers = futBinMappingSteps.mapRawPlayersToPlayers(futBinRawPlayers);

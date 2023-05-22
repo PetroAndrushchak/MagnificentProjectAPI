@@ -24,11 +24,9 @@ public class FUTSnippingSteps {
     @Autowired FUTSearchResultPage searchResultPage;
 
     public void performSnipping(SnippingModel snippingFilter) {
-        final int NUMBER_OF_SNIPES = 20;
+        final int NUMBER_OF_SNIPES = 40;
 
-        var playerSearch = (PlayerItem) snippingFilter.getItemsSearch();
-
-        searchTransferMarketPage.setPlayerName(playerSearch.getPlayerName(), playerSearch.getRating());
+        transferMarketSteps.setItemSearchAttributes(snippingFilter.getItemsSearch());
 
         IntStream.range(1, NUMBER_OF_SNIPES).forEach($ -> {
             log.info("Snipping attempt " + $ + " ouf of " + NUMBER_OF_SNIPES);
@@ -53,9 +51,10 @@ public class FUTSnippingSteps {
         });
         //TODO
         System.out.println("dsfsdf");
-
-
     }
+
+
+
 
 
 }

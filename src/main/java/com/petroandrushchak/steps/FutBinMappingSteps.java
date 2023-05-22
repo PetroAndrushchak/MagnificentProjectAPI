@@ -165,6 +165,8 @@ public class FutBinMappingSteps {
     private Rarity getSpecialRarity(String specialRarity) {
         return switch (specialRarity) {
             case "if" -> Rarity.TEAM_OF_THE_WEEK;
+            case "motm" -> Rarity.DOMESTIC_MAN_OF_THE_MATCH;
+            case "ucl_motm" -> Rarity.CHAMPIONS_LEAGUE_MAN_OF_THE_MATCH;
             case "trophy_titans_icon" -> Rarity.TROPHY_TITANS_ICON;
             case "trophy_titans" -> Rarity.TROPHY_TITANS;
             case "conmebol_foundations" -> Rarity.CONMEBOL_FOUNDATIONS;
@@ -206,6 +208,7 @@ public class FutBinMappingSteps {
             case "sbc_flashback" -> Rarity.FLASHBACK;
 
             case "showdown_plus" -> Rarity.SHOWDOWN_PLUS;
+            case "showdown" -> Rarity.SHOWDOWN;
             case "winter_wildcards" -> Rarity.WINTER_WILDCARDS;
 
             case "potm_epl" -> Rarity.POTM_EPL;

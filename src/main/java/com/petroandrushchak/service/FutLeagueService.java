@@ -47,7 +47,14 @@ public class FutLeagueService {
             var leaguesShortAbbreviationNames = getLeagueShortAbbreviationName(result.getLeagueShortAbbreviations(), id);
             return new League(id, leaguesFullNames, leaguesShortAbbreviationNames);
         }).toList();
+    }
 
+    public League getLeagueById(int id) {
+        var result = futLeagueRepository.findAll();
+
+        var leaguesFullNames = getLeagueFullName(result.getLeagueFullNames(), (long) id);
+        var leaguesShortAbbreviationNames = getLeagueShortAbbreviationName(result.getLeagueShortAbbreviations(), (long) id);
+        return new League((long) id, leaguesFullNames, leaguesShortAbbreviationNames);
     }
 
     public String getLeagueFullName(Map<String, String> leaguesFullNames, Long id) {

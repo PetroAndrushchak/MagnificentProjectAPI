@@ -1,8 +1,6 @@
 package com.petroandrushchak.service;
 
 import com.petroandrushchak.entity.mongo.FutEaDbNation;
-import com.petroandrushchak.helper.StringHelper;
-import com.petroandrushchak.model.fut.Club;
 import com.petroandrushchak.model.fut.Nation;
 import com.petroandrushchak.repository.mongo.FUTNationRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -32,6 +30,13 @@ public class FutNationService {
             return new Nation(id, nationAbbreviation, nationName);
         }).toList();
 
+    }
+
+    public Nation getNationById(int id) {
+        var result = futNationRepository.findAll();
+        var nationName = getNationName(result.getNationNames(), (long) id);
+        var nationAbbreviation = getNationAbbreviation(result.getNationAbbreviationsById(), (long) id);
+        return new Nation((long) id, nationAbbreviation, nationName);
     }
 
 

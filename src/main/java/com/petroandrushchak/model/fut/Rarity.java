@@ -18,6 +18,7 @@ public enum Rarity {
     FUTBALLERS("futballers"),
 
     DOMESTIC_MAN_OF_THE_MATCH("domestic_man_of_the_match"),
+    CHAMPIONS_LEAGUE_MAN_OF_THE_MATCH("champions_league_man_of_the_match"),
     FIFA_WORLD_CUP_PATH_TO_GLORY("fifa_world_cup_path_to_glory"),
 
     TROPHY_TITANS("trophy_titans"),
@@ -25,6 +26,7 @@ public enum Rarity {
 
     FUT_CENTURIONS("fut_centurions"),
     FUT_FUTURE_STARS("fut_future_stars"),
+    FUT_CHAMPIONS_TOTS("fut_champions_tots"),
 
     FANTASY_FUT("fantasy_fut"),
     FANTASY_FUT_HEROES("fantasy_fut_heroes"),
@@ -36,6 +38,8 @@ public enum Rarity {
     RULE_BREAKERS("rule_breakers"),
     TEAM_OF_THE_WEEK("team_of_the_week"),
     TEAM_OF_THE_YEAR("team_of_the_year"),
+    TEAM_OF_THE_SEASON("team_of_the_season"),
+    TEAM_OF_THE_SEASON_MOMENTS("team_of_the_season_moments"),
     TOTY_HONOURABLE_MENTIONS("toty_honourable_mentions"),
     TOTY_ICON("toty_icon"),
     UCL_ROAD_TO_THE_FINAL("ucl_road_to_the_final"),
@@ -62,6 +66,7 @@ public enum Rarity {
 
     WINTER_WILDCARDS("winter_wildcards"),
     SHOWDOWN_PLUS("showdown_plus"),
+    SHOWDOWN("showdown"),
 
     WORLD_CUP_HERO("world_cup_hero"),
     WORLD_CUP_HISTORY_MAKERS("world_cup_history_makers"),

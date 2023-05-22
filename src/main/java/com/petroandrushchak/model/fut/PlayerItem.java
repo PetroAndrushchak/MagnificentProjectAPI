@@ -20,12 +20,44 @@ public class PlayerItem extends Item {
     League league;
     Club club;
 
+    public boolean isPlayerNamePresent() {
+        return playerName != null;
+    }
+
+    public boolean isRatingPresent() {
+        return rating != null;
+    }
+
+    public boolean isRarityPresent() {
+        return rarity != null;
+    }
+
+    public boolean isPositionPresent() {
+        return position != null;
+    }
+
+    public boolean isChemistryStylePresent() {
+        return chemistryStyle != null;
+    }
+
+    public boolean isNationPresent() {
+        return nation != null;
+    }
+
+    public boolean isLeaguePresent() {
+        return league != null;
+    }
+
+    public boolean isClubPresent() {
+        return club != null;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("\n{\n");
 
-        if (level != null) {
-            sb.append("  \"level\": \"").append(level).append("\",\n");
+        if (quality != null) {
+            sb.append("  \"level\": \"").append(quality).append("\",\n");
         }
 
         if (playerName != null) {
