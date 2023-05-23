@@ -1,0 +1,53 @@
+version: "3"
+services:
+  selenium-hub:
+    image: seleniarm/hub:4.8.0
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    environment:
+          - SE_OPTS=--registration-secret mysecretkey
+
+  chrome:
+    image: seleniarm/node-chromium:109.0
+    volumes:
+      - /dev/shm:/dev/shm
+    shm_size: "2gb"
+    ports:
+      - "6900:5900"
+      - "5555:5555"
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_MAX_SESSIONS=3
+      - SE_NODE_SESSION_TIMEOUT=30000
+      - SE_VNC_NO_PASSWORD=1
+      - SE_OPTS=--registration-secret mysecretkey
+      - SE_NODE_GRID_URL=http://localhost:4444/wd/hub
+    depends_on:
+      - selenium-hub
+
+  chrome_video:
+    image: selenium/video:ffmpeg-4.3.1-20230221
+    volumes:
+      - /dev/shm:/dev/shm
+      - /tmp/videos:/videos
+    shm_size: "2gb"
+    ports:
+      - "6900:5900"
+      - "5555:5555"
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_MAX_SESSIONS=3
+      - SE_NODE_SESSION_TIMEOUT=300
+      - SE_VNC_NO_PASSWORD=1
+      - SE_OPTS=--registration-secret mysecretkey
+      - DISPLAY_CONTAINER_NAME=chrome
+      - FILE_NAME=chrome_video.mp4
+    depends_on:
+      - selenium-hub
