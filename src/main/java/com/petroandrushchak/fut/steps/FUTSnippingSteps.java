@@ -50,7 +50,6 @@ public class FUTSnippingSteps {
 
         });
         //TODO
-        System.out.println("dsfsdf");
     }
 
 

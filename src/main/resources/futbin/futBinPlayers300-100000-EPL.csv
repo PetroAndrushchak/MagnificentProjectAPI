@@ -1,0 +1,751 @@
+clubId,clubName,id,leagueId,leagueName,name,nationId,nationName,positions,priceText,qualityAndRarity,rating
+11,"Manchester Utd",52538,13,"Manchester Utd",Casemiro,54,Brazil,CDM,97K," motm gold rare",92
+10,"Manchester City",26264,13,"Manchester City","Kevin De Bruyne",7,Belgium,CM;CAM,60K,"  gold rare",91
+18,Spurs,50335,13,Spurs,"Harry Kane",14,England,ST;CF,87K," wc_tott gold rare",91
+11,"Manchester Utd",50523,13,"Manchester Utd",Casemiro,54,Brazil,CDM,69.5K," if gold rare",91
+19,"West Ham",52518,13,"West Ham","Saïd Benrahma",97,Algeria,LM;CAM;LW,71K," fantasy gold rare",91
+9,Liverpool,26266,13,Liverpool,"Mohamed Salah",111,Egypt,RW;RM,49.25K,"  gold rare",90
+9,Liverpool,26267,13,Liverpool,"Virgil van Dijk",34,Netherlands,CB,49.5K,"  gold rare",90
+11,"Manchester Utd",26268,13,"Manchester Utd","Cristiano Ronaldo",38,Portugal,ST;CF,53.5K,"  gold rare",90
+11,"Manchester Utd",48660,13,"Manchester Utd",Casemiro,54,Brazil,CDM,56K," if gold rare",90
+18,Spurs,50524,13,Spurs,"Harry Kane",14,England,ST;CF,59.5K," if gold rare",90
+1808,Brighton,52612,13,Brighton,"Kaoru Mitoma",163,Japan,LM;LWB;LW,58.5K," fantasy gold rare",90
+10,"Manchester City",52750,13,"Manchester City",Ederson,54,Brazil,GK,33.4K," futballers gold rare",90
+114605,HERO,26248,13,HERO,"Javier Mascherano",52,Argentina,CDM;CB,83.5K," wc_heroes gold rare",89
+18,Spurs,26272,13,Spurs,"Heung Min Son",167,"Korea Republic",LW;LM,37K,"  gold rare",89
+11,"Manchester Utd",26275,13,"Manchester Utd",Casemiro,54,Brazil,CDM,37K,"  gold rare",89
+9,Liverpool,26276,13,Liverpool,Alisson,54,Brazil,GK,37K,"  gold rare",89
+18,Spurs,26277,13,Spurs,"Harry Kane",14,England,ST;CF,37K,"  gold rare",89
+10,"Manchester City",26278,13,"Manchester City",Ederson,54,Brazil,GK,37K,"  gold rare",89
+5,Chelsea,26279,13,Chelsea,"N'Golo Kanté",18,France,CDM;CM,37K,"  gold rare",89
+10,"Manchester City",48485,13,"Manchester City","Phil Foden",14,England,LW;LM;CAM;CF,66K," ucl_live gold rare",89
+10,"Manchester City",48506,13,"Manchester City","João Cancelo",38,Portugal,LB;RB;LWB,81.5K," if gold rare",89
+10,"Manchester City",48795,13,"Manchester City","Jack Grealish",14,England,LW;LM;CAM,52.5K," wc_ptg gold rare",89
+9,Liverpool,48835,13,Liverpool,Fabinho,54,Brazil,CDM;CB,11.15K," wc_star gold rare",89
+1799,"Crystal Palace",50396,13,"Crystal Palace","Jack Butland",14,England,GK,41K," winter_wildcards gold rare",89
+14,"Nott'm Forest",51637,13,"Nott'm Forest","Keylor Navas",72,"Costa Rica",GK,43K," if gold rare",89
+1,Arsenal,51671,13,Arsenal,"Eddie Nketiah",14,England,ST;CF;LW,98.5K," future_stars gold rare",89
+11,"Manchester Utd",52843,13,"Manchester Utd","Bruno Fernandes",38,Portugal,CAM;CM,71K," motm gold rare",89
+114605,HERO,52905,13,HERO,"Freddie Ljungberg",46,Sweden,LM;RM;LW,36K," trophy_titans gold rare",89
+10,"Manchester City",26281,13,"Manchester City","Erling Haaland",36,Norway,ST;CF,28K,"  gold rare",88
+10,"Manchester City",26303,13,"Manchester City","Bernardo Silva",38,Portugal,CAM;CM,27.5K,"  gold rare",88
+10,"Manchester City",26305,13,"Manchester City","Rúben Dias",38,Portugal,CB,27K,"  gold rare",88
+10,"Manchester City",26307,13,"Manchester City","João Cancelo",38,Portugal,LB;RB;LWB,27.25K,"  gold rare",88
+114605,HERO,27795,13,HERO,"Jay-Jay Okocha",133,Nigeria,CAM;RM;ST,64.5K," heroes gold rare",88
+1,Arsenal,48480,13,Arsenal,"Martin Ødegaard",36,Norway,CAM;CM,45K," europa_live gold rare",88
+5,Chelsea,48639,13,Chelsea,"Kai Havertz",21,Germany,CAM;CF;ST,40K," halloween gold rare",88
+5,Chelsea,48692,13,Chelsea,"Reece James",14,England,RW;RM;ST,36.75K," out_of_position gold rare",88
+5,Chelsea,48830,13,Chelsea,"Mason Mount",14,England,CAM;RW,6.95K," wc_star gold rare",88
+114605,HERO,50119,13,HERO,"Freddie Ljungberg",46,Sweden,LM;RM;LW,27.25K," wc_heroes gold rare",88
+5,Chelsea,50187,13,Chelsea,"Christian Pulisic",95,"United States",LW;LM;RW,30K," wc_ptg gold rare",88
+5,Chelsea,50278,13,Chelsea,"Hakim Ziyech",129,Morocco,CAM;RM;RW,60.55K," wc_showdown_plus gold rare",88
+1,Arsenal,50304,13,Arsenal,"Bukayo Saka",14,England,RM;LM;RW,55K," wc_phenoms gold rare",88
+95,"Leicester City",50316,13,"Leicester City","Youri Tielemans",7,Belgium,CDM;CM,36.75K," wc_phenoms gold rare",88
+5,Chelsea,50339,13,Chelsea,"Thiago Silva",54,Brazil,CB,62K," wc_tott gold rare",88
+11,"Manchester Utd",50340,13,"Manchester Utd","Diogo Dalot",38,Portugal,RB;RWB,69K," wc_tott gold rare",88
+13,"Newcastle Utd",50388,13,"Newcastle Utd","Nick Pope",14,England,GK,28.45K," showdown_plus gold rare",88
+1,Arsenal,50473,13,Arsenal,"Martin Ødegaard",36,Norway,CM;CAM,41.5K," if gold rare",88
+95,"Leicester City",50505,13,"Leicester City","Jamie Vardy",14,England,ST;CF,47.5K," centurions gold rare",88
+5,Chelsea,50574,13,Chelsea,"Thiago Silva",54,Brazil,CB,45.5K," if gold rare",88
+10,"Manchester City",50633,13,"Manchester City","Riyad Mahrez",97,Algeria,RM;RW,34.75K," if gold rare",88
+1799,"Crystal Palace",51237,13,"Crystal Palace","Marc Guehi",14,England,CB,54.5K," future_stars gold rare",88
+11,"Manchester Utd",51241,13,"Manchester Utd","Anthony Elanga",46,Sweden,RW;RM;LW,40K," future_stars gold rare",88
+9,Liverpool,51675,13,Liverpool,"Fabio Carvalho",38,Portugal,CAM;RM;CM,57.5K," future_stars gold rare",88
+8,"Leeds United",51676,13,"Leeds United","Illan Meslier",18,France,GK,34.75K," future_stars gold rare",88
+10,"Manchester City",51727,13,"Manchester City",Rodri,45,Spain,CDM,33.75K," if gold rare",88
+18,Spurs,51757,13,Spurs,"Lucas Moura",54,Brazil,RW;RM,78K," ucl_rttf gold rare",88
+11,"Manchester Utd",51782,13,"Manchester Utd","Bruno Fernandes",38,Portugal,RM;CM;RW,48K," if gold rare",88
+14,"Nott'm Forest",51889,13,"Nott'm Forest","Keylor Navas",72,"Costa Rica",GK,27.25K,"  gold rare",88
+114605,HERO,52535,13,HERO,"Peter Crouch",14,England,ST;CF,81.5K," fantasy_hero gold rare",88
+10,"Manchester City",52718,13,"Manchester City","Jack Grealish",14,England,CAM;LM;LW,15.6K," futballers gold rare",88
+2,"Aston Villa",52722,13,"Aston Villa","Douglas Luiz",54,Brazil,CDM;CM,31K," if gold rare",88
+18,Spurs,52759,13,Spurs,Emerson,54,Brazil,RWB;RB,77.5K," fut-bd gold rare",88
+5,Chelsea,52841,13,Chelsea,"Kai Havertz",21,Germany,ST;CF,27.25K," ucl_motm gold rare",88
+13,"Newcastle Utd",52883,13,"Newcastle Utd","Kieran Trippier",14,England,RB;RWB;RM,28.25K," if gold rare",88
+1799,"Crystal Palace",52929,13,"Crystal Palace","Michael Olise",18,France,RW;RM;CAM,27.75K," if gold rare",88
+114605,HERO,26237,13,HERO,"Park Ji-sung",167,"Korea Republic",CAM;RM;LM;LW,47.25K," wc_heroes gold rare",87
+11,"Manchester Utd",26306,13,"Manchester Utd","David De Gea",45,Spain,GK,19.25K,"  gold rare",87
+18,Spurs,26308,13,Spurs,"Hugo Lloris",18,France,GK,19.5K,"  gold rare",87
+9,Liverpool,26309,13,Liverpool,"Trent Alexander-Arnold",14,England,RB;RWB,19K,"  gold rare",87
+5,Chelsea,26310,13,Chelsea,"Kalidou Koulibaly",136,Senegal,CB,19.25K,"  gold rare",87
+10,"Manchester City",26311,13,"Manchester City",Rodri,45,Spain,CDM,19K,"  gold rare",87
+9,Liverpool,26312,13,Liverpool,"Andrew Robertson",42,Scotland,LB;LWB,19K,"  gold rare",87
+9,Liverpool,26313,13,Liverpool,Fabinho,54,Brazil,CDM;CB,19.25K,"  gold rare",87
+114605,HERO,27792,13,HERO,"Joe Cole",14,England,RW;RM;CAM;LW,23.5K," heroes gold rare",87
+114605,HERO,47289,13,HERO,"Harry Kewell",195,Australia,LW;LM;CAM,27K," heroes gold rare",87
+9,Liverpool,48438,13,Liverpool,"Darwin Núñez",60,Uruguay,ST;CF;LW,63.5K," otw gold rare",87
+11,"Manchester Utd",48493,13,"Manchester Utd","Aaron Wan-Bissaka",14,England,RB;RWB,62K," europa_live gold rare",87
+19,"West Ham",48497,13,"West Ham","Lucas Paquetá",54,Brazil,CAM;CM;CF,52K," conference gold rare",87
+10,"Manchester City",48591,13,"Manchester City","Kalvin Phillips",14,England,CDM;CM,25.5K," halloween gold rare",87
+18,Spurs,48653,13,Spurs,"Davinson Sánchez",56,Colombia,CB,40K," halloween gold rare",87
+11,"Manchester Utd",48693,13,"Manchester Utd",Fred,54,Brazil,LM;CF;LW,27K," out_of_position gold rare",87
+10,"Manchester City",48828,13,"Manchester City","Nathan Aké",34,Netherlands,CB;LB,2.15K," wc_star gold rare",87
+5,Chelsea,50141,13,Chelsea,"Denis Zakaria",47,Switzerland,CDM;CM,92K," wc_ptg gold rare",87
+1,Arsenal,50214,13,Arsenal,"Ben White",14,England,CB,76K," wc_rtwc gold rare",87
+11,"Manchester Utd",50244,13,"Manchester Utd","Christian Eriksen",13,Denmark,CAM;CM,26.1K," wc_rtwc gold rare",87
+18,Spurs,50343,13,Spurs,"Ivan Perišic",10,Croatia,LW;LWB;LM,35.25K," wc_tott gold rare",87
+2,"Aston Villa",50474,13,"Aston Villa","Douglas Luiz",54,Brazil,CDM;CM,26.5K," if gold rare",87
+5,Chelsea,50557,13,Chelsea,Azpilicueta,45,Spain,CB;RWB;RB,51K," centurions gold rare",87
+17,Southampton,50575,13,Southampton,"James Ward-Prowse",14,England,CAM;CM,26.5K," if gold rare",87
+13,"Newcastle Utd",51677,13,"Newcastle Utd","Joseph Willock",14,England,CM;CAM,38.5K," future_stars gold rare",87
+5,Chelsea,51692,13,Chelsea,"Benoît Badiashile",18,France,CB,89.5K," future_stars gold rare",87
+11,"Manchester Utd",51734,13,"Manchester Utd","Luke Shaw",14,England,CB;LWB,49.5K," if gold rare",87
+1943,"AFC Bournemouth",51751,13,"AFC Bournemouth",Traorè,108,"Côte d'Ivoire",CAM;LM;LW,71.3K," future_stars gold rare",87
+10,"Manchester City",52403,13,"Manchester City","Phil Foden",14,England,RW;RM;CAM;CF,27.5K," if gold rare",87
+19,"West Ham",52404,13,"West Ham","Declan Rice",14,England,CDM,24K," if gold rare",87
+17,Southampton,52636,13,Southampton,"Kyle Walker-Peters",14,England,RB;RWB;LB,26K," if gold rare",87
+5,Chelsea,52640,13,Chelsea,"Mateo Kovacic",10,Croatia,CM,24K," if gold rare",87
+10,"Manchester City",52934,13,"Manchester City","Jack Grealish",14,England,LW;LM;CAM,18.5K," if gold rare",87
+114605,HERO,26247,13,HERO,"Peter Crouch",14,England,ST;CF,21.25K," wc_heroes gold rare",86
+10,"Manchester City",26302,13,"Manchester City","Aymeric Laporte",45,Spain,CB,15K,"  gold rare",86
+5,Chelsea,26304,13,Chelsea,"Édouard Mendy",136,Senegal,GK,14.75K,"  gold rare",86
+5,Chelsea,26339,13,Chelsea,"Thiago Silva",54,Brazil,CB,15K,"  gold rare",86
+5,Chelsea,26340,13,Chelsea,"Raheem Sterling",14,England,LW;LM;RW,15.5K,"  gold rare",86
+9,Liverpool,26349,13,Liverpool,Thiago,45,Spain,CM,15.75K,"  gold rare",86
+10,"Manchester City",26499,13,"Manchester City","Riyad Mahrez",97,Algeria,RW;RM,14.5K,"  gold rare",86
+11,"Manchester Utd",26728,13,"Manchester Utd","Bruno Fernandes",38,Portugal,CAM;CM,15K,"  gold rare",86
+114605,HERO,27793,13,HERO,"Robbie Keane",25,"Republic of Ireland",ST;CF,19.75K," heroes gold rare",86
+114605,HERO,27796,13,HERO,"Ole Gunnar Solskjær",36,Norway,ST;CF,16K," heroes gold rare",86
+114605,HERO,27799,13,HERO,"Freddie Ljungberg",46,Sweden,LM;RM;LW,18K," heroes gold rare",86
+114605,HERO,27806,13,HERO,"Jerzy Dudek",37,Poland,GK,21.75K," heroes gold rare",86
+114605,HERO,47223,13,HERO,"Ji Sung Park",167,"Korea Republic",LM;RM;LW,19.25K," heroes gold rare",86
+5,Chelsea,48406,13,Chelsea,"Kai Havertz",21,Germany,ST;CAM;CF,27.25K," if gold rare",86
+11,"Manchester Utd",48435,13,"Manchester Utd",Antony,54,Brazil,RW;RM,37K," otw gold rare",86
+5,Chelsea,48507,13,Chelsea,"Mason Mount",14,England,CAM;RW,21K," if gold rare",86
+1799,"Crystal Palace",48593,13,"Crystal Palace","Wilfried Zaha",108,"Côte d'Ivoire",LW;LM;CF,30K," halloween gold rare",86
+2,"Aston Villa",48601,13,"Aston Villa","Leon Bailey",82,Jamaica,RM;RW;LW,25K," halloween gold rare",86
+1,Arsenal,48641,13,Arsenal,"Smith Rowe",14,England,LM;CAM;LW,19.75K," halloween gold rare",86
+18,Spurs,48694,13,Spurs,"Ivan Perišic",10,Croatia,CAM;RB;RM;RW,23.5K," out_of_position gold rare",86
+18,Spurs,48711,13,Spurs,"Rodrigo Bentancur",60,Uruguay,CM,23K," if gold rare",86
+1,Arsenal,48738,13,Arsenal,"Oleksandr Zinchenko",49,Ukraine,CM;CDM,65.9K," out_of_position gold rare",86
+95,"Leicester City",48754,13,"Leicester City","James Maddison",14,England,RM;RW,20K," if gold rare",86
+13,"Newcastle Utd",48755,13,"Newcastle Utd","Kieran Trippier",14,England,RB;RWB;RM,29K," if gold rare",86
+1,Arsenal,50150,13,Arsenal,"Martin Ødegaard",36,Norway,CM;CAM,27.5K," if gold rare",86
+110,Wolves,50217,13,Wolves,"Matheus Nunes",38,Portugal,CM,27.75K," wc_rtwc gold rare",86
+144,Fulham,50241,13,Fulham,"Aleksandar Mitrovic",51,Serbia,ST;CF,17.25K," wc_rtwc gold rare",86
+1808,Brighton,50248,13,Brighton,"Leandro Trossard",7,Belgium,LM;CAM;ST;LW,57.05K," wc_showdown_plus gold rare",86
+5,Chelsea,50249,13,Chelsea,"Mateo Kovacic",10,Croatia,CM,56.05K," wc_showdown_plus gold rare",86
+8,"Leeds United",50258,13,"Leeds United","Brenden Aaronson",95,"United States",CAM;CM,51.75K," wc_showdown gold rare",86
+11,"Manchester Utd",50285,13,"Manchester Utd","Luke Shaw",14,England,LB;LWB,89.35K," wc_showdown gold rare",86
+11,"Manchester Utd",50318,13,"Manchester Utd","Lisandro Martínez",52,Argentina,LB;CB;LWB;CDM,42K," wc_phenoms gold rare",86
+19,"West Ham",50330,13,"West Ham","Nayef Aguerd",129,Morocco,CB,26.3K," wc_showdown gold rare",86
+1808,Brighton,50346,13,Brighton,"Alexis Mac Allister",52,Argentina,CM;CAM,28K," wc_tott gold rare",86
+95,"Leicester City",50389,13,"Leicester City","Danny Ward",50,Wales,GK,28.3K," showdown gold rare",86
+110,Wolves,50462,13,Wolves,"Adama Traoré",45,Spain,ST;CF,82K," winter_wildcards gold rare",86
+114605,HERO,50499,13,HERO,"Ledley King",14,England,CB,35K," heroes gold rare",86
+9,Liverpool,50510,13,Liverpool,"James Milner",14,England,CM;RB;LB,27K," centurions gold rare",86
+7,Everton,50566,13,Everton,"Séamus Coleman",25,"Republic of Ireland",RB;RWB,31K," centurions gold rare",86
+110,Wolves,51642,13,Wolves,"Rúben Neves",38,Portugal,CM;CDM,19K," if gold rare",86
+18,Spurs,51643,13,Spurs,"Pierre-Emile Højbjerg",13,Denmark,CM;CDM,19K," if gold rare",86
+8,"Leeds United",52405,13,"Leeds United","Junior Firpo",45,Spain,LB;LWB,27.25K," if gold rare",86
+18,Spurs,52409,13,Spurs,"Cristian Romero",52,Argentina,CB,24.75K," if gold rare",86
+9,Liverpool,52668,13,Liverpool,"Luis Díaz",56,Colombia,LW;LM,16.6K," futballers gold rare",86
+18,Spurs,52680,13,Spurs,"Dejan Kulusevski",46,Sweden,RW;RM;CF,22.05K," futballers gold rare",86
+1,Arsenal,52887,13,Arsenal,"Gabriel Jesus",54,Brazil,ST;CF;RW,16.75K," if gold rare",86
+5,Chelsea,26341,13,Chelsea,Jorginho,27,Italy,CM,12.75K,"  gold rare",85
+9,Liverpool,26350,13,Liverpool,"Diogo Jota",38,Portugal,CF;ST;LW,9.3K,"  gold rare",85
+10,"Manchester City",26645,13,"Manchester City","Phil Foden",14,England,LW;LM;CAM;CF,9.4K,"  gold rare",85
+10,"Manchester City",26755,13,"Manchester City","Ilkay Gündogan",21,Germany,CM;CDM,9.5K,"  gold rare",85
+10,"Manchester City",26756,13,"Manchester City","Kyle Walker",14,England,RB;RWB,11K,"  gold rare",85
+95,"Leicester City",26757,13,"Leicester City","Jamie Vardy",14,England,ST;CF,9.7K,"  gold rare",85
+5,Chelsea,26758,13,Chelsea,Aubameyang,115,Gabon,ST;CF,9.2K,"  gold rare",85
+114605,HERO,27810,13,HERO,"Tim Cahill",195,Australia,ST;CM;CAM;CF,16.25K," heroes gold rare",85
+114605,HERO,44182,13,HERO,"Peter Crouch",14,England,ST;CF,13.5K," heroes gold rare",85
+1925,Brentford,48644,13,Brentford,"Ivan Toney",14,England,ST;CF,14.5K," halloween gold rare",85
+13,"Newcastle Utd",48778,13,"Newcastle Utd","Miguel Almirón",58,Paraguay,RW;RM;CM;CAM,99.25K," potm_epl gold rare",85
+144,Fulham,50202,13,Fulham,"Harry Wilson",50,Wales,RM;CAM;RW,29.15K," dynamic_duo gold rare",85
+19,"West Ham",50311,13,"West Ham","Thilo Kehrer",21,Germany,CB;RB,26.75K," wc_phenoms gold rare",85
+1925,Brentford,50312,13,Brentford,"Mikkel Damsgaard",13,Denmark,LM;LW,17K," wc_phenoms gold rare",85
+144,Fulham,50313,13,Fulham,"Daniel James",50,Wales,ST;CF;RW;LW,40.25K," wc_phenoms gold rare",85
+13,"Newcastle Utd",50532,13,"Newcastle Utd","Fabian Schär",47,Switzerland,CB,20K," if gold rare",85
+11,"Manchester Utd",50581,13,"Manchester Utd","Marcus Rashford",14,England,LM;ST;LW,66.5K," if gold rare",85
+1,Arsenal,50582,13,Arsenal,"Aaron Ramsdale",14,England,GK,21.75K," if gold rare",85
+11,"Manchester Utd",51689,13,"Manchester Utd","Phil Jones",14,England,CB,27.75K," sbc_flashback gold rare",85
+1,Arsenal,51840,13,Arsenal,Jorginho,27,Italy,CM,9.4K,"  gold rare",85
+1,Arsenal,52565,13,Arsenal,"Reiss Nelson",14,England,LW;RM;LM;RW,18.5K," if gold rare",85
+110,Wolves,52566,13,Wolves,"José Sá",38,Portugal,GK,15.75K," if gold rare",85
+1,Arsenal,52644,13,Arsenal,"Leandro Trossard",7,Belgium,ST;LM;CAM;LW,15K," if gold rare",85
+8,"Leeds United",52675,13,"Leeds United","Patrick Bamford",14,England,ST;CF,21.2K," futballers gold rare",85
+1,Arsenal,52730,13,Arsenal,"Bukayo Saka",14,England,RW;RM;LM,17K," if gold rare",85
+9,Liverpool,52798,13,Liverpool,"Ibrahima Konaté",18,France,CB,22K," if gold rare",85
+5,Chelsea,52800,13,Chelsea,"Ben Chilwell",14,England,LB;LWB,13K," if gold rare",85
+5,Chelsea,52802,13,Chelsea,"Christian Pulisic",95,"United States",CAM;LM;RW,12.5K," if gold rare",85
+10,"Manchester City",26296,13,"Manchester City","Jack Grealish",14,England,LW;LM;CAM,5.7K,"  gold rare",84
+5,Chelsea,26298,13,Chelsea,"Kai Havertz",21,Germany,CAM;CF;ST,5K,"  gold rare",84
+5,Chelsea,26342,13,Chelsea,"Mason Mount",14,England,CAM;RW,4.6K,"  gold rare",84
+5,Chelsea,26343,13,Chelsea,"Mateo Kovacic",10,Croatia,CM,4.7K,"  gold rare",84
+5,Chelsea,26344,13,Chelsea,"Reece James",14,England,RWB;RB,4.9K,"  gold rare",84
+9,Liverpool,26351,13,Liverpool,"Joel Matip",103,Cameroon,CB,4.8K,"  gold rare",84
+9,Liverpool,26352,13,Liverpool,"Luis Díaz",56,Colombia,LW;LM,4.7K,"  gold rare",84
+11,"Manchester Utd",26502,13,"Manchester Utd","Jadon Sancho",14,England,LW;LM;RW,4.7K,"  gold rare",84
+1,Arsenal,26504,13,Arsenal,"Martin Ødegaard",36,Norway,CAM;CM,4.9K,"  gold rare",84
+95,"Leicester City",26730,13,"Leicester City","Youri Tielemans",7,Belgium,CM;CDM,4.6K,"  gold rare",84
+19,"West Ham",26759,13,"West Ham","Declan Rice",14,England,CDM,4.6K,"  gold rare",84
+18,Spurs,26764,13,Spurs,"Ivan Perišić",10,Croatia,LM;LWB;LW,4.6K,"  gold rare",84
+1,Arsenal,26766,13,Arsenal,"Thomas Partey",117,Ghana,CDM;CM,4.6K,"  gold rare",84
+2,"Aston Villa",26767,13,"Aston Villa","Emiliano Martínez",52,Argentina,GK,4.6K,"  gold rare",84
+11,"Manchester Utd",26769,13,"Manchester Utd","Raphaël Varane",18,France,CB,4.9K,"  gold rare",84
+95,"Leicester City",26771,13,"Leicester City","Wilfred Ndidi",133,Nigeria,CDM;CM,4.6K,"  gold rare",84
+13,"Newcastle Utd",26774,13,"Newcastle Utd","Kieran Trippier",14,England,RB;RWB;RM,4.6K,"  gold rare",84
+144,Fulham,27781,13,Fulham,"Palhinha Gonçalves",38,Portugal,CDM;CM,20.75K," if gold rare",84
+10,"Manchester City",48412,13,"Manchester City","Manuel Akanji",47,Switzerland,CB,23K," if gold rare",84
+11,"Manchester Utd",48413,13,"Manchester Utd","Christian Eriksen",13,Denmark,CM;CAM,16.75K," if gold rare",84
+95,"Leicester City",48457,13,"Leicester City","James Maddison",14,England,RM;RW,14.75K," if gold rare",84
+8,"Leeds United",48498,13,"Leeds United","Jack Harrison",14,England,LM;RM;LW,15.05K," dynamic_duo gold rare",84
+8,"Leeds United",48499,13,"Leeds United",Rodrigo,45,Spain,CAM;CM;ST,30.85K," dynamic_duo gold rare",84
+1,Arsenal,48511,13,Arsenal,"Gabriel Martinelli",54,Brazil,LM;LW,17.5K," if gold rare",84
+13,"Newcastle Utd",48513,13,"Newcastle Utd","Bruno Guimarães",54,Brazil,CM;CDM,18K," if gold rare",84
+7,Everton,48596,13,Everton,"Ben Godfrey",14,England,CB;LB,20.5K," halloween gold rare",84
+9,Liverpool,48615,13,Liverpool,"Joe Gomez",14,England,CB;RB,21.5K," if gold rare",84
+95,"Leicester City",48668,13,"Leicester City","Timothy Castagne",7,Belgium,RB;RWB;LB,15K," if gold rare",84
+11,"Manchester Utd",48717,13,"Manchester Utd","Diogo Dalot",38,Portugal,RB;RWB,18K," if gold rare",84
+1,Arsenal,48761,13,Arsenal,Gabriel,54,Brazil,CB,20K," if gold rare",84
+9,Liverpool,50156,13,Liverpool,"Darwin Núñez",60,Uruguay,LW;LM;CF;ST,25K," if gold rare",84
+11,"Manchester Utd",50484,13,"Manchester Utd","Luke Shaw",14,England,CB;LB;LWB,22.5K," if gold rare",84
+144,Fulham,50535,13,Fulham,"Bernd Leno",21,Germany,GK,14.75K," if gold rare",84
+19,"West Ham",50640,13,"West Ham","Jarrod Bowen",14,England,RW;RM;ST,12.75K," if gold rare",84
+5,Chelsea,51258,13,Chelsea,"João Félix",38,Portugal,CF;ST,4.7K,"  gold rare",84
+7,Everton,51653,13,Everton,"James Tarkowski",14,England,CB,13.5K," if gold rare",84
+18,Spurs,51793,13,Spurs,Emerson,54,Brazil,RWB;RB,16K," if gold rare",84
+11,"Manchester Utd",52539,13,"Manchester Utd",Fred,54,Brazil,CDM;CM,18.75K," motm gold rare",84
+9,Liverpool,52682,13,Liverpool,Oxlade-Chamberlain,14,England,CM,16.5K," futballers gold rare",84
+5,Chelsea,52721,13,Chelsea,"Noni Madueke",14,England,RW;RM,12.45K," futballers gold rare",84
+1808,Brighton,52733,13,Brighton,"Pervis Estupiñán",57,Ecuador,LB;LWB,12.25K," if gold rare",84
+11,"Manchester Utd",52804,13,"Manchester Utd","Marcel Sabitzer",4,Austria,CM;CDM;CAM,11.5K," if gold rare",84
+2,"Aston Villa",52890,13,"Aston Villa","John McGinn",42,Scotland,RM;CDM;RW,10.5K," if gold rare",84
+5,Chelsea,26345,13,Chelsea,"Hakim Ziyech",129,Morocco,RW;RM;CAM,1.2K,"  gold rare",83
+9,Liverpool,26353,13,Liverpool,"Jordan Henderson",14,England,CM;CDM,1.4K,"  gold rare",83
+9,Liverpool,26354,13,Liverpool,"Roberto Firmino",54,Brazil,CF;ST,1.1K,"  gold rare",83
+110,Wolves,26538,13,Wolves,"Rúben Neves",38,Portugal,CM;CDM,1.1K,"  gold rare",83
+10,"Manchester City",26785,13,"Manchester City","John Stones",14,England,CB,1.3K,"  gold rare",83
+1,Arsenal,26786,13,Arsenal,"Gabriel Jesus",54,Brazil,ST;CF;RW,2.7K,"  gold rare",83
+18,Spurs,26791,13,Spurs,"Pierre-Emile Højbjerg",13,Denmark,CDM;CM,1.1K,"  gold rare",83
+95,"Leicester City",26792,13,"Leicester City","Ricardo Pereira",38,Portugal,RB;RWB,1.1K,"  gold rare",83
+2,"Aston Villa",26793,13,"Aston Villa","Diego Carlos",54,Brazil,CB,1.3K,"  gold rare",83
+18,Spurs,26798,13,Spurs,"Cristian Romero",52,Argentina,CB,1.3K,"  gold rare",83
+1,Arsenal,27786,13,Arsenal,"William Saliba",18,France,CB,30K," if gold rare",83
+1808,Brighton,48648,13,Brighton,"Pervis Estupiñán",57,Ecuador,LB;LWB,14K," halloween gold rare",83
+1808,Brighton,50541,13,Brighton,"Solly March",14,England,RM;LB;LWB,12.5K," if gold rare",83
+9,Liverpool,50712,13,Liverpool,"Cody Gakpo",34,Netherlands,LW;LM,2.8K,"  gold rare",83
+95,"Leicester City",51743,13,"Leicester City","Kelechi Iheanacho",133,Nigeria,ST;CF,10.5K," if gold rare",83
+144,Fulham,52547,13,Fulham,"Manor Solomon",26,Israel,LM;RM;CAM;LW,15.25K," motm gold rare",83
+1808,Brighton,52573,13,Brighton,"Alexis Mac Allister",52,Argentina,CAM;CM,12.75K," if gold rare",83
+1943,"AFC Bournemouth",52940,13,"AFC Bournemouth","Philip Billing",13,Denmark,CAM;CM,10.5K," if gold rare",83
+5,Chelsea,26292,13,Chelsea,"Christian Pulisic",95,"United States",LW;LM;RW,1.1K,"  gold rare",82
+1,Arsenal,26328,13,Arsenal,"Aaron Ramsdale",14,England,GK,1.4K,"  gold rare",82
+5,Chelsea,26346,13,Chelsea,"Ben Chilwell",14,England,LWB;LB,1K,"  gold rare",82
+5,Chelsea,26347,13,Chelsea,Azpilicueta,45,Spain,CB;RWB;RB,1K,"  gold non-rare",82
+9,Liverpool,26355,13,Liverpool,"Darwin Núñez",60,Uruguay,ST;CF;LW,1.1K,"  gold rare",82
+1,Arsenal,26396,13,Arsenal,"Bukayo Saka",14,England,RM;LM;RW,1.3K,"  gold rare",82
+11,"Manchester Utd",26509,13,"Manchester Utd",Antony,54,Brazil,RW;RM,2.1K,"  gold rare",82
+19,"West Ham",26510,13,"West Ham","Lucas Paquetá",54,Brazil,CAM;CM;CF,1.1K,"  gold rare",82
+1799,"Crystal Palace",26511,13,"Crystal Palace","Wilfried Zaha",108,"Côte d'Ivoire",LW;LM;CF,1.5K,"  gold rare",82
+2,"Aston Villa",26512,13,"Aston Villa",Coutinho,54,Brazil,CAM;CM;LW,1K,"  gold rare",82
+110,Wolves,26541,13,Wolves,"Raúl Jiménez",83,Mexico,ST;CF,1.2K,"  gold non-rare",82
+110,Wolves,26544,13,Wolves,"Gonçalo Guedes",38,Portugal,ST;LM;CF,2.8K,"  gold rare",82
+11,"Manchester Utd",26727,13,"Manchester Utd","Christian Eriksen",13,Denmark,CM;CAM,1K,"  gold rare",82
+7,Everton,26810,13,Everton,"Jordan Pickford",14,England,GK,1.1K,"  gold non-rare",82
+2,"Aston Villa",26818,13,"Aston Villa","Lucas Digne",18,France,LB;LWB,1.6K,"  gold non-rare",82
+7,Everton,26820,13,Everton,"Idrissa Gueye",136,Senegal,CDM;CM,1K,"  gold rare",82
+95,"Leicester City",26831,13,"Leicester City","James Maddison",14,England,CAM,1.1K,"  gold rare",82
+19,"West Ham",26835,13,"West Ham","Łukasz Fabiański",37,Poland,GK,950,"  gold rare",82
+144,Fulham,48414,13,Fulham,"Aleksandar Mitrovic",51,Serbia,ST;CF,15K," if gold rare",82
+11,"Manchester Utd",48415,13,"Manchester Utd","Diogo Dalot",38,Portugal,RB;RWB,15.25K," if gold rare",82
+1808,Brighton,48461,13,Brighton,"Leandro Trossard",7,Belgium,LW;LM;CAM;ST,14.5K," if gold rare",82
+14,"Nott'm Forest",48678,13,"Nott'm Forest","Dean Henderson",14,England,GK,16K," if gold rare",82
+13,"Newcastle Utd",48723,13,"Newcastle Utd","Callum Wilson",14,England,ST;CF,14K," if gold rare",82
+1,Arsenal,50648,13,Arsenal,"Eddie Nketiah",14,England,ST;CF,13.5K," if gold rare",82
+18,Spurs,51829,13,Spurs,"Arnaut Danjuma",34,Netherlands,LM;ST;LW,1.9K,"  gold rare",82
+5,Chelsea,26348,13,Chelsea,Cucurella,45,Spain,LB;CB;LWB;LM,1.1K,"  gold non-rare",81
+9,Liverpool,26356,13,Liverpool,"Naby Keïta",118,Guinea,CM,900,"  gold rare",81
+9,Liverpool,26357,13,Liverpool,"Joe Gomez",14,England,CB;RB,1K,"  gold rare",81
+110,Wolves,26482,13,Wolves,"José Sá",38,Portugal,GK,900,"  gold rare",81
+11,"Manchester Utd",26514,13,"Manchester Utd","Marcus Rashford",14,England,LW;LM;ST,1.1K,"  gold rare",81
+13,"Newcastle Utd",26516,13,"Newcastle Utd","Allan Saint-Maximin",18,France,LM;LW,2K,"  gold rare",81
+110,Wolves,26540,13,Wolves,"João Moutinho",38,Portugal,CM,750,"  gold non-rare",81
+11,"Manchester Utd",26848,13,"Manchester Utd","Lisandro Martínez",52,Argentina,CB;LB;CDM,1K,"  gold rare",81
+5,Chelsea,26852,13,Chelsea,"Denis Zakaria",47,Switzerland,CDM;CM,1K,"  gold rare",81
+18,Spurs,26853,13,Spurs,"Dejan Kulusevski",46,Sweden,RW;RM;CF,950,"  gold rare",81
+18,Spurs,26855,13,Spurs,Richarlison,54,Brazil,ST;CF;LW,950,"  gold rare",81
+10,"Manchester City",26858,13,"Manchester City","Manuel Akanji",47,Switzerland,CB,950,"  gold rare",81
+18,Spurs,26865,13,Spurs,"Yves Bissouma",126,Mali,CDM;CM,950,"  gold rare",81
+13,"Newcastle Utd",26868,13,"Newcastle Utd","Bruno Guimarães",54,Brazil,CM;CDM,1K,"  gold rare",81
+10,"Manchester City",26873,13,"Manchester City","Kalvin Phillips",14,England,CDM;CM,950,"  gold rare",81
+144,Fulham,26879,13,Fulham,Palhinha,38,Portugal,CDM;CM,950,"  gold rare",81
+19,"West Ham",26880,13,"West Ham","Tomáš Souček",12,"Czech Republic",CDM;CM,1K,"  gold non-rare",81
+19,"West Ham",26884,13,"West Ham","Alphonse Areola",18,France,GK,1K,"  gold rare",81
+17,Southampton,26886,13,Southampton,"James Ward-Prowse",14,England,CM,950,"  gold non-rare",81
+1,Arsenal,26888,13,Arsenal,"Kieran Tierney",42,Scotland,LB;LWB,1.6K,"  gold rare",81
+1943,"AFC Bournemouth",26892,13,"AFC Bournemouth",Neto,54,Brazil,GK,950,"  gold rare",81
+13,"Newcastle Utd",26893,13,"Newcastle Utd","Nick Pope",14,England,GK,950,"  gold rare",81
+11,"Manchester Utd",26896,13,"Manchester Utd","Harry Maguire",14,England,CB,1K,"  gold non-rare",81
+9,Liverpool,26898,13,Liverpool,"Ibrahima Konaté",18,France,CB,1.1K,"  gold rare",81
+1,Arsenal,26905,13,Arsenal,Gabriel,54,Brazil,CB,850,"  gold non-rare",81
+8,"Leeds United",48440,13,"Leeds United","Tyler Adams",95,"United States",CDM;RWB;CM,14.75K," otw gold rare",81
+13,"Newcastle Utd",48622,13,"Newcastle Utd","Fabian Schär",47,Switzerland,CB,14.75K," if gold rare",81
+8,"Leeds United",48729,13,"Leeds United","Illan Meslier",18,France,GK,16K," if gold rare",81
+1925,Brentford,50164,13,Brentford,"Ivan Toney",14,England,ST;CF,11.5K," if gold rare",81
+110,Wolves,50727,13,Wolves,"Matheus Cunha",54,Brazil,ST;LM;CAM;CF,950,"  gold rare",81
+110,Wolves,51289,13,Wolves,"Pablo Sarabia",45,Spain,RW;RM;CAM;LW,900,"  gold non-rare",81
+18,Spurs,51832,13,Spurs,"Pedro Porro",45,Spain,RWB;RB;RM,950,"  gold rare",81
+14,"Nott'm Forest",51893,13,"Nott'm Forest",Felipe,54,Brazil,CB,850,"  gold non-rare",81
+1,Arsenal,26402,13,Arsenal,"William Saliba",18,France,CB,1K,"  gold rare",80
+110,Wolves,26484,13,Wolves,"Nélson Semedo",38,Portugal,RWB;RB,950,"  gold rare",80
+11,"Manchester Utd",26917,13,"Manchester Utd",Fred,54,Brazil,CM;CDM,1K,"  gold rare",80
+11,"Manchester Utd",26918,13,"Manchester Utd","Scott McTominay",42,Scotland,CDM;CM,950,"  gold rare",80
+8,"Leeds United",26919,13,"Leeds United","Luis Sinisterra",56,Colombia,LW;LM,1K,"  gold rare",80
+18,Spurs,26920,13,Spurs,"Lucas Moura",54,Brazil,RW;RM,950,"  gold rare",80
+7,Everton,26921,13,Everton,"Allan Marques Loureiro",54,Brazil,CDM;CM,2.8K,"  gold rare",80
+2,"Aston Villa",26922,13,"Aston Villa","Emiliano Buendía",52,Argentina,RM;CAM;RW,700,"  gold non-rare",80
+9,Liverpool,26926,13,Liverpool,Arthur,54,Brazil,CM;CDM,700,"  gold non-rare",80
+18,Spurs,26927,13,Spurs,"Eric Dier",14,England,CB,800,"  gold non-rare",80
+14,"Nott'm Forest",26929,13,"Nott'm Forest","Remo Freuler",47,Switzerland,CM;CDM,750,"  gold non-rare",80
+14,"Nott'm Forest",26932,13,"Nott'm Forest","Renan Lodi",54,Brazil,LB;LWB;LM,1K,"  gold rare",80
+11,"Manchester Utd",26935,13,"Manchester Utd","Victor Lindelöf",46,Sweden,CB,700,"  gold non-rare",80
+10,"Manchester City",26939,13,"Manchester City","Stefan Ortega",21,Germany,GK,950,"  gold rare",80
+19,"West Ham",26940,13,"West Ham","Nayef Aguerd",129,Morocco,CB,950,"  gold rare",80
+144,Fulham,26948,13,Fulham,"Bernd Leno",21,Germany,GK,950,"  gold rare",80
+11,"Manchester Utd",26949,13,"Manchester Utd","Anthony Martial",18,France,ST;LM;CF,950,"  gold rare",80
+7,Everton,26951,13,Everton,"Dominic Calvert-Lewin",14,England,ST;CF,750,"  gold non-rare",80
+95,"Leicester City",26954,13,"Leicester City","Harvey Barnes",14,England,LM;LW,750,"  gold non-rare",80
+2,"Aston Villa",26958,13,"Aston Villa","Boubacar Kamara",18,France,CDM,950,"  gold rare",80
+11,"Manchester Utd",26959,13,"Manchester Utd","Luke Shaw",14,England,LB;LWB,1K,"  gold rare",80
+13,"Newcastle Utd",26965,13,"Newcastle Utd","Alexander Isak",46,Sweden,ST;CF,950,"  gold rare",80
+2,"Aston Villa",26966,13,"Aston Villa","Leon Bailey",82,Jamaica,RM;RW;LW,950,"  gold rare",80
+19,"West Ham",26968,13,"West Ham","Jarrod Bowen",14,England,RM;RW;ST,750,"  gold non-rare",80
+19,"West Ham",26972,13,"West Ham","Kurt Zouma",18,France,CB,900,"  gold non-rare",80
+11,"Manchester Utd",26974,13,"Manchester Utd","Martin Dúbravka",43,Slovakia,GK,4.3K,"  gold non-rare",80
+19,"West Ham",26976,13,"West Ham","Vladimír Coufal",12,"Czech Republic",RB;RWB,950,"  gold rare",80
+5,Chelsea,26979,13,Chelsea,"Kepa Arrizabalaga",45,Spain,GK,750,"  gold non-rare",80
+19,"West Ham",26983,13,"West Ham","Gianluca Scamacca",27,Italy,ST;CF,700,"  gold non-rare",80
+11,"Manchester Utd",26994,13,"Manchester Utd","Aaron Wan-Bissaka",14,England,RB;RWB,1K,"  gold rare",80
+13,"Newcastle Utd",26995,13,"Newcastle Utd","Sven Botman",34,Netherlands,CB,750,"  gold non-rare",80
+1,Arsenal,26997,13,Arsenal,"Smith Rowe",14,England,LM;CAM;LW,700,"  gold non-rare",80
+13,"Newcastle Utd",50720,13,"Newcastle Utd","Martin Dúbravka",43,Slovakia,GK,700,"  gold non-rare",80
+2,"Aston Villa",51259,13,"Aston Villa","Álex Moreno",45,Spain,LB;LWB,1K,"  gold rare",80
+11,"Manchester Utd",51838,13,"Manchester Utd","Marcel Sabitzer",4,Austria,CM;CDM;CAM,1K,"  gold rare",80
+8,"Leeds United",51863,13,"Leeds United","Weston McKennie",95,"United States",CM;LM,1K,"  gold rare",80
+5,Chelsea,26411,13,Chelsea,"Wesley Fofana",18,France,CB,950,"  gold rare",79
+110,Wolves,26485,13,Wolves,Jonny,45,Spain,LWB;RWB;LB,700,"  gold non-rare",79
+110,Wolves,26539,13,Wolves,"Matheus Nunes",38,Portugal,CM,950,"  gold rare",79
+110,Wolves,26545,13,Wolves,"Adama Traoré",45,Spain,RW;RM;LW,1K,"  gold rare",79
+19,"West Ham",27000,13,"West Ham","Michail Antonio",82,Jamaica,ST;CF,950,"  gold rare",79
+7,Everton,27002,13,Everton,"Abdoulaye Doucouré",126,Mali,CM;CDM,700,"  gold non-rare",79
+2,"Aston Villa",27006,13,"Aston Villa","John McGinn",42,Scotland,CM;CDM,700,"  gold non-rare",79
+18,Spurs,27007,13,Spurs,"Ben Davies",50,Wales,CB;LB;LWB,700,"  gold non-rare",79
+11,"Manchester Utd",27011,13,"Manchester Utd","Donny van de Beek",34,Netherlands,CM;CDM;CAM,700,"  gold non-rare",79
+5,Chelsea,27013,13,Chelsea,"Conor Gallagher",14,England,CM,700,"  gold non-rare",79
+18,Spurs,27014,13,Spurs,"Rodrigo Bentancur",60,Uruguay,CM,950,"  gold rare",79
+19,"West Ham",27022,13,"West Ham","Pablo Fornals",45,Spain,CAM;LM,800,"  gold non-rare",79
+13,"Newcastle Utd",27033,13,"Newcastle Utd","Callum Wilson",14,England,ST;CF,950,"  gold rare",79
+2,"Aston Villa",27036,13,"Aston Villa","Ezri Konsa",14,England,CB,1K,"  gold rare",79
+14,"Nott'm Forest",27041,13,"Nott'm Forest","Dean Henderson",14,England,GK,700,"  gold non-rare",79
+2,"Aston Villa",27044,13,"Aston Villa","Danny Ings",14,England,ST;CF,2.2K,"  gold non-rare",79
+1799,"Crystal Palace",27051,13,"Crystal Palace",Guaita,45,Spain,GK,700,"  gold non-rare",79
+2,"Aston Villa",27052,13,"Aston Villa","Matty Cash",37,Poland,RB;RWB,700,"  gold non-rare",79
+18,Spurs,27053,13,Spurs,"Davinson Sánchez",56,Colombia,CB,950,"  gold rare",79
+1,Arsenal,27060,13,Arsenal,"Oleksandr Zinchenko",49,Ukraine,LB;LWB,700,"  gold non-rare",79
+7,Everton,27062,13,Everton,"Conor Coady",14,England,CB,700,"  gold non-rare",79
+1,Arsenal,27068,13,Arsenal,"Ben White",14,England,CB,800,"  gold non-rare",79
+11,"Manchester Utd",27072,13,"Manchester Utd","Tyrell Malacia",34,Netherlands,LB;LWB,2.5K,"  gold rare",79
+7,Everton,27082,13,Everton,"James Tarkowski",14,England,CB,700,"  gold non-rare",79
+7,Everton,27088,13,Everton,"Michael Keane",14,England,CB,750,"  gold non-rare",79
+1,Arsenal,27089,13,Arsenal,"Granit Xhaka",47,Switzerland,CDM;CM,700,"  gold non-rare",79
+1808,Brighton,27090,13,Brighton,"Leandro Trossard",7,Belgium,LM;CAM;ST;LW,1K,"  gold rare",79
+1808,Brighton,27103,13,Brighton,"Lewis Dunk",14,England,CB,700,"  gold non-rare",79
+1808,Brighton,27107,13,Brighton,"Pervis Estupiñán",57,Ecuador,LB;LWB,700,"  gold non-rare",79
+19,"West Ham",27112,13,"West Ham","Manuel Lanzini",52,Argentina,CAM;CM,850,"  gold non-rare",79
+1,Arsenal,27114,13,Arsenal,"Takehiro Tomiyasu",163,Japan,RB;RWB,700,"  gold non-rare",79
+19,"West Ham",27115,13,"West Ham","Angelo Ogbonna",27,Italy,CB,750,"  gold non-rare",79
+95,"Leicester City",27116,13,"Leicester City","Jonny Evans",35,"Northern Ireland",CB,750,"  gold non-rare",79
+11,"Manchester Utd",51266,13,"Manchester Utd","Wout Weghorst",34,Netherlands,ST;CF,700,"  gold non-rare",79
+1,Arsenal,51276,13,Arsenal,"Leandro Trossard",7,Belgium,LM;CAM;ST;LW,950,"  gold rare",79
+19,"West Ham",51279,13,"West Ham","Danny Ings",14,England,ST;CF,750,"  gold non-rare",79
+17,Southampton,51881,13,Southampton,Onuachu,133,Nigeria,ST;CF,700,"  gold non-rare",79
+1,Arsenal,26410,13,Arsenal,"Gabriel Martinelli",54,Brazil,LM;LW,950,"  gold rare",78
+110,Wolves,26547,13,Wolves,"Saša Kalajdžić",4,Austria,ST;CF,850,"  gold non-rare",78
+110,Wolves,26548,13,Wolves,"Daniel Podence",38,Portugal,LW;LM;CAM;ST,700,"  gold non-rare",78
+110,Wolves,26549,13,Wolves,"Pedro Neto",38,Portugal,LW;LM;RW;ST,700,"  gold non-rare",78
+10,"Manchester City",27119,13,"Manchester City","Julián Álvarez",52,Argentina,ST;CF;RW;LW,950,"  gold rare",78
+19,"West Ham",27120,13,"West Ham","Maxwel Cornet",108,"Côte d'Ivoire",LM;LB;CF;LW,950,"  gold rare",78
+10,"Manchester City",27128,13,"Manchester City","Nathan Aké",34,Netherlands,CB;LB,1K,"  gold rare",78
+2,"Aston Villa",27142,13,"Aston Villa","Ollie Watkins",14,England,ST;CF;LW,950,"  gold rare",78
+14,"Nott'm Forest",27146,13,"Nott'm Forest","Moussa Niakhaté",18,France,CB,1K,"  gold rare",78
+8,"Leeds United",27154,13,"Leeds United","Patrick Bamford",14,England,ST;CF,750,"  gold non-rare",78
+2,"Aston Villa",27156,13,"Aston Villa","Douglas Luiz",54,Brazil,CDM;CM,750,"  gold non-rare",78
+2,"Aston Villa",27158,13,"Aston Villa","Tyrone Mings",14,England,CB,700,"  gold non-rare",78
+1808,Brighton,27160,13,Brighton,"Joël Veltman",34,Netherlands,CB;RWB;RB,700,"  gold non-rare",78
+9,Liverpool,27162,13,Liverpool,"James Milner",14,England,CM;RB;LB,750,"  gold non-rare",78
+1943,"AFC Bournemouth",27167,13,"AFC Bournemouth","Marcos Senesi",52,Argentina,CB,800,"  gold non-rare",78
+14,"Nott'm Forest",27169,13,"Nott'm Forest","Jesse Lingard",14,England,CAM,800,"  gold non-rare",78
+95,"Leicester City",27173,13,"Leicester City","Çağlar Söyüncü",48,Turkey,CB,700,"  gold non-rare",78
+18,Spurs,27175,13,Spurs,"Clément Lenglet",18,France,CB,900,"  gold non-rare",78
+95,"Leicester City",27176,13,"Leicester City","Dennis Praet",7,Belgium,CAM;CM;CF,800,"  gold non-rare",78
+13,"Newcastle Utd",27177,13,"Newcastle Utd","Miguel Almirón",58,Paraguay,RM;CM;CAM;RW,950,"  gold rare",78
+11,"Manchester Utd",27178,13,"Manchester Utd","Diogo Dalot",38,Portugal,RB;RWB,700,"  gold non-rare",78
+1799,"Crystal Palace",27192,13,"Crystal Palace","Marc Guehi",14,England,CB,950,"  gold rare",78
+18,Spurs,27196,13,Spurs,Emerson,54,Brazil,RWB;RB,700,"  gold non-rare",78
+95,"Leicester City",27203,13,"Leicester City","Timothy Castagne",7,Belgium,RB;RWB;LB,700,"  gold non-rare",78
+1925,Brentford,27207,13,Brentford,"Thomas Strakosha",1,Albania,GK,700,"  gold non-rare",78
+1925,Brentford,27221,13,Brentford,"Ben Mee",14,England,CB,750,"  gold non-rare",78
+17,Southampton,27223,13,Southampton,"Duje Ćaleta-Car",10,Croatia,CB,700,"  gold non-rare",78
+19,"West Ham",27226,13,"West Ham","Aaron Cresswell",14,England,LB;CB;LWB,800,"  gold non-rare",78
+14,"Nott'm Forest",27227,13,"Nott'm Forest","Willy Boly",108,"Côte d'Ivoire",CB,700,"  gold non-rare",78
+19,"West Ham",27229,13,"West Ham","Saïd Benrahma",97,Algeria,LM;CAM;LW,700,"  gold non-rare",78
+2,"Aston Villa",27230,13,"Aston Villa","Frédéric Guilbert",18,France,RWB;RB,1.3K,"  gold non-rare",78
+144,Fulham,27236,13,Fulham,"Aleksandar Mitrović",51,Serbia,ST;CF,950,"  gold rare",78
+17,Southampton,27242,13,Southampton,"Kyle Walker-Peters",14,England,RB;RWB;LB,800,"  gold non-rare",78
+19,"West Ham",27243,13,"West Ham","Craig Dawson",14,England,CB,1.2K,"  gold non-rare",78
+14,"Nott'm Forest",51149,13,"Nott'm Forest","Moussa Niakhaté",136,Senegal,CB,1K,"  gold rare",78
+110,Wolves,51292,13,Wolves,"Craig Dawson",14,England,CB,850,"  gold non-rare",78
+5,Chelsea,51831,13,Chelsea,"Enzo Fernández",52,Argentina,CM;CDM,950,"  gold rare",78
+1943,"AFC Bournemouth",51926,13,"AFC Bournemouth",Traorè,108,"Côte d'Ivoire",LM;CAM;LW,700,"  gold non-rare",78
+1808,Brighton,26323,13,Brighton,"Deniz Undav",21,Germany,ST;CF,750,"  gold non-rare",77
+110,Wolves,26486,13,Wolves,"Max Kilman",14,England,CB,700,"  gold non-rare",77
+110,Wolves,26546,13,Wolves,"Hee Chan Hwang",167,"Korea Republic",LW;LM;ST,700,"  gold non-rare",77
+144,Fulham,26753,13,Fulham,"Daniel James",50,Wales,RM;LM;RW;ST,950,"  gold rare",77
+9,Liverpool,27254,13,Liverpool,Oxlade-Chamberlain,14,England,CM,950,"  gold rare",77
+7,Everton,27278,13,Everton,"Ben Godfrey",14,England,CB;LB,950,"  gold rare",77
+1925,Brentford,27279,13,Brentford,"Ivan Toney",14,England,ST;CF,750,"  gold non-rare",77
+13,"Newcastle Utd",27284,13,"Newcastle Utd","Fabian Schär",47,Switzerland,CB,750,"  gold non-rare",77
+8,"Leeds United",27293,13,"Leeds United","Rasmus Kristensen",13,Denmark,RB;RWB,1K,"  gold rare",77
+8,"Leeds United",27311,13,"Leeds United",Rodrigo,45,Spain,CAM;CM;ST,750,"  gold non-rare",77
+8,"Leeds United",27316,13,"Leeds United","Jack Harrison",14,England,LM;RM;LW,700,"  gold non-rare",77
+95,"Leicester City",27319,13,"Leicester City","Kelechi Iheanacho",133,Nigeria,ST;CF,700,"  gold non-rare",77
+1799,"Crystal Palace",27328,13,"Crystal Palace","Joachim Andersen",13,Denmark,CB,700,"  gold non-rare",77
+9,Liverpool,27330,13,Liverpool,"Konstantinos Tsimikas",22,Greece,LB;LWB,700,"  gold non-rare",77
+14,"Nott'm Forest",27335,13,"Nott'm Forest","Taiwo Awoniyi",133,Nigeria,ST;CF,700,"  gold non-rare",77
+18,Spurs,27345,13,Spurs,"Matt Doherty",25,"Republic of Ireland",RWB;RB,2K,"  gold non-rare",77
+1808,Brighton,27349,13,Brighton,"Pascal Groß",21,Germany,CM;RM,800,"  gold non-rare",77
+95,"Leicester City",27350,13,"Leicester City","Patson Daka",147,Zambia,ST;CF,950,"  gold rare",77
+19,"West Ham",27352,13,"West Ham",Emerson,27,Italy,LB;LWB,700,"  gold non-rare",77
+144,Fulham,27357,13,Fulham,"Kevin Mbabu",47,Switzerland,RB;RWB,1.7K,"  gold rare",77
+1808,Brighton,27358,13,Brighton,"Robert Sanchéz",45,Spain,GK,800,"  gold non-rare",77
+7,Everton,27359,13,Everton,"Demarai Gray",14,England,LM;CAM;LW,950,"  gold rare",77
+2,"Aston Villa",27371,13,"Aston Villa","Ludwig Augustinsson",46,Sweden,LB;LWB;LM,1K,"  gold non-rare",77
+8,"Leeds United",27376,13,"Leeds United","Illan Meslier",18,France,GK,750,"  gold non-rare",77
+13,"Newcastle Utd",27380,13,"Newcastle Utd","Jonjo Shelvey",14,England,CM;CDM,1.1K,"  gold non-rare",77
+18,Spurs,27384,13,Spurs,"Oliver Skipp",14,England,CDM;CM,700,"  gold non-rare",77
+17,Southampton,27388,13,Southampton,"Mohammed Salisu",117,Ghana,CB,700,"  gold non-rare",77
+1,Arsenal,27389,13,Arsenal,"Matt Turner",95,"United States",GK,700,"  gold non-rare",77
+1,Arsenal,27392,13,Arsenal,"Fábio Vieira",38,Portugal,CAM;RM,850,"  gold non-rare",77
+1,Arsenal,27394,13,Arsenal,"Rob Holding",14,England,CB,900,"  gold non-rare",77
+95,"Leicester City",27397,13,"Leicester City","Wout Faes",7,Belgium,CB,750,"  gold non-rare",77
+13,"Newcastle Utd",27398,13,"Newcastle Utd","Dan Burn",14,England,CB;LB,700,"  gold non-rare",77
+7,Everton,27401,13,Everton,"Yerry Mina",56,Colombia,CB,700,"  gold non-rare",77
+144,Fulham,27402,13,Fulham,"Issa Diop",18,France,CB,850,"  gold non-rare",77
+13,"Newcastle Utd",27405,13,"Newcastle Utd","Matt Targett",14,England,LB;LWB,700,"  gold non-rare",77
+18,Spurs,35032,13,Spurs,"Bryan Gil Salvatierra",45,Spain,LM;RM;LW,2K,"  gold non-rare",77
+5,Chelsea,50705,13,Chelsea,"Benoît Badiashile",18,France,CB,850,"  gold non-rare",77
+17,Southampton,50737,13,Southampton,"Mislav Oršic",10,Croatia,LW;LM;ST,700,"  gold non-rare",77
+5,Chelsea,51260,13,Chelsea,"Noni Madueke",14,England,RW;RM,850,"  gold non-rare",77
+14,"Nott'm Forest",51806,13,"Nott'm Forest",Kouyaté,136,Senegal,CDM;CB;CM,750,"  gold non-rare",77
+144,Fulham,51866,13,Fulham,"Saša Lukic",51,Serbia,CM,700,"  gold non-rare",77
+14,"Nott'm Forest",51896,13,"Nott'm Forest","Jonjo Shelvey",14,England,CM;CDM,700,"  gold non-rare",77
+110,Wolves,26487,13,Wolves,"Rayan Aït Nouri",18,France,LWB;LB,700,"  gold non-rare",76
+18,Spurs,28001,13,Spurs,"Fraser Forster",14,England,GK,700,"  gold non-rare",76
+7,Everton,28131,13,Everton,"Séamus Coleman",25,"Republic of Ireland",RB;RWB,750,"  gold non-rare",76
+8,"Leeds United",28456,13,"Leeds United","Liam Cooper",42,Scotland,CB,700,"  gold non-rare",76
+13,"Newcastle Utd",28610,13,"Newcastle Utd","Chris Wood",198,"New Zealand",ST;CF,850,"  gold non-rare",76
+7,Everton,28803,13,Everton,"Andros Townsend",14,England,RM;RW,700,"  gold non-rare",76
+1799,"Crystal Palace",29124,13,"Crystal Palace","Jeffrey Schlupp",117,Ghana,LM;CM;LW,700,"  gold non-rare",76
+17,Southampton,29271,13,Southampton,"Stuart Armstrong",42,Scotland,RM;CM;RW,700,"  gold non-rare",76
+17,Southampton,29372,13,Southampton,"Mohamed Elyounoussi",36,Norway,LM;RM;ST;LW,700,"  gold non-rare",76
+1808,Brighton,29710,13,Brighton,"Adam Webster",14,England,CB,700,"  gold non-rare",76
+13,"Newcastle Utd",29729,13,"Newcastle Utd","Ryan Fraser",42,Scotland,RM;LM;RW,700,"  gold non-rare",76
+1925,Brentford,29983,13,Brentford,"Christian Nørgaard",13,Denmark,CDM;CM,700,"  gold non-rare",76
+2,"Aston Villa",30009,13,"Aston Villa","Morgan Sanson",18,France,CM,1.4K,"  gold non-rare",76
+8,"Leeds United",30215,13,"Leeds United","Diego Llorente",45,Spain,CB,1K,"  gold non-rare",76
+95,"Leicester City",30243,13,"Leicester City","Daniel Amartey",117,Ghana,CB;CDM,700,"  gold non-rare",76
+1,Arsenal,30264,13,Arsenal,"Mohamed Elneny",111,Egypt,CDM;CM,700,"  gold non-rare",76
+5,Chelsea,30336,13,Chelsea,"Ruben Loftus-Cheek",14,England,CM;RM,700,"  gold non-rare",76
+95,"Leicester City",30552,13,"Leicester City","Ayoze Pérez Gutiérrez",45,Spain,RW;RM,950,"  gold non-rare",76
+1943,"AFC Bournemouth",30859,13,"AFC Bournemouth","David Brooks",50,Wales,RW;RM,700,"  gold non-rare",76
+144,Fulham,30909,13,Fulham,"Harry Wilson",50,Wales,RM;CAM;RW,700,"  gold non-rare",76
+1925,Brentford,30935,13,Brentford,"David Raya Martin",45,Spain,GK,700,"  gold non-rare",76
+17,Southampton,31691,13,Southampton,"Ché Adams",42,Scotland,ST;CF,700,"  gold non-rare",76
+19,"West Ham",31708,13,"West Ham","Thilo Kehrer",21,Germany,CB;RB,850,"  gold non-rare",76
+5,Chelsea,32236,13,Chelsea,Chalobah,14,England,CB;CDM;CM,700,"  gold non-rare",76
+17,Southampton,32302,13,Southampton,"Romain Perraud",18,France,LB;LWB,700,"  gold non-rare",76
+95,"Leicester City",32342,13,"Leicester City","James Justin",14,England,LB;RB;LWB,700,"  gold non-rare",76
+8,"Leeds United",32525,13,"Leeds United","Tyler Adams",95,"United States",CDM;RWB;CM,950,"  gold rare",76
+1799,"Crystal Palace",32655,13,"Crystal Palace","Odsonne Edouard",18,France,ST;CF;LW,950,"  gold rare",76
+1799,"Crystal Palace",32980,13,"Crystal Palace","Eberechi Eze",14,England,CAM;CM;LM,750,"  gold non-rare",76
+8,"Leeds United",33008,13,"Leeds United","Marc Roca Junqué",45,Spain,CDM;CM,750,"  gold non-rare",76
+1799,"Crystal Palace",33080,13,"Crystal Palace","Jean-Philippe Mateta",18,France,ST;CF,750,"  gold non-rare",76
+8,"Leeds United",33095,13,"Leeds United","Robin Koch",21,Germany,CB;CDM,800,"  gold non-rare",76
+14,"Nott'm Forest",33526,13,"Nott'm Forest","Emmanuel Dennis",133,Nigeria,ST;RM;LM;CF,1K,"  gold rare",76
+8,"Leeds United",33586,13,"Leeds United","Pascal Struijk",34,Netherlands,CB;CDM,700,"  gold non-rare",76
+95,"Leicester City",33687,13,"Leicester City","Boubakary Soumaré",18,France,CDM;CM,700,"  gold non-rare",76
+1808,Brighton,33689,13,Brighton,"Alexis Mac Allister",52,Argentina,CAM;CM,700,"  gold non-rare",76
+1799,"Crystal Palace",33898,13,"Crystal Palace","Tyrick Mitchell",14,England,LB;LWB,700,"  gold non-rare",76
+1925,Brentford,34014,13,Brentford,"Mikkel Damsgaard",13,Denmark,LM;LW,700,"  gold non-rare",76
+9,Liverpool,34215,13,Liverpool,"Curtis Jones",14,England,CM,700,"  gold non-rare",76
+1799,"Crystal Palace",34246,13,"Crystal Palace","Cheick Doucouré",126,Mali,CM;CDM,700,"  gold non-rare",76
+1808,Brighton,34371,13,Brighton,"Enock Mwepu",147,Zambia,CM;CDM;CAM,3K,"  gold rare",76
+7,Everton,34382,13,Everton,"Dwight McNeil",14,England,LM;RM;LW,700,"  gold non-rare",76
+7,Everton,34614,13,Everton,"Vitaliy Mykolenko",49,Ukraine,LB;LWB,700,"  gold non-rare",76
+144,Fulham,35035,13,Fulham,"Manor Solomon",26,Israel,LM;RM;CAM;LW,700,"  gold non-rare",76
+1799,"Crystal Palace",35247,13,"Crystal Palace","Michael Olise",18,France,RW;RM;CAM,700,"  gold non-rare",76
+7,Everton,37999,13,Everton,"Neal Maupay",18,France,ST;CF,700,"  gold non-rare",76
+2,"Aston Villa",38004,13,"Aston Villa","Leander Dendoncker",7,Belgium,CM;CB,700,"  gold non-rare",76
+2,"Aston Villa",38030,13,"Aston Villa","Jan Bednarek",37,Poland,CB,800,"  gold non-rare",76
+144,Fulham,38238,13,Fulham,"Carlos Vinícius Alves Morais",54,Brazil,ST;CF,700,"  gold non-rare",76
+144,Fulham,44556,13,Fulham,"Andreas Hugo Hoelgebaum Pereira",54,Brazil,CAM;RM;CM,700,"  gold non-rare",76
+14,"Nott'm Forest",51307,13,"Nott'm Forest","Chris Wood",198,"New Zealand",ST;CF,700,"  gold non-rare",76
+2,"Aston Villa",51830,13,"Aston Villa","Bertrand Traoré",101,"Burkina Faso",RM;RW,700,"  gold non-rare",76
+95,"Leicester City",51841,13,"Leicester City","Mateus Tetê",54,Brazil,RW;RM,700,"  gold non-rare",76
+17,Southampton,51887,13,Southampton,"Jan Bednarek",37,Poland,CB,700,"  gold non-rare",76
+2,"Aston Villa",26314,13,"Aston Villa","Jacob Ramsey",14,England,CM;CAM,1K,"  gold rare",75
+7,Everton,26315,13,Everton,"Anthony Gordon",14,England,LM;RM;LW,700,"  gold non-rare",75
+17,Southampton,26318,13,Southampton,"Tino Livramento",14,England,RB;RWB,700,"  gold non-rare",75
+18,Spurs,26338,13,Spurs,"Djed Spence",14,England,RWB;RB,800,"  gold non-rare",75
+110,Wolves,26488,13,Wolves,"Nathan Collins",25,"Republic of Ireland",CB;RB,700,"  gold non-rare",75
+1799,"Crystal Palace",27996,13,"Crystal Palace","James McArthur",42,Scotland,CDM;CM,700,"  gold non-rare",75
+7,Everton,28007,13,Everton,"Asmir Begović",8,"Bosnia and Herzegovina",GK,700,"  gold non-rare",75
+1808,Brighton,28141,13,Brighton,"Adam Lallana",14,England,CM,750,"  gold non-rare",75
+95,"Leicester City",28201,13,"Leicester City","Marc Albrighton",14,England,RM;RWB;RW,2K,"  gold non-rare",75
+1808,Brighton,28312,13,Brighton,"Danny Welbeck",14,England,ST;CF,750,"  gold non-rare",75
+8,"Leeds United",28315,13,"Leeds United","Luke Ayling",14,England,RB;RWB;CB,700,"  gold non-rare",75
+17,Southampton,28439,13,Southampton,"Alex McCarthy",14,England,GK,700,"  gold non-rare",75
+13,"Newcastle Utd",28709,13,"Newcastle Utd","Karl Darlow",14,England,GK,750,"  gold non-rare",75
+1925,Brentford,28780,13,Brentford,"Pontus Jansson",46,Sweden,CB,700,"  gold non-rare",75
+144,Fulham,28818,13,Fulham,"Tom Cairney",42,Scotland,CM;CAM,700,"  gold non-rare",75
+8,"Leeds United",28828,13,"Leeds United","Joel Robles Blázquez",45,Spain,GK,700,"  gold non-rare",75
+1799,"Crystal Palace",28862,13,"Crystal Palace","Jordan Ayew",117,Ghana,RW;RM;ST,700,"  gold non-rare",75
+1,Arsenal,29160,13,Arsenal,Cédric,38,Portugal,RB;RWB,1.2K,"  gold non-rare",75
+95,"Leicester City",29318,13,"Leicester City","Jannik Vestergaard",13,Denmark,CB,700,"  gold non-rare",75
+13,"Newcastle Utd",29382,13,"Newcastle Utd","Jamaal Lascelles",14,England,CB,700,"  gold non-rare",75
+8,"Leeds United",29390,13,"Leeds United","Stuart Dallas",35,"Northern Ireland",CM;LB;CDM,700,"  gold non-rare",75
+1943,"AFC Bournemouth",29544,13,"AFC Bournemouth","Ryan Fredericks",14,England,RB;RWB,700,"  gold non-rare",75
+2,"Aston Villa",29610,13,"Aston Villa","Calum Chambers",14,England,CB;RB;CDM,700,"  gold non-rare",75
+144,Fulham,29611,13,Fulham,"Harrison Reed",14,England,CDM;CM,700,"  gold non-rare",75
+1799,"Crystal Palace",29617,13,"Crystal Palace","Sam Johnstone",14,England,GK,700,"  gold non-rare",75
+1799,"Crystal Palace",29662,13,"Crystal Palace","Will Hughes",14,England,CM;CDM,700,"  gold non-rare",75
+1808,Brighton,29682,13,Brighton,"Solly March",14,England,LWB;LB;RM,750,"  gold non-rare",75
+2,"Aston Villa",29704,13,"Aston Villa","Robin Olsen",46,Sweden,GK,700,"  gold non-rare",75
+95,"Leicester City",29755,13,"Leicester City","Danny Ward",50,Wales,GK,700,"  gold non-rare",75
+7,Everton,30333,13,Everton,"Alex Iwobi",133,Nigeria,RM;RWB;LM;RW,700,"  gold non-rare",75
+1943,"AFC Bournemouth",30381,13,"AFC Bournemouth","Jefferson Lerma",56,Colombia,CDM;CM,700,"  gold non-rare",75
+1943,"AFC Bournemouth",30910,13,"AFC Bournemouth","Philip Billing",13,Denmark,CM;CAM,750,"  gold non-rare",75
+144,Fulham,31083,13,Fulham,"Tosin Adarabioyo",14,England,CB,700,"  gold non-rare",75
+144,Fulham,31218,13,Fulham,"Marek Rodák",43,Slovakia,GK,700,"  gold non-rare",75
+2,"Aston Villa",31224,13,"Aston Villa","Marvelous Nakamba",148,Zimbabwe,CDM;CM,800,"  gold non-rare",75
+13,"Newcastle Utd",31275,13,"Newcastle Utd",Joelinton,54,Brazil,CM;ST,700,"  gold non-rare",75
+1925,Brentford,31394,13,Brentford,"Kristoffer Ajer",36,Norway,CB;RB,750,"  gold non-rare",75
+1925,Brentford,31445,13,Brentford,"Rico Henry",14,England,LWB;LB,950,"  gold rare",75
+7,Everton,31525,13,Everton,"Mason Holgate",14,England,CB;RB,750,"  gold non-rare",75
+1943,"AFC Bournemouth",31603,13,"AFC Bournemouth","Dominic Solanke",14,England,ST;CF,700,"  gold non-rare",75
+7,Everton,32165,13,Everton,"Tom Davies",14,England,CM;CDM,750,"  gold non-rare",75
+17,Southampton,32256,13,Southampton,"Joe Aribo",133,Nigeria,CM,950,"  gold rare",75
+14,"Nott'm Forest",32692,13,"Nott'm Forest","Orel Mangala",7,Belgium,CM;CDM,700,"  gold non-rare",75
+1925,Brentford,32810,13,Brentford,"Yoane Wissa",110,"Congo DR",LW;LM;ST,700,"  gold non-rare",75
+18,Spurs,32998,13,Spurs,"Ryan Sessegnon",14,England,LWB;LB,700,"  gold non-rare",75
+14,"Nott'm Forest",33025,13,"Nott'm Forest","Morgan Gibbs-White",14,England,CAM;RM;ST,750,"  gold non-rare",75
+13,"Newcastle Utd",33262,13,"Newcastle Utd","Joseph Willock",14,England,CM;CAM,700,"  gold non-rare",75
+1925,Brentford,33472,13,Brentford,"Ethan Pinnock",82,Jamaica,CB,700,"  gold non-rare",75
+8,"Leeds United",33949,13,"Leeds United","Junior Firpo",45,Spain,LB;LWB,700,"  gold non-rare",75
+1,Arsenal,34087,13,Arsenal,"Albert Sambi Lokonga",7,Belgium,CM;CDM,2.4K,"  gold non-rare",75
+1808,Brighton,34211,13,Brighton,"Tariq Lamptey",117,Ghana,RWB;RB,700,"  gold non-rare",75
+1925,Brentford,34330,13,Brentford,"Bryan Mbeumo",103,Cameroon,RW;RM;ST,700,"  gold non-rare",75
+1925,Brentford,35433,13,Brentford,"Aaron Hickey",42,Scotland,LWB;RWB;LB,700,"  gold non-rare",75
+14,"Nott'm Forest",35634,13,"Nott'm Forest","Brennan Johnson",50,Wales,RW;RM;ST,650,"  gold non-rare",75
+95,"Leicester City",36156,13,"Leicester City","Luke Thomas",14,England,LB;LWB,700,"  gold non-rare",75
+5,Chelsea,36445,13,Chelsea,"Armando Broja",1,Albania,ST;CF,700,"  gold non-rare",75
+144,Fulham,37952,13,Fulham,"Layvin Kurzawa",18,France,LB;LWB,700,"  gold non-rare",75
+17,Southampton,38063,13,Southampton,"Ainsley Maitland-Niles",14,England,RWB;RB;RM,700,"  gold non-rare",75
+8,"Leeds United",50726,13,"Leeds United","Maximilian Wöber",4,Austria,CB,700,"  gold non-rare",75
+8,"Leeds United",51288,13,"Leeds United","Georginio Rutter",18,France,ST;CF,700,"  gold non-rare",75
+110,Wolves,51295,13,Wolves,"Mario Lemina",115,Gabon,CM;CDM,700,"  gold non-rare",75
+14,"Nott'm Forest",51809,13,"Nott'm Forest",Ayew,117,Ghana,ST;CF;RW,700,"  gold non-rare",75
+13,"Newcastle Utd",51855,13,"Newcastle Utd","Anthony Gordon",14,England,LM;RM;LW,700,"  gold non-rare",75
+144,Fulham,51870,13,Fulham,Cédric,38,Portugal,RB;RWB,700,"  gold non-rare",75
+1799,"Crystal Palace",51875,13,"Crystal Palace","Albert Sambi Lokonga",7,Belgium,CM;CDM,700,"  gold non-rare",75
+17,Southampton,51890,13,Southampton,"Kamaldeen Sulemana",117,Ghana,LW;LM;ST,700,"  gold non-rare",75
+1943,"AFC Bournemouth",51930,13,"AFC Bournemouth","Matias Viña",60,Uruguay,LWB;LB;LM,700,"  gold non-rare",75
+2,"Aston Villa",27868,13,"Aston Villa","Ashley Young",14,England,LM;LB;LW,550,"  silver rare",74
+95,"Leicester City",27980,13,"Leicester City","Ryan Bertrand",14,England,LB;LWB,550,"  silver rare",74
+14,"Nott'm Forest",27986,13,"Nott'm Forest","Wayne Hennessey",50,Wales,GK,500,"  silver rare",74
+1799,"Crystal Palace",28326,13,"Crystal Palace","Joel Ward",14,England,RB;RWB,500,"  silver rare",74
+7,Everton,28432,13,Everton,"Salomón Rondón",61,Venezuela,ST;CF,550,"  silver rare",74
+1799,"Crystal Palace",28514,13,"Crystal Palace","Nathaniel Clyne",14,England,RB;RWB,500,"  silver rare",74
+1943,"AFC Bournemouth",28561,13,"AFC Bournemouth","Adam Smith",14,England,RB;RWB;LB,550,"  silver rare",74
+144,Fulham,28648,13,Fulham,"Shane Duffy",25,"Republic of Ireland",CB,550,"  silver rare",74
+8,"Leeds United",28674,13,"Leeds United","Mateusz Klich",37,Poland,CM;CDM,850,"  silver rare",74
+95,"Leicester City",28953,13,"Leicester City","Nampalys Mendy",136,Senegal,CDM;CM,500,"  silver rare",74
+144,Fulham,29385,13,Fulham,"Bobby Decordova-Reid",82,Jamaica,RM;CAM;RW,600,"  silver rare",74
+1799,"Crystal Palace",29647,13,"Crystal Palace","Luka Milivojević",51,Serbia,CDM;CM,550,"  silver rare",74
+13,"Newcastle Utd",29716,13,"Newcastle Utd","Emil Krafth",46,Sweden,RB;RWB;CB,600,"  silver rare",74
+13,"Newcastle Utd",30017,13,"Newcastle Utd","Javier Manquillo Gaitán",45,Spain,RB;RWB,550,"  silver rare",74
+1943,"AFC Bournemouth",30363,13,"AFC Bournemouth","Ryan Christie",42,Scotland,RW;RM,600,"  silver rare",74
+144,Fulham,30616,13,Fulham,"Kenny Tete",34,Netherlands,RB;RWB,600,"  silver rare",74
+1799,"Crystal Palace",30961,13,"Crystal Palace","Jaïro Riedewald",34,Netherlands,CDM;CM,550,"  silver rare",74
+17,Southampton,31038,13,Southampton,"Adam Armstrong",14,England,ST;CF;LW,1.5K,"  silver rare",74
+1943,"AFC Bournemouth",31399,13,"AFC Bournemouth","Lewis Cook",14,England,CM;CDM,550,"  silver rare",74
+144,Fulham,32066,13,Fulham,"Antonee Robinson",95,"United States",LB;LWB,550,"  silver rare",74
+1925,Brentford,32116,13,Brentford,"Mathias Jensen",13,Denmark,CM;CDM,550,"  silver rare",74
+14,"Nott'm Forest",32198,13,"Nott'm Forest","Joe Worrall",14,England,CB,700,"  silver rare",74
+11,"Manchester Utd",32327,13,"Manchester Utd","Axel Tuanzebe",14,England,CB,5.8K,"  silver rare",74
+1925,Brentford,32885,13,Brentford,"Vitaly Janelt",21,Germany,CM;CB;CDM,850,"  silver rare",74
+18,Spurs,33116,13,Spurs,"Japhet Tanganga",14,England,RWB;RB;CB,550,"  silver rare",74
+13,"Newcastle Utd",33222,13,"Newcastle Utd","Sean Longstaff",14,England,CM,550,"  silver rare",74
+95,"Leicester City",33273,13,"Leicester City","Kiernan Dewsbury-Hall",14,England,CM;CDM,550,"  silver rare",74
+17,Southampton,33303,13,Southampton,"Moussa Djenepo",126,Mali,LM;RM;LW,700,"  silver rare",74
+17,Southampton,33610,13,Southampton,"Ibrahima Diallo",18,France,CDM;CM,550,"  silver rare",74
+1808,Brighton,33679,13,Brighton,"Jakub Moder",37,Poland,CDM;CM;LM,550,"  silver rare",74
+10,"Manchester City",34061,13,"Manchester City","Sergio Gómez Martín",45,Spain,LB;LWB;RM;LM,650,"  silver rare",74
+19,"West Ham",34070,13,"West Ham","Ben Johnson",14,England,RB;RWB;LB,500,"  silver rare",74
+8,"Leeds United",35161,13,"Leeds United","Brenden Aaronson",95,"United States",CAM;CM,550,"  silver rare",74
+1799,"Crystal Palace",35508,13,"Crystal Palace","Chris Richards",95,"United States",CB,550,"  silver rare",74
+1808,Brighton,36332,13,Brighton,"Kaoru Mitoma",163,Japan,LM;LWB;LW,600,"  silver rare",74
+7,Everton,36581,13,Everton,"Amadou Onana",7,Belgium,CDM;CM,500,"  silver rare",74
+11,"Manchester Utd",36669,13,"Manchester Utd","Anthony Elanga",46,Sweden,RW;RM;LW,500,"  silver rare",74
+1943,"AFC Bournemouth",37961,13,"AFC Bournemouth","Jack Stephens",14,England,CB,600,"  silver rare",74
+2,"Aston Villa",50234,13,"Aston Villa","Ashley Young",14,England,LM;LB;LW,11.2K," sbc_flashback silver rare",74
+5,Chelsea,51262,13,Chelsea,"Mykhailo Mudryk",49,Ukraine,LM;CAM;LW,650,"  silver rare",74
+11,"Manchester Utd",27922,13,"Manchester Utd","Tom Heaton",14,England,GK,600,"  silver rare",73
+19,"West Ham",27979,13,"West Ham","Darren Randolph",25,"Republic of Ireland",GK,950,"  silver rare",73
+13,"Newcastle Utd",28327,13,"Newcastle Utd","Matt Ritchie",42,Scotland,RM;LB;RW,550,"  silver rare",73
+8,"Leeds United",28758,13,"Leeds United","Adam Forshaw",14,England,CDM;CM,550,"  silver rare",73
+11,"Manchester Utd",28807,13,"Manchester Utd","Phil Jones",14,England,CB,550,"  silver rare",73
+144,Fulham,29328,13,Fulham,"Neeskens Kebano",110,"Congo DR",LM;LW,600,"  silver rare",73
+1799,"Crystal Palace",29341,13,"Crystal Palace","Jack Butland",14,England,GK,3.5K,"  silver rare",73
+13,"Newcastle Utd",29463,13,"Newcastle Utd","Paul Dummett",50,Wales,LB;CB;LWB,550,"  silver rare",73
+144,Fulham,29596,13,Fulham,"Nathaniel Chalobah",14,England,CDM;CM,600,"  silver rare",73
+13,"Newcastle Utd",29620,13,"Newcastle Utd","Jacob Murphy",14,England,RM;RWB;RW,650,"  silver non-rare",73
+1943,"AFC Bournemouth",30340,13,"AFC Bournemouth","Ben Pearson",14,England,CDM,800,"  silver rare",73
+1943,"AFC Bournemouth",30661,13,"AFC Bournemouth","Kieffer Moore",50,Wales,ST;CF,550,"  silver rare",73
+14,"Nott'm Forest",31669,13,"Nott'm Forest","Scott McKenna",42,Scotland,CB,500,"  silver rare",73
+95,"Leicester City",31940,13,"Leicester City","Daniel Iversen",13,Denmark,GK,500,"  silver rare",73
+1925,Brentford,32322,13,Brentford,"Josh Dasilva",14,England,CM;CAM,550,"  silver rare",73
+1,Arsenal,32324,13,Arsenal,"Reiss Nelson",14,England,RW;RM;LW,700,"  silver rare",73
+1943,"AFC Bournemouth",32332,13,"AFC Bournemouth","Lloyd Kelly",14,England,CB,550,"  silver rare",73
+1943,"AFC Bournemouth",32450,13,"AFC Bournemouth","Mark Travers",25,"Republic of Ireland",GK,500,"  silver rare",73
+14,"Nott'm Forest",32857,13,"Nott'm Forest","Omar Richards",14,England,LB;LWB,500,"  silver rare",73
+7,Everton,32886,13,Everton,"Rúben Vinagre",38,Portugal,LWB;LB,550,"  silver rare",73
+14,"Nott'm Forest",32960,13,"Nott'm Forest","Ryan Yates",14,England,CDM;CM,550,"  silver rare",73
+14,"Nott'm Forest",33094,13,"Nott'm Forest","Lewis O'Brien",14,England,CM;CDM;LM,550,"  silver rare",73
+1,Arsenal,33189,13,Arsenal,"Eddie Nketiah",14,England,ST;CF,900,"  silver rare",73
+1925,Brentford,33625,13,Brentford,"Frank Onyeka",133,Nigeria,CDM;CM,600,"  silver rare",73
+9,Liverpool,33886,13,Liverpool,"Caoimhin Kelleher",25,"Republic of Ireland",GK,500,"  silver rare",73
+9,Liverpool,33893,13,Liverpool,"Nathaniel Phillips",14,England,CB,550,"  silver rare",73
+11,"Manchester Utd",34408,13,"Manchester Utd","Brandon Williams",14,England,LB;RB;LWB,600,"  silver rare",73
+9,Liverpool,34922,13,Liverpool,"Harvey Elliott",14,England,CAM;CM;RW,650,"  silver rare",73
+17,Southampton,35189,13,Southampton,"Armel Bella Kotchap",21,Germany,CB,1.2K,"  silver rare",73
+9,Liverpool,36524,13,Liverpool,"Fabio Carvalho",38,Portugal,CAM;RM;CM,500,"  silver rare",73
+14,"Nott'm Forest",38324,13,"Nott'm Forest","Loïc Badé",18,France,CB,1K,"  silver non-rare",73
+1,Arsenal,48000,13,Arsenal,"Marcus Vincius Oliveira Alencar",54,Brazil,RM;LM;RW,2.4K,"  silver rare",73
+11,"Manchester Utd",51270,13,"Manchester Utd","Jack Butland",14,England,GK,650,"  silver rare",73
+110,Wolves,51869,13,Wolves,"Daniel Bentley",14,England,GK,550,"  silver rare",73
+1943,"AFC Bournemouth",51932,13,"AFC Bournemouth","Darren Randolph",25,"Republic of Ireland",GK,550,"  silver rare",73
+1943,"AFC Bournemouth",51936,13,"AFC Bournemouth","Illia Zabarnyi",49,Ukraine,CB,550,"  silver rare",73
+17,Southampton,27937,13,Southampton,"Theo Walcott",14,England,RM;RW,500,"  silver non-rare",72
+1799,"Crystal Palace",28021,13,"Crystal Palace","James Tomkins",14,England,CB,500,"  silver rare",72
+1943,"AFC Bournemouth",28453,13,"AFC Bournemouth","Junior Stanislas",14,England,LW;LM;RW,550,"  silver rare",72
+14,"Nott'm Forest",28678,13,"Nott'm Forest","Steve Cook",14,England,CB,500,"  silver non-rare",72
+9,Liverpool,28802,13,Liverpool,Adrián,45,Spain,GK,500,"  silver non-rare",72
+14,"Nott'm Forest",29621,13,"Nott'm Forest","Harry Toffolo",14,England,LWB;LB,500,"  silver non-rare",72
+1943,"AFC Bournemouth",30341,13,"AFC Bournemouth","Joe Rothwell",14,England,CM,550,"  silver rare",72
+1925,Brentford,31363,13,Brentford,"Sergi Canós Tenés",45,Spain,LW;RWB;LWB;LM,3K,"  silver non-rare",72
+17,Southampton,32192,13,Southampton,"Lyanco Neves Vojnovic",54,Brazil,CB,550,"  silver non-rare",72
+13,"Newcastle Utd",32298,13,"Newcastle Utd","Jamal Lewis",35,"Northern Ireland",LB;LWB,500,"  silver rare",72
+1943,"AFC Bournemouth",33286,13,"AFC Bournemouth","Marcus Tavernier",14,England,CAM;CM,500,"  silver rare",72
+1943,"AFC Bournemouth",34465,13,"AFC Bournemouth","Jaidon Anthony",14,England,LW;LM;ST,650,"  silver non-rare",72
+8,"Leeds United",34890,13,"Leeds United","Joe Gelhardt",14,England,ST;CAM;CF,950,"  silver rare",72
+7,Everton,38220,13,Everton,"James Garner",14,England,CDM;CM,500,"  silver non-rare",72
+1808,Brighton,38253,13,Brighton,"Billy Gilmour",42,Scotland,CM;CDM,500,"  silver non-rare",72
+95,"Leicester City",51845,13,"Leicester City","Harry Souttar",195,Australia,CB,500,"  silver rare",72
+2,"Aston Villa",28622,13,"Aston Villa","Jed Steer",14,England,GK,500,"  silver non-rare",71
+1943,"AFC Bournemouth",30068,13,"AFC Bournemouth","Jamal Lowe",82,Jamaica,ST;CF;RW;LW,2.7K,"  silver rare",71
+1943,"AFC Bournemouth",32558,13,"AFC Bournemouth","Chris Mepham",50,Wales,CB,650,"  silver non-rare",71
+14,"Nott'm Forest",32725,13,"Nott'm Forest","Sam Surridge",14,England,ST;CF,500,"  silver non-rare",71
+14,"Nott'm Forest",34340,13,"Nott'm Forest","Neco Williams",50,Wales,RB;RWB,500,"  silver non-rare",71
+1925,Brentford,34449,13,Brentford,"Keane Lewis-Potter",14,England,LW;LM;ST,550,"  silver non-rare",71
+1808,Brighton,36952,13,Brighton,"Jan Paul van Hecke",34,Netherlands,CB,550,"  silver non-rare",71
+18,Spurs,37146,13,Spurs,"Pape Matar Sarr",136,Senegal,CM,550,"  silver non-rare",71
+1,Arsenal,51278,13,Arsenal,"Jakub Kiwior",37,Poland,CDM;CB,500,"  silver rare",71
+17,Southampton,51302,13,Southampton,"Carlos Alcaraz",52,Argentina,CAM;CM;LM,1.6K,"  silver non-rare",71
+17,Southampton,51895,13,Southampton,"James Bree",14,England,RWB;RB,500,"  silver non-rare",71
+144,Fulham,28903,13,Fulham,"Tim Ream",95,"United States",CB,500,"  silver rare",70
+5,Chelsea,29447,13,Chelsea,"Marcus Bettinelli",14,England,GK,500,"  silver non-rare",70
+1943,"AFC Bournemouth",29977,13,"AFC Bournemouth","Emiliano Marcondes",13,Denmark,CAM;CM,2.3K,"  silver non-rare",70
+19,"West Ham",33740,13,"West Ham","Flynn Downes",14,England,CDM;CM,550,"  silver non-rare",70
+17,Southampton,34442,13,Southampton,"Gavin Bazunu",25,"Republic of Ireland",GK,550,"  silver non-rare",70
+14,"Nott'm Forest",35009,13,"Nott'm Forest","Giulian Biancone",18,France,CB;RWB;LWB,550,"  silver rare",70
+11,"Manchester Utd",35984,13,"Manchester Utd","Facundo Pellistri",60,Uruguay,RM;RW,650,"  silver non-rare",70
+1808,Brighton,36422,13,Brighton,"Moisés Caicedo",57,Ecuador,CM,550,"  silver rare",70
+1943,"AFC Bournemouth",37099,13,"AFC Bournemouth","Jordan Zemura",148,Zimbabwe,LB;LWB,500,"  silver non-rare",70
+1808,Brighton,37671,13,Brighton,"Levi Colwill",14,England,CB,550,"  silver non-rare",70
+17,Southampton,44198,13,Southampton,"Willy Caballero",52,Argentina,GK,550,"  silver rare",70
+2,"Aston Villa",46268,13,"Aston Villa","Cameron Archer",14,England,ST;CF;RW,2K,"  silver non-rare",70
+1925,Brentford,51298,13,Brentford,"Kevin Schade",21,Germany,RM;RW,800,"  silver rare",70
+5,Chelsea,51833,13,Chelsea,"Nathan Baxter",14,England,GK,550,"  silver rare",70
+10,"Manchester City",51850,13,"Manchester City","Máximo Perrone",52,Argentina,CM;CDM,500,"  silver rare",70
+1943,"AFC Bournemouth",51940,13,"AFC Bournemouth","Antoine Semenyo",117,Ghana,ST;RM;CF;RW,550,"  silver rare",70
+110,Wolves,26489,13,Wolves,Toti,38,Portugal,CB,550,"  silver rare",69
+14,"Nott'm Forest",28509,13,"Nott'm Forest","Lyle Taylor",84,Montserrat,ST;CF,550,"  silver non-rare",69
+14,"Nott'm Forest",28759,13,"Nott'm Forest","Jack Colback",14,England,CDM;LWB;CM,500,"  silver non-rare",69
+14,"Nott'm Forest",30738,13,"Nott'm Forest",Cafú,38,Portugal,CDM;CAM,550,"  silver rare",69
+144,Fulham,31078,13,Fulham,"Josh Onomah",14,England,CM;CAM,1.8K,"  silver non-rare",69
+1925,Brentford,33393,13,Brentford,"Mads Roerslev",13,Denmark,RWB;RB,500,"  silver non-rare",69
+1943,"AFC Bournemouth",33582,13,"AFC Bournemouth","Siriki Dembélé",42,Scotland,ST;CF;LW,2.9K,"  silver rare",69
+1925,Brentford,33845,13,Brentford,"Shandon Baptiste",77,Grenada,CM;CDM,550,"  silver non-rare",69
+8,"Leeds United",35736,13,"Leeds United","Crysencio Summerville",34,Netherlands,RM;LM;RW,800,"  silver rare",69
+11,"Manchester Utd",35930,13,"Manchester Utd","Di'Shon Bernard",14,England,CB;RB,1.5K,"  silver non-rare",69
+8,"Leeds United",38360,13,"Leeds United","Wilfried Gnonto",27,Italy,ST;LM;CF,550,"  silver rare",69
+110,Wolves,46571,13,Wolves,"Francisco Jorge Tavares Oliveira",38,Portugal,RW;RM;LW,550,"  silver rare",69
+1925,Brentford,50736,13,Brentford,"Mads Bech Sørensen",13,Denmark,CB;LB,4.9K,"  silver non-rare",69
+95,"Leicester City",51273,13,"Leicester City","Victor Kristiansen",13,Denmark,LB;LWB,500,"  silver non-rare",69
+110,Wolves,26483,13,Wolves,"Matija Šarkic",15,Montenegro,GK,650,"  silver non-rare",68
+1925,Brentford,32397,13,Brentford,"Saman Ghoddos",161,Iran,CAM;ST;LW,500,"  silver rare",68
+1799,"Crystal Palace",34282,13,"Crystal Palace","Nathan Ferguson",14,England,LB;RB;LWB,500,"  silver non-rare",68
+8,"Leeds United",36167,13,"Leeds United","Cody Drameh",14,England,RWB;RB,500,"  silver non-rare",68
+7,Everton,50711,13,Everton,"Ellis Simms",14,England,ST;CF,550,"  silver non-rare",68
+110,Wolves,26542,13,Wolves,"Connor Ronan",25,"Republic of Ireland",CM,1.9K,"  silver non-rare",67
+13,"Newcastle Utd",28882,13,"Newcastle Utd","Mark Gillespie",14,England,GK,500,"  silver non-rare",67
+110,Wolves,30906,13,Wolves,"Leonardo B. Lohner Maia",54,Brazil,ST;CAM;CF,4.1K,"  silver non-rare",67
+14,"Nott'm Forest",31209,13,"Nott'm Forest","Jordan Smith",14,England,GK,650,"  silver non-rare",67
+1925,Brentford,32014,13,Brentford,"Charlie Goode",14,England,CB,1.2K,"  silver rare",67
+8,"Leeds United",36010,13,"Leeds United","Sam Greenwood",14,England,CAM;CM;CF,550,"  silver non-rare",67
+11,"Manchester Utd",36028,13,"Manchester Utd","Teden Mengi",14,England,CB,550,"  silver rare",67
+13,"Newcastle Utd",36133,13,"Newcastle Utd","Elliot Anderson",42,Scotland,LW;CM;LM,500,"  silver non-rare",67
+10,"Manchester City",36683,13,"Manchester City","Cole Palmer",14,England,RW;RM;CAM;CF,550,"  silver rare",67
+13,"Newcastle Utd",50723,13,"Newcastle Utd","Matthew Longstaff",14,England,CM,500,"  silver non-rare",67
+2,"Aston Villa",51261,13,"Aston Villa","Kaine Kesler Hayden",14,England,RWB;RB,500,"  silver non-rare",67
+14,"Nott'm Forest",51310,13,"Nott'm Forest","Alex Mighten",14,England,LW;LM,550,"  silver non-rare",67
+19,"West Ham",33877,13,"West Ham","Conor Coventry",25,"Republic of Ireland",CM,3.3K,"  silver non-rare",66
+14,"Nott'm Forest",35410,13,"Nott'm Forest","Loïc Mbe Soh",18,France,CB,3.4K,"  silver non-rare",66
+7,Everton,36761,13,Everton,"Nathan Patterson",42,Scotland,RB;RWB,550,"  silver non-rare",66
+13,"Newcastle Utd",37050,13,"Newcastle Utd","Santiago Muñoz",83,Mexico,ST;CAM;CF,1.1K,"  silver non-rare",66
+10,"Manchester City",37206,13,"Manchester City","Morgan Rogers",14,England,LW;LM;RW,2.9K,"  silver rare",66
+1808,Brighton,37817,13,Brighton,"Jeremy Sarmiento",57,Ecuador,RM;LM;RW,500,"  silver non-rare",66
+5,Chelsea,50706,13,Chelsea,"David Datro Fofana",108,"Côte d'Ivoire",ST;CF,600,"  silver rare",66
+5,Chelsea,51265,13,Chelsea,"Gabriel Slonina",95,"United States",GK,500,"  silver non-rare",66
+10,"Manchester City",27896,13,"Manchester City","Scott Carson",14,England,GK,500,"  silver non-rare",65
+14,"Nott'm Forest",28262,13,"Nott'm Forest","Harry Arter",25,"Republic of Ireland",CDM;CM,500,"  silver non-rare",65
+1808,Brighton,28400,13,Brighton,"Jason Steele",14,England,GK,500,"  silver non-rare",65
+8,"Leeds United",33352,13,"Leeds United","Kristoffer Klaesson",36,Norway,GK,500,"  silver non-rare",65
+8,"Leeds United",36096,13,"Leeds United","Leo Hjelde",36,Norway,CB;LB,1.5K,"  silver non-rare",65
+1799,"Crystal Palace",47340,13,"Crystal Palace","Malcolm Ebiowei",14,England,RM;RW,1.7K,"  silver non-rare",65
+110,Wolves,50729,13,Wolves,"Theo Corbeanu",70,Canada,RW;RM;LW,3.9K,"  silver rare",65
+144,Fulham,51290,13,Fulham,"Sylvester Jasper",9,Bulgaria,RM;LM;RW,550,"  silver non-rare",65
+9,Liverpool,51842,13,Liverpool,"Rhys Williams",14,England,CB,500,"  silver rare",65
+110,Wolves,26490,13,Wolves,"Yerson Mosquera",56,Colombia,CB,1.7K,"  bronze rare",64
+18,Spurs,34871,13,Spurs,"Harvey White",14,England,CDM;CM,1.6K,"  bronze rare",64
+1943,"AFC Bournemouth",35397,13,"AFC Bournemouth","James Hill",14,England,CB,4K,"  bronze rare",64
+11,"Manchester Utd",37306,13,"Manchester Utd","Shola Shoretire",14,England,RM;CM;CAM;RW,4.5K,"  bronze rare",64
+5,Chelsea,51835,13,Chelsea,"Harvey Vale",14,England,LW;LM;CAM,500,"  bronze non-rare",63
+9,Liverpool,36036,13,Liverpool,"Jake Cain",14,England,CM;CDM,6.8K,"  bronze non-rare",62
+19,"West Ham",36937,13,"West Ham","Harrison Ashby",42,Scotland,RB;RWB,900,"  bronze non-rare",62
+9,Liverpool,46394,13,Liverpool,"Kaide Gordon",14,England,RW;RM;LW,600,"  bronze non-rare",62
+14,"Nott'm Forest",35657,13,"Nott'm Forest","Ateef Konaté",18,France,CAM;LW,3.5K,"  bronze non-rare",61
+110,Wolves,26543,13,Wolves,"Chem Campbell",50,Wales,CAM;LW,1.8K,"  bronze non-rare",60
+19,"West Ham",51284,13,"West Ham","Armstrong Okoflex",25,"Republic of Ireland",LM;ST;LW,1K,"  bronze non-rare",60
+1943,"AFC Bournemouth",34338,13,"AFC Bournemouth","Will Dennis",14,England,GK,2.2K,"  bronze non-rare",58
+19,"West Ham",35391,13,"West Ham","Pierre Ekwah Elimby",18,France,CDM;CM,800,"  bronze non-rare",58
+1799,"Crystal Palace",37391,13,"Crystal Palace","Killian Phillips",25,"Republic of Ireland",CM,1K,"  bronze non-rare",58
+2,"Aston Villa",48354,13,"Aston Villa","Lamare Bogarde",34,Netherlands,CB;LB;CDM,3.4K,"  bronze non-rare",58
+13,"Newcastle Utd",48535,13,"Newcastle Utd",White,14,England,CM;RM;CAM,5K,"  bronze non-rare",58
+17,Southampton,51306,13,Southampton,"Thierry Small",14,England,LWB;LB,2.8K,"  bronze non-rare",57
+14,"Nott'm Forest",47030,13,"Nott'm Forest","Dale Taylor",35,"Northern Ireland",ST;CF,550,"  bronze non-rare",56
+110,Wolves,48339,13,Wolves,"Jackson Smith",14,England,GK,1K,"  bronze non-rare",54

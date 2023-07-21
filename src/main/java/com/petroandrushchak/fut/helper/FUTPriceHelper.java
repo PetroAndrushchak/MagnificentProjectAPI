@@ -124,7 +124,7 @@ public class FUTPriceHelper {
         } else if (price <= 20000 && price > 5000) {
             return 250;
         } else if (price <= 5000 && price > 2000) {
-            return 200;
+            return 400;
         } else if (price <= 2000 && price > 700) {
             return 150;
         } else {

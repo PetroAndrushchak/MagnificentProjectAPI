@@ -12,10 +12,14 @@ public class FutBinSteps {
 
     @Autowired PlayersPageSteps playersPageSteps;
 
+    public List<FutBinRawPlayer> parseAllPlayers() {
+        return playersPageSteps.parseAllPlayersSemiManual();
+    }
+
     public List<FutBinRawPlayer> parseAllPlayers(FutBinPlayersSearchFilter searchFilter) {
 //        playersPageSteps.openPlayersPageInBrowser()
 //                        .closePrivacyModalIfOpened();
 
-       return playersPageSteps.parseAllPlayersSemiManual();
+        return playersPageSteps.parseAllPlayersSemiManual();
     }
 }

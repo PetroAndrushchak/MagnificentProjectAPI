@@ -1,0 +1,229 @@
+clubId,clubName,id,leagueId,leagueName,name,nationId,nationName,positions,priceText,qualityAndRarity,rating
+21,"FC Bayern",26273,19,"FC Bayern","Sadio Mané",136,Senegal,LM;CF;LW,20K,"  gold rare",89
+21,"FC Bayern",26274,19,"FC Bayern","Joshua Kimmich",21,Germany,CDM;RB,19K,"  gold rare",89
+21,"FC Bayern",51852,19,"FC Bayern","João Cancelo",38,Portugal,LB;RB;LWB,14.75K,"  gold rare",88
+21,"FC Bayern",26415,19,"FC Bayern","Thomas Müller",21,Germany,CAM;CF,12.25K,"  gold rare",87
+21,"FC Bayern",26417,19,"FC Bayern","Leon Goretzka",21,Germany,CM;CDM,18.75K,"  gold rare",87
+21,"FC Bayern",26419,19,"FC Bayern","Kingsley Coman",18,France,LM;LW,10K,"  gold rare",86
+1824,Frankfurt,26421,19,Frankfurt,"Kevin Trapp",21,Germany,GK,9.7K,"  gold rare",86
+112172,"RB Leipzig",26424,19,"RB Leipzig","Christopher Nkunku",18,France,CF;CAM;ST,12.5K,"  gold rare",86
+112172,"RB Leipzig",26423,19,"RB Leipzig","Péter Gulácsi",23,Hungary,GK,6.7K,"  gold rare",85
+21,"FC Bayern",26425,19,"FC Bayern","Matthijs de Ligt",34,Netherlands,CB,7.4K,"  gold rare",85
+23,"M'gladbach",26426,19,"M'gladbach","Yann Sommer",47,Switzerland,GK,9K,"  gold rare",85
+22,Dortmund,26427,19,Dortmund,"Niklas Süle",21,Germany,CB;RB,6.6K,"  gold rare",85
+32,Leverkusen,26428,19,Leverkusen,"Patrik Schick",12,"Czech Republic",ST;CF,6.6K,"  gold rare",85
+22,Dortmund,26429,19,Dortmund,"Marco Reus",21,Germany,CAM;RM;CF,6.5K,"  gold rare",85
+21,"FC Bayern",26430,19,"FC Bayern","Serge Gnabry",21,Germany,RM;RW,7.5K,"  gold rare",85
+21,"FC Bayern",51285,19,"FC Bayern","Yann Sommer",47,Switzerland,GK,6.6K,"  gold rare",85
+22,Dortmund,26293,19,Dortmund,"Jude Bellingham",14,England,CM;LM,6.5K,"  gold rare",84
+21,"FC Bayern",26299,19,"FC Bayern","Alphonso Davies",70,Canada,LB;LWB;LM,9.8K,"  gold rare",84
+32,Leverkusen,26414,19,Leverkusen,"Moussa Diaby",18,France,RM;LM;RW;LW,6.4K,"  gold rare",84
+21,"FC Bayern",26416,19,"FC Bayern","Leroy Sané",21,Germany,LM;LW,7.4K,"  gold rare",84
+175,"VfL Wolfsburg",26418,19,"VfL Wolfsburg","Koen Casteels",7,Belgium,GK,4.3K,"  gold rare",84
+22,Dortmund,26420,19,Dortmund,"Mats Hummels",21,Germany,CB,3.9K,"  gold rare",84
+21,"FC Bayern",26422,19,"FC Bayern","Lucas Hernández",18,France,CB;LB,4K,"  gold rare",84
+112172,"RB Leipzig",26413,19,"RB Leipzig","Konrad Laimer",4,Austria,CDM;CM,3.7K,"  gold rare",83
+10029,"TSG Hoffenheim",26790,19,"TSG Hoffenheim",Angeliño,45,Spain,LWB;LB;LM,1.8K,"  gold rare",83
+10029,"TSG Hoffenheim",26796,19,"TSG Hoffenheim","Oliver Baumann",21,Germany,GK,1.7K,"  gold rare",83
+22,Dortmund,26799,19,Dortmund,"Gregor Kobel",47,Switzerland,GK,3.6K,"  gold rare",83
+32,Leverkusen,26801,19,Leverkusen,"Lukáš Hrádecký",17,Finland,GK,1.9K,"  gold rare",83
+22,Dortmund,26334,19,Dortmund,"Nico Schlotterbeck",21,Germany,CB,3.9K,"  gold rare",82
+32,Leverkusen,26395,19,Leverkusen,"Florian Wirtz",21,Germany,CAM;CM,1.4K,"  gold rare",82
+112172,"RB Leipzig",26449,19,"RB Leipzig","Timo Werner",21,Germany,ST;CF;LW,2.3K,"  gold rare",82
+112172,"RB Leipzig",26450,19,"RB Leipzig","André Silva",38,Portugal,ST;CF,950,"  gold rare",82
+112172,"RB Leipzig",26452,19,"RB Leipzig","Dani Olmo",45,Spain,CAM;CF,900,"  gold rare",82
+112172,"RB Leipzig",26453,19,"RB Leipzig","Willi Orban",23,Hungary,CB,950,"  gold non-rare",82
+22,Dortmund,26726,19,Dortmund,Guerreiro,38,Portugal,LB;LWB;LM,1.8K,"  gold non-rare",82
+22,Dortmund,26802,19,Dortmund,"Emre Can",21,Germany,CM;CB;CDM,4.1K,"  gold rare",82
+25,"SC Freiburg",26815,19,"SC Freiburg","Matthias Ginter",21,Germany,CB,1K,"  gold non-rare",82
+21,"FC Bayern",26817,19,"FC Bayern","Noussair Mazraoui",129,Morocco,RB;RWB,1.1K,"  gold rare",82
+10029,"TSG Hoffenheim",26836,19,"TSG Hoffenheim","Andrej Kramarić",10,Croatia,CF;CAM;ST,850,"  gold rare",82
+22,Dortmund,26839,19,Dortmund,"Sébastien Haller",108,"Côte d'Ivoire",ST;CF,1.2K,"  gold rare",82
+22,Dortmund,26842,19,Dortmund,"Julian Brandt",21,Germany,CAM;CM;CF,1.5K,"  gold rare",82
+32,Leverkusen,26844,19,Leverkusen,"Jonathan Tah",21,Germany,CB,900,"  gold rare",82
+112172,"RB Leipzig",26327,19,"RB Leipzig","David Raum",21,Germany,LWB;LB;LM,750,"  gold rare",81
+21,"FC Bayern",26398,19,"FC Bayern","Jamal Musiala",21,Germany,CM;LM;CAM,2.2K,"  gold rare",81
+112172,"RB Leipzig",26454,19,"RB Leipzig","Emil Forsberg",46,Sweden,CAM;CF;ST,800,"  gold rare",81
+112172,"RB Leipzig",26456,19,"RB Leipzig","Joško Gvardiol",10,Croatia,CB;LB,1K,"  gold rare",81
+23,"M'gladbach",26693,19,"M'gladbach","Jonas Hofmann",21,Germany,CAM;RM;LM,1.7K,"  gold rare",81
+1824,Frankfurt,26854,19,Frankfurt,"Evan Ndicka",18,France,CB,800,"  gold rare",81
+32,Leverkusen,26864,19,Leverkusen,"Robert Andrich",21,Germany,CDM;CM,800,"  gold rare",81
+32,Leverkusen,26866,19,Leverkusen,"Kerem Demirbay",21,Germany,CM;CDM;CAM,800,"  gold rare",81
+32,Leverkusen,26871,19,Leverkusen,"Edmond Tapsoba",101,"Burkina Faso",CB,750,"  gold rare",81
+21,"FC Bayern",26881,19,"FC Bayern","Dayot Upamecano",18,France,CB,1K,"  gold rare",81
+1824,Frankfurt,26894,19,Frankfurt,"Mario Götze",21,Germany,CAM;CM;ST,1.1K,"  gold non-rare",81
+25,"SC Freiburg",26903,19,"SC Freiburg","Vincenzo Grifo",27,Italy,LM;CF;LW,2K,"  gold non-rare",81
+10029,"TSG Hoffenheim",51873,19,"TSG Hoffenheim","Thomas Delaney",13,Denmark,CDM;CM,800,"  gold rare",81
+32,Leverkusen,26403,19,Leverkusen,"Jeremie Frimpong",34,Netherlands,RB;RWB,6.5K,"  gold rare",80
+112172,"RB Leipzig",26458,19,"RB Leipzig","Lukas Klostermann",21,Germany,CB;RWB,900,"  gold rare",80
+112172,"RB Leipzig",26460,19,"RB Leipzig","Xaver Schlager",4,Austria,CDM;CM,800,"  gold rare",80
+112172,"RB Leipzig",26462,19,"RB Leipzig","Kevin Kampl",44,Slovenia,CM;CDM,550,"  gold non-rare",80
+175,"VfL Wolfsburg",26470,19,"VfL Wolfsburg","Ridle Baku",21,Germany,RM;RB;CM;RW,900,"  gold rare",80
+175,"VfL Wolfsburg",26471,19,"VfL Wolfsburg","Max Kruse",21,Germany,CF;CAM;ST,3.8K,"  gold non-rare",80
+175,"VfL Wolfsburg",26492,19,"VfL Wolfsburg","Maximilian Arnold",21,Germany,CDM;CM,800,"  gold non-rare",80
+23,"M'gladbach",26694,19,"M'gladbach","Florian Neuhaus",21,Germany,CM,600,"  gold non-rare",80
+1824,Frankfurt,26909,19,Frankfurt,"Djibril Sow",47,Switzerland,CM;CDM,800,"  gold rare",80
+21,"FC Bayern",26912,19,"FC Bayern","Marcel Sabitzer",4,Austria,CM;CDM;CAM,9.6K,"  gold rare",80
+22,Dortmund,26934,19,Dortmund,"Mahmoud Dahoud",21,Germany,CM;CDM,1.2K,"  gold non-rare",80
+22,Dortmund,26943,19,Dortmund,"Thorgan Hazard",7,Belgium,LM;CF;LW,5K,"  gold rare",80
+32,Leverkusen,26957,19,Leverkusen,"Sardar Azmoun",161,Iran,ST;CAM;CF,700,"  gold rare",80
+25,"SC Freiburg",26971,19,"SC Freiburg","Christian Günter",21,Germany,LB;LWB;LM,1K,"  gold rare",80
+32,Leverkusen,26973,19,Leverkusen,"Charles Aránguiz",55,Chile,CDM;CM,1.4K,"  gold non-rare",80
+25,"SC Freiburg",26989,19,"SC Freiburg","Mark Flekken",34,Netherlands,GK,750,"  gold rare",80
+1824,Frankfurt,26990,19,Frankfurt,"Daichi Kamada",163,Japan,CAM;CF,500,"  gold non-rare",80
+21,"FC Bayern",50718,19,"FC Bayern","Daley Blind",34,Netherlands,CB;LB;CDM,950,"  gold non-rare",80
+112172,"RB Leipzig",26408,19,"RB Leipzig","Dominik Szoboszlai",23,Hungary,CAM;LM,750,"  gold rare",79
+175,"VfL Wolfsburg",26466,19,"VfL Wolfsburg","Josip Brekalo",10,Croatia,CF;LM;ST,850,"  gold rare",79
+21,"FC Bayern",26646,19,"FC Bayern","Ryan Gravenberch",34,Netherlands,CM,1.1K,"  gold rare",79
+23,"M'gladbach",26695,19,"M'gladbach","Lars Stindl",21,Germany,CAM,600,"  gold non-rare",79
+23,"M'gladbach",26697,19,"M'gladbach","Julian Weigl",21,Germany,CM;CDM,600,"  gold non-rare",79
+22,Dortmund,27009,19,Dortmund,"Salih Özcan",48,Turkey,CDM;CM,1.2K,"  gold rare",79
+22,Dortmund,27017,19,Dortmund,"Donyell Malen",34,Netherlands,ST;LM;CF,1.2K,"  gold rare",79
+31,"1. FC Köln",27020,19,"1. FC Köln","Ellyes Skhiri",145,Tunisia,CDM;CM,500,"  gold non-rare",79
+160,"VfL Bochum",27037,19,"VfL Bochum","Manuel Riemann",21,Germany,GK,700,"  gold non-rare",79
+32,Leverkusen,27055,19,Leverkusen,"Karim Bellarabi",21,Germany,RM;RW,800,"  gold rare",79
+22,Dortmund,27099,19,Dortmund,"Anthony Modeste",18,France,ST;CF,1.2K,"  gold non-rare",79
+21,"FC Bayern",27100,19,"FC Bayern","Benjamin Pavard",18,France,RB;RWB;CB,1.9K,"  gold non-rare",79
+23,"M'gladbach",51296,19,"M'gladbach","Jonas Omlin",47,Switzerland,GK,450,"  gold non-rare",79
+169,"1. FSV Mainz 05",51902,19,"1. FSV Mainz 05","Ludovic Ajorque",18,France,ST;CF,750,"  gold non-rare",79
+32,Leverkusen,26325,19,Leverkusen,"Piero Hincapié",57,Ecuador,LB;CB;LWB,500,"  gold non-rare",78
+112172,"RB Leipzig",26459,19,"RB Leipzig","Marcel Halstenberg",21,Germany,CB;LWB,550,"  gold non-rare",78
+112172,"RB Leipzig",26461,19,"RB Leipzig","Amadou Haidara",126,Mali,CM;CDM;RM,400,"  gold non-rare",78
+112172,"RB Leipzig",26463,19,"RB Leipzig","Mohamed Simakan",18,France,CB,750,"  gold rare",78
+175,"VfL Wolfsburg",26493,19,"VfL Wolfsburg","Lukas Nmecha",21,Germany,ST;CF,800,"  gold rare",78
+36,"VfB Stuttgart",26564,19,"VfB Stuttgart","Konstantinos Mavropanos",22,Greece,CB;RB,750,"  gold rare",78
+36,"VfB Stuttgart",26565,19,"VfB Stuttgart","Wataru Endo",163,Japan,CM;CDM,700,"  gold rare",78
+36,"VfB Stuttgart",26567,19,"VfB Stuttgart","Borna Sosa",10,Croatia,LB;LWB;LM,550,"  gold non-rare",78
+23,"M'gladbach",26689,19,"M'gladbach","Ramy Bensebaini",97,Algeria,LB;CB;LWB,500,"  gold non-rare",78
+23,"M'gladbach",26698,19,"M'gladbach","Marcus Thuram",18,France,ST;LM;CF,750,"  gold non-rare",78
+23,"M'gladbach",26699,19,"M'gladbach","Alassane Plea",18,France,CF;ST,500,"  gold non-rare",78
+1824,Frankfurt,27136,19,Frankfurt,Borré,56,Colombia,ST;CF,700,"  gold rare",78
+32,Leverkusen,27139,19,Leverkusen,"Exequiel Palacios",52,Argentina,CDM;CM;CAM,500,"  gold non-rare",78
+22,Dortmund,27157,19,Dortmund,"Thomas Meunier",7,Belgium,RB;RWB;RM,1.5K,"  gold non-rare",78
+1824,Frankfurt,27182,19,Frankfurt,"Sebastian Rode",21,Germany,CDM;CM,500,"  gold non-rare",78
+1824,Frankfurt,27202,19,Frankfurt,"Kolo Muani",18,France,ST;RM;CF,1.3K,"  gold rare",78
+31,"1. FC Köln",27206,19,"1. FC Köln","Jonas Hector",21,Germany,LB;LWB;CDM,850,"  gold non-rare",78
+10029,"TSG Hoffenheim",27228,19,"TSG Hoffenheim","Christoph Baumgartner",4,Austria,CAM;CM;LM,500,"  gold non-rare",78
+25,"SC Freiburg",27238,19,"SC Freiburg","Philipp Lienhart",4,Austria,CB,700,"  gold non-rare",78
+1824,Frankfurt,27241,19,Frankfurt,"Lucas Alario",52,Argentina,ST;CF,650,"  gold non-rare",78
+38,"Werder Bremen",27246,19,"Werder Bremen","Jiří Pavlenka",12,"Czech Republic",GK,450,"  gold non-rare",78
+23,"M'gladbach",26319,19,"M'gladbach",Koné,18,France,CM,500,"  gold non-rare",77
+112172,"RB Leipzig",26451,19,"RB Leipzig","Benjamin Henrichs",21,Germany,RWB;RB;RM,500,"  gold non-rare",77
+112172,"RB Leipzig",26455,19,"RB Leipzig","Abdou Diallo",136,Senegal,CB;LB,400,"  gold non-rare",77
+112172,"RB Leipzig",26457,19,"RB Leipzig","Yussuf Poulsen",13,Denmark,ST;CF,400,"  gold non-rare",77
+175,"VfL Wolfsburg",26465,19,"VfL Wolfsburg","Maxence Lacroix",18,France,CB,2.7K,"  gold rare",77
+23,"M'gladbach",26690,19,"M'gladbach","Nico Elvedi",47,Switzerland,CB,450,"  gold non-rare",77
+23,"M'gladbach",26691,19,"M'gladbach","Marvin Friedrich",21,Germany,CB,500,"  gold non-rare",77
+23,"M'gladbach",26692,19,"M'gladbach","Stefan Lainer",4,Austria,RB;RWB,450,"  gold non-rare",77
+23,"M'gladbach",26696,19,"M'gladbach","Christoph Kramer",21,Germany,CDM,450,"  gold non-rare",77
+166,"Hertha Berlin",26707,19,"Hertha Berlin","Suat Serdar",21,Germany,CM;CDM;CAM,2.2K,"  gold non-rare",77
+166,"Hertha Berlin",26712,19,"Hertha Berlin","Stevan Jovetić",15,Montenegro,ST;CAM;CF,3.4K,"  gold non-rare",77
+22,Dortmund,27260,19,Dortmund,"Marius Wolf",21,Germany,RM;RB;RW,1.2K,"  gold non-rare",77
+100409,"FC Augsburg",27262,19,"FC Augsburg","Niklas Dorsch",21,Germany,CDM;CM,550,"  gold non-rare",77
+169,"1. FSV Mainz 05",27264,19,"1. FSV Mainz 05","Angelo Fulgini",18,France,CM;CAM;CF,1.9K,"  gold non-rare",77
+1824,Frankfurt,27283,19,Frankfurt,Tuta,54,Brazil,CB,500,"  gold non-rare",77
+32,Leverkusen,27300,19,Leverkusen,"Callum Hudson-Odoi",14,England,LW;RWB;LM;RW,500,"  gold non-rare",77
+10029,"TSG Hoffenheim",27305,19,"TSG Hoffenheim","Ihlas Bebou",144,Togo,ST;RM;CF;RW,800,"  gold rare",77
+169,"1. FSV Mainz 05",27318,19,"1. FSV Mainz 05","Silvan Widmer",47,Switzerland,RWB;RB;CB,400,"  gold non-rare",77
+1831,"Union Berlin",27329,19,"Union Berlin","Christopher Trimmel",4,Austria,RWB;RB;RM,4K,"  gold non-rare",77
+22,Dortmund,27337,19,Dortmund,"Giovanni Reyna",95,"United States",CAM;RM;LM,1.2K,"  gold non-rare",77
+32,Leverkusen,27338,19,Leverkusen,"Adam Hložek",12,"Czech Republic",CAM;LM;ST,500,"  gold non-rare",77
+31,"1. FC Köln",27340,19,"1. FC Köln","Marvin Schwäbe",21,Germany,GK,400,"  gold non-rare",77
+100409,"FC Augsburg",27341,19,"FC Augsburg",Iago,54,Brazil,LWB;LB;LM,400,"  gold non-rare",77
+25,"SC Freiburg",27372,19,"SC Freiburg","Ritsu Doan",163,Japan,RM;CAM;RW,700,"  gold non-rare",77
+160,"VfL Bochum",27378,19,"VfL Bochum",Danilo,54,Brazil,LB;LWB,600,"  gold non-rare",77
+10029,"TSG Hoffenheim",27387,19,"TSG Hoffenheim","Pavel Kadeřábek",12,"Czech Republic",RWB;RB;RM,400,"  gold non-rare",77
+100409,"FC Augsburg",27407,19,"FC Augsburg","Rafał Gikiewicz",37,Poland,GK,400,"  gold non-rare",77
+10029,"TSG Hoffenheim",50728,19,"TSG Hoffenheim","Kasper Dolberg",13,Denmark,ST;CF,450,"  gold non-rare",77
+10029,"TSG Hoffenheim",51804,19,"TSG Hoffenheim",Brooks,95,"United States",CB,500,"  gold non-rare",77
+1824,Frankfurt,51872,19,Frankfurt,"Philipp Max",21,Germany,LB;LWB,1K,"  gold non-rare",77
+175,"VfL Wolfsburg",26333,19,"VfL Wolfsburg","Patrick Wimmer",4,Austria,RM;LM;RW,600,"  gold non-rare",76
+175,"VfL Wolfsburg",26494,19,"VfL Wolfsburg","Jonas Wind",13,Denmark,ST;CF,400,"  gold non-rare",76
+175,"VfL Wolfsburg",26495,19,"VfL Wolfsburg","Maximilian Philipp",21,Germany,CF;CAM;ST,1.5K,"  gold non-rare",76
+175,"VfL Wolfsburg",26496,19,"VfL Wolfsburg","Mattias Svanberg",46,Sweden,CM;CDM,400,"  gold non-rare",76
+175,"VfL Wolfsburg",26497,19,"VfL Wolfsburg","Yannick Gerhardt",21,Germany,CM,400,"  gold non-rare",76
+175,"VfL Wolfsburg",26498,19,"VfL Wolfsburg","Paulo Otávio",54,Brazil,LB;LWB;LM,500,"  gold non-rare",76
+175,"VfL Wolfsburg",26501,19,"VfL Wolfsburg","Jérôme Roussillon",18,France,LB;LWB;LM,4.5K,"  gold non-rare",76
+1831,"Union Berlin",26561,19,"Union Berlin","Sheraldo Becker",92,Suriname,ST;RM;CF,5.3K,"  gold rare",76
+36,"VfB Stuttgart",26568,19,"VfB Stuttgart","Florian Müller",21,Germany,GK,400,"  gold non-rare",76
+34,"FC Schalke 04",26703,19,"FC Schalke 04","Florent Mollet",18,France,RM;CAM;RW,6.4K,"  gold non-rare",76
+34,"FC Schalke 04",26705,19,"FC Schalke 04","Simon Terodde",21,Germany,ST;CF,450,"  gold non-rare",76
+10029,"TSG Hoffenheim",28651,19,"TSG Hoffenheim","Kevin Vogt",21,Germany,CB;CDM,500,"  gold non-rare",76
+31,"1. FC Köln",29075,19,"1. FC Köln","Mark Uth",21,Germany,CAM;CF;ST,500,"  gold non-rare",76
+1831,"Union Berlin",29339,19,"Union Berlin","Robin Knoche",21,Germany,CB,4K,"  gold non-rare",76
+169,"1. FSV Mainz 05",30166,19,"1. FSV Mainz 05","Dominik Kohr",21,Germany,CDM;CM,800,"  gold rare",76
+169,"1. FSV Mainz 05",31009,19,"1. FSV Mainz 05","Jae Sung Lee",167,"Korea Republic",CM;CAM;CF,400,"  gold non-rare",76
+1831,"Union Berlin",31306,19,"Union Berlin","Timo Baumgartl",21,Germany,CB,4K,"  gold non-rare",76
+169,"1. FSV Mainz 05",31393,19,"1. FSV Mainz 05","Robin Zentner",21,Germany,GK,400,"  gold non-rare",76
+32,Leverkusen,31570,19,Leverkusen,"Nadiem Amiri",21,Germany,CAM;CM,400,"  gold non-rare",76
+100409,"FC Augsburg",31658,19,"FC Augsburg","Reece Oxford",14,England,CB;RB;CDM,400,"  gold non-rare",76
+10029,"TSG Hoffenheim",31957,19,"TSG Hoffenheim","Grischa Prömel",21,Germany,CM;CDM,400,"  gold non-rare",76
+32,Leverkusen,32151,19,Leverkusen,"Andrey Lunev",40,Russia,GK,400,"  gold non-rare",76
+25,"SC Freiburg",32708,19,"SC Freiburg","Roland Sallai",23,Hungary,RM;CF;RW,650,"  gold non-rare",76
+31,"1. FC Köln",32790,19,"1. FC Köln","Timo Hübers",21,Germany,CB,800,"  gold rare",76
+10029,"TSG Hoffenheim",32921,19,"TSG Hoffenheim","Diadié Samassékou",126,Mali,CDM;CM,1.2K,"  gold non-rare",76
+100409,"FC Augsburg",33314,19,"FC Augsburg","Arne Maier",21,Germany,CM;CDM,400,"  gold non-rare",76
+31,"1. FC Köln",33888,19,"1. FC Köln","Dejan Ljubicic",4,Austria,RM;CDM;RW,400,"  gold non-rare",76
+1824,Frankfurt,34373,19,Frankfurt,"Luca Pellegrini",27,Italy,LB;LWB,5.8K,"  gold non-rare",76
+169,"1. FSV Mainz 05",34588,19,"1. FSV Mainz 05","Jonathan Burkardt",21,Germany,ST;CF;RW,700,"  gold non-rare",76
+169,"1. FSV Mainz 05",36614,19,"1. FSV Mainz 05","Anton Stach",21,Germany,CM;CDM,800,"  gold rare",76
+1824,Frankfurt,36756,19,Frankfurt,"Kristijan Jakić",10,Croatia,CDM;CM,400,"  gold non-rare",76
+36,"VfB Stuttgart",38012,19,"VfB Stuttgart","Serhou Guirassy",18,France,ST;CF,900,"  gold non-rare",76
+166,"Hertha Berlin",48542,19,"Hertha Berlin",Ejuke,133,Nigeria,LM;RM;LW,3.3K,"  gold rare",76
+1831,"Union Berlin",51334,19,"Union Berlin","Jérôme Roussillon",18,France,LB;LWB;LM,4.1K,"  gold non-rare",76
+38,"Werder Bremen",51945,19,"Werder Bremen","Maximilian Philipp",21,Germany,CF;CAM;ST,450,"  gold non-rare",76
+36,"VfB Stuttgart",52391,19,"VfB Stuttgart","Serhou Guirassy",118,Guinea,ST;CF,400,"  gold non-rare",76
+10029,"TSG Hoffenheim",26336,19,"TSG Hoffenheim","Georginio Rutter",18,France,ST;CF,700,"  gold non-rare",75
+175,"VfL Wolfsburg",26469,19,"VfL Wolfsburg","Luca Waldschmidt",21,Germany,CF;ST,400,"  gold non-rare",75
+175,"VfL Wolfsburg",26503,19,"VfL Wolfsburg","Josuha Guilavogui",18,France,CDM;CB,350,"  gold non-rare",75
+175,"VfL Wolfsburg",26505,19,"VfL Wolfsburg","Sebastiaan Bornauw",7,Belgium,CB,350,"  gold non-rare",75
+36,"VfB Stuttgart",26530,19,"VfB Stuttgart",Silas,110,"Congo DR",RM;LM;RW;ST,350,"  gold non-rare",75
+25,"SC Freiburg",26534,19,"SC Freiburg","Daniel-Kofi Kyereh",117,Ghana,CAM;RM;ST,650,"  gold non-rare",75
+36,"VfB Stuttgart",26566,19,"VfB Stuttgart","Waldemar Anton",21,Germany,CB;CDM,350,"  gold non-rare",75
+36,"VfB Stuttgart",26569,19,"VfB Stuttgart","Tiago Tomás",38,Portugal,ST;CF;RW,350,"  gold non-rare",75
+23,"M'gladbach",26687,19,"M'gladbach","Ko Itakura",163,Japan,CB;CDM,800,"  gold rare",75
+34,"FC Schalke 04",26700,19,"FC Schalke 04","Alexander Schwolow",21,Germany,GK,450,"  gold non-rare",75
+34,"FC Schalke 04",26701,19,"FC Schalke 04","Thomas Ouwejan",34,Netherlands,LB;LWB,350,"  gold non-rare",75
+34,"FC Schalke 04",26702,19,"FC Schalke 04","Cédric Brunner",47,Switzerland,RB;RWB;CB,350,"  gold non-rare",75
+34,"FC Schalke 04",26704,19,"FC Schalke 04","Alex Král",12,"Czech Republic",CDM;CM,350,"  gold non-rare",75
+166,"Hertha Berlin",26706,19,"Hertha Berlin","Marc-Oliver Kempf",21,Germany,CB,2.1K,"  gold rare",75
+166,"Hertha Berlin",26708,19,"Hertha Berlin","Vladimír Darida",12,"Czech Republic",CM;CDM;CAM,4K,"  gold non-rare",75
+166,"Hertha Berlin",26709,19,"Hertha Berlin","Jean-Paul Boëtius",34,Netherlands,CAM;CM,2.3K,"  gold non-rare",75
+166,"Hertha Berlin",26710,19,"Hertha Berlin","Lucas Tousart",18,France,CDM;CM,2.3K,"  gold non-rare",75
+21,"FC Bayern",28222,19,"FC Bayern","Eric Maxim Choupo-Moting",103,Cameroon,ST;LM;CF,2.9K,"  gold non-rare",75
+21,"FC Bayern",28336,19,"FC Bayern","Sven Ulreich",21,Germany,GK,850,"  gold non-rare",75
+10029,"TSG Hoffenheim",28433,19,"TSG Hoffenheim","Sebastian Rudy",21,Germany,CM;RB;CDM,400,"  gold non-rare",75
+10029,"TSG Hoffenheim",28452,19,"TSG Hoffenheim","Benjamin Hübner",21,Germany,CB,2.7K,"  gold non-rare",75
+31,"1. FC Köln",28813,19,"1. FC Köln","Florian Kainz",4,Austria,LM;RM;LW,500,"  gold non-rare",75
+38,"Werder Bremen",28850,19,"Werder Bremen","Marvin Ducksch",21,Germany,ST;CF,400,"  gold non-rare",75
+100409,"FC Augsburg",28852,19,"FC Augsburg","Daniel Caligiuri",27,Italy,RM;RWB;CM;RW,650,"  gold non-rare",75
+169,"1. FSV Mainz 05",28910,19,"1. FSV Mainz 05","Stefan Bell",21,Germany,CB,400,"  gold non-rare",75
+160,"VfL Bochum",28988,19,"VfL Bochum","Anthony Losilla",18,France,CDM;CB;CM,350,"  gold non-rare",75
+25,"SC Freiburg",28998,19,"SC Freiburg","Michael Gregoritsch",4,Austria,ST;CAM;CF,2.7K,"  gold non-rare",75
+25,"SC Freiburg",29049,19,"SC Freiburg","Nicolas Höfler",21,Germany,CDM;CM,600,"  gold non-rare",75
+31,"1. FC Köln",29074,19,"1. FC Köln","Timo Horn",21,Germany,GK,400,"  gold non-rare",75
+1831,"Union Berlin",29175,19,"Union Berlin","Frederik Rønnow",13,Denmark,GK,4K,"  gold non-rare",75
+100409,"FC Augsburg",29261,19,"FC Augsburg","Jeffrey Gouweleeuw",34,Netherlands,CB,350,"  gold non-rare",75
+38,"Werder Bremen",29347,19,"Werder Bremen","Leonardo Bittencourt",21,Germany,CAM,400,"  gold non-rare",75
+38,"Werder Bremen",29559,19,"Werder Bremen","Niclas Füllkrug",21,Germany,ST;CF,700,"  gold non-rare",75
+10029,"TSG Hoffenheim",29791,19,"TSG Hoffenheim","Munas Dabbur",26,Israel,ST;CF,350,"  gold non-rare",75
+10029,"TSG Hoffenheim",30109,19,"TSG Hoffenheim","Kevin Akpoguma",133,Nigeria,CB;RWB,800,"  gold rare",75
+38,"Werder Bremen",30254,19,"Werder Bremen","Niklas Stark",21,Germany,CB;CDM,800,"  gold rare",75
+31,"1. FC Köln",31191,19,"1. FC Köln","Benno Schmitz",21,Germany,RB;RWB,1.2K,"  gold non-rare",75
+25,"SC Freiburg",31701,19,"SC Freiburg","Maximilian Eggestein",21,Germany,CDM;CM,600,"  gold non-rare",75
+100409,"FC Augsburg",32426,19,"FC Augsburg","Felix Uduokhai",21,Germany,CB,400,"  gold non-rare",75
+10029,"TSG Hoffenheim",32941,19,"TSG Hoffenheim","Dennis Geiger",21,Germany,CM,400,"  gold non-rare",75
+169,"1. FSV Mainz 05",33054,19,"1. FSV Mainz 05","Aarón Martín Caricol",45,Spain,LWB;LB;LM,350,"  gold non-rare",75
+169,"1. FSV Mainz 05",33127,19,"1. FSV Mainz 05","Anthony Caci",18,France,LWB;CB;LB,350,"  gold non-rare",75
+100409,"FC Augsburg",33452,19,"FC Augsburg","Ruben Vargas",47,Switzerland,LM;RM;LW,800,"  gold rare",75
+32,Leverkusen,33591,19,Leverkusen,"Mitchel Bakker",34,Netherlands,LB;LWB,350,"  gold non-rare",75
+32,Leverkusen,33714,19,Leverkusen,Paulinho,54,Brazil,LM;CAM;LW,10K,"  gold non-rare",75
+1824,Frankfurt,34848,19,Frankfurt,"Jesper Lindstrøm",13,Denmark,CAM;CF,400,"  gold non-rare",75
+38,"Werder Bremen",35046,19,"Werder Bremen","Amos Pieper",21,Germany,CB,450,"  gold non-rare",75
+32,Leverkusen,35062,19,Leverkusen,"Odilon Kossounou",108,"Côte d'Ivoire",CB;RB,350,"  gold non-rare",75
+22,Dortmund,35721,19,Dortmund,"Karim Adeyemi",21,Germany,ST;CF,1.3K,"  gold rare",75
+1824,Frankfurt,36684,19,Frankfurt,"Ansgar Knauff",21,Germany,RM;LM;RW,550,"  gold non-rare",75
+160,"VfL Bochum",44874,19,"VfL Bochum","Ivan Ordets",49,Ukraine,CB,350,"  gold non-rare",75
+34,"FC Schalke 04",51332,19,"FC Schalke 04","Michael Frey",47,Switzerland,ST;CF,350,"  gold non-rare",75
+1831,"Union Berlin",51338,19,"Union Berlin","Josip Juranovic",10,Croatia,RB;RWB;LB,4.1K,"  gold non-rare",75
+34,"FC Schalke 04",51944,19,"FC Schalke 04","Éder Balanta",56,Colombia,CDM;CM,350,"  gold non-rare",75

@@ -8,6 +8,9 @@ import com.petroandrushchak.futbin.models.FutBinPlayersSearchFilter;
 import com.petroandrushchak.futbin.models.MinMaxPrice;
 import com.petroandrushchak.futbin.models.Version;
 import lombok.extern.slf4j.Slf4j;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Evaluator;
 import org.openqa.selenium.By;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -42,47 +45,59 @@ public class PlayersPage {
     By playerNationLinkBy = By.cssSelector("a[href *='&nation']");
     By playerLeagueLinkBy = By.cssSelector("a[href *='&league']");
 
-    By playerRatingLabelBy = By.cssSelector("td > .rating");
+    By playerRatingLabelBy = By.cssSelector("span.rating");
     By playerPositionElementBy = By.cssSelector("td:has(span[class *='rating']) + td");
 
     By playerPriceLabelBy = By.cssSelector("span:has(img[src *='coins'] )");
 
     public List<FutBinRawPlayer> parsePlayersDisplayedOnThePage() {
         log.info("Parsing players displayed on the page");
-        var result =  playerTableRows.asDynamicIterable().stream()
-                              .map(this::parsePlayerFromRow)
-                              .toList();
+        var result = playerTableRows.asDynamicIterable().stream()
+                                    .map(this::parsePlayerFromRow)
+                                    .toList();
 
         log.info("Found {} players", result.size());
         return result;
     }
 
-   // @RealPerson
     private FutBinRawPlayer parsePlayerFromRow(SelenideElement playerRow) {
+        log.info("Parsing player from row");
         var futBinPlayer = new FutBinRawPlayer();
+        var playerRawElementHtml = playerRow.getAttribute("innerHTML");
+        Document jsoup = Jsoup.parse(playerRawElementHtml);
 
-        var playerNameLink = playerRow.$(playerNameLinkBy);
-        String playerName = playerNameLink.getText();
-        String playerId = getPlayerIdFromPlayerNameLink(playerNameLink.getAttribute("href"));
+        var playerNameLink = jsoup.select("a[class *='player_name_players']").get(0);
+        String playerName = playerNameLink.text();
+        String playerId = getPlayerIdFromPlayerNameLink(playerNameLink.attr("href"));
 
-        var playerClubLink = playerRow.$(playerClubLinkBy);
-        String clubId = getPlayerClubIdFromPlayerClubLink(playerClubLink.getAttribute("href"));
-        String clubName = playerClubLink.getAttribute("data-original-title");
+        var playerClubLink = jsoup.select("a[href *='&club']").get(0);
+        String clubId = getPlayerClubIdFromPlayerClubLink(playerClubLink.attr("href"));
+        String clubName = playerClubLink.attr("data-original-title");
 
-        var playerNationLink = playerRow.$(playerNationLinkBy);
-        String nationId = getPlayerNationIdFromPlayerNationLink(playerNationLink.getAttribute("href"));
-        String nationName = playerNationLink.getAttribute("data-original-title");
+        var playerNationLink = jsoup.select("a[href *='&nation']").get(0);
+        String nationId = getPlayerNationIdFromPlayerNationLink(playerNationLink.attr("href"));
+        String nationName = playerNationLink.attr("data-original-title");
 
-        var playerLeagueLink = playerRow.$(playerLeagueLinkBy);
-        String leagueId = getPlayerLeagueIdFromPlayerLeagueLink(playerLeagueLink.getAttribute("href"));
-        String leagueName = playerLeagueLink.getAttribute("data-original-title");
+        var playerLeagueLink = jsoup.select("a[href *='&league']").get(0);
+        String leagueId = getPlayerLeagueIdFromPlayerLeagueLink(playerLeagueLink.attr("href"));
+        String leagueName = playerLeagueLink.attr("data-original-title");
 
-        String playerRating = playerRow.$(playerRatingLabelBy).getText();
-        String qualityAndRarity = getPlayerQualityAndRarity(playerRow.$(playerRatingLabelBy));
+        String playerRating = jsoup.select("span.rating").text();
 
-        List<String> playerPositions = getPlayerAllPositions(playerRow.$(playerPositionElementBy));
+        String playerQualityAndRarityClass = jsoup.select("span.rating").get(0).attr("class");
+        String qualityAndRarity = getPlayerQualityAndRarity(playerQualityAndRarityClass);
 
-        String playerPrice = playerRow.$(playerPriceLabelBy).getText();
+        var firstPositionElement = jsoup.select(".font-weight-bold").get(0);
+        String firstPosition = firstPositionElement.text();
+        String additionalPositions = "";
+        var nextPositionSibling = firstPositionElement.nextElementSibling();
+        if (nextPositionSibling != null) {
+            additionalPositions = nextPositionSibling.text();
+        }
+
+        List<String> playerPositions = getPlayerAllPositions(firstPosition, additionalPositions);
+
+        String playerPrice = jsoup.select("span:has(img[src *='coins'] )").get(0).text();
 
         // Setting Value
         futBinPlayer.setId(playerId);
@@ -103,6 +118,7 @@ public class PlayersPage {
         futBinPlayer.setPositions(playerPositions);
         futBinPlayer.setPriceText(playerPrice);
 
+        log.info("Finished parsing player from row");
         return futBinPlayer;
 
     }
@@ -151,6 +167,14 @@ public class PlayersPage {
         }
     }
 
+    private List<String> getPlayerAllPositions(String firstPosition, String additionalPositions) {
+        if (additionalPositions.isBlank()) {
+            return List.of(firstPosition);
+        }
+        String allPositions = firstPosition + "," + additionalPositions;
+        return List.of(allPositions.split(","));
+    }
+
     private List<String> getPlayerAllPositions(SelenideElement selenideElement) {
         String allPositions = selenideElement.$$("div").asDynamicIterable()
                                              .stream().map(SelenideElement::getText)
@@ -158,9 +182,8 @@ public class PlayersPage {
         return List.of(allPositions.split(","));
     }
 
-    private String getPlayerQualityAndRarity(SelenideElement selenideElement) {
-        var className = selenideElement.getAttribute("class");
-        return className.substring(className.indexOf("ut23") + 4);
+    private String getPlayerQualityAndRarity(String classAttribute) {
+        return classAttribute.substring(classAttribute.indexOf("ut23") + 4);
     }
 
     @RealPerson
@@ -180,7 +203,6 @@ public class PlayersPage {
         WebDriverRunner.getWebDriver().get(PLAYERS_PAGE_URL);
     }
 
-   // @RealPerson
     public int getTotalNumberOfPages() {
         log.info("Waiting for pagination buttons to be displayed");
         currentlyVisiblePaginationButtons.shouldHave(sizeGreaterThan(0));
@@ -201,7 +223,7 @@ public class PlayersPage {
         return this;
     }
 
-   // @RealPerson
+    // @RealPerson
     public void paginationButtonForPageNumberShouldBeSelected(int pageNumber) {
         var element = getElementForPageNumber(pageNumber);
         log.info("Waiting for pagination button with page number: {} to be displayed", pageNumber);
@@ -211,7 +233,7 @@ public class PlayersPage {
     public boolean isPaginationButtonForPageNumberDisplayed(int pageNumber) {
         var element = getElementForPageNumber(pageNumber);
         log.info("Waiting for pagination button with page number: {} to be displayed", pageNumber);
-       return element.parent().is(Condition.attribute("class", "page-item active"));
+        return element.parent().is(Condition.attribute("class", "page-item active"));
     }
 
 

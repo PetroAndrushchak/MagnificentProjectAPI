@@ -1,0 +1,325 @@
+clubId,clubName,id,leagueId,leagueName,name,nationId,nationName,positions,priceText,qualityAndRarity,rating
+5,Chelsea,26345,13,Chelsea,"Hakim Ziyech",129,Morocco,RW;RM;CAM,1.4K,,83
+9,Liverpool,26353,13,Liverpool,"Jordan Henderson",14,England,CM;CDM,1.4K,,83
+9,Liverpool,26354,13,Liverpool,"Roberto Firmino",54,Brazil,CF;ST,1.4K,,83
+110,Wolves,26538,13,Wolves,"Rúben Neves",38,Portugal,CM;CDM,1.3K,,83
+10,"Manchester City",26785,13,"Manchester City","John Stones",14,England,CB,1.5K,,83
+1,Arsenal,26786,13,Arsenal,"Gabriel Jesus",54,Brazil,ST;CF;RW,1.5K,,83
+18,Spurs,26791,13,Spurs,"Pierre-Emile Højbjerg",13,Denmark,CDM;CM,1.3K,,83
+95,"Leicester City",26792,13,"Leicester City","Ricardo Pereira",38,Portugal,RB;RWB,1.2K,,83
+2,"Aston Villa",26793,13,"Aston Villa","Diego Carlos",54,Brazil,CB,1.5K,,83
+18,Spurs,26798,13,Spurs,"Cristian Romero",52,Argentina,CB,1.5K,,83
+9,Liverpool,50712,13,Liverpool,"Cody Gakpo",34,Netherlands,LW;LM,1.6K,,83
+5,Chelsea,26292,13,Chelsea,"Christian Pulisic",95,"United States",LW;LM;RW,750,,82
+1,Arsenal,26328,13,Arsenal,"Aaron Ramsdale",14,England,GK,800,,82
+5,Chelsea,26346,13,Chelsea,"Ben Chilwell",14,England,LWB;LB,750,,82
+5,Chelsea,26347,13,Chelsea,Azpilicueta,45,Spain,CB;RWB;RB,1.6K,,82
+9,Liverpool,26355,13,Liverpool,"Darwin Núñez",60,Uruguay,ST;CF;LW,1.5K,,82
+11,"Manchester Utd",26509,13,"Manchester Utd",Antony,54,Brazil,RW;RM,2.1K,,82
+19,"West Ham",26510,13,"West Ham","Lucas Paquetá",54,Brazil,CAM;CM;CF,2.7K,,82
+1799,"Crystal Palace",26511,13,"Crystal Palace","Wilfried Zaha",108,"Côte d'Ivoire",LW;LM;CF,1.1K,,82
+2,"Aston Villa",26512,13,"Aston Villa",Coutinho,54,Brazil,CAM;CM;LW,2.7K,,82
+110,Wolves,26541,13,Wolves,"Raúl Jiménez",83,Mexico,ST;CF,850,,82
+110,Wolves,26544,13,Wolves,"Gonçalo Guedes",38,Portugal,ST;LM;CF,3K,,82
+11,"Manchester Utd",26727,13,"Manchester Utd","Christian Eriksen",13,Denmark,CM;CAM,800,,82
+7,Everton,26810,13,Everton,"Jordan Pickford",14,England,GK,950,,82
+2,"Aston Villa",26818,13,"Aston Villa","Lucas Digne",18,France,LB;LWB,2.8K,,82
+7,Everton,26820,13,Everton,"Idrissa Gueye",136,Senegal,CDM;CM,750,,82
+95,"Leicester City",26831,13,"Leicester City","James Maddison",14,England,CAM,2.7K,,82
+19,"West Ham",26835,13,"West Ham","Łukasz Fabiański",37,Poland,GK,750,,82
+18,Spurs,51829,13,Spurs,"Arnaut Danjuma",34,Netherlands,LM;ST;LW,2.3K,,82
+5,Chelsea,26348,13,Chelsea,Cucurella,45,Spain,LB;CB;LWB;LM,1.5K,,81
+9,Liverpool,26356,13,Liverpool,"Naby Keïta",118,Guinea,CM,700,,81
+9,Liverpool,26357,13,Liverpool,"Joe Gomez",14,England,CB;RB,1.2K,,81
+110,Wolves,26482,13,Wolves,"José Sá",38,Portugal,GK,700,,81
+11,"Manchester Utd",26514,13,"Manchester Utd","Marcus Rashford",14,England,LW;LM;ST,1K,,81
+13,"Newcastle Utd",26516,13,"Newcastle Utd","Allan Saint-Maximin",18,France,LM;LW,2.3K,,81
+110,Wolves,26540,13,Wolves,"João Moutinho",38,Portugal,CM,1K,,81
+11,"Manchester Utd",26848,13,"Manchester Utd","Lisandro Martínez",52,Argentina,CB;LB;CDM,1.6K,,81
+5,Chelsea,26852,13,Chelsea,"Denis Zakaria",47,Switzerland,CDM;CM,950,,81
+18,Spurs,26853,13,Spurs,"Dejan Kulusevski",46,Sweden,RW;RM;CF,700,,81
+18,Spurs,26855,13,Spurs,Richarlison,54,Brazil,ST;CF;LW,950,,81
+10,"Manchester City",26858,13,"Manchester City","Manuel Akanji",47,Switzerland,CB,800,,81
+18,Spurs,26865,13,Spurs,"Yves Bissouma",126,Mali,CDM;CM,700,,81
+13,"Newcastle Utd",26868,13,"Newcastle Utd","Bruno Guimarães",54,Brazil,CM;CDM,750,,81
+10,"Manchester City",26873,13,"Manchester City","Kalvin Phillips",14,England,CDM;CM,700,,81
+144,Fulham,26879,13,Fulham,Palhinha,38,Portugal,CDM;CM,700,,81
+19,"West Ham",26880,13,"West Ham","Tomáš Souček",12,"Czech Republic",CDM;CM,750,,81
+19,"West Ham",26884,13,"West Ham","Alphonse Areola",18,France,GK,700,,81
+17,Southampton,26886,13,Southampton,"James Ward-Prowse",14,England,CM,800,,81
+1,Arsenal,26888,13,Arsenal,"Kieran Tierney",42,Scotland,LB;LWB,1.8K,,81
+1943,"AFC Bournemouth",26892,13,"AFC Bournemouth",Neto,54,Brazil,GK,700,,81
+13,"Newcastle Utd",26893,13,"Newcastle Utd","Nick Pope",14,England,GK,750,,81
+11,"Manchester Utd",26896,13,"Manchester Utd","Harry Maguire",14,England,CB,850,,81
+9,Liverpool,26898,13,Liverpool,"Ibrahima Konaté",18,France,CB,1.1K,,81
+1,Arsenal,26905,13,Arsenal,Gabriel,54,Brazil,CB,750,,81
+110,Wolves,50727,13,Wolves,"Matheus Cunha",54,Brazil,ST;LM;CAM;CF,800,,81
+110,Wolves,51289,13,Wolves,"Pablo Sarabia",45,Spain,RW;RM;CAM;LW,600,,81
+18,Spurs,51832,13,Spurs,"Pedro Porro",45,Spain,RWB;RB;RM,700,,81
+14,"Nott'm Forest",51893,13,"Nott'm Forest",Felipe,54,Brazil,CB,750,,81
+1,Arsenal,26402,13,Arsenal,"William Saliba",18,France,CB,700,,80
+110,Wolves,26484,13,Wolves,"Nélson Semedo",38,Portugal,RWB;RB,700,,80
+11,"Manchester Utd",26917,13,"Manchester Utd",Fred,54,Brazil,CM;CDM,800,,80
+11,"Manchester Utd",26918,13,"Manchester Utd","Scott McTominay",42,Scotland,CDM;CM,700,,80
+8,"Leeds United",26919,13,"Leeds United","Luis Sinisterra",56,Colombia,LW;LM,700,,80
+18,Spurs,26920,13,Spurs,"Lucas Moura",54,Brazil,RW;RM,700,,80
+2,"Aston Villa",26922,13,"Aston Villa","Emiliano Buendía",52,Argentina,RM;CAM;RW,1.6K,,80
+9,Liverpool,26926,13,Liverpool,Arthur,54,Brazil,CM;CDM,800,,80
+18,Spurs,26927,13,Spurs,"Eric Dier",14,England,CB,700,,80
+14,"Nott'm Forest",26929,13,"Nott'm Forest","Remo Freuler",47,Switzerland,CM;CDM,650,,80
+14,"Nott'm Forest",26932,13,"Nott'm Forest","Renan Lodi",54,Brazil,LB;LWB;LM,1.4K,,80
+11,"Manchester Utd",26935,13,"Manchester Utd","Victor Lindelöf",46,Sweden,CB,700,,80
+10,"Manchester City",26939,13,"Manchester City","Stefan Ortega",21,Germany,GK,700,,80
+19,"West Ham",26940,13,"West Ham","Nayef Aguerd",129,Morocco,CB,700,,80
+144,Fulham,26948,13,Fulham,"Bernd Leno",21,Germany,GK,700,,80
+11,"Manchester Utd",26949,13,"Manchester Utd","Anthony Martial",18,France,ST;LM;CF,700,,80
+7,Everton,26951,13,Everton,"Dominic Calvert-Lewin",14,England,ST;CF,600,,80
+95,"Leicester City",26954,13,"Leicester City","Harvey Barnes",14,England,LM;LW,850,,80
+2,"Aston Villa",26958,13,"Aston Villa","Boubacar Kamara",18,France,CDM,700,,80
+11,"Manchester Utd",26959,13,"Manchester Utd","Luke Shaw",14,England,LB;LWB,1K,,80
+13,"Newcastle Utd",26965,13,"Newcastle Utd","Alexander Isak",46,Sweden,ST;CF,700,,80
+2,"Aston Villa",26966,13,"Aston Villa","Leon Bailey",82,Jamaica,RM;RW;LW,1.7K,,80
+19,"West Ham",26968,13,"West Ham","Jarrod Bowen",14,England,RM;RW;ST,1.9K,,80
+19,"West Ham",26972,13,"West Ham","Kurt Zouma",18,France,CB,600,,80
+19,"West Ham",26976,13,"West Ham","Vladimír Coufal",12,"Czech Republic",RB;RWB,950,,80
+5,Chelsea,26979,13,Chelsea,"Kepa Arrizabalaga",45,Spain,GK,700,,80
+19,"West Ham",26983,13,"West Ham","Gianluca Scamacca",27,Italy,ST;CF,750,,80
+11,"Manchester Utd",26994,13,"Manchester Utd","Aaron Wan-Bissaka",14,England,RB;RWB,1.1K,,80
+13,"Newcastle Utd",26995,13,"Newcastle Utd","Sven Botman",34,Netherlands,CB,600,,80
+1,Arsenal,26997,13,Arsenal,"Smith Rowe",14,England,LM;CAM;LW,850,,80
+13,"Newcastle Utd",50720,13,"Newcastle Utd","Martin Dúbravka",43,Slovakia,GK,600,,80
+2,"Aston Villa",51259,13,"Aston Villa","Álex Moreno",45,Spain,LB;LWB,1.3K,,80
+11,"Manchester Utd",51838,13,"Manchester Utd","Marcel Sabitzer",4,Austria,CM;CDM;CAM,700,,80
+8,"Leeds United",51863,13,"Leeds United","Weston McKennie",95,"United States",CM;LM,700,,80
+5,Chelsea,26411,13,Chelsea,"Wesley Fofana",18,France,CB,700,,79
+110,Wolves,26485,13,Wolves,Jonny,45,Spain,LWB;RWB;LB,550,,79
+110,Wolves,26539,13,Wolves,"Matheus Nunes",38,Portugal,CM,850,,79
+110,Wolves,26545,13,Wolves,"Adama Traoré",45,Spain,RW;RM;LW,800,,79
+19,"West Ham",27000,13,"West Ham","Michail Antonio",82,Jamaica,ST;CF,700,,79
+7,Everton,27002,13,Everton,"Abdoulaye Doucouré",126,Mali,CM;CDM,650,,79
+2,"Aston Villa",27006,13,"Aston Villa","John McGinn",42,Scotland,CM;CDM,650,,79
+18,Spurs,27007,13,Spurs,"Ben Davies",50,Wales,CB;LB;LWB,550,,79
+11,"Manchester Utd",27011,13,"Manchester Utd","Donny van de Beek",34,Netherlands,CM;CDM;CAM,750,,79
+5,Chelsea,27013,13,Chelsea,"Conor Gallagher",14,England,CM,750,,79
+18,Spurs,27014,13,Spurs,"Rodrigo Bentancur",60,Uruguay,CM,700,,79
+19,"West Ham",27022,13,"West Ham","Pablo Fornals",45,Spain,CAM;LM,1.2K,,79
+13,"Newcastle Utd",27033,13,"Newcastle Utd","Callum Wilson",14,England,ST;CF,700,,79
+2,"Aston Villa",27036,13,"Aston Villa","Ezri Konsa",14,England,CB,700,,79
+14,"Nott'm Forest",27041,13,"Nott'm Forest","Dean Henderson",14,England,GK,600,,79
+2,"Aston Villa",27044,13,"Aston Villa","Danny Ings",14,England,ST;CF,1.6K,,79
+1799,"Crystal Palace",27051,13,"Crystal Palace",Guaita,45,Spain,GK,550,,79
+2,"Aston Villa",27052,13,"Aston Villa","Matty Cash",37,Poland,RB;RWB,1.1K,,79
+18,Spurs,27053,13,Spurs,"Davinson Sánchez",56,Colombia,CB,700,,79
+1,Arsenal,27060,13,Arsenal,"Oleksandr Zinchenko",49,Ukraine,LB;LWB,1K,,79
+7,Everton,27062,13,Everton,"Conor Coady",14,England,CB,550,,79
+1,Arsenal,27068,13,Arsenal,"Ben White",14,England,CB,600,,79
+11,"Manchester Utd",27072,13,"Manchester Utd","Tyrell Malacia",34,Netherlands,LB;LWB,1.3K,,79
+7,Everton,27082,13,Everton,"James Tarkowski",14,England,CB,550,,79
+7,Everton,27088,13,Everton,"Michael Keane",14,England,CB,600,,79
+1,Arsenal,27089,13,Arsenal,"Granit Xhaka",47,Switzerland,CDM;CM,550,,79
+1808,Brighton,27090,13,Brighton,"Leandro Trossard",7,Belgium,LM;CAM;ST;LW,800,,79
+1808,Brighton,27103,13,Brighton,"Lewis Dunk",14,England,CB,550,,79
+1808,Brighton,27107,13,Brighton,"Pervis Estupiñán",57,Ecuador,LB;LWB,1.2K,,79
+19,"West Ham",27112,13,"West Ham","Manuel Lanzini",52,Argentina,CAM;CM,1.2K,,79
+1,Arsenal,27114,13,Arsenal,"Takehiro Tomiyasu",163,Japan,RB;RWB,1K,,79
+19,"West Ham",27115,13,"West Ham","Angelo Ogbonna",27,Italy,CB,700,,79
+95,"Leicester City",27116,13,"Leicester City","Jonny Evans",35,"Northern Ireland",CB,550,,79
+11,"Manchester Utd",51266,13,"Manchester Utd","Wout Weghorst",34,Netherlands,ST;CF,650,,79
+1,Arsenal,51276,13,Arsenal,"Leandro Trossard",7,Belgium,LM;CAM;ST;LW,700,,79
+19,"West Ham",51279,13,"West Ham","Danny Ings",14,England,ST;CF,700,,79
+17,Southampton,51881,13,Southampton,Onuachu,133,Nigeria,ST;CF,500,,79
+1,Arsenal,26410,13,Arsenal,"Gabriel Martinelli",54,Brazil,LM;LW,700,,78
+110,Wolves,26547,13,Wolves,"Saša Kalajdžić",4,Austria,ST;CF,500,,78
+110,Wolves,26548,13,Wolves,"Daniel Podence",38,Portugal,LW;LM;CAM;ST,550,,78
+110,Wolves,26549,13,Wolves,"Pedro Neto",38,Portugal,LW;LM;RW;ST,500,,78
+10,"Manchester City",27119,13,"Manchester City","Julián Álvarez",52,Argentina,ST;CF;RW;LW,700,,78
+19,"West Ham",27120,13,"West Ham","Maxwel Cornet",108,"Côte d'Ivoire",LM;LB;CF;LW,700,,78
+10,"Manchester City",27128,13,"Manchester City","Nathan Aké",34,Netherlands,CB;LB,700,,78
+2,"Aston Villa",27142,13,"Aston Villa","Ollie Watkins",14,England,ST;CF;LW,700,,78
+14,"Nott'm Forest",27146,13,"Nott'm Forest","Moussa Niakhaté",18,France,CB,1.3K,,78
+8,"Leeds United",27154,13,"Leeds United","Patrick Bamford",14,England,ST;CF,500,,78
+2,"Aston Villa",27156,13,"Aston Villa","Douglas Luiz",54,Brazil,CDM;CM,2.3K,,78
+2,"Aston Villa",27158,13,"Aston Villa","Tyrone Mings",14,England,CB,600,,78
+1808,Brighton,27160,13,Brighton,"Joël Veltman",34,Netherlands,CB;RWB;RB,550,,78
+9,Liverpool,27162,13,Liverpool,"James Milner",14,England,CM;RB;LB,750,,78
+1943,"AFC Bournemouth",27167,13,"AFC Bournemouth","Marcos Senesi",52,Argentina,CB,1K,,78
+14,"Nott'm Forest",27169,13,"Nott'm Forest","Jesse Lingard",14,England,CAM,1.2K,,78
+95,"Leicester City",27173,13,"Leicester City","Çağlar Söyüncü",48,Turkey,CB,550,,78
+18,Spurs,27175,13,Spurs,"Clément Lenglet",18,France,CB,600,,78
+95,"Leicester City",27176,13,"Leicester City","Dennis Praet",7,Belgium,CAM;CM;CF,1.2K,,78
+13,"Newcastle Utd",27177,13,"Newcastle Utd","Miguel Almirón",58,Paraguay,RM;CM;CAM;RW,1.2K,,78
+11,"Manchester Utd",27178,13,"Manchester Utd","Diogo Dalot",38,Portugal,RB;RWB,1.1K,,78
+1799,"Crystal Palace",27192,13,"Crystal Palace","Marc Guehi",14,England,CB,700,,78
+18,Spurs,27196,13,Spurs,Emerson,54,Brazil,RWB;RB,1K,,78
+95,"Leicester City",27203,13,"Leicester City","Timothy Castagne",7,Belgium,RB;RWB;LB,1K,,78
+1925,Brentford,27207,13,Brentford,"Thomas Strakosha",1,Albania,GK,500,,78
+1925,Brentford,27221,13,Brentford,"Ben Mee",14,England,CB,550,,78
+17,Southampton,27223,13,Southampton,"Duje Ćaleta-Car",10,Croatia,CB,550,,78
+19,"West Ham",27226,13,"West Ham","Aaron Cresswell",14,England,LB;CB;LWB,1.1K,,78
+14,"Nott'm Forest",27227,13,"Nott'm Forest","Willy Boly",108,"Côte d'Ivoire",CB,600,,78
+19,"West Ham",27229,13,"West Ham","Saïd Benrahma",97,Algeria,LM;CAM;LW,900,,78
+144,Fulham,27236,13,Fulham,"Aleksandar Mitrović",51,Serbia,ST;CF,700,,78
+17,Southampton,27242,13,Southampton,"Kyle Walker-Peters",14,England,RB;RWB;LB,1.2K,,78
+19,"West Ham",27243,13,"West Ham","Craig Dawson",14,England,CB,1.7K,,78
+14,"Nott'm Forest",51149,13,"Nott'm Forest","Moussa Niakhaté",136,Senegal,CB,800,,78
+110,Wolves,51292,13,Wolves,"Craig Dawson",14,England,CB,550,,78
+5,Chelsea,51831,13,Chelsea,"Enzo Fernández",52,Argentina,CM;CDM,700,,78
+1943,"AFC Bournemouth",51926,13,"AFC Bournemouth",Traorè,108,"Côte d'Ivoire",LM;CAM;LW,550,,78
+1808,Brighton,26323,13,Brighton,"Deniz Undav",21,Germany,ST;CF,500,,77
+110,Wolves,26486,13,Wolves,"Max Kilman",14,England,CB,550,,77
+110,Wolves,26546,13,Wolves,"Hee Chan Hwang",167,"Korea Republic",LW;LM;ST,500,,77
+144,Fulham,26753,13,Fulham,"Daniel James",50,Wales,RM;LM;RW;ST,1.2K,,77
+9,Liverpool,27254,13,Liverpool,Oxlade-Chamberlain,14,England,CM,750,,77
+7,Everton,27278,13,Everton,"Ben Godfrey",14,England,CB;LB,700,,77
+1925,Brentford,27279,13,Brentford,"Ivan Toney",14,England,ST;CF,500,,77
+13,"Newcastle Utd",27284,13,"Newcastle Utd","Fabian Schär",47,Switzerland,CB,550,,77
+8,"Leeds United",27293,13,"Leeds United","Rasmus Kristensen",13,Denmark,RB;RWB,950,,77
+8,"Leeds United",27311,13,"Leeds United",Rodrigo,45,Spain,CAM;CM;ST,1.1K,,77
+8,"Leeds United",27316,13,"Leeds United","Jack Harrison",14,England,LM;RM;LW,500,,77
+95,"Leicester City",27319,13,"Leicester City","Kelechi Iheanacho",133,Nigeria,ST;CF,500,,77
+1799,"Crystal Palace",27328,13,"Crystal Palace","Joachim Andersen",13,Denmark,CB,600,,77
+9,Liverpool,27330,13,Liverpool,"Konstantinos Tsimikas",22,Greece,LB;LWB,1.1K,,77
+14,"Nott'm Forest",27335,13,"Nott'm Forest","Taiwo Awoniyi",133,Nigeria,ST;CF,500,,77
+18,Spurs,27345,13,Spurs,"Matt Doherty",25,"Republic of Ireland",RWB;RB,2.5K,,77
+1808,Brighton,27349,13,Brighton,"Pascal Groß",21,Germany,CM;RM,700,,77
+95,"Leicester City",27350,13,"Leicester City","Patson Daka",147,Zambia,ST;CF,700,,77
+19,"West Ham",27352,13,"West Ham",Emerson,27,Italy,LB;LWB,1.1K,,77
+144,Fulham,27357,13,Fulham,"Kevin Mbabu",47,Switzerland,RB;RWB,1.7K,,77
+1808,Brighton,27358,13,Brighton,"Robert Sanchéz",45,Spain,GK,550,,77
+7,Everton,27359,13,Everton,"Demarai Gray",14,England,LM;CAM;LW,700,,77
+2,"Aston Villa",27371,13,"Aston Villa","Ludwig Augustinsson",46,Sweden,LB;LWB;LM,2.3K,,77
+8,"Leeds United",27376,13,"Leeds United","Illan Meslier",18,France,GK,600,,77
+13,"Newcastle Utd",27380,13,"Newcastle Utd","Jonjo Shelvey",14,England,CM;CDM,2.8K,,77
+18,Spurs,27384,13,Spurs,"Oliver Skipp",14,England,CDM;CM,500,,77
+17,Southampton,27388,13,Southampton,"Mohammed Salisu",117,Ghana,CB,2.4K,,77
+1,Arsenal,27389,13,Arsenal,"Matt Turner",95,"United States",GK,500,,77
+1,Arsenal,27392,13,Arsenal,"Fábio Vieira",38,Portugal,CAM;RM,1.2K,,77
+1,Arsenal,27394,13,Arsenal,"Rob Holding",14,England,CB,550,,77
+95,"Leicester City",27397,13,"Leicester City","Wout Faes",7,Belgium,CB,550,,77
+13,"Newcastle Utd",27398,13,"Newcastle Utd","Dan Burn",14,England,CB;LB,550,,77
+7,Everton,27401,13,Everton,"Yerry Mina",56,Colombia,CB,550,,77
+144,Fulham,27402,13,Fulham,"Issa Diop",18,France,CB,600,,77
+13,"Newcastle Utd",27405,13,"Newcastle Utd","Matt Targett",14,England,LB;LWB,1K,,77
+5,Chelsea,50705,13,Chelsea,"Benoît Badiashile",18,France,CB,600,,77
+17,Southampton,50737,13,Southampton,"Mislav Oršic",10,Croatia,LW;LM;ST,500,,77
+5,Chelsea,51260,13,Chelsea,"Noni Madueke",14,England,RW;RM,550,,77
+14,"Nott'm Forest",51806,13,"Nott'm Forest",Kouyaté,136,Senegal,CDM;CB;CM,500,,77
+144,Fulham,51866,13,Fulham,"Saša Lukic",51,Serbia,CM,650,,77
+14,"Nott'm Forest",51896,13,"Nott'm Forest","Jonjo Shelvey",14,England,CM;CDM,700,,77
+110,Wolves,26487,13,Wolves,"Rayan Aït Nouri",18,France,LWB;LB,500,,76
+18,Spurs,28001,13,Spurs,"Fraser Forster",14,England,GK,550,,76
+7,Everton,28131,13,Everton,"Séamus Coleman",25,"Republic of Ireland",RB;RWB,1.1K,,76
+8,"Leeds United",28456,13,"Leeds United","Liam Cooper",42,Scotland,CB,550,,76
+13,"Newcastle Utd",28610,13,"Newcastle Utd","Chris Wood",198,"New Zealand",ST;CF,800,,76
+7,Everton,28803,13,Everton,"Andros Townsend",14,England,RM;RW,1.5K,,76
+1799,"Crystal Palace",29124,13,"Crystal Palace","Jeffrey Schlupp",117,Ghana,LM;CM;LW,500,,76
+17,Southampton,29271,13,Southampton,"Stuart Armstrong",42,Scotland,RM;CM;RW,1.2K,,76
+17,Southampton,29372,13,Southampton,"Mohamed Elyounoussi",36,Norway,LM;RM;ST;LW,500,,76
+1808,Brighton,29710,13,Brighton,"Adam Webster",14,England,CB,550,,76
+13,"Newcastle Utd",29729,13,"Newcastle Utd","Ryan Fraser",42,Scotland,RM;LM;RW,1.1K,,76
+1925,Brentford,29983,13,Brentford,"Christian Nørgaard",13,Denmark,CDM;CM,500,,76
+8,"Leeds United",30215,13,"Leeds United","Diego Llorente",45,Spain,CB,2.5K,,76
+95,"Leicester City",30243,13,"Leicester City","Daniel Amartey",117,Ghana,CB;CDM,550,,76
+1,Arsenal,30264,13,Arsenal,"Mohamed Elneny",111,Egypt,CDM;CM,500,,76
+5,Chelsea,30336,13,Chelsea,"Ruben Loftus-Cheek",14,England,CM;RM,750,,76
+95,"Leicester City",30552,13,"Leicester City","Ayoze Pérez Gutiérrez",45,Spain,RW;RM,1.3K,,76
+1943,"AFC Bournemouth",30859,13,"AFC Bournemouth","David Brooks",50,Wales,RW;RM,500,,76
+144,Fulham,30909,13,Fulham,"Harry Wilson",50,Wales,RM;CAM;RW,1.4K,,76
+1925,Brentford,30935,13,Brentford,"David Raya Martin",45,Spain,GK,550,,76
+17,Southampton,31691,13,Southampton,"Ché Adams",42,Scotland,ST;CF,500,,76
+19,"West Ham",31708,13,"West Ham","Thilo Kehrer",21,Germany,CB;RB,600,,76
+5,Chelsea,32236,13,Chelsea,Chalobah,14,England,CB;CDM;CM,550,,76
+17,Southampton,32302,13,Southampton,"Romain Perraud",18,France,LB;LWB,1.1K,,76
+95,"Leicester City",32342,13,"Leicester City","James Justin",14,England,LB;RB;LWB,1.1K,,76
+8,"Leeds United",32525,13,"Leeds United","Tyler Adams",95,"United States",CDM;RWB;CM,700,,76
+1799,"Crystal Palace",32655,13,"Crystal Palace","Odsonne Edouard",18,France,ST;CF;LW,700,,76
+1799,"Crystal Palace",32980,13,"Crystal Palace","Eberechi Eze",14,England,CAM;CM;LM,1.2K,,76
+8,"Leeds United",33008,13,"Leeds United","Marc Roca Junqué",45,Spain,CDM;CM,550,,76
+1799,"Crystal Palace",33080,13,"Crystal Palace","Jean-Philippe Mateta",18,France,ST;CF,500,,76
+8,"Leeds United",33095,13,"Leeds United","Robin Koch",21,Germany,CB;CDM,600,,76
+14,"Nott'm Forest",33526,13,"Nott'm Forest","Emmanuel Dennis",133,Nigeria,ST;RM;LM;CF,700,,76
+8,"Leeds United",33586,13,"Leeds United","Pascal Struijk",34,Netherlands,CB;CDM,550,,76
+95,"Leicester City",33687,13,"Leicester City","Boubakary Soumaré",18,France,CDM;CM,500,,76
+1808,Brighton,33689,13,Brighton,"Alexis Mac Allister",52,Argentina,CAM;CM,1.2K,,76
+1799,"Crystal Palace",33898,13,"Crystal Palace","Tyrick Mitchell",14,England,LB;LWB,1.1K,,76
+1925,Brentford,34014,13,Brentford,"Mikkel Damsgaard",13,Denmark,LM;LW,500,,76
+9,Liverpool,34215,13,Liverpool,"Curtis Jones",14,England,CM,700,,76
+1799,"Crystal Palace",34246,13,"Crystal Palace","Cheick Doucouré",126,Mali,CM;CDM,650,,76
+7,Everton,34382,13,Everton,"Dwight McNeil",14,England,LM;RM;LW,500,,76
+7,Everton,34614,13,Everton,"Vitaliy Mykolenko",49,Ukraine,LB;LWB,1.1K,,76
+144,Fulham,35035,13,Fulham,"Manor Solomon",26,Israel,LM;RM;CAM;LW,500,,76
+1799,"Crystal Palace",35247,13,"Crystal Palace","Michael Olise",18,France,RW;RM;CAM,650,,76
+7,Everton,37999,13,Everton,"Neal Maupay",18,France,ST;CF,500,,76
+2,"Aston Villa",38004,13,"Aston Villa","Leander Dendoncker",7,Belgium,CM;CB,650,,76
+2,"Aston Villa",38030,13,"Aston Villa","Jan Bednarek",37,Poland,CB,800,,76
+144,Fulham,38238,13,Fulham,"Carlos Vinícius Alves Morais",54,Brazil,ST;CF,500,,76
+144,Fulham,44556,13,Fulham,"Andreas Hugo Hoelgebaum Pereira",54,Brazil,CAM;RM;CM,1.2K,,76
+14,"Nott'm Forest",51307,13,"Nott'm Forest","Chris Wood",198,"New Zealand",ST;CF,500,,76
+2,"Aston Villa",51830,13,"Aston Villa","Bertrand Traoré",101,"Burkina Faso",RM;RW,1.4K,,76
+95,"Leicester City",51841,13,"Leicester City","Mateus Tetê",54,Brazil,RW;RM,500,,76
+17,Southampton,51887,13,Southampton,"Jan Bednarek",37,Poland,CB,550,,76
+2,"Aston Villa",26314,13,"Aston Villa","Jacob Ramsey",14,England,CM;CAM,650,,75
+7,Everton,26315,13,Everton,"Anthony Gordon",14,England,LM;RM;LW,600,,75
+17,Southampton,26318,13,Southampton,"Tino Livramento",14,England,RB;RWB,950,,75
+18,Spurs,26338,13,Spurs,"Djed Spence",14,England,RWB;RB,1.3K,,75
+110,Wolves,26488,13,Wolves,"Nathan Collins",25,"Republic of Ireland",CB;RB,650,,75
+1799,"Crystal Palace",27996,13,"Crystal Palace","James McArthur",42,Scotland,CDM;CM,500,,75
+7,Everton,28007,13,Everton,"Asmir Begović",8,"Bosnia and Herzegovina",GK,500,,75
+1808,Brighton,28141,13,Brighton,"Adam Lallana",14,England,CM,650,,75
+1808,Brighton,28312,13,Brighton,"Danny Welbeck",14,England,ST;CF,500,,75
+8,"Leeds United",28315,13,"Leeds United","Luke Ayling",14,England,RB;RWB;CB,1.1K,,75
+17,Southampton,28439,13,Southampton,"Alex McCarthy",14,England,GK,550,,75
+13,"Newcastle Utd",28709,13,"Newcastle Utd","Karl Darlow",14,England,GK,1.8K,,75
+1925,Brentford,28780,13,Brentford,"Pontus Jansson",46,Sweden,CB,550,,75
+144,Fulham,28818,13,Fulham,"Tom Cairney",42,Scotland,CM;CAM,700,,75
+8,"Leeds United",28828,13,"Leeds United","Joel Robles Blázquez",45,Spain,GK,550,,75
+1799,"Crystal Palace",28862,13,"Crystal Palace","Jordan Ayew",117,Ghana,RW;RM;ST,500,,75
+1,Arsenal,29160,13,Arsenal,Cédric,38,Portugal,RB;RWB,2K,,75
+95,"Leicester City",29318,13,"Leicester City","Jannik Vestergaard",13,Denmark,CB,550,,75
+13,"Newcastle Utd",29382,13,"Newcastle Utd","Jamaal Lascelles",14,England,CB,550,,75
+8,"Leeds United",29390,13,"Leeds United","Stuart Dallas",35,"Northern Ireland",CM;LB;CDM,650,,75
+1943,"AFC Bournemouth",29544,13,"AFC Bournemouth","Ryan Fredericks",14,England,RB;RWB,1.1K,,75
+2,"Aston Villa",29610,13,"Aston Villa","Calum Chambers",14,England,CB;RB;CDM,600,,75
+144,Fulham,29611,13,Fulham,"Harrison Reed",14,England,CDM;CM,500,,75
+1799,"Crystal Palace",29617,13,"Crystal Palace","Sam Johnstone",14,England,GK,550,,75
+1799,"Crystal Palace",29662,13,"Crystal Palace","Will Hughes",14,England,CM;CDM,800,,75
+1808,Brighton,29682,13,Brighton,"Solly March",14,England,LWB;LB;RM,500,,75
+2,"Aston Villa",29704,13,"Aston Villa","Robin Olsen",46,Sweden,GK,550,,75
+95,"Leicester City",29755,13,"Leicester City","Danny Ward",50,Wales,GK,550,,75
+7,Everton,30333,13,Everton,"Alex Iwobi",133,Nigeria,RM;RWB;LM;RW,1.1K,,75
+1943,"AFC Bournemouth",30381,13,"AFC Bournemouth","Jefferson Lerma",56,Colombia,CDM;CM,500,,75
+1943,"AFC Bournemouth",30910,13,"AFC Bournemouth","Philip Billing",13,Denmark,CM;CAM,700,,75
+144,Fulham,31083,13,Fulham,"Tosin Adarabioyo",14,England,CB,550,,75
+144,Fulham,31218,13,Fulham,"Marek Rodák",43,Slovakia,GK,500,,75
+2,"Aston Villa",31224,13,"Aston Villa","Marvelous Nakamba",148,Zimbabwe,CDM;CM,800,,75
+13,"Newcastle Utd",31275,13,"Newcastle Utd",Joelinton,54,Brazil,CM;ST,800,,75
+1925,Brentford,31394,13,Brentford,"Kristoffer Ajer",36,Norway,CB;RB,550,,75
+1925,Brentford,31445,13,Brentford,"Rico Henry",14,England,LWB;LB,650,,75
+7,Everton,31525,13,Everton,"Mason Holgate",14,England,CB;RB,550,,75
+1943,"AFC Bournemouth",31603,13,"AFC Bournemouth","Dominic Solanke",14,England,ST;CF,500,,75
+7,Everton,32165,13,Everton,"Tom Davies",14,England,CM;CDM,700,,75
+17,Southampton,32256,13,Southampton,"Joe Aribo",133,Nigeria,CM,650,,75
+14,"Nott'm Forest",32692,13,"Nott'm Forest","Orel Mangala",7,Belgium,CM;CDM,650,,75
+1925,Brentford,32810,13,Brentford,"Yoane Wissa",110,"Congo DR",LW;LM;ST,500,,75
+18,Spurs,32998,13,Spurs,"Ryan Sessegnon",14,England,LWB;LB,500,,75
+14,"Nott'm Forest",33025,13,"Nott'm Forest","Morgan Gibbs-White",14,England,CAM;RM;ST,1.2K,,75
+13,"Newcastle Utd",33262,13,"Newcastle Utd","Joseph Willock",14,England,CM;CAM,700,,75
+1925,Brentford,33472,13,Brentford,"Ethan Pinnock",82,Jamaica,CB,550,,75
+8,"Leeds United",33949,13,"Leeds United","Junior Firpo",45,Spain,LB;LWB,1K,,75
+1,Arsenal,34087,13,Arsenal,"Albert Sambi Lokonga",7,Belgium,CM;CDM,2.4K,,75
+1808,Brighton,34211,13,Brighton,"Tariq Lamptey",117,Ghana,RWB;RB,500,,75
+1925,Brentford,34330,13,Brentford,"Bryan Mbeumo",103,Cameroon,RW;RM;ST,500,,75
+1925,Brentford,35433,13,Brentford,"Aaron Hickey",42,Scotland,LWB;RWB;LB,500,,75
+14,"Nott'm Forest",35634,13,"Nott'm Forest","Brennan Johnson",50,Wales,RW;RM;ST,550,,75
+95,"Leicester City",36156,13,"Leicester City","Luke Thomas",14,England,LB;LWB,1K,,75
+5,Chelsea,36445,13,Chelsea,"Armando Broja",1,Albania,ST;CF,500,,75
+144,Fulham,37952,13,Fulham,"Layvin Kurzawa",18,France,LB;LWB,1.1K,,75
+17,Southampton,38063,13,Southampton,"Ainsley Maitland-Niles",14,England,RWB;RB;RM,500,,75
+8,"Leeds United",50726,13,"Leeds United","Maximilian Wöber",4,Austria,CB,600,,75
+8,"Leeds United",51288,13,"Leeds United","Georginio Rutter",18,France,ST;CF,500,,75
+110,Wolves,51295,13,Wolves,"Mario Lemina",115,Gabon,CM;CDM,650,,75
+14,"Nott'm Forest",51809,13,"Nott'm Forest",Ayew,117,Ghana,ST;CF;RW,500,,75
+13,"Newcastle Utd",51855,13,"Newcastle Utd","Anthony Gordon",14,England,LM;RM;LW,500,,75
+144,Fulham,51870,13,Fulham,Cédric,38,Portugal,RB;RWB,1.5K,,75
+1799,"Crystal Palace",51875,13,"Crystal Palace","Albert Sambi Lokonga",7,Belgium,CM;CDM,650,,75
+17,Southampton,51890,13,Southampton,"Kamaldeen Sulemana",117,Ghana,LW;LM;ST,500,,75

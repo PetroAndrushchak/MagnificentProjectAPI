@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.petroandrushchak.fut.helper.FUTPriceHelper.createSellPrices;
+import static com.petroandrushchak.service.LocalBrowserHelper.connectToAlreadyOpenedBrowser;
 
 @SpringBootTest
 public class FutSnippingPlayerTest {
@@ -42,24 +43,24 @@ public class FutSnippingPlayerTest {
         }
 
         PlayerItem playerItem = new PlayerItem();
-//        playerItem.setPlayerName("Jeremie Frimpong");
-//        playerItem.setRating(80);
+//        playerItem.setPlayerName("Kyle Walker");
+//        playerItem.setRating(85);
 //        playerItem.setLevel(Quality.SPECIAL);
 
         //GER 1
+//        playerItem.setQuality(Quality.GOLD);
+//        playerItem.setRarity(Rarity.COMMON);
+//        playerItem.setPosition(Position.CF);
+//        playerItem.setChemistryStyle(ChemistryStyle.ARCHITECT);
+//
         playerItem.setQuality(Quality.GOLD);
-        playerItem.setRarity(Rarity.COMMON);
-        playerItem.setPosition(Position.CF);
-        playerItem.setChemistryStyle(ChemistryStyle.ARCHITECT);
-
         playerItem.setLeague(futLeagueService.getLeagueById(13));
         playerItem.setClub(futClubService.getClubById(10));
-        playerItem.setNation(futNationService.getNationById(21));
 
 //        //Union Berlin
 //        playerItem.setClub(futClubService.getClubById(1831L));
 
-        long sellPrice = 6400;
+        long sellPrice = 3100;
 
         var searchPrices = FUTPriceHelper.createSearchPricesWithMaxBuyNowPrice(FUTPriceHelper.createPriceForSnippingFromSellPrice(sellPrice));
 
@@ -78,21 +79,6 @@ public class FutSnippingPlayerTest {
 
 
 
-    }
-
-    private static void connectToAlreadyOpenedBrowser() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 60000;
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-blink-features=AutomationControlled");
-        options.addArguments("--remote-allow-origins=http://localhost:9222");
-        options.setExperimentalOption("debuggerAddress", "localhost:9222");
-
-        System.setProperty("webdriver.chrome.driver", "/Users/pandrushchak.appwell/Workspace/OtherProjects /magnificent-project-api/src/main/resources/chromedriver");
-        System.setProperty("webdriver.http.factory", "jdk-http-client");
-
-        ChromeDriver chromeDriver = new ChromeDriver(options);
-        WebDriverRunner.setWebDriver(chromeDriver);
     }
 
 

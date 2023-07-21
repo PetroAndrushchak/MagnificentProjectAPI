@@ -9,6 +9,7 @@ import com.petroandrushchak.fut.pages.helper.BrowserHelper;
 import com.petroandrushchak.helper.Waiter;
 import com.petroandrushchak.model.fut.SellPrices;
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -54,7 +55,9 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
     }
 
     public void clickBuyNowButton() {
+        log.info("Clicking buy now button");
         buyNowButton.click();
+        log.info("Buy now button clicked");
     }
 
     public SearchResultState buyDefaultSelectedItem() {
@@ -64,10 +67,14 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
     }
 
     public boolean buyNowConfirmationModalWindowsPresent() {
-        return buyNowConfirmationModal.is(visible);
+        log.info("Checking if buy now confirmation modal window is present");
+        var isPresent = buyNowConfirmationModal.is(visible);
+        log.info("Buy now confirmation modal window is present: {}", isPresent);
+        return isPresent;
     }
 
     public void clickOnButtonBuyNowModalWindow() {
+        log.info("Clicking on OK button on the buy now confirmation modal window");
         buyNowConfirmationModalOKButton.click();
     }
 

@@ -74,6 +74,7 @@ public class TransferMarketSteps {
                 break;
             }
         }
+        log.info("Search result: " + searchResult);
         if (searchResult.isPresent()) {
             return searchResult.get() == SearchResultState.ITEM_TO_BUY_FOUND;
         } else {

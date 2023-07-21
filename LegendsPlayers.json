@@ -1,0 +1,1868 @@
+[
+  {
+    "f": "Alan",
+    "id": 51,
+    "l": "Shearer",
+    "r": 91
+  },
+  {
+    "f": "Roy",
+    "id": 240,
+    "l": "Keane",
+    "r": 90
+  },
+  {
+    "f": "Paul",
+    "id": 246,
+    "l": "Scholes",
+    "r": 91
+  },
+  {
+    "f": "David",
+    "id": 250,
+    "l": "Beckham",
+    "r": 92
+  },
+  {
+    "f": "Sol",
+    "id": 388,
+    "l": "Campbell",
+    "r": 85
+  },
+  {
+    "f": "Christian",
+    "id": 942,
+    "l": "Vieri",
+    "r": 88
+  },
+  {
+    "c": "Rui Costa",
+    "f": "Rui Manuel",
+    "id": 1025,
+    "l": "César Costa",
+    "r": 90
+  },
+  {
+    "c": "Roberto Carlos",
+    "f": "Roberto Carlos",
+    "id": 1040,
+    "l": "da Silva Rocha",
+    "r": 88
+  },
+  {
+    "f": "Javier",
+    "id": 1041,
+    "l": "Zanetti",
+    "r": 92
+  },
+  {
+    "f": "Alessandro",
+    "id": 1075,
+    "l": "Del Piero",
+    "r": 90
+  },
+  {
+    "f": "Alessandro",
+    "id": 1088,
+    "l": "Nesta",
+    "r": 92
+  },
+  {
+    "f": "Paolo",
+    "id": 1109,
+    "l": "Maldini",
+    "r": 88
+  },
+  {
+    "f": "Roberto",
+    "id": 1114,
+    "l": "Baggio",
+    "r": 93
+  },
+  {
+    "f": "Marcel",
+    "id": 1116,
+    "l": "Desailly",
+    "r": 91
+  },
+  {
+    "f": "Fabio",
+    "id": 1183,
+    "l": "Cannavaro",
+    "r": 92
+  },
+  {
+    "f": "Gianfranco",
+    "id": 1201,
+    "l": "Zola",
+    "r": 90
+  },
+  {
+    "f": "Clarence",
+    "id": 1256,
+    "l": "Seedorf",
+    "r": 91
+  },
+  {
+    "f": "Zinedine",
+    "id": 1397,
+    "l": "Zidane",
+    "r": 96
+  },
+  {
+    "f": "Patrick",
+    "id": 1419,
+    "l": "Vieira",
+    "r": 88
+  },
+  {
+    "f": "Robert",
+    "id": 1605,
+    "l": "Pirès",
+    "r": 91
+  },
+  {
+    "f": "Emmanuel",
+    "id": 1620,
+    "l": "Petit",
+    "r": 90
+  },
+  {
+    "f": "Thierry",
+    "id": 1625,
+    "l": "Henry",
+    "r": 93
+  },
+  {
+    "f": "Claude",
+    "id": 1668,
+    "l": "Makélélé",
+    "r": 90
+  },
+  {
+    "f": "Michael",
+    "id": 3647,
+    "l": "Ballack",
+    "r": 91
+  },
+  {
+    "f": "Dennis",
+    "id": 4000,
+    "l": "Bergkamp",
+    "r": 90
+  },
+  {
+    "f": "Gennaro",
+    "id": 4202,
+    "l": "Gattuso",
+    "r": 87
+  },
+  {
+    "c": "Rivaldo",
+    "f": "Rivaldo Vítor",
+    "id": 4231,
+    "l": "Borba Ferreira",
+    "r": 92
+  },
+  {
+    "f": "Hristo",
+    "id": 4833,
+    "l": "Stoichkov",
+    "r": 92
+  },
+  {
+    "c": "Cafu",
+    "f": "Marcos",
+    "id": 5003,
+    "l": "de Morais",
+    "r": 93
+  },
+  {
+    "f": "Michael",
+    "id": 5419,
+    "l": "Owen",
+    "r": 91
+  },
+  {
+    "f": "Frank",
+    "id": 5471,
+    "l": "Lampard",
+    "r": 90
+  },
+  {
+    "c": "Casillas",
+    "f": "Iker",
+    "id": 5479,
+    "l": "Casillas Fernández",
+    "r": 92
+  },
+  {
+    "c": "Luís Figo",
+    "f": "Luís Filipe",
+    "id": 5589,
+    "l": "Madeira Caeiro Figo",
+    "r": 92
+  },
+  {
+    "f": "Jari",
+    "id": 5673,
+    "l": "Litmanen",
+    "r": 90
+  },
+  {
+    "f": "Patrick",
+    "id": 5680,
+    "l": "Kluivert",
+    "r": 86
+  },
+  {
+    "f": "David",
+    "id": 5984,
+    "l": "Trezeguet",
+    "r": 91
+  },
+  {
+    "f": "Pavel",
+    "id": 6235,
+    "l": "Nedvěd",
+    "r": 91
+  },
+  {
+    "f": "Rio",
+    "id": 7289,
+    "l": "Ferdinand",
+    "r": 90
+  },
+  {
+    "f": "Hernán",
+    "id": 7512,
+    "l": "Crespo",
+    "r": 90
+  },
+  {
+    "f": "Juan Sebastián",
+    "id": 7518,
+    "l": "Verón",
+    "r": 88
+  },
+  {
+    "f": "Andrea",
+    "id": 7763,
+    "l": "Pirlo",
+    "r": 92
+  },
+  {
+    "f": "Samuel",
+    "id": 9676,
+    "l": "Eto'o",
+    "r": 92
+  },
+  {
+    "f": "Ruud",
+    "id": 10264,
+    "l": "van Nistelrooy",
+    "r": 92
+  },
+  {
+    "c": "Xavi",
+    "f": "Xavier",
+    "id": 10535,
+    "l": "Hernández Creus",
+    "r": 93
+  },
+  {
+    "f": "Miroslav",
+    "id": 11141,
+    "l": "Klose",
+    "r": 87
+  },
+  {
+    "c": "Carles Puyol",
+    "f": "Carles",
+    "id": 13038,
+    "l": "Puyol Saforcada",
+    "r": 86
+  },
+  {
+    "f": "Andriy",
+    "id": 13128,
+    "l": "Shevchenko",
+    "r": 91
+  },
+  {
+    "f": "Steven",
+    "id": 13743,
+    "l": "Gerrard",
+    "r": 91
+  },
+  {
+    "f": "Juan Román",
+    "id": 23174,
+    "l": "Riquelme",
+    "r": 91
+  },
+  {
+    "c": "Ronaldinho",
+    "f": "Ronaldo",
+    "id": 28130,
+    "l": "de Assis Moreira",
+    "r": 94
+  },
+  {
+    "f": "Didier",
+    "id": 31432,
+    "l": "Drogba",
+    "r": 91
+  },
+  {
+    "f": "Ashley",
+    "id": 34079,
+    "l": "Cole",
+    "r": 89
+  },
+  {
+    "c": "Ronaldo",
+    "f": "Ronaldo Luís",
+    "id": 37576,
+    "l": "Nazário de Lima",
+    "r": 96
+  },
+  {
+    "c": "Xabi Alonso",
+    "f": "Xabier",
+    "id": 45197,
+    "l": "Alonso Olano",
+    "r": 90
+  },
+  {
+    "c": "Raúl",
+    "f": "Raúl",
+    "id": 45661,
+    "l": "González Blanco",
+    "r": 92
+  },
+  {
+    "f": "Michaël",
+    "id": 45674,
+    "l": "Essien",
+    "r": 90
+  },
+  {
+    "f": "Petr",
+    "id": 48940,
+    "l": "Čech",
+    "r": 91
+  },
+  {
+    "c": "Fernando Torres",
+    "f": "Fernando José",
+    "id": 49369,
+    "l": "Torres Sanz",
+    "r": 91
+  },
+  {
+    "f": "Edwin",
+    "id": 51539,
+    "l": "van der Sar",
+    "r": 91
+  },
+  {
+    "f": "Henrik",
+    "id": 52241,
+    "l": "Larsson",
+    "r": 87
+  },
+  {
+    "f": "Wayne",
+    "id": 54050,
+    "l": "Rooney",
+    "r": 91
+  },
+  {
+    "f": "Philipp",
+    "id": 121939,
+    "l": "Lahm",
+    "r": 91
+  },
+  {
+    "f": "Bastian",
+    "id": 121944,
+    "l": "Schweinsteiger",
+    "r": 91
+  },
+  {
+    "c": "Kaká",
+    "f": "Ricardo Izecson",
+    "id": 138449,
+    "l": "dos Santos Leite",
+    "r": 91
+  },
+  {
+    "f": "Nemanja",
+    "id": 140601,
+    "l": "Vidić",
+    "r": 90
+  },
+  {
+    "f": "Luis",
+    "id": 156353,
+    "l": "Hernández",
+    "r": 90
+  },
+  {
+    "c": "Fernando Hierro",
+    "f": "Fernando",
+    "id": 161840,
+    "l": "Hierro Ruiz",
+    "r": 91
+  },
+  {
+    "f": "Gheorghe",
+    "id": 166124,
+    "l": "Hagi",
+    "r": 91
+  },
+  {
+    "f": "Hugo",
+    "id": 166149,
+    "l": "Sánchez",
+    "r": 92
+  },
+  {
+    "f": "Franco",
+    "id": 166906,
+    "l": "Baresi",
+    "r": 93
+  },
+  {
+    "c": "Carlos Alberto",
+    "f": "Carlos Alberto",
+    "id": 167135,
+    "l": "Torres",
+    "r": 93
+  },
+  {
+    "f": "Eric",
+    "id": 167198,
+    "l": "Cantona",
+    "r": 93
+  },
+  {
+    "f": "Ronald",
+    "id": 167680,
+    "l": "Koeman",
+    "r": 91
+  },
+  {
+    "c": "Pelé",
+    "f": "Edson",
+    "id": 190043,
+    "l": "Arantes Nascimento",
+    "r": 91
+  },
+  {
+    "f": "Bobby",
+    "id": 190044,
+    "l": "Moore",
+    "r": 92
+  },
+  {
+    "f": "Johan",
+    "id": 190045,
+    "l": "Cruyff",
+    "r": 94
+  },
+  {
+    "c": "Sócrates",
+    "f": "Sócrates",
+    "id": 190046,
+    "l": "Vieira de Oliveira",
+    "r": 91
+  },
+  {
+    "f": "Gerd",
+    "id": 190048,
+    "l": "Müller",
+    "r": 94
+  },
+  {
+    "c": "Eusébio",
+    "f": "Eusébio",
+    "id": 190049,
+    "l": "da Silva Ferreira",
+    "r": 89
+  },
+  {
+    "f": "Peter",
+    "id": 190053,
+    "l": "Schmeichel",
+    "r": 90
+  },
+  {
+    "f": "Lothar",
+    "id": 191189,
+    "l": "Matthäus",
+    "r": 91
+  },
+  {
+    "c": "Emilio Butragueño",
+    "f": "Emilio",
+    "id": 191695,
+    "l": "Butragueño Santos",
+    "r": 92
+  },
+  {
+    "f": "Marco",
+    "id": 192181,
+    "l": "van Basten",
+    "r": 93
+  },
+  {
+    "f": "Frank",
+    "id": 214098,
+    "l": "Rijkaard",
+    "r": 90
+  },
+  {
+    "f": "Ruud",
+    "id": 214100,
+    "l": "Gullit",
+    "r": 93
+  },
+  {
+    "f": "Gary",
+    "id": 214267,
+    "l": "Lineker",
+    "r": 92
+  },
+  {
+    "f": "Davor",
+    "id": 214649,
+    "l": "Šuker",
+    "r": 90
+  },
+  {
+    "f": "Michael",
+    "id": 222000,
+    "l": "Laudrup",
+    "r": 91
+  },
+  {
+    "f": "Laurent",
+    "id": 222481,
+    "l": "Blanc",
+    "r": 85
+  },
+  {
+    "f": "George",
+    "id": 226764,
+    "l": "Best",
+    "r": 93
+  },
+  {
+    "f": "Thierry",
+    "id": 237062,
+    "l": "Henry",
+    "r": 87
+  },
+  {
+    "c": "Ronaldo",
+    "f": "Ronaldo Luís",
+    "id": 237063,
+    "l": "Nazário de Lima",
+    "r": 90
+  },
+  {
+    "c": "Ronaldo",
+    "f": "Ronaldo Luís",
+    "id": 237064,
+    "l": "Nazário de Lima",
+    "r": 94
+  },
+  {
+    "f": "Rio",
+    "id": 237065,
+    "l": "Ferdinand",
+    "r": 85
+  },
+  {
+    "f": "Rio",
+    "id": 237066,
+    "l": "Ferdinand",
+    "r": 88
+  },
+  {
+    "c": "Pelé",
+    "f": "Edson",
+    "id": 237067,
+    "l": "Arantes Nascimento",
+    "r": 98
+  },
+  {
+    "c": "Pelé",
+    "f": "Edson",
+    "id": 237068,
+    "l": "Arantes Nascimento",
+    "r": 95
+  },
+  {
+    "f": "Thierry",
+    "id": 237069,
+    "l": "Henry",
+    "r": 90
+  },
+  {
+    "c": "Roberto Carlos",
+    "f": "Roberto Carlos",
+    "id": 237071,
+    "l": "da Silva Rocha",
+    "r": 86
+  },
+  {
+    "f": "Juan Sebastián",
+    "id": 237603,
+    "l": "Verón",
+    "r": 86
+  },
+  {
+    "f": "Lev",
+    "id": 238193,
+    "l": "Yashin",
+    "r": 91
+  },
+  {
+    "f": "Lev",
+    "id": 238380,
+    "l": "Yashin",
+    "r": 94
+  },
+  {
+    "f": "Lev",
+    "id": 238381,
+    "l": "Yashin",
+    "r": 89
+  },
+  {
+    "f": "Alessandro",
+    "id": 238382,
+    "l": "Del Piero",
+    "r": 92
+  },
+  {
+    "f": "Alessandro",
+    "id": 238383,
+    "l": "Del Piero",
+    "r": 87
+  },
+  {
+    "c": "Carles Puyol",
+    "f": "Carles",
+    "id": 238384,
+    "l": "Puyol Saforcada",
+    "r": 92
+  },
+  {
+    "c": "Carles Puyol",
+    "f": "Carles",
+    "id": 238386,
+    "l": "Puyol Saforcada",
+    "r": 90
+  },
+  {
+    "f": "Dennis",
+    "id": 238387,
+    "l": "Bergkamp",
+    "r": 87
+  },
+  {
+    "f": "Dennis",
+    "id": 238388,
+    "l": "Bergkamp",
+    "r": 92
+  },
+  {
+    "c": "Ronaldinho",
+    "f": "Ronaldo",
+    "id": 238395,
+    "l": "de Assis Moreira",
+    "r": 91
+  },
+  {
+    "f": "Emmanuel",
+    "id": 238414,
+    "l": "Petit",
+    "r": 88
+  },
+  {
+    "f": "Emmanuel",
+    "id": 238415,
+    "l": "Petit",
+    "r": 85
+  },
+  {
+    "f": "Hernán",
+    "id": 238418,
+    "l": "Crespo",
+    "r": 87
+  },
+  {
+    "f": "Hernán",
+    "id": 238419,
+    "l": "Crespo",
+    "r": 85
+  },
+  {
+    "f": "Luis",
+    "id": 238420,
+    "l": "Hernández",
+    "r": 87
+  },
+  {
+    "f": "Luis",
+    "id": 238421,
+    "l": "Hernández",
+    "r": 85
+  },
+  {
+    "f": "Patrick",
+    "id": 238424,
+    "l": "Kluivert",
+    "r": 91
+  },
+  {
+    "f": "Patrick",
+    "id": 238425,
+    "l": "Kluivert",
+    "r": 88
+  },
+  {
+    "f": "Patrick",
+    "id": 238426,
+    "l": "Vieira",
+    "r": 86
+  },
+  {
+    "f": "Patrick",
+    "id": 238427,
+    "l": "Vieira",
+    "r": 91
+  },
+  {
+    "f": "Peter",
+    "id": 238428,
+    "l": "Schmeichel",
+    "r": 92
+  },
+  {
+    "f": "Peter",
+    "id": 238429,
+    "l": "Schmeichel",
+    "r": 86
+  },
+  {
+    "c": "Roberto Carlos",
+    "f": "Roberto Carlos",
+    "id": 238430,
+    "l": "da Silva Rocha",
+    "r": 91
+  },
+  {
+    "c": "Rui Costa",
+    "f": "Rui Manuel",
+    "id": 238431,
+    "l": "César Costa",
+    "r": 88
+  },
+  {
+    "c": "Rui Costa",
+    "f": "Rui Manuel",
+    "id": 238432,
+    "l": "César Costa",
+    "r": 85
+  },
+  {
+    "f": "Ruud",
+    "id": 238433,
+    "l": "Gullit",
+    "r": 86
+  },
+  {
+    "f": "Ruud",
+    "id": 238434,
+    "l": "Gullit",
+    "r": 90
+  },
+  {
+    "f": "Lothar",
+    "id": 238435,
+    "l": "Matthäus",
+    "r": 93
+  },
+  {
+    "f": "Lothar",
+    "id": 238436,
+    "l": "Matthäus",
+    "r": 88
+  },
+  {
+    "f": "George",
+    "id": 238437,
+    "l": "Best",
+    "r": 88
+  },
+  {
+    "f": "George",
+    "id": 238438,
+    "l": "Best",
+    "r": 90
+  },
+  {
+    "f": "Paolo",
+    "id": 238439,
+    "l": "Maldini",
+    "r": 94
+  },
+  {
+    "f": "Paolo",
+    "id": 238440,
+    "l": "Maldini",
+    "r": 92
+  },
+  {
+    "f": "Laurent",
+    "id": 238443,
+    "l": "Blanc",
+    "r": 91
+  },
+  {
+    "f": "Laurent",
+    "id": 238444,
+    "l": "Blanc",
+    "r": 89
+  },
+  {
+    "c": "Ronaldinho",
+    "f": "Ronaldo",
+    "id": 238706,
+    "l": "de Assis Moreira",
+    "r": 89
+  },
+  {
+    "f": "Marco",
+    "id": 239054,
+    "l": "van Basten",
+    "r": 89
+  },
+  {
+    "f": "Marco",
+    "id": 239055,
+    "l": "van Basten",
+    "r": 91
+  },
+  {
+    "f": "Gheorghe",
+    "id": 239056,
+    "l": "Hagi",
+    "r": 85
+  },
+  {
+    "f": "Gheorghe",
+    "id": 239057,
+    "l": "Hagi",
+    "r": 89
+  },
+  {
+    "f": "Michael",
+    "id": 239058,
+    "l": "Laudrup",
+    "r": 85
+  },
+  {
+    "f": "Michael",
+    "id": 239059,
+    "l": "Laudrup",
+    "r": 89
+  },
+  {
+    "f": "Edwin",
+    "id": 239060,
+    "l": "van der Sar",
+    "r": 87
+  },
+  {
+    "f": "Edwin",
+    "id": 239061,
+    "l": "van der Sar",
+    "r": 89
+  },
+  {
+    "f": "Alessandro",
+    "id": 239062,
+    "l": "Nesta",
+    "r": 90
+  },
+  {
+    "f": "Alessandro",
+    "id": 239063,
+    "l": "Nesta",
+    "r": 88
+  },
+  {
+    "f": "Fabio",
+    "id": 239064,
+    "l": "Cannavaro",
+    "r": 87
+  },
+  {
+    "f": "Fabio",
+    "id": 239065,
+    "l": "Cannavaro",
+    "r": 89
+  },
+  {
+    "c": "Fernando Hierro",
+    "f": "Fernando",
+    "id": 239067,
+    "l": "Hierro Ruiz",
+    "r": 86
+  },
+  {
+    "c": "Fernando Hierro",
+    "f": "Fernando",
+    "id": 239068,
+    "l": "Hierro Ruiz",
+    "r": 89
+  },
+  {
+    "f": "Robert",
+    "id": 239069,
+    "l": "Pirès",
+    "r": 88
+  },
+  {
+    "f": "Robert",
+    "id": 239070,
+    "l": "Pirès",
+    "r": 85
+  },
+  {
+    "c": "Luís Figo",
+    "f": "Luís Filipe",
+    "id": 239080,
+    "l": "Madeira Caeiro Figo",
+    "r": 90
+  },
+  {
+    "c": "Luís Figo",
+    "f": "Luís Filipe",
+    "id": 239081,
+    "l": "Madeira Caeiro Figo",
+    "r": 88
+  },
+  {
+    "f": "Michael",
+    "id": 239082,
+    "l": "Owen",
+    "r": 88
+  },
+  {
+    "f": "Michael",
+    "id": 239083,
+    "l": "Owen",
+    "r": 86
+  },
+  {
+    "f": "Gianfranco",
+    "id": 239110,
+    "l": "Zola",
+    "r": 85
+  },
+  {
+    "f": "Gianfranco",
+    "id": 239111,
+    "l": "Zola",
+    "r": 87
+  },
+  {
+    "f": "Jari",
+    "id": 239114,
+    "l": "Litmanen",
+    "r": 88
+  },
+  {
+    "f": "Jari",
+    "id": 239115,
+    "l": "Litmanen",
+    "r": 85
+  },
+  {
+    "f": "Henrik",
+    "id": 239261,
+    "l": "Larsson",
+    "r": 90
+  },
+  {
+    "f": "Henrik",
+    "id": 239262,
+    "l": "Larsson",
+    "r": 86
+  },
+  {
+    "f": "Andriy",
+    "id": 239419,
+    "l": "Shevchenko",
+    "r": 86
+  },
+  {
+    "f": "Andriy",
+    "id": 239420,
+    "l": "Shevchenko",
+    "r": 88
+  },
+  {
+    "f": "Frank",
+    "id": 239421,
+    "l": "Rijkaard",
+    "r": 88
+  },
+  {
+    "f": "Frank",
+    "id": 239422,
+    "l": "Rijkaard",
+    "r": 86
+  },
+  {
+    "f": "Javier",
+    "id": 239516,
+    "l": "Zanetti",
+    "r": 87
+  },
+  {
+    "f": "Javier",
+    "id": 239517,
+    "l": "Zanetti",
+    "r": 88
+  },
+  {
+    "f": "Christian",
+    "id": 239518,
+    "l": "Vieri",
+    "r": 86
+  },
+  {
+    "f": "Christian",
+    "id": 239519,
+    "l": "Vieri",
+    "r": 90
+  },
+  {
+    "f": "Gary",
+    "id": 239522,
+    "l": "Lineker",
+    "r": 89
+  },
+  {
+    "f": "Gary",
+    "id": 239524,
+    "l": "Lineker",
+    "r": 87
+  },
+  {
+    "f": "Marcel",
+    "id": 239525,
+    "l": "Desailly",
+    "r": 87
+  },
+  {
+    "f": "Marcel",
+    "id": 239526,
+    "l": "Desailly",
+    "r": 88
+  },
+  {
+    "f": "Franco",
+    "id": 239527,
+    "l": "Baresi",
+    "r": 88
+  },
+  {
+    "f": "Franco",
+    "id": 239528,
+    "l": "Baresi",
+    "r": 91
+  },
+  {
+    "f": "Bobby",
+    "id": 239530,
+    "l": "Moore",
+    "r": 87
+  },
+  {
+    "f": "Bobby",
+    "id": 239531,
+    "l": "Moore",
+    "r": 89
+  },
+  {
+    "f": "Ruud",
+    "id": 239532,
+    "l": "van Nistelrooy",
+    "r": 90
+  },
+  {
+    "f": "Ruud",
+    "id": 239533,
+    "l": "van Nistelrooy",
+    "r": 86
+  },
+  {
+    "f": "Pavel",
+    "id": 239535,
+    "l": "Nedvěd",
+    "r": 86
+  },
+  {
+    "f": "Paul",
+    "id": 239537,
+    "l": "Scholes",
+    "r": 89
+  },
+  {
+    "f": "Paul",
+    "id": 239539,
+    "l": "Scholes",
+    "r": 87
+  },
+  {
+    "f": "Hristo",
+    "id": 239541,
+    "l": "Stoichkov",
+    "r": 87
+  },
+  {
+    "f": "Hristo",
+    "id": 239542,
+    "l": "Stoichkov",
+    "r": 90
+  },
+  {
+    "f": "Alan",
+    "id": 239598,
+    "l": "Shearer",
+    "r": 89
+  },
+  {
+    "f": "Alan",
+    "id": 239599,
+    "l": "Shearer",
+    "r": 87
+  },
+  {
+    "f": "Roy",
+    "id": 239600,
+    "l": "Keane",
+    "r": 88
+  },
+  {
+    "f": "Roy",
+    "id": 239601,
+    "l": "Keane",
+    "r": 86
+  },
+  {
+    "f": "Pavel",
+    "id": 239602,
+    "l": "Nedvěd",
+    "r": 89
+  },
+  {
+    "c": "Emilio Butragueño",
+    "f": "Emilio",
+    "id": 239603,
+    "l": "Butragueño Santos",
+    "r": 87
+  },
+  {
+    "c": "Emilio Butragueño",
+    "f": "Emilio",
+    "id": 239604,
+    "l": "Butragueño Santos",
+    "r": 90
+  },
+  {
+    "f": "Miroslav",
+    "id": 242510,
+    "l": "Klose",
+    "r": 91
+  },
+  {
+    "f": "Miroslav",
+    "id": 242511,
+    "l": "Klose",
+    "r": 89
+  },
+  {
+    "c": "Sócrates",
+    "f": "Sócrates",
+    "id": 242517,
+    "l": "Vieira de Oliveira",
+    "r": 87
+  },
+  {
+    "c": "Sócrates",
+    "f": "Sócrates",
+    "id": 242518,
+    "l": "Vieira de Oliveira",
+    "r": 89
+  },
+  {
+    "c": "Eusébio",
+    "f": "Eusébio",
+    "id": 242519,
+    "l": "da Silva Ferreira",
+    "r": 93
+  },
+  {
+    "c": "Eusébio",
+    "f": "Eusébio",
+    "id": 242520,
+    "l": "da Silva Ferreira",
+    "r": 91
+  },
+  {
+    "f": "Johan",
+    "id": 242521,
+    "l": "Cruyff",
+    "r": 89
+  },
+  {
+    "f": "Johan",
+    "id": 242522,
+    "l": "Cruyff",
+    "r": 91
+  },
+  {
+    "f": "Claude",
+    "id": 242858,
+    "l": "Makélélé",
+    "r": 85
+  },
+  {
+    "f": "Claude",
+    "id": 242859,
+    "l": "Makélélé",
+    "r": 87
+  },
+  {
+    "f": "David",
+    "id": 242860,
+    "l": "Trezeguet",
+    "r": 89
+  },
+  {
+    "f": "David",
+    "id": 242861,
+    "l": "Trezeguet",
+    "r": 86
+  },
+  {
+    "f": "Clarence",
+    "id": 242927,
+    "l": "Seedorf",
+    "r": 88
+  },
+  {
+    "f": "Clarence",
+    "id": 242928,
+    "l": "Seedorf",
+    "r": 85
+  },
+  {
+    "f": "Frank",
+    "id": 242929,
+    "l": "Lampard",
+    "r": 86
+  },
+  {
+    "f": "Frank",
+    "id": 242930,
+    "l": "Lampard",
+    "r": 88
+  },
+  {
+    "f": "Steven",
+    "id": 242931,
+    "l": "Gerrard",
+    "r": 89
+  },
+  {
+    "f": "Steven",
+    "id": 242932,
+    "l": "Gerrard",
+    "r": 86
+  },
+  {
+    "c": "Raúl",
+    "f": "Raúl",
+    "id": 242939,
+    "l": "González Blanco",
+    "r": 88
+  },
+  {
+    "c": "Raúl",
+    "f": "Raúl",
+    "id": 242940,
+    "l": "González Blanco",
+    "r": 86
+  },
+  {
+    "c": "Rivaldo",
+    "f": "Rivaldo Vítor",
+    "id": 242950,
+    "l": "Borba Ferreira",
+    "r": 90
+  },
+  {
+    "c": "Rivaldo",
+    "f": "Rivaldo Vítor",
+    "id": 242951,
+    "l": "Borba Ferreira",
+    "r": 87
+  },
+  {
+    "f": "Juan Sebastián",
+    "id": 243027,
+    "l": "Verón",
+    "r": 90
+  },
+  {
+    "f": "Sol",
+    "id": 243028,
+    "l": "Campbell",
+    "r": 87
+  },
+  {
+    "f": "Sol",
+    "id": 243029,
+    "l": "Campbell",
+    "r": 89
+  },
+  {
+    "f": "Gennaro",
+    "id": 243030,
+    "l": "Gattuso",
+    "r": 89
+  },
+  {
+    "f": "Gennaro",
+    "id": 243031,
+    "l": "Gattuso",
+    "r": 85
+  },
+  {
+    "f": "Roberto",
+    "id": 243078,
+    "l": "Baggio",
+    "r": 91
+  },
+  {
+    "f": "Roberto",
+    "id": 243079,
+    "l": "Baggio",
+    "r": 89
+  },
+  {
+    "f": "Michael",
+    "id": 243783,
+    "l": "Ballack",
+    "r": 86
+  },
+  {
+    "f": "Michael",
+    "id": 243784,
+    "l": "Ballack",
+    "r": 89
+  },
+  {
+    "c": "Kaká",
+    "f": "Ricardo Izecson",
+    "id": 247074,
+    "l": "dos Santos Leite",
+    "r": 87
+  },
+  {
+    "c": "Kaká",
+    "f": "Ricardo Izecson",
+    "id": 247075,
+    "l": "dos Santos Leite",
+    "r": 89
+  },
+  {
+    "f": "Ronald",
+    "id": 247301,
+    "l": "Koeman",
+    "r": 88
+  },
+  {
+    "f": "Ronald",
+    "id": 247303,
+    "l": "Koeman",
+    "r": 85
+  },
+  {
+    "f": "Michaël",
+    "id": 247305,
+    "l": "Essien",
+    "r": 85
+  },
+  {
+    "f": "Michaël",
+    "id": 247307,
+    "l": "Essien",
+    "r": 87
+  },
+  {
+    "c": "Carlos Alberto",
+    "f": "Carlos Alberto",
+    "id": 247324,
+    "l": "Torres",
+    "r": 90
+  },
+  {
+    "c": "Carlos Alberto",
+    "f": "Carlos Alberto",
+    "id": 247327,
+    "l": "Torres",
+    "r": 87
+  },
+  {
+    "f": "John",
+    "id": 247514,
+    "l": "Barnes",
+    "r": 87
+  },
+  {
+    "f": "John",
+    "id": 247515,
+    "l": "Barnes",
+    "r": 89
+  },
+  {
+    "f": "John",
+    "id": 247517,
+    "l": "Barnes",
+    "r": 86
+  },
+  {
+    "f": "Hugo",
+    "id": 247547,
+    "l": "Sánchez",
+    "r": 89
+  },
+  {
+    "f": "Hugo",
+    "id": 247549,
+    "l": "Sánchez",
+    "r": 87
+  },
+  {
+    "c": "Garrincha",
+    "f": "Manuel",
+    "id": 247552,
+    "l": "Franc. dos Santos",
+    "r": 90
+  },
+  {
+    "c": "Garrincha",
+    "f": "Manuel",
+    "id": 247553,
+    "l": "Franc. dos Santos",
+    "r": 94
+  },
+  {
+    "c": "Garrincha",
+    "f": "Manuel",
+    "id": 247555,
+    "l": "Franc. dos Santos",
+    "r": 92
+  },
+  {
+    "f": "Andrea",
+    "id": 247614,
+    "l": "Pirlo",
+    "r": 90
+  },
+  {
+    "f": "Andrea",
+    "id": 247616,
+    "l": "Pirlo",
+    "r": 88
+  },
+  {
+    "f": "Didier",
+    "id": 247693,
+    "l": "Drogba",
+    "r": 87
+  },
+  {
+    "f": "Didier",
+    "id": 247695,
+    "l": "Drogba",
+    "r": 89
+  },
+  {
+    "f": "Kenny",
+    "id": 247699,
+    "l": "Dalglish",
+    "r": 92
+  },
+  {
+    "f": "Kenny",
+    "id": 247700,
+    "l": "Dalglish",
+    "r": 87
+  },
+  {
+    "f": "Kenny",
+    "id": 247701,
+    "l": "Dalglish",
+    "r": 90
+  },
+  {
+    "f": "Ian",
+    "id": 247703,
+    "l": "Rush",
+    "r": 91
+  },
+  {
+    "f": "Ian",
+    "id": 247704,
+    "l": "Rush",
+    "r": 87
+  },
+  {
+    "f": "Ian",
+    "id": 247706,
+    "l": "Rush",
+    "r": 89
+  },
+  {
+    "f": "Ian",
+    "id": 248146,
+    "l": "Wright",
+    "r": 89
+  },
+  {
+    "f": "Ian",
+    "id": 248154,
+    "l": "Wright",
+    "r": 85
+  },
+  {
+    "f": "Ian",
+    "id": 248155,
+    "l": "Wright",
+    "r": 87
+  },
+  {
+    "f": "Zinedine",
+    "id": 248449,
+    "l": "Zidane",
+    "r": 91
+  },
+  {
+    "f": "Zinedine",
+    "id": 248450,
+    "l": "Zidane",
+    "r": 94
+  },
+  {
+    "f": "Gianluca",
+    "id": 250889,
+    "l": "Zambrotta",
+    "r": 86
+  },
+  {
+    "f": "Gianluca",
+    "id": 250890,
+    "l": "Zambrotta",
+    "r": 89
+  },
+  {
+    "f": "Gianluca",
+    "id": 250891,
+    "l": "Zambrotta",
+    "r": 87
+  },
+  {
+    "f": "Juan Román",
+    "id": 254570,
+    "l": "Riquelme",
+    "r": 87
+  },
+  {
+    "f": "Juan Román",
+    "id": 254571,
+    "l": "Riquelme",
+    "r": 89
+  },
+  {
+    "f": "Ferenc",
+    "id": 254642,
+    "l": "Puskás",
+    "r": 94
+  },
+  {
+    "f": "Ashley",
+    "id": 255354,
+    "l": "Cole",
+    "r": 85
+  },
+  {
+    "f": "Ashley",
+    "id": 255355,
+    "l": "Cole",
+    "r": 87
+  },
+  {
+    "f": "Samuel",
+    "id": 255357,
+    "l": "Eto'o",
+    "r": 87
+  },
+  {
+    "f": "Samuel",
+    "id": 255358,
+    "l": "Eto'o",
+    "r": 90
+  },
+  {
+    "f": "Eric",
+    "id": 255476,
+    "l": "Cantona",
+    "r": 88
+  },
+  {
+    "f": "Eric",
+    "id": 255477,
+    "l": "Cantona",
+    "r": 90
+  },
+  {
+    "f": "Nemanja",
+    "id": 255757,
+    "l": "Vidić",
+    "r": 85
+  },
+  {
+    "f": "Nemanja",
+    "id": 255758,
+    "l": "Vidić",
+    "r": 88
+  },
+  {
+    "c": "Xavi",
+    "f": "Xavier",
+    "id": 255909,
+    "l": "Hernández Creus",
+    "r": 88
+  },
+  {
+    "c": "Xavi",
+    "f": "Xavier",
+    "id": 255910,
+    "l": "Hernández Creus",
+    "r": 90
+  },
+  {
+    "f": "Ferenc",
+    "id": 256013,
+    "l": "Puskás",
+    "r": 89
+  },
+  {
+    "f": "Ferenc",
+    "id": 256014,
+    "l": "Puskás",
+    "r": 92
+  },
+  {
+    "f": "Philipp",
+    "id": 256153,
+    "l": "Lahm",
+    "r": 87
+  },
+  {
+    "f": "Philipp",
+    "id": 256154,
+    "l": "Lahm",
+    "r": 89
+  },
+  {
+    "f": "Bastian",
+    "id": 256338,
+    "l": "Schweinsteiger",
+    "r": 87
+  },
+  {
+    "f": "Bastian",
+    "id": 256339,
+    "l": "Schweinsteiger",
+    "r": 89
+  },
+  {
+    "f": "Petr",
+    "id": 256431,
+    "l": "Čech",
+    "r": 86
+  },
+  {
+    "f": "Petr",
+    "id": 256432,
+    "l": "Čech",
+    "r": 88
+  },
+  {
+    "c": "Fernando Torres",
+    "f": "Fernando José",
+    "id": 256869,
+    "l": "Torres Sanz",
+    "r": 88
+  },
+  {
+    "c": "Fernando Torres",
+    "f": "Fernando José",
+    "id": 256870,
+    "l": "Torres Sanz",
+    "r": 85
+  },
+  {
+    "f": "Davor",
+    "id": 257416,
+    "l": "Šuker",
+    "r": 85
+  },
+  {
+    "f": "Davor",
+    "id": 257417,
+    "l": "Šuker",
+    "r": 87
+  },
+  {
+    "f": "David",
+    "id": 258778,
+    "l": "Beckham",
+    "r": 89
+  },
+  {
+    "f": "David",
+    "id": 258779,
+    "l": "Beckham",
+    "r": 87
+  },
+  {
+    "c": "Cafu",
+    "f": "Marcos",
+    "id": 260816,
+    "l": "de Morais",
+    "r": 88
+  },
+  {
+    "c": "Cafu",
+    "f": "Marcos",
+    "id": 260817,
+    "l": "de Morais",
+    "r": 90
+  },
+  {
+    "c": "Casillas",
+    "f": "Iker",
+    "id": 261394,
+    "l": "Casillas Fernández",
+    "r": 87
+  },
+  {
+    "c": "Casillas",
+    "f": "Iker",
+    "id": 261395,
+    "l": "Casillas Fernández",
+    "r": 89
+  },
+  {
+    "f": "Wayne",
+    "id": 261591,
+    "l": "Rooney",
+    "r": 88
+  },
+  {
+    "f": "Wayne",
+    "id": 261592,
+    "l": "Rooney",
+    "r": 86
+  },
+  {
+    "f": "Robin",
+    "id": 262110,
+    "l": "van Persie",
+    "r": 87
+  },
+  {
+    "f": "Robin",
+    "id": 262111,
+    "l": "van Persie",
+    "r": 89
+  },
+  {
+    "f": "Robin",
+    "id": 262112,
+    "l": "van Persie",
+    "r": 91
+  },
+  {
+    "f": "Gerd",
+    "id": 267896,
+    "l": "Müller",
+    "r": 89
+  },
+  {
+    "f": "Gerd",
+    "id": 267897,
+    "l": "Müller",
+    "r": 92
+  },
+  {
+    "c": "Jairzinho",
+    "f": "Jair",
+    "id": 268513,
+    "l": "Ventura Filho",
+    "r": 92
+  },
+  {
+    "c": "Jairzinho",
+    "f": "Jair",
+    "id": 268514,
+    "l": "Ventura Filho",
+    "r": 90
+  },
+  {
+    "c": "Jairzinho",
+    "f": "Jair",
+    "id": 268515,
+    "l": "Ventura Filho",
+    "r": 88
+  },
+  {
+    "c": "Xabi Alonso",
+    "f": "Xabier",
+    "id": 269600,
+    "l": "Alonso Olano",
+    "r": 87
+  },
+  {
+    "c": "Xabi Alonso",
+    "f": "Xabier",
+    "id": 269601,
+    "l": "Alonso Olano",
+    "r": 89
+  }
+]
