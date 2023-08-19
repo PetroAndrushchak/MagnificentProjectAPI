@@ -2,18 +2,11 @@ package com.petroandrushchak.steps;
 
 import com.petroandrushchak.futbin.models.FutBinPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
-import com.petroandrushchak.futbin.models.FutBinRawPlayer;
-import com.petroandrushchak.model.fut.FutPlayersAttributes;
+import com.petroandrushchak.model.domain.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
-import com.petroandrushchak.model.fut.Position;
 import com.petroandrushchak.model.fut.snipping.filters.*;
-import com.petroandrushchak.service.FutBinService;
-import com.petroandrushchak.service.FutClubService;
-import com.petroandrushchak.service.FutLeagueService;
-import com.petroandrushchak.service.FutNationService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

@@ -21,36 +21,37 @@ import static org.awaitility.Awaitility.await;
 @Component
 public class FUTAppLogInPage extends BasePage<FUTAppLogInPage> {
 
-   // private static final String PAGE_URL = "https://www.ea.com/fifa/ultimate-team/web-app/";
-   private static final String PAGE_URL = "https://www.google.com";
+    private static final String PAGE_URL = "https://www.ea.com/fifa/ultimate-team/web-app/";
+  // private static final String PAGE_URL = "https://www.google.com";
 
     SelenideElement logInButton = $(".call-to-action");
 
     //TODO Remove
-    @CloseBrowser
+   // @CloseBrowser
     public void openFUTLogInPage() {
         log.info("Opening Web App log in page ... ");
         Selenide.clearBrowserCookies();
         Selenide.open(PAGE_URL);
-        log.info("Waiting for 60 seconds ... ");
 
-        AtomicInteger i = new AtomicInteger();
-        await().atMost(Duration.ofSeconds(20))
-               .pollInSameThread()
-               .pollInterval(Duration.ofSeconds(5))
-               .until(() -> {
-                   if (Thread.currentThread().isInterrupted()) {
-                       log.info("Thread is interrupted ... ");
-                       return true;
-                   }
-                   log.info("Waiting for Log in button to be visible ... i = " + i.get());
-                   i.getAndIncrement();
-                   if (i.get() == 55) {
-                       return true;
-                   } else {
-                       return false;
-                   }
-               });
+//    This code is needed for the case when you interrupt the snipping process
+//        log.info("Waiting for 60 seconds ... ");
+//        AtomicInteger i = new AtomicInteger();
+//        await().atMost(Duration.ofSeconds(20))
+//               .pollInSameThread()
+//               .pollInterval(Duration.ofSeconds(5))
+//               .until(() -> {
+//                   if (Thread.currentThread().isInterrupted()) {
+//                       log.info("Thread is interrupted ... ");
+//                       return true;
+//                   }
+//                   log.info("Waiting for Log in button to be visible ... i = " + i.get());
+//                   i.getAndIncrement();
+//                   if (i.get() == 55) {
+//                       return true;
+//                   } else {
+//                       return false;
+//                   }
+//               });
         log.info("Waiting for Log in button to be visible ... ");
         logInButton.shouldBe(Condition.visible)
                    .shouldBe(Condition.interactable);

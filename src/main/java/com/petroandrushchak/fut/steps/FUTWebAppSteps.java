@@ -3,16 +3,13 @@ package com.petroandrushchak.fut.steps;
 import com.petroandrushchak.aop.CloseBrowser;
 import com.petroandrushchak.fut.pages.fut.FUTAppLogInPage;
 import com.petroandrushchak.fut.pages.helper.Page;
-import com.petroandrushchak.helper.Waiter;
-import com.petroandrushchak.model.fut.SnippingModel;
+import com.petroandrushchak.model.domain.SnippingModel;
 import com.petroandrushchak.process.BrowserProcessHelper;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.view.FutEaAccountView;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 

@@ -7,9 +7,8 @@ import com.petroandrushchak.fut.model.SearchResultState;
 import com.petroandrushchak.fut.pages.BasePage;
 import com.petroandrushchak.fut.pages.helper.BrowserHelper;
 import com.petroandrushchak.helper.Waiter;
-import com.petroandrushchak.model.fut.SellPrices;
+import com.petroandrushchak.model.domain.SellPrices;
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.By;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;

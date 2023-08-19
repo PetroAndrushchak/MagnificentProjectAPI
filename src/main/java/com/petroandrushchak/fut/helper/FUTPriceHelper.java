@@ -1,7 +1,7 @@
 package com.petroandrushchak.fut.helper;
 
-import com.petroandrushchak.model.fut.SellPrices;
-import com.petroandrushchak.model.fut.TransferMarketPrices;
+import com.petroandrushchak.model.domain.SellPrices;
+import com.petroandrushchak.model.domain.TransferMarketPrices;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

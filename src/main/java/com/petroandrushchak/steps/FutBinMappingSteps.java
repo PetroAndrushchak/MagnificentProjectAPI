@@ -4,7 +4,7 @@ import com.petroandrushchak.aop.RetryStep;
 import com.petroandrushchak.futbin.models.FutBinPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
 import com.petroandrushchak.futbin.models.FutBinRawPlayer;
-import com.petroandrushchak.model.fut.FutPlayersAttributes;
+import com.petroandrushchak.model.domain.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.Position;
 import com.petroandrushchak.model.fut.Quality;
 import com.petroandrushchak.model.fut.Rarity;
