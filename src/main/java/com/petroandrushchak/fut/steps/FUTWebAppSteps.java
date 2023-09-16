@@ -3,7 +3,7 @@ package com.petroandrushchak.fut.steps;
 import com.petroandrushchak.aop.CloseBrowser;
 import com.petroandrushchak.fut.pages.fut.FUTAppLogInPage;
 import com.petroandrushchak.fut.pages.helper.Page;
-import com.petroandrushchak.model.domain.SnippingModel;
+import com.petroandrushchak.fut.model.snipping.SnippingModel;
 import com.petroandrushchak.process.BrowserProcessHelper;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.view.FutEaAccountView;

@@ -1,4 +1,4 @@
-package com.petroandrushchak.model.domain;
+package com.petroandrushchak.fut.model;
 
 import com.petroandrushchak.model.fut.*;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.petroandrushchak.model.fut.snipping.filters;
+package com.petroandrushchak.fut.model.filters;
 
 import com.petroandrushchak.futbin.models.FutBinPlayer;
 import lombok.AllArgsConstructor;

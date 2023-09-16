@@ -8,7 +8,7 @@ import com.petroandrushchak.fut.exeptions.ItemCanNotBeFoundOnTheTransferMarket;
 import com.petroandrushchak.fut.exeptions.NotFoundException;
 import com.petroandrushchak.fut.pages.BasePage;
 import com.petroandrushchak.helper.Waiter;
-import com.petroandrushchak.model.domain.TransferMarketPrices;
+import com.petroandrushchak.fut.model.TransferMarketPrices;
 import com.petroandrushchak.model.fut.*;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;

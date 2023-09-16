@@ -5,7 +5,7 @@ import com.petroandrushchak.fut.pages.fut.FUTSearchResultPage;
 import com.petroandrushchak.fut.pages.fut.FUTSearchTransferMarketPage;
 import com.petroandrushchak.fut.steps.transfer.market.TransferMarketSteps;
 import com.petroandrushchak.helper.Waiter;
-import com.petroandrushchak.model.domain.SnippingModel;
+import com.petroandrushchak.fut.model.snipping.SnippingModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

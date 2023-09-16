@@ -1,8 +1,11 @@
 package com.petroandrushchak.service;
 
 import com.fasterxml.jackson.databind.MappingIterator;
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import com.petroandrushchak.futbin.models.FutBinNewRawPlayer;
 import com.petroandrushchak.futbin.models.FutBinRawPlayer;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Component;
@@ -12,6 +15,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 @Component
@@ -50,5 +54,16 @@ public class FutBinService {
                                                                .readValues(reader)) {
             return iterator.readAll();
         }
+    }
+
+    @SneakyThrows
+    public List<FutBinNewRawPlayer> parsePlayersFromJsonFile() {
+        JsonMapper jsonMapper = new JsonMapper();
+        TypeFactory typeFactory = jsonMapper.getTypeFactory();
+
+        List<FutBinNewRawPlayer> parsedPlayers = jsonMapper.readValue(Paths.get("/Users/pandrushchak.appwell/Workspace/MagnificentProjectAPI/players_data.json").toFile(), typeFactory.constructCollectionType(List.class, FutBinNewRawPlayer.class));
+
+        return parsedPlayers;
+
     }
 }

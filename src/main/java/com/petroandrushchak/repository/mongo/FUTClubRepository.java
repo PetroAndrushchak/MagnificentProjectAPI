@@ -2,7 +2,6 @@ package com.petroandrushchak.repository.mongo;
 
 
 import com.petroandrushchak.entity.mongo.FutEaDbClub;
-import com.petroandrushchak.entity.mongo.FutEaDbLeague;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;

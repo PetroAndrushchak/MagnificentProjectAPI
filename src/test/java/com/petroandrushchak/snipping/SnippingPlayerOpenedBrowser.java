@@ -1,13 +1,12 @@
 package com.petroandrushchak.snipping;
 
-import com.codeborne.selenide.WebDriverRunner;
 import com.petroandrushchak.fut.helper.FUTPriceHelper;
 import com.petroandrushchak.fut.pages.fut.FUTAppMainPage;
 import com.petroandrushchak.fut.pages.helper.Page;
 import com.petroandrushchak.fut.steps.FUTSnippingSteps;
 import com.petroandrushchak.fut.steps.FUTWebAppNavigationSteps;
-import com.petroandrushchak.model.domain.SnippingModel;
-import com.petroandrushchak.model.domain.SnippingResult;
+import com.petroandrushchak.fut.model.snipping.SnippingModel;
+import com.petroandrushchak.fut.model.snipping.SnippingResult;
 import com.petroandrushchak.model.fut.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -16,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.petroandrushchak.fut.helper.FUTPriceHelper.createSellPrices;
 import static com.petroandrushchak.service.LocalBrowserHelper.connectToAlreadyOpenedBrowser;
+import static com.petroandrushchak.service.LocalBrowserHelper.openTabWithUrlIfNotPresent;
 
 @Slf4j
 @SpringBootTest
@@ -28,21 +28,15 @@ public class SnippingPlayerOpenedBrowser {
     @Test
     void test() {
         connectToAlreadyOpenedBrowser();
+        openTabWithUrlIfNotPresent("https://www.ea.com/fifa/ultimate-team/web-app/");
 
-        var currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-        if (currentUrl.contains("fifa/ultimate-team/web-app/")) {
-            log.info("Current URL is {}", currentUrl);
-            WebDriverRunner.getWebDriver().navigate().refresh();
-        } else {
-            //TODO Implement Opening FutWeb App and log in if needed
-        }
 
         PlayerItem playerItem = new PlayerItem();
 
         playerItem.setPlayerName("Aymeric Laporte");
         playerItem.setRating(86);
 
-        long sellPrice = 8100;
+        long sellPrice = 4900;
 
         var searchPrices = FUTPriceHelper.createSearchPricesWithMaxBuyNowPrice(FUTPriceHelper.createPriceForSnippingFromSellPrice(sellPrice));
 
@@ -59,8 +53,6 @@ public class SnippingPlayerOpenedBrowser {
         snippingSteps.performSnipping(snippingModel);
 
         System.out.println("dfgdgdfg");
-
-
 
     }
 

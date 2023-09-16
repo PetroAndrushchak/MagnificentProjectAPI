@@ -1,12 +1,11 @@
 package com.petroandrushchak.snipping;
 
 import com.petroandrushchak.fut.helper.FUTPriceHelper;
-import com.petroandrushchak.fut.pages.webdriver.WebDriverManager;
 import com.petroandrushchak.fut.steps.FUTWebAppSteps;
 import com.petroandrushchak.fut.steps.LogInSteps;
-import com.petroandrushchak.model.domain.SnippingResult;
+import com.petroandrushchak.fut.model.snipping.SnippingResult;
 import com.petroandrushchak.model.fut.PlayerItem;
-import com.petroandrushchak.model.domain.SnippingModel;
+import com.petroandrushchak.fut.model.snipping.SnippingModel;
 import com.petroandrushchak.repository.mongo.FutWebCookiesItemRepository;
 
 import com.petroandrushchak.view.FutEaAccountView;

@@ -9,6 +9,8 @@ public class PlayerItem extends Item {
 
     String playerName;
 
+    //Add Players name from FUT DB. First and Last names. We have mismatch between FutBin and FUT Web App. Need to handle this.
+
     Integer rating;
     Long id;
 

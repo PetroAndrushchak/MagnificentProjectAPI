@@ -6,6 +6,7 @@ import com.petroandrushchak.model.fut.Rarity;
 import lombok.Data;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 @Data
 public class FutBinPlayer {
@@ -21,10 +22,15 @@ public class FutBinPlayer {
     Quality quality;
     Rarity rarity;
 
-    List<Position> positions;
+    List<Position> mainPositions;
+    List<Position> otherPositions;
 
     public boolean isPlayerHasPosition(Position position) {
-        return positions.contains(position);
+        return getAllPositions().contains(position);
+    }
+
+    public List<Position> getAllPositions() {
+        return Stream.of(mainPositions, otherPositions).flatMap(List::stream).distinct().toList();
     }
 
     long price;

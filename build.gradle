@@ -43,6 +43,8 @@ dependencies {
     testAnnotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.4.2.Final'
 
     implementation group: 'com.codeborne', name: 'selenide', version: '6.17.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-http-jdk-client', version: '4.8.1'
+
 
     implementation group: 'org.jsoup', name: 'jsoup', version: '1.15.4'
 

@@ -1,7 +1,7 @@
 package com.petroandrushchak.fut.helper;
 
-import com.petroandrushchak.model.domain.SellPrices;
-import com.petroandrushchak.model.domain.TransferMarketPrices;
+import com.petroandrushchak.fut.model.SellPrices;
+import com.petroandrushchak.fut.model.TransferMarketPrices;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -35,11 +35,7 @@ public class FUTPriceHelper {
         return new SellPrices(startBidPrice, buyNowPrice);
     }
 
-    private static long getReducedPrice(long price) {
-        return price - getStepAmount(price);
-    }
-
-    private static TransferMarketPrices createSearchPrices() {
+    public static TransferMarketPrices createSearchPrices() {
         TransferMarketPrices prices = TransferMarketPrices.emptyPrices();
         prices.setMinBidPrice(MAX_MIN_BID_PRICE);
         prices.setMinBuyNowPrice(MAX_MIN_BUY_NOW_PRICE);
@@ -83,6 +79,22 @@ public class FUTPriceHelper {
         return minPrice - PRICE_STEP;
     }
 
+    public static long getIncreasedPrice(long price) {
+        return price + getStepAmount(price);
+    }
+
+    public static long getIncreasedSignificantlyPrice(long price) {
+        return price + getSignificantStepAmount(price);
+    }
+
+    public static long getReducedSignificantlyPrice(long price) {
+        return price - getSignificantStepAmount(price);
+    }
+
+    public static long getReducedPrice(long price) {
+        return price - getStepAmount(price);
+    }
+
     private static long getRoundedPrice(long price) {
         long step = getStepAmount(price);
         long division = (price % step);
@@ -111,6 +123,19 @@ public class FUTPriceHelper {
         }
     }
 
+    private static long getSignificantStepAmount(long price) {
+        if (price <= 1_000_000 && price > 100_000) {
+            return 50_000;
+        } else if (price <= 100000 && price > 50000) {
+            return 5000;
+        } else if (price <= 50000 && price > 10000) {
+            return 2500;
+        } else if (price <= 10000 && price > 1000) {
+            return 1000;
+        } else {
+            return 50;
+        }
+    }
     //TODO Make it as a Config
     private static long getIncomePrice(long price) {
         if (price <= 10000000 && price > 500000) {

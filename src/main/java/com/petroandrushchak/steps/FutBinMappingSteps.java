@@ -1,10 +1,11 @@
 package com.petroandrushchak.steps;
 
 import com.petroandrushchak.aop.RetryStep;
+import com.petroandrushchak.fut.model.statistic.PlayerCsvStatisticItem;
+import com.petroandrushchak.futbin.models.FutBinNewRawPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
-import com.petroandrushchak.futbin.models.FutBinRawPlayer;
-import com.petroandrushchak.model.domain.FutPlayersAttributes;
+import com.petroandrushchak.fut.model.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.Position;
 import com.petroandrushchak.model.fut.Quality;
 import com.petroandrushchak.model.fut.Rarity;
@@ -56,8 +57,21 @@ public class FutBinMappingSteps {
         return playersAttributes;
     }
 
+    public List<PlayerCsvStatisticItem> mapFutBinPlayersToCsvStatisticItems(List<FutBinPlayer> futBinPlayers) {
+        return futBinPlayers.stream().map(futBinPlayer -> {
+                    PlayerCsvStatisticItem playerCsvStatisticItem = new PlayerCsvStatisticItem();
+                    var league = futLeagueService.getLeagueById(Math.toIntExact(futBinPlayer.getLeagueId()));
+                    playerCsvStatisticItem.setLeagueName(league.getLeagueShortAbbreviation());
+                    playerCsvStatisticItem.setPlayerName(futBinPlayer.getPlayerName());
+                    playerCsvStatisticItem.setPlayerRating(futBinPlayer.getRating());
+                    playerCsvStatisticItem.setPlayerId(futBinPlayer.getId());
+                    playerCsvStatisticItem.setPossibleSellPrice(futBinPlayer.getPrice());
+                    return playerCsvStatisticItem;
+                }
+        ).toList();
+    }
 
-    public List<FutBinPlayer> mapRawPlayersToPlayers(List<FutBinRawPlayer> rawPlayers) {
+    public List<FutBinPlayer> mapNewRawPlayersToPlayers(List<FutBinNewRawPlayer> rawPlayers) {
 
         var futBinPlayers = new ArrayList<FutBinPlayer>();
 
@@ -72,13 +86,16 @@ public class FutBinMappingSteps {
             futBinPlayer.setNationId(Long.parseLong(rawPlayer.getNationId()));
             futBinPlayer.setLeagueId(Long.parseLong(rawPlayer.getLeagueId()));
 
-            var qualityRarityPair = getPlayerQualityAndRarity(rawPlayer.getQualityAndRarity());
+            var qualityRarityPair = getPlayerQualityAndRarity(String.join(" ", rawPlayer.getQualityAndRarity()));
 
             futBinPlayer.setQuality(qualityRarityPair.getLeft());
             futBinPlayer.setRarity(qualityRarityPair.getRight());
 
-            var positions = getPositions(rawPlayer.getPositions());
-            futBinPlayer.setPositions(positions);
+            var mainPositions = getPositions(rawPlayer.getMainPosition());
+            futBinPlayer.setMainPositions(mainPositions);
+
+            var positions = getPositions(rawPlayer.getOtherPositions());
+            futBinPlayer.setOtherPositions(positions);
 
             var price = parsePrice(rawPlayer.getPriceText());
             futBinPlayer.setPrice(price);
@@ -95,7 +112,7 @@ public class FutBinMappingSteps {
         if (input == null || input.isEmpty()) {
             return 0;
         }
-
+        input = input.trim();
         long multiplier = 1;
         char lastChar = input.charAt(input.length() - 1);
 
@@ -117,6 +134,10 @@ public class FutBinMappingSteps {
     private List<Position> getPositions(List<String> positions) {
         var positionsList = new ArrayList<Position>();
 
+        if (positions == null || positions.isEmpty()) {
+            return positionsList;
+        }
+
         positions.forEach(position -> {
             var foundPosition = Position.fromKey(position);
             positionsList.add(foundPosition);
@@ -130,6 +151,23 @@ public class FutBinMappingSteps {
             }
 
         });
+
+        return positionsList;
+    }
+
+    private List<Position> getPositions(String position) {
+        var positionsList = new ArrayList<Position>();
+
+        var foundPosition = Position.fromKey(position);
+        positionsList.add(foundPosition);
+
+        if (foundPosition.isAttacker() && !positionsList.contains(Position.ATTACKERS)) {
+            positionsList.add(Position.ATTACKERS);
+        } else if (foundPosition.isMidfielder() && !positionsList.contains(Position.MIDFIELDERS)) {
+            positionsList.add(Position.MIDFIELDERS);
+        } else if (foundPosition.isDefender() && !positionsList.contains(Position.DEFENDERS)) {
+            positionsList.add(Position.DEFENDERS);
+        }
 
         return positionsList;
     }

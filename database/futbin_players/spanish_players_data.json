@@ -1,0 +1,5831 @@
+[
+  {
+    "id": "26261",
+    "name": "Karim Benzema",
+    "rating": "91",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CF",
+    "otherPositions": [
+      "ST"
+    ],
+    "priceText": "0 "
+  },
+  {
+    "id": "26262",
+    "name": "Robert Lewandowski",
+    "rating": "91",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "37",
+    "nationName": "Poland",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "23K "
+  },
+  {
+    "id": "26269",
+    "name": "Thibaut Courtois",
+    "rating": "90",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "7",
+    "nationName": "Belgium",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "15.75K "
+  },
+  {
+    "id": "26280",
+    "name": "Jan Oblak",
+    "rating": "89",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "44",
+    "nationName": "Slovenia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "21K "
+  },
+  {
+    "id": "26282",
+    "name": "Toni Kroos",
+    "rating": "88",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "21",
+    "nationName": "Germany",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "8K "
+  },
+  {
+    "id": "26385",
+    "name": "ter Stegen",
+    "rating": "88",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "21",
+    "nationName": "Germany",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "7.3K "
+  },
+  {
+    "id": "26386",
+    "name": "Luka Modric",
+    "rating": "88",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "10",
+    "nationName": "Croatia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "26383",
+    "name": "Frenkie de Jong",
+    "rating": "87",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "26384",
+    "name": "Antonio R\u00fcdiger",
+    "rating": "87",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "21",
+    "nationName": "Germany",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "26295",
+    "name": "Vin\u00edcius J\u00fanior",
+    "rating": "86",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM"
+    ],
+    "priceText": "7.8K "
+  },
+  {
+    "id": "26381",
+    "name": "David Alaba",
+    "rating": "86",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "4",
+    "nationName": "Austria",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "26382",
+    "name": "Parejo",
+    "rating": "86",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "5.2K "
+  },
+  {
+    "id": "26297",
+    "name": "Pedri",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "3.5K "
+  },
+  {
+    "id": "26374",
+    "name": "Marcos Acu\u00f1a",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "2.7K "
+  },
+  {
+    "id": "26375",
+    "name": "Yannick Carrasco",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "7",
+    "nationName": "Belgium",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "LW"
+    ],
+    "priceText": "2.7K "
+  },
+  {
+    "id": "26376",
+    "name": "Sergio Busquets",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": null,
+    "priceText": "10K "
+  },
+  {
+    "id": "26377",
+    "name": "Nabil Fekir",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": null,
+    "priceText": "9.5K "
+  },
+  {
+    "id": "26378",
+    "name": "Memphis Depay",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CF",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "20K "
+  },
+  {
+    "id": "26379",
+    "name": "Iago Aspas",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "2.5K "
+  },
+  {
+    "id": "26380",
+    "name": "Gerard Moreno",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "2.4K "
+  },
+  {
+    "id": "26389",
+    "name": "Jordi Alba Ramos",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "2.8K "
+  },
+  {
+    "id": "51274",
+    "name": "Memphis Depay",
+    "rating": "85",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CF",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "2.6K "
+  },
+  {
+    "id": "26300",
+    "name": "Jo\u00e3o F\u00e9lix",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CF",
+    "otherPositions": [
+      "ST"
+    ],
+    "priceText": "10K "
+  },
+  {
+    "id": "26301",
+    "name": "Federico Valverde",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "10K "
+  },
+  {
+    "id": "26373",
+    "name": "Jules Kound\u00e9",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "8.5K "
+  },
+  {
+    "id": "26387",
+    "name": "Yassine Bounou",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "129",
+    "nationName": "Morocco",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "1.8K "
+  },
+  {
+    "id": "26390",
+    "name": "\u00c9der Milit\u00e3o",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "9.7K "
+  },
+  {
+    "id": "26391",
+    "name": "Carvajal",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "5.3K "
+  },
+  {
+    "id": "26392",
+    "name": "Stefan Savi\u0107",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "15",
+    "nationName": "Montenegro",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "1.4K "
+  },
+  {
+    "id": "26432",
+    "name": "Eden Hazard",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "7",
+    "nationName": "Belgium",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM"
+    ],
+    "priceText": "9.2K "
+  },
+  {
+    "id": "26760",
+    "name": "Oyarzabal",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "1.4K "
+  },
+  {
+    "id": "26761",
+    "name": "Marcos Llorente",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "RB",
+      "RM"
+    ],
+    "priceText": "9.8K "
+  },
+  {
+    "id": "26762",
+    "name": "Kessi\u00e9",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "108",
+    "nationName": "C\u00f4te d'Ivoire",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "2.4K "
+  },
+  {
+    "id": "26763",
+    "name": "De Paul",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "1.7K "
+  },
+  {
+    "id": "26765",
+    "name": "Canales",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "CM",
+      "LM",
+      "RW"
+    ],
+    "priceText": "1.5K "
+  },
+  {
+    "id": "26770",
+    "name": "Muniain",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "CAM",
+      "LW"
+    ],
+    "priceText": "2K "
+  },
+  {
+    "id": "26777",
+    "name": "Alejandro G\u00f3mez",
+    "rating": "84",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "LW"
+    ],
+    "priceText": "6.3K "
+  },
+  {
+    "id": "26388",
+    "name": "Unai Sim\u00f3n",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "850 "
+  },
+  {
+    "id": "26393",
+    "name": "Jes\u00fas Navas",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "1K "
+  },
+  {
+    "id": "26394",
+    "name": "Pau Torres",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "900 "
+  },
+  {
+    "id": "26434",
+    "name": "Ferland Mendy",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "4.5K "
+  },
+  {
+    "id": "26437",
+    "name": "Marco Asensio",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "1K "
+  },
+  {
+    "id": "26507",
+    "name": "Ousmane Demb\u00e9l\u00e9",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "8.2K "
+  },
+  {
+    "id": "26729",
+    "name": "David Silva",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "850 "
+  },
+  {
+    "id": "26778",
+    "name": "Merino",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "950 "
+  },
+  {
+    "id": "26779",
+    "name": "\u00c1ngel Correa",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "RM",
+      "CF"
+    ],
+    "priceText": "1.9K "
+  },
+  {
+    "id": "26780",
+    "name": "Raphinha",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "1.5K "
+  },
+  {
+    "id": "26781",
+    "name": "Antoine Griezmann",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF",
+      "RW"
+    ],
+    "priceText": "6.5K "
+  },
+  {
+    "id": "26782",
+    "name": "Thomas Lemar",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "RM",
+      "LM"
+    ],
+    "priceText": "900 "
+  },
+  {
+    "id": "26783",
+    "name": "Jorge Resurrecci\u00f3n",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "900 "
+  },
+  {
+    "id": "26787",
+    "name": "De Tom\u00e1s",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "0 "
+  },
+  {
+    "id": "26789",
+    "name": "Ronald Araujo",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "RB"
+    ],
+    "priceText": "4.1K "
+  },
+  {
+    "id": "26794",
+    "name": "Gerard Piqu\u00e9",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "26795",
+    "name": "Fernando Reges",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CB"
+    ],
+    "priceText": "850 "
+  },
+  {
+    "id": "26800",
+    "name": "Gim\u00e9nez",
+    "rating": "83",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "900 "
+  },
+  {
+    "id": "26438",
+    "name": "Aur\u00e9lien Tchouam\u00e9ni",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26440",
+    "name": "Nacho Fern\u00e1ndez",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26748",
+    "name": "Isco",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "CM",
+      "LW"
+    ],
+    "priceText": "0 "
+  },
+  {
+    "id": "26804",
+    "name": "Sergi Darder",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "CAM"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26805",
+    "name": "Geoffrey Kondogbia",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "105",
+    "nationName": "Central African Republic",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CB",
+      "CDM"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26812",
+    "name": "Yuri Berchiche",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "850 "
+  },
+  {
+    "id": "26814",
+    "name": "Gabriel Paulista",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26819",
+    "name": "I\u00f1igo Mart\u00ednez",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26821",
+    "name": "Ger\u00f3nimo Rulli",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "10K "
+  },
+  {
+    "id": "26822",
+    "name": "Ivan Rakiti\u0107",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "10",
+    "nationName": "Croatia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26824",
+    "name": "Ferr\u00e1n Torres",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM",
+      "ST"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26829",
+    "name": "Arnaut Danjuma",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "0 "
+  },
+  {
+    "id": "26832",
+    "name": "Gay\u00e0",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "750 "
+  },
+  {
+    "id": "26834",
+    "name": "\u00c1lex Remiro",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26841",
+    "name": "David Soria",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26843",
+    "name": "Andreas Christensen",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "13",
+    "nationName": "Denmark",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "750 "
+  },
+  {
+    "id": "26845",
+    "name": "Aritz Elustondo",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "RB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26847",
+    "name": "Ra\u00fal Albiol",
+    "rating": "82",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "600 "
+  },
+  {
+    "id": "26399",
+    "name": "Rodrygo",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "10K "
+  },
+  {
+    "id": "26442",
+    "name": "Lucas V\u00e1zquez",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "RW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26519",
+    "name": "Jes\u00fas Corona",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "83",
+    "nationName": "Mexico",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM",
+      "LW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26750",
+    "name": "I\u00f1aki Williams",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "117",
+    "nationName": "Ghana",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26860",
+    "name": "Thomas Delaney",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "13",
+    "nationName": "Denmark",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "9.8K "
+  },
+  {
+    "id": "26861",
+    "name": "Giovani Lo Celso",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CAM",
+      "ST"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26876",
+    "name": "Matheus Cunha",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "LM",
+      "CAM",
+      "CF"
+    ],
+    "priceText": "7.5K "
+  },
+  {
+    "id": "26899",
+    "name": "Borja Iglesias",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "26904",
+    "name": "Felipe",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "7K "
+  },
+  {
+    "id": "26906",
+    "name": "Guido Rodr\u00edguez",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "26907",
+    "name": "Robin Le Normand",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "1.8K "
+  },
+  {
+    "id": "51264",
+    "name": "Lucas Ocampos",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "1K "
+  },
+  {
+    "id": "51808",
+    "name": "Cavani",
+    "rating": "81",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26910",
+    "name": "Sa\u00fal",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "LM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26911",
+    "name": "Mario Hermoso",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26915",
+    "name": "Francis Coquelin",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "LM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26925",
+    "name": "\u00c1lex Berenguer",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "26930",
+    "name": "Alex Telles",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "26933",
+    "name": "Morales",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26937",
+    "name": "Etienne Capoue",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "26941",
+    "name": "Joan Jord\u00e1n",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "700 "
+  },
+  {
+    "id": "26946",
+    "name": "Ra\u00fal Garc\u00eda",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "26947",
+    "name": "\u00c1lex Moreno",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "7.2K "
+  },
+  {
+    "id": "26956",
+    "name": "Morata",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26960",
+    "name": "Mauro Arambarri",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "26961",
+    "name": "Yeray",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "26963",
+    "name": "Sergi Roberto",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "CM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26967",
+    "name": "Reguil\u00f3n",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LWB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26970",
+    "name": "Ledesma",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "26975",
+    "name": "Edgar Badia",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "26977",
+    "name": "Javi Gal\u00e1n",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "26984",
+    "name": "Youssef En-Nesyri",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "129",
+    "nationName": "Morocco",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "26985",
+    "name": "Marko Dmitrovi\u0107",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "51",
+    "nationName": "Serbia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "26991",
+    "name": "Rui Silva",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "550 "
+  },
+  {
+    "id": "26993",
+    "name": "William Carvalho",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "26996",
+    "name": "Joselu",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "550 "
+  },
+  {
+    "id": "51324",
+    "name": "Viktor Tsygankov",
+    "rating": "80",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "49",
+    "nationName": "Ukraine",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW"
+    ],
+    "priceText": "650 "
+  },
+  {
+    "id": "26397",
+    "name": "Anssumane Fati",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "26404",
+    "name": "Yeremy Pino",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW",
+      "ST"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "26405",
+    "name": "P\u00e1ez Gavira",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "RW",
+      "LW"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "26406",
+    "name": "Camavinga",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27004",
+    "name": "\u00d3scar Trejo",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": null,
+    "priceText": "700 "
+  },
+  {
+    "id": "27015",
+    "name": "Ezequiel \u00c1vila",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "RM",
+      "CF"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27019",
+    "name": "Erik Lamela",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM",
+      "CAM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27021",
+    "name": "Luis Milla",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27025",
+    "name": "Ander Herrera",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27029",
+    "name": "Renato Tapia",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "59",
+    "nationName": "Peru",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27034",
+    "name": "Rafa Mir",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27040",
+    "name": "Nemanja Gudelj",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "51",
+    "nationName": "Serbia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27042",
+    "name": "Sergio Asenjo",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "27046",
+    "name": "Agust\u00edn Marches\u00edn",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27048",
+    "name": "Gonzalo Montiel",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27054",
+    "name": "Nemanja Maksimovi\u0107",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "51",
+    "nationName": "Serbia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27056",
+    "name": "Denis Su\u00e1rez",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "4.8K "
+  },
+  {
+    "id": "27057",
+    "name": "Munir",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "129",
+    "nationName": "Morocco",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM",
+      "RW",
+      "ST"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27061",
+    "name": "Marc\u00e3o",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "700 "
+  },
+  {
+    "id": "27069",
+    "name": "Zubimendi",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27076",
+    "name": "Samuel Chukwueze",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "133",
+    "nationName": "Nigeria",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27080",
+    "name": "Manu Trigueros",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "RM",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27081",
+    "name": "Reinildo",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "130",
+    "nationName": "Mozambique",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "CB",
+      "LWB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27083",
+    "name": "Fran Beltr\u00e1n",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27086",
+    "name": "Rub\u00e9n Garc\u00eda",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27087",
+    "name": "Dakonam Djen\u00e9",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "144",
+    "nationName": "Togo",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27093",
+    "name": "Luiz Felipe",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "27",
+    "nationName": "Italy",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "700 "
+  },
+  {
+    "id": "27094",
+    "name": "David Garc\u00eda",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27095",
+    "name": "Diego L\u00f3pez",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "27096",
+    "name": "Suso",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27102",
+    "name": "Joaqu\u00edn",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27105",
+    "name": "Axel Witsel",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "7",
+    "nationName": "Belgium",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27108",
+    "name": "H\u00e9ctor Beller\u00edn",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "5.8K "
+  },
+  {
+    "id": "27110",
+    "name": "Juanmi",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "ST",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27111",
+    "name": "Juan Foyth",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "CB",
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27117",
+    "name": "Unai N\u00fa\u00f1ez",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "37935",
+    "name": "Marcos Alonso Mendoza",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LWB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "550 "
+  },
+  {
+    "id": "51897",
+    "name": "Denis Su\u00e1rez",
+    "rating": "79",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "26441",
+    "name": "Odriozola",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "850 "
+  },
+  {
+    "id": "27121",
+    "name": "Zubeldia",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27131",
+    "name": "Portu",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27145",
+    "name": "Puado",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "ST",
+      "LW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27150",
+    "name": "Pedraza",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "27151",
+    "name": "Claudio Bravo",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "55",
+    "nationName": "Chile",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27159",
+    "name": "Alfonso Espino",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27170",
+    "name": "A\u00efssa Mandi",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "97",
+    "nationName": "Algeria",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27185",
+    "name": "Nahuel Molina",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RWB",
+    "otherPositions": [
+      "RB",
+      "RM"
+    ],
+    "priceText": "1K "
+  },
+  {
+    "id": "27186",
+    "name": "Rub\u00e9n Pe\u00f1a",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "LB",
+      "RM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "27187",
+    "name": "Lucas P\u00e9rez",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "9.3K "
+  },
+  {
+    "id": "27189",
+    "name": "Enes \u00dcnal",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "48",
+    "nationName": "Turkey",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27193",
+    "name": "Franco Cervi",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "LW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27200",
+    "name": "Willian Jos\u00e9",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "27205",
+    "name": "Sergio Herrera",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27208",
+    "name": "Stole Dimitrievski",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "19",
+    "nationName": "FYR Macedonia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27212",
+    "name": "Pacheco",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "2.1K "
+  },
+  {
+    "id": "27214",
+    "name": "Pablo Maffeo",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27233",
+    "name": "\u00d3liver Torres",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "LW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27239",
+    "name": "Predrag Rajkovi\u0107",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "51",
+    "nationName": "Serbia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27244",
+    "name": "V\u00edctor Ruiz Torre",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27245",
+    "name": "Joseph Aidoo",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "117",
+    "nationName": "Ghana",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "700 "
+  },
+  {
+    "id": "27250",
+    "name": "Oriol Romeu Vidal",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51807",
+    "name": "Montes",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "83",
+    "nationName": "Mexico",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "51900",
+    "name": "Pacheco",
+    "rating": "78",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "26316",
+    "name": "Hugo Duro",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "LM",
+      "CF"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "26439",
+    "name": "Dani Ceballos",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "1K "
+  },
+  {
+    "id": "27280",
+    "name": "Capa",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27286",
+    "name": "Lucas Boy\u00e9",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27287",
+    "name": "Unai Vencedor",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27292",
+    "name": "Cristhian Stuani",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27297",
+    "name": "Andr\u00e9s Guardado",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "83",
+    "nationName": "Mexico",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27298",
+    "name": "Valentin Castellanos",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27302",
+    "name": "Johan Mojica",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "56",
+    "nationName": "Colombia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27313",
+    "name": "Alberto Moreno",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "27317",
+    "name": "Giorgi Mamardashvili",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "20",
+    "nationName": "Georgia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27321",
+    "name": "De Marcos",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27323",
+    "name": "Gonzalo Plata",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "57",
+    "nationName": "Ecuador",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27326",
+    "name": "Dami\u00e1n Su\u00e1rez",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27331",
+    "name": "Fidel",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "LWB",
+      "CM",
+      "LW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27332",
+    "name": "Brais M\u00e9ndez",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "RW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27334",
+    "name": "Pepe Reina",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "483",
+    "clubName": "Villarreal CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27339",
+    "name": "Aitor Fern\u00e1ndez",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27342",
+    "name": "Isi",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "CAM",
+      "RW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27346",
+    "name": "Umar Sadiq",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "133",
+    "nationName": "Nigeria",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27353",
+    "name": "Florian Lejeune",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "450 "
+  },
+  {
+    "id": "27363",
+    "name": "Benjamin Lecomte",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "0 "
+  },
+  {
+    "id": "27368",
+    "name": "Asier Illarramendi",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27370",
+    "name": "Kasper Dolberg",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "13",
+    "nationName": "Denmark",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "9.2K "
+  },
+  {
+    "id": "27375",
+    "name": "Karim Rekik",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "27382",
+    "name": "Dyego Sousa",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27391",
+    "name": "David L\u00f3pez",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27395",
+    "name": "Negredo",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27399",
+    "name": "Gorosabel",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27408",
+    "name": "Domingos Duarte",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27410",
+    "name": "Germ\u00e1n Pezzella",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "27412",
+    "name": "Hugo Mallo",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51837",
+    "name": "Bryan Gil Salvatierra",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "51846",
+    "name": "Matt Doherty",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "240",
+    "clubName": "Atl\u00e9tico de Madrid",
+    "nationId": "25",
+    "nationName": "Republic of Ireland",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RWB",
+    "otherPositions": [
+      "RB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51907",
+    "name": "Ludwig Augustinsson",
+    "rating": "77",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "46",
+    "nationName": "Sweden",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "27958",
+    "name": "Radamel Falcao",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "56",
+    "nationName": "Colombia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "650 "
+  },
+  {
+    "id": "28387",
+    "name": "Ante Budimir",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "10",
+    "nationName": "Croatia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "28459",
+    "name": "Aridane",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "28692",
+    "name": "Jaume Costa",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "RB",
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "28916",
+    "name": "Dani Rodr\u00edguez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "CAM",
+      "ST",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "28983",
+    "name": "\u00c1lex Fern\u00e1ndez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "CM",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29449",
+    "name": "Roque Mesa Quevedo",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29680",
+    "name": "Mois\u00e9s G\u00f3mez Bordonado",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "LW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29687",
+    "name": "Roberto Torres Morales",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "CM",
+      "LM",
+      "RW"
+    ],
+    "priceText": "0 "
+  },
+  {
+    "id": "29721",
+    "name": "Roger Mart\u00ed Salvador",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "4.1K "
+  },
+  {
+    "id": "30500",
+    "name": "Fabrizio Angileri",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "30565",
+    "name": "Youssouf Sabaly",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "136",
+    "nationName": "Senegal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "RM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "30643",
+    "name": "\u00c1lvaro Garc\u00eda Rivera",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "LW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "30851",
+    "name": "Zald\u00faa",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "600 "
+  },
+  {
+    "id": "30873",
+    "name": "Diego Rico Salguero",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "31662",
+    "name": "Pere Milla Pe\u00f1a",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "LM",
+      "CAM",
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "32094",
+    "name": "Rafael Jim\u00e9nez Jarque",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "RB",
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "32128",
+    "name": "Rub\u00e9n Alcaraz Jim\u00e9nez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "850 "
+  },
+  {
+    "id": "32688",
+    "name": "Yangel Herrera",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "61",
+    "nationName": "Venezuela",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "CAM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "32854",
+    "name": "Lucas Robertone",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "CDM",
+      "CM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "33228",
+    "name": "Keidi Bare",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "1",
+    "nationName": "Albania",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "33578",
+    "name": "\u00d3scar Rodr\u00edguez Arnaiz",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "RM",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "33781",
+    "name": "Omar Alderete",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "58",
+    "nationName": "Paraguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "33797",
+    "name": "Ander Guevara Lajo",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "33887",
+    "name": "Juan Miranda Gonz\u00e1lez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "34531",
+    "name": "Catena",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "34670",
+    "name": "Oihan Sancet Tirapu",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CAM",
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "34741",
+    "name": "Eric Garc\u00eda Martret",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "241",
+    "clubName": "FC Barcelona",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "500 "
+  },
+  {
+    "id": "34906",
+    "name": "Adri\u00e0 Giner Pedrosa",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "700 "
+  },
+  {
+    "id": "34941",
+    "name": "\u00d3scar Gil Rega\u00f1o",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "35191",
+    "name": "Edgar Gonz\u00e1lez Estrada",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "35248",
+    "name": "Thierry Rendall Correia",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "38",
+    "nationName": "Portugal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "RM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "35400",
+    "name": "Daniel Vivian Moreno",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "35632",
+    "name": "Shon Weissman",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "26",
+    "nationName": "Israel",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "9.7K "
+  },
+  {
+    "id": "37936",
+    "name": "Martin Braithwaite",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "13",
+    "nationName": "Denmark",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF",
+      "LW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "38016",
+    "name": "Alexander S\u00f8rloth",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "36",
+    "nationName": "Norway",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "38155",
+    "name": "Justin Kluivert",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "34",
+    "nationName": "Netherlands",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "RM",
+      "LM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "44330",
+    "name": "Javier Pastore",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "10K "
+  },
+  {
+    "id": "48243",
+    "name": "Robert Kenedy Nunes do Nascimento",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "50756",
+    "name": "Su\u00e1rez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "56",
+    "nationName": "Colombia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "LM",
+      "CAM",
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51839",
+    "name": "Pape Gueye",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "481",
+    "clubName": "Sevilla FC",
+    "nationId": "136",
+    "nationName": "Senegal",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51851",
+    "name": "Ayoze P\u00e9rez Guti\u00e9rrez",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "51879",
+    "name": "Haris Seferovic",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "47",
+    "nationName": "Switzerland",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "51880",
+    "name": "Roger Mart\u00ed Salvador",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "51883",
+    "name": "Gonzalo Escalante",
+    "rating": "76",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "52",
+    "nationName": "Argentina",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "26433",
+    "name": "Vallejo",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "950 "
+  },
+  {
+    "id": "26435",
+    "name": "Andriy Lunin",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "243",
+    "clubName": "Real Madrid",
+    "nationId": "49",
+    "nationName": "Ukraine",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "950 "
+  },
+  {
+    "id": "28504",
+    "name": "Mikel Balenziaga",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "CB",
+      "LWB"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "28660",
+    "name": "Kike Garc\u00eda",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "28661",
+    "name": "Escudero Palomo",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "28668",
+    "name": "Leandro Cabrera",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": [
+      "LB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "28786",
+    "name": "Mart\u00edn Montoya Torralbo",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "449",
+    "clubName": "Real Betis",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "28890",
+    "name": "Samuel S\u00e1iz Alonso",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "RM",
+      "LM",
+      "CF"
+    ],
+    "priceText": "9.7K "
+  },
+  {
+    "id": "29354",
+    "name": "Dimitri Foulquier",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "CB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "29392",
+    "name": "Iv\u00e1n Balliu",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "1",
+    "nationName": "Albania",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "29540",
+    "name": "Fernando Mart\u00ednez Rubio",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "GK",
+    "otherPositions": null,
+    "priceText": "450 "
+  },
+  {
+    "id": "29562",
+    "name": "Anthony Lozano",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "81",
+    "nationName": "Honduras",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "LM",
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29769",
+    "name": "Lucas Torr\u00f3 Marset",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29805",
+    "name": "Omar Mascarell Gonz\u00e1lez",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "29975",
+    "name": "Samuel Castillejo Azuaga",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "30606",
+    "name": "Daniel Garc\u00eda Carrillo",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "30787",
+    "name": "Martin Valjent",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "43",
+    "nationName": "Slovakia",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "450 "
+  },
+  {
+    "id": "30826",
+    "name": "Embarba",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "RW",
+      "ST"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "31037",
+    "name": "Lucas Olaza",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "60",
+    "nationName": "Uruguay",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "CB",
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "31140",
+    "name": "Unai L\u00f3pez Cabrera",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "CAM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "31296",
+    "name": "Jaime Mata Arnaiz",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1860",
+    "clubName": "Getafe CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "31318",
+    "name": "Vedat Muriqi",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "219",
+    "nationName": "Kosovo",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "ST",
+    "otherPositions": [
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "31598",
+    "name": "I\u00f1igo Lekue Mart\u00ednez",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "448",
+    "clubName": "Athletic Club",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "LB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "31979",
+    "name": "Kevin V\u00e1zquez Comesa\u00f1a",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "32139",
+    "name": "Eduardo Exp\u00f3sito Ja\u00e9n",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "452",
+    "clubName": "RCD Espanyol",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CAM",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "32296",
+    "name": "Iv\u00e1n Alejo Peralta",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RM",
+    "otherPositions": [
+      "LM",
+      "RW"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "32979",
+    "name": "Santiago Comesa\u00f1a Veiga",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CM",
+      "CAM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "32997",
+    "name": "Pol Mikel Lirola Kosok",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "468",
+    "clubName": "Elche CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB",
+      "RM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "33415",
+    "name": "Ignacio Vidal Miralles",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RB",
+    "otherPositions": [
+      "RWB"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "33833",
+    "name": "Carles P\u00e9rez Sayol",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "450",
+    "clubName": "RC Celta",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "RW",
+    "otherPositions": [
+      "RM",
+      "CF"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "34057",
+    "name": "Jawad El Yamiq",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "129",
+    "nationName": "Morocco",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "650 "
+  },
+  {
+    "id": "34196",
+    "name": "\u00c1lvaro Aguado M\u00e9ndez",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "462",
+    "clubName": "R. Valladolid CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "CAM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "34834",
+    "name": "Iddrisu Baba",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "117",
+    "nationName": "Ghana",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CDM",
+    "otherPositions": [
+      "CB",
+      "CM"
+    ],
+    "priceText": "500 "
+  },
+  {
+    "id": "34999",
+    "name": "Fran Garc\u00eda",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "480",
+    "clubName": "Rayo Vallecano",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB",
+      "LM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "35027",
+    "name": "Aihen Mu\u00f1oz Capell\u00e1n",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "457",
+    "clubName": "Real Sociedad",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LB",
+    "otherPositions": [
+      "LWB"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "35188",
+    "name": "Jon Moncayola Tollar",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "479",
+    "clubName": "CA Osasuna",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "36237",
+    "name": "Nico Gonz\u00e1lez",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": null,
+    "priceText": "450 "
+  },
+  {
+    "id": "38017",
+    "name": "Th\u00e9o Bongonda",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1968",
+    "clubName": "C\u00e1diz CF",
+    "nationId": "110",
+    "nationName": "Congo DR",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LW",
+    "otherPositions": [
+      "LM"
+    ],
+    "priceText": "400 "
+  },
+  {
+    "id": "38088",
+    "name": "Antonio Villa Su\u00e1rez",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "110062",
+    "clubName": "Girona FC",
+    "nationId": "45",
+    "nationName": "Spain",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "CAM",
+      "LW"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "44289",
+    "name": "Cl\u00e9ment Grenier",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "453",
+    "clubName": "RCD Mallorca",
+    "nationId": "18",
+    "nationName": "France",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CM",
+    "otherPositions": [
+      "CDM",
+      "CAM"
+    ],
+    "priceText": "450 "
+  },
+  {
+    "id": "44453",
+    "name": "Rodrigo Ely",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "1861",
+    "clubName": "UD Almer\u00eda",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "CB",
+    "otherPositions": null,
+    "priceText": "400 "
+  },
+  {
+    "id": "45801",
+    "name": "Samuel Dias Lino",
+    "rating": "75",
+    "qualityAndRarity": [
+      "gold",
+      "non-rare"
+    ],
+    "clubId": "461",
+    "clubName": "Valencia CF",
+    "nationId": "54",
+    "nationName": "Brazil",
+    "leagueId": "53",
+    "leagueName": "LaLiga Santander",
+    "mainPosition": "LM",
+    "otherPositions": [
+      "RM",
+      "ST",
+      "LW"
+    ],
+    "priceText": "400 "
+  }
+]

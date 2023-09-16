@@ -1,6 +1,8 @@
-package com.petroandrushchak.model.domain;
+package com.petroandrushchak.fut.model.snipping;
 
 import com.petroandrushchak.fut.helper.FUTPriceHelper;
+import com.petroandrushchak.fut.model.SellPrices;
+import com.petroandrushchak.fut.model.TransferMarketPrices;
 import com.petroandrushchak.model.fut.Item;
 import com.petroandrushchak.model.fut.PlayerItem;
 import lombok.Builder;

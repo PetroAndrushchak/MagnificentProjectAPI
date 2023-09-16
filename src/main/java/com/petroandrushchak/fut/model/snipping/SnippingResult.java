@@ -1,4 +1,4 @@
-package com.petroandrushchak.model.domain;
+package com.petroandrushchak.fut.model.snipping;
 
 public class SnippingResult {
 

@@ -1,4 +1,4 @@
-package com.petroandrushchak.model.domain;
+package com.petroandrushchak.fut.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

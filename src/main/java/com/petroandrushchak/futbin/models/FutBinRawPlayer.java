@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.List;
 
+@Deprecated //I use python project to parse players from Futbin and send json file. This class is not used anymore
 @Data
 public class FutBinRawPlayer {
 

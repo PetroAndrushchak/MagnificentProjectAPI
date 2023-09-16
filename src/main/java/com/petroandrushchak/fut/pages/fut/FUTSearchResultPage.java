@@ -7,7 +7,7 @@ import com.petroandrushchak.fut.model.SearchResultState;
 import com.petroandrushchak.fut.pages.BasePage;
 import com.petroandrushchak.fut.pages.helper.BrowserHelper;
 import com.petroandrushchak.helper.Waiter;
-import com.petroandrushchak.model.domain.SellPrices;
+import com.petroandrushchak.fut.model.SellPrices;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

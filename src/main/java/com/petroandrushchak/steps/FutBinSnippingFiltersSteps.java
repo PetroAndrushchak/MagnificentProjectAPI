@@ -1,11 +1,11 @@
 package com.petroandrushchak.steps;
 
+import com.petroandrushchak.fut.model.filters.*;
 import com.petroandrushchak.futbin.models.FutBinPlayer;
 import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
-import com.petroandrushchak.model.domain.FutPlayersAttributes;
+import com.petroandrushchak.fut.model.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
-import com.petroandrushchak.model.fut.snipping.filters.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.petroandrushchak.model.fut.snipping.filters.AttributeType.*;
+import static com.petroandrushchak.fut.model.filters.AttributeType.*;
 
 @Slf4j
 @Component
@@ -28,7 +28,7 @@ public class FutBinSnippingFiltersSteps {
                     .addClubId(futBinPlayer.getClubId())
                     .addLeagueId(futBinPlayer.getLeagueId())
                     .addNationId(futBinPlayer.getNationId())
-                    .addPositions(futBinPlayer.getPositions())
+                    .addPositions(futBinPlayer.getAllPositions())
                     .addQuality(futBinPlayer.getQuality())
                     .addRarity(futBinPlayer.getRarity());
         });
