@@ -8,11 +8,11 @@ import com.petroandrushchak.model.fut.Club;
 import com.petroandrushchak.model.fut.Item;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
-import com.petroandrushchak.repository.mongo.FUTLeagueRepository;
 import com.petroandrushchak.repository.mongo.FUTNationRepository;
 import com.petroandrushchak.service.BrowserProcessService;
 import com.petroandrushchak.service.firebase.FutAccountServiceFirebase;
 import com.petroandrushchak.service.fut.FutClubServiceInternal;
+import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
 import com.petroandrushchak.service.fut.FutPlayerServiceInternal;
 import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.request.PlayerItemRequestBody;
@@ -35,7 +35,7 @@ public class SnippingValidationsSteps {
     @Autowired FutPlayerServiceInternal futPlayerService;
 
     @Autowired FUTNationRepository futNationRepository;
-    @Autowired FUTLeagueRepository futLeagueRepository;
+    @Autowired FutLeagueServiceInternal futLeagueService;
 
     @Autowired FutClubServiceInternal futClubServiceInternal;
 
@@ -207,20 +207,10 @@ public class SnippingValidationsSteps {
         var isLeagueShortAbbreviationPresent = playerItem.isLeagueShortAbbreviationPresent();
 
         if (isLeagueIdPresent) {
-            var foundLeagueFullNamesResult = futLeagueRepository.getLeagueFullNameById(playerItem.getLeagueId());
-            var foundLeagueShortAbbreviationsResult = futLeagueRepository.getLeagueShortAbbreviationById(playerItem.getLeagueId());
 
-            if (foundLeagueFullNamesResult.isEmpty())
-                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " not found in DB");
-            if (foundLeagueFullNamesResult.size() > 1)
-                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " found more than 1 in DB");
-            if (foundLeagueShortAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " not found in DB");
-            if (foundLeagueShortAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("League Id", "League with id: " + playerItem.getLeagueId() + " found more than 1 in DB");
-
-            var leagueFullName = foundLeagueFullNamesResult.get(0);
-            var leagueShortAbbreviation = foundLeagueShortAbbreviationsResult.get(0);
+            var leagueFullName = futLeagueService.getLeagueById(playerItem.getLeagueId()).getLeagueFullName();
+            var league = futLeagueService.getLeagueById(playerItem.getLeagueId());
+            var leagueShortAbbreviation = league.getLeagueShortName();
 
             if (isLeagueNamePresent && !playerItem.getLeagueFullName().equals(leagueFullName)) {
                 throw new ItemMappingException("League Name", "League with id: " + playerItem.getLeagueId() + " found in DB with name: " + leagueFullName);
@@ -231,9 +221,9 @@ public class SnippingValidationsSteps {
                 throw new ItemMappingException("League Abbreviation", "League with id: " + playerItem.getLeagueId() + " found in DB with abbreviation: " + leagueShortAbbreviation);
             }
 
-            return Optional.of(new League(playerItem.getLeagueId(), leagueFullName, leagueShortAbbreviation));
+            return Optional.of(league);
         } else if (isLeagueShortAbbreviationPresent) {
-            var foundLeagueIdsResult = futLeagueRepository.getLeagueIdsByShortAbbreviation(playerItem.getLeagueShortAbbreviation());
+            var foundLeagueIdsResult = futLeagueService.getLeagueIdsByShortName(playerItem.getLeagueShortAbbreviation());
 
             if (foundLeagueIdsResult.isEmpty())
                 throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " not found in DB");
@@ -242,22 +232,17 @@ public class SnippingValidationsSteps {
 
             var leagueId = foundLeagueIdsResult.get(0);
 
-            var foundLeagueFullNamesResult = futLeagueRepository.getLeagueFullNameById(leagueId);
-            if (foundLeagueFullNamesResult.isEmpty())
-                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " not found in DB");
-            if (foundLeagueFullNamesResult.size() > 1)
-                throw new ItemMappingException("League Abbreviation", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " found more than 1 in DB");
-
-            var leagueFullName = foundLeagueFullNamesResult.get(0);
+            var league = futLeagueService.getLeagueById(leagueId);
+            var leagueFullName = league.getLeagueFullName();
 
             if (isLeagueNamePresent && !playerItem.getLeagueFullName().equals(leagueFullName)) {
                 throw new ItemMappingException("League Name", "League with abbreviation: " + playerItem.getLeagueShortAbbreviation() + " found in DB with name: " + leagueFullName);
             }
 
-            return Optional.of(new League(leagueId, leagueFullName, playerItem.getLeagueShortAbbreviation()));
+            return Optional.of(league);
 
         } else if (isLeagueNamePresent) {
-            var foundLeagueIdsResult = futLeagueRepository.getLeagueIdsByFullName(playerItem.getLeagueFullName());
+            var foundLeagueIdsResult = futLeagueService.getLeagueIdsByFullName(playerItem.getLeagueFullName());
 
             if (foundLeagueIdsResult.isEmpty())
                 throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " not found in DB");
@@ -266,15 +251,9 @@ public class SnippingValidationsSteps {
 
             var leagueId = foundLeagueIdsResult.get(0);
 
-            var foundLeagueShortAbbreviationsResult = futLeagueRepository.getLeagueShortAbbreviationById(leagueId);
-            if (foundLeagueShortAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " not found in DB");
-            if (foundLeagueShortAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("League Name", "League with name: " + playerItem.getLeagueFullName() + " found more than 1 in DB");
+            var league = futLeagueService.getLeagueById(leagueId);
 
-            var leagueShortAbbreviation = foundLeagueShortAbbreviationsResult.get(0);
-
-            return Optional.of(new League(leagueId, playerItem.getLeagueFullName(), leagueShortAbbreviation));
+            return Optional.of(league);
 
         } else {
             return Optional.empty();

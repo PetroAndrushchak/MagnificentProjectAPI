@@ -311,7 +311,7 @@ public class FUTSearchTransferMarketPage extends BasePage<FUTSearchTransferMarke
     public void selectLeague(League league) {
         var leagueId = String.valueOf(league.getLeagueId());
         var leagueFullName = league.getLeagueFullName();
-        var leagueShortAbbreviation = league.getLeagueShortAbbreviation();
+        var leagueShortAbbreviation = league.getLeagueShortName();
         String leagueInDropdown = leagueFullName + " (" + leagueShortAbbreviation + ")";
 
         if (!isLeagueDropdownOpened()) {

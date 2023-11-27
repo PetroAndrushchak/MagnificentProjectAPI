@@ -1,15 +1,18 @@
 package com.petroandrushchak.snipping;
 
 import com.petroandrushchak.fut.helper.FUTPriceHelper;
+import com.petroandrushchak.fut.model.snipping.SnippingModel;
 import com.petroandrushchak.fut.pages.fut.FUTAppMainPage;
 import com.petroandrushchak.fut.pages.helper.Page;
 import com.petroandrushchak.fut.steps.FUTSnippingSteps;
 import com.petroandrushchak.fut.steps.FUTWebAppNavigationSteps;
-import com.petroandrushchak.fut.model.snipping.SnippingModel;
-import com.petroandrushchak.model.fut.*;
-import com.petroandrushchak.service.FutLeagueService;
+import com.petroandrushchak.model.fut.Club;
+import com.petroandrushchak.model.fut.League;
+import com.petroandrushchak.model.fut.PlayerItem;
+import com.petroandrushchak.model.fut.Position;
 import com.petroandrushchak.service.FutNationService;
 import com.petroandrushchak.service.fut.FutClubServiceInternal;
+import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +31,7 @@ public class Snipping {
     @Autowired FUTSnippingSteps snippingSteps;
 
     @Autowired FutNationService futNationService;
-    @Autowired FutLeagueService futLeagueService;
+    @Autowired FutLeagueServiceInternal futLeagueService;
     @Autowired FutClubServiceInternal clubService;
 
     @Test
@@ -55,7 +58,7 @@ public class Snipping {
 //
 //        playerItem.setNation(futNationService.getNationById(54));
 
-        League league = futLeagueService.getLeagueById(13);
+        League league = futLeagueService.getLeagueById(13L);
         playerItem.setLeague(league);
 //
         Club team = clubService.getClubById(5L);

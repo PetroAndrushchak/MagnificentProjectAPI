@@ -8,9 +8,9 @@ import lombok.Data;
 public class League {
 
     Long leagueId;
-    String leagueFullName;
-    String leagueShortAbbreviation;
 
-    //League FullAbbreviation can also be address, that value is stored in DB
+    String leagueFullName;
+    String leagueMediumName;
+    String leagueShortName;
 
 }

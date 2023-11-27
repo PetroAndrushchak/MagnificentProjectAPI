@@ -11,12 +11,11 @@ public class FUTPriceHelper {
 
 
     private static final int MIN_MIN_BID_PRICE = 150;
-    private static final int MAX_MIN_BID_PRICE = 400;
+    private static final int MAX_MIN_BID_PRICE = 500;
     private static final int MIN_MIN_BUY_NOW_PRICE = 200;
-    private static final int MAX_MIN_BUY_NOW_PRICE = 400;
+    private static final int MAX_MIN_BUY_NOW_PRICE = 500;
 
     private static final int PRICE_STEP = 50;
-
 
     public static TransferMarketPrices createSearchPricesWithMaxBuyNowPrice(long maxBuyNowPrice) {
         TransferMarketPrices prices = createSearchPrices();
@@ -24,10 +23,15 @@ public class FUTPriceHelper {
         return prices;
     }
 
-    public static  long createPriceForSnippingFromSellPrice(long sellPrice) {
+    public static long createPriceForSnippingFromSellPrice(long sellPrice) {
         double tax = sellPrice * EA_SELL_TAX;
         long priceAfterTax = (long) (sellPrice - tax - getIncomePrice(sellPrice));
         return getRoundedPrice(priceAfterTax);
+    }
+
+    public static long getIncomeForPriceAfterTax(long priceAfterTax) {
+        double tax = priceAfterTax * EA_SELL_TAX;
+        return (long) (priceAfterTax - tax);
     }
 
     public static SellPrices createSellPrices(long buyNowPrice) {
@@ -42,9 +46,13 @@ public class FUTPriceHelper {
         return prices;
     }
 
-    public static TransferMarketPrices updateMinBidAndMinBuySearchPrices(TransferMarketPrices transferMarketPrices) {
+    public static TransferMarketPrices updatePrices(TransferMarketPrices transferMarketPrices) {
+        return updatePrices(transferMarketPrices, transferMarketPrices.getMaxBuyNowPrice());
+    }
+
+    public static TransferMarketPrices updatePrices(TransferMarketPrices transferMarketPrices, long moxBuyNowPrice) {
         TransferMarketPrices newPrices = TransferMarketPrices.emptyPrices();
-        newPrices.setMaxBuyNowPrice(transferMarketPrices.getMaxBuyNowPrice());
+        newPrices.setMaxBuyNowPrice(moxBuyNowPrice);
         newPrices.setMaxBidPrice(transferMarketPrices.getMaxBidPrice());
 
         if (minBidPriceCanBeDecreased(transferMarketPrices.getMinBidPrice())) {
@@ -110,13 +118,13 @@ public class FUTPriceHelper {
     }
 
     private static long getStepAmount(long price) {
-        if (price <= 1_000_000 && price > 100_000) {
+        if (price < 1_000_000 && price >= 100_000) {
             return 1000;
-        } else if (price <= 100000 && price > 50000) {
+        } else if (price < 100000 && price >= 50000) {
             return 250;
-        } else if (price <= 50000 && price > 10000) {
+        } else if (price < 50000 && price >= 10000) {
             return 250;
-        } else if (price <= 10000 && price > 1000) {
+        } else if (price < 10000 && price > 1000) {
             return 100;
         } else {
             return 50;
@@ -136,6 +144,7 @@ public class FUTPriceHelper {
             return 50;
         }
     }
+
     //TODO Make it as a Config
     private static long getIncomePrice(long price) {
         if (price <= 10000000 && price > 500000) {
@@ -143,17 +152,19 @@ public class FUTPriceHelper {
         } else if (price <= 500000 && price > 100000) {
             return 2000;
         } else if (price <= 100000 && price > 50000) {
-            return 1000;
+            return 500;
         } else if (price <= 50000 && price > 20000) {
-            return 350;
-        } else if (price <= 20000 && price > 5000) {
             return 250;
-        } else if (price <= 5000 && price > 2000) {
-            return 400;
-        } else if (price <= 2000 && price > 700) {
+        } else if (price <= 20000 && price > 5000) {
             return 150;
-        } else {
+        } else if (price <= 5000 && price > 2000) {
+            return 75;
+        } else if (price <= 2000 && price > 1000) {
             return 100;
+        } else if (price <= 1000 && price > 500) {
+            return 50;
+        } else {
+            return 50;
         }
     }
 

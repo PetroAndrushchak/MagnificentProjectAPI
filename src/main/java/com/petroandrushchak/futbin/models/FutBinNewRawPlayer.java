@@ -1,5 +1,6 @@
 package com.petroandrushchak.futbin.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;
@@ -7,7 +8,12 @@ import java.util.List;
 @Data
 public class FutBinNewRawPlayer {
 
-    String id;
+    @JsonProperty("fut_bin_id")
+    String internalId;
+
+    @JsonProperty("fut_id")
+    String futId;
+
     String name;
 
     String rating;

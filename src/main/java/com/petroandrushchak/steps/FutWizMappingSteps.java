@@ -7,9 +7,9 @@ import com.petroandrushchak.model.fut.Quality;
 import com.petroandrushchak.model.fut.Rarity;
 import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
 import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayersAttributes;
-import com.petroandrushchak.service.FutLeagueService;
 import com.petroandrushchak.service.FutNationService;
 import com.petroandrushchak.service.fut.FutClubServiceInternal;
+import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ import java.util.List;
 public class FutWizMappingSteps {
 
     @Autowired FutClubServiceInternal futClubService;
-    @Autowired FutLeagueService futLeagueService;
+    @Autowired FutLeagueServiceInternal futLeagueServiceInternal;
     @Autowired FutNationService futNationService;
 
     public FutPlayersAttributes mapThirdPartyPlayersAttributesToPlayersAttributes(ThirdPartySitePlayersAttributes futBinPlayersUniqueAttributes) {
@@ -34,7 +34,7 @@ public class FutWizMappingSteps {
         playersAttributes.addClubs(futClubService.getClubsByIds(futBinPlayersUniqueAttributes.getClubIds()
                                                                                              .stream()
                                                                                              .toList()));
-        playersAttributes.addLeagues(futLeagueService.getLeaguesByIds(futBinPlayersUniqueAttributes.getLeagueIds()
+        playersAttributes.addLeagues(futLeagueServiceInternal.getLeaguesByIds(futBinPlayersUniqueAttributes.getLeagueIds()
                                                                                                    .stream()
                                                                                                    .toList()));
         playersAttributes.addNations(futNationService.getNationsByIds(futBinPlayersUniqueAttributes.getNationIds()

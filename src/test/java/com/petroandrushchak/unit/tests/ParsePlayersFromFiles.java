@@ -1,6 +1,7 @@
 package com.petroandrushchak.unit.tests;
 
 import com.petroandrushchak.service.fut.FutClubServiceInternal;
+import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
 import com.petroandrushchak.service.fut.FutPlayerServiceInternal;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,7 @@ public class ParsePlayersFromFiles {
 
     @Autowired FutPlayerServiceInternal futPlayerServiceInternal;
     @Autowired FutClubServiceInternal futClubServiceInternal;
+    @Autowired FutLeagueServiceInternal futLeagueServiceInternal;
 
     @SneakyThrows
     @Test
@@ -33,5 +35,16 @@ public class ParsePlayersFromFiles {
         var end = System.currentTimeMillis();
         System.out.println("Time: " + (end - start));
         System.out.println(club);
+    }
+
+    @SneakyThrows
+    @Test
+    void parseLeagueFromFile() {
+        Long leagueId = 2179L;
+        var start = System.currentTimeMillis();
+        var league = futLeagueServiceInternal.getLeagueById(leagueId);
+        var end = System.currentTimeMillis();
+        System.out.println("Time: " + (end - start));
+        System.out.println(league);
     }
 }
