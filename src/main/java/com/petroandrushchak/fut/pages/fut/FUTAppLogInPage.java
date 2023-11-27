@@ -21,7 +21,7 @@ import static org.awaitility.Awaitility.await;
 @Component
 public class FUTAppLogInPage extends BasePage<FUTAppLogInPage> {
 
-    private static final String PAGE_URL = "https://www.ea.com/fifa/ultimate-team/web-app/";
+    private static final String PAGE_URL = "https://www.ea.com/ea-sports-fc/ultimate-team/web-app/";
   // private static final String PAGE_URL = "https://www.google.com";
 
     SelenideElement logInButton = $(".call-to-action");

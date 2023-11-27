@@ -17,7 +17,7 @@ public class AuctionInfoHelper {
 
     private final int ITEMS_ON_SEARCH_RESULT_PAGE = 17;
     private final int ITEMS_ON_SEARCH_RESULT_PAGE_OKAY_TO_MONITOR = ITEMS_ON_SEARCH_RESULT_PAGE - 3;
-    private final int ITEM_NUMBER_ON_TM_OKAY_TO_SNIPE = 6;
+    private final int ITEM_NUMBER_ON_TM_OKAY_TO_SNIPE = 19;
     private final int ITEM_NUMBER_MAX_EXPIRE_TIME_OKAY_TO_SELL = 5;
 
     public static boolean isPlayersNumberEqualToMonitoringNumber(List<AuctionInfoItem> auctionInfos) {
@@ -38,8 +38,8 @@ public class AuctionInfoHelper {
 
 
     public static boolean isPlayersNumbersLessThanMaxSearch(List<AuctionInfoItem> auctionInfos) {
-        boolean result =  auctionInfos.size() <= ITEMS_ON_SEARCH_RESULT_PAGE;
-        if(result){
+        boolean result = auctionInfos.size() <= ITEMS_ON_SEARCH_RESULT_PAGE;
+        if (result) {
             log.info("Players number is less than Max Search: " + auctionInfos.size() + " allowed: " + ITEMS_ON_SEARCH_RESULT_PAGE);
         }
         return result;
@@ -56,8 +56,8 @@ public class AuctionInfoHelper {
         logAuctionInfoData(auctionInfos);
 
         List<AuctionInfoItem> notExpiredTimeMaxAuctionInfo = auctionInfos.stream()
-            .filter(auctionInfo -> isNotExpireTimeMax(auctionInfo.getExpires()))
-            .collect(Collectors.toList());
+                                                                         .filter(auctionInfo -> isNotExpireTimeMax(auctionInfo.getExpires()))
+                                                                         .collect(Collectors.toList());
 
         Optional<Integer> optionalLowestBinPrice;
 
@@ -65,22 +65,22 @@ public class AuctionInfoHelper {
 
             //Grouping prices with 59 minutes expire time
             Map<Integer, Long> groupedPrices = auctionInfos.stream()
-                .filter(auctionInfo -> !isNotExpireTimeMax(auctionInfo.getExpires()))
-                .collect(Collectors.groupingBy(AuctionInfoItem::getBuyNowPrice, Collectors.counting()));
+                                                           .filter(auctionInfo -> !isNotExpireTimeMax(auctionInfo.getExpires()))
+                                                           .collect(Collectors.groupingBy(AuctionInfoItem::getBuyNowPrice, Collectors.counting()));
 
             Map<Integer, Long> sortedByPrice = groupedPrices.entrySet().stream()
-                .sorted(Entry.comparingByKey(Comparator.reverseOrder()))
-                .collect(Collectors.toMap(Entry::getKey, Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+                                                            .sorted(Entry.comparingByKey(Comparator.reverseOrder()))
+                                                            .collect(Collectors.toMap(Entry::getKey, Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new));
 
             optionalLowestBinPrice = sortedByPrice.entrySet().stream()
-                .filter((entry) -> entry.getValue() < ITEM_NUMBER_MAX_EXPIRE_TIME_OKAY_TO_SELL)
-                .map(Entry::getKey)
-                .findFirst();
+                                                  .filter((entry) -> entry.getValue() < ITEM_NUMBER_MAX_EXPIRE_TIME_OKAY_TO_SELL)
+                                                  .map(Entry::getKey)
+                                                  .findFirst();
         } else {
             optionalLowestBinPrice = auctionInfos.stream()
-                .filter(auctionInfo -> isNotExpireTimeMax(auctionInfo.getExpires()))
-                .map(AuctionInfoItem::getBuyNowPrice)
-                .min(Comparator.comparing(Long::valueOf));
+                                                 .filter(auctionInfo -> isNotExpireTimeMax(auctionInfo.getExpires()))
+                                                 .map(AuctionInfoItem::getBuyNowPrice)
+                                                 .min(Comparator.comparing(Long::valueOf));
         }
 
         if (optionalLowestBinPrice.isPresent()) {
@@ -91,13 +91,31 @@ public class AuctionInfoHelper {
         }
     }
 
-    public static boolean isAuctionInfoWithMaxOnMarketTime(List<AuctionInfoItem> auctionInfos) {
+    public static boolean areBuyNowPriceForItemsLessThan(List<AuctionInfoItem> auctionInfos, long price) {
+        return auctionInfos.stream()
+                           .allMatch(auctionInfo -> auctionInfo.getBuyNowPrice() < price);
+    }
+
+    public static boolean areItemsOkayToSnipe(List<AuctionInfoItem> auctionInfos) {
         log.info("Trying to check if the auction info has max expire time");
         logAuctionInfoData(auctionInfos);
         boolean allMatchExpireTime = auctionInfos.stream().allMatch(auctionInfo -> isExpireTimeMax(auctionInfo.getExpires()));
         log.info("All match expire time " + allMatchExpireTime);
         boolean isNumberOfItemsOkayToSnipe = auctionInfos.size() <= ITEM_NUMBER_ON_TM_OKAY_TO_SNIPE;
         return allMatchExpireTime && isNumberOfItemsOkayToSnipe;
+    }
+
+    public Optional<Long> getBuyNowPriceWhichIsNotPlacedRecently(List<AuctionInfoItem> auctionInfos) {
+        var result = auctionInfos.stream()
+                                 .filter(auctionInfo -> auctionInfo.getExpires() < 3000)
+                                 .min(Comparator.comparing(AuctionInfoItem::getBuyNowPrice));
+
+        if (result.isPresent()) {
+            int price = result.get().getBuyNowPrice();
+            return Optional.of((long) price);
+        } else {
+            return Optional.empty();
+        }
     }
 
     public static List<AuctionInfoItem> subtractBaseOnTradeId(List<AuctionInfoItem> x, List<AuctionInfoItem> y) {
@@ -118,9 +136,9 @@ public class AuctionInfoHelper {
         if (auctionInfos == null || auctionInfos.isEmpty()) {
             log.info(" --- Auction info is empty --- ");
         } else {
-            System.out.println("Auction data: \n Buy now prices  Expire time :");
+            System.out.println("Auction data ( " + auctionInfos.size() + " ) : \nBuy now prices  Expire time :");
             auctionInfos.forEach(auctionInfo -> {
-                System.out.println("       " + auctionInfo.getBuyNowPrice() + "  " + auctionInfo.getExpires() / 60 + " min");
+                System.out.println("       " + auctionInfo.getBuyNowPrice() + "     " + auctionInfo.getExpires() / 60 + " min");
             });
         }
     }

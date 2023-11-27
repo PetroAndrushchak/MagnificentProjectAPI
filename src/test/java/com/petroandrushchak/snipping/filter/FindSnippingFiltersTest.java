@@ -1,8 +1,8 @@
 package com.petroandrushchak.snipping.filter;
 
 import com.petroandrushchak.futbin.models.FutBinNewRawPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayersAttributes;
 import com.petroandrushchak.futbin.steps.FutBinSteps;
 import com.petroandrushchak.fut.model.FutPlayersAttributes;
 import com.petroandrushchak.fut.model.filters.Attribute;
@@ -32,16 +32,25 @@ public class FindSnippingFiltersTest {
 
         List<AttributeType> attributeTypes = List.of(POSITION, NATION, CLUB);
 
-        List<FutBinNewRawPlayer> futBinRawPlayers = futBinService.parsePlayersFromJsonFile();
-        List<FutBinPlayer> futBinPlayers = futBinMappingSteps.mapNewRawPlayersToPlayers(futBinRawPlayers);
+        var playersFileName = "english_players_data.json";
+     //   var playersFileName = "spanish_players_data.json";
+    //    var playersFileName = "french_players_data.json";
+     //   var playersFileName = "german_players_data.json";
+    //   var playersFileName = "italian_players_data.json";
 
-        FutBinPlayersAttributes futBinPlayersUniqueAttributes = futBinSnippingFiltersSteps.getUniquePlayersAttributes(futBinPlayers);
+     //    var playersFileName = "w_english_players_data.json";
+
+
+        List<FutBinNewRawPlayer> futBinRawPlayers = futBinService.parsePlayersFromJsonFile(playersFileName);
+        List<ThirdPartySitePlayer> thirdPartySitePlayers = futBinMappingSteps.mapNewRawPlayersToPlayers(futBinRawPlayers);
+
+        ThirdPartySitePlayersAttributes futBinPlayersUniqueAttributes = futBinSnippingFiltersSteps.getUniquePlayersAttributes(thirdPartySitePlayers);
 
         FutPlayersAttributes futPlayersAttributes = futBinMappingSteps.mapFutBinPlayersAttributesToPlayersAttributes(futBinPlayersUniqueAttributes);
 
         List<List<Attribute>> allPossibleCombinationsForAttributes = futBinSnippingFiltersSteps.getAllPossibleCombinationsForAttributes(attributeTypes, futPlayersAttributes);
 
-        var foundPlayersToSnipe = futBinSnippingFiltersSteps.findAllPlayersMatchingAttributes(allPossibleCombinationsForAttributes, futBinPlayers);
+        var foundPlayersToSnipe = futBinSnippingFiltersSteps.findAllPlayersMatchingAttributes(allPossibleCombinationsForAttributes, thirdPartySitePlayers);
 
         System.out.println("dsfsdf");
 

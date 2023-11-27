@@ -1,6 +1,6 @@
 package com.petroandrushchak.steps;
 
-import com.petroandrushchak.entity.mongo.FutEaDbPlayer;
+import com.petroandrushchak.entity.local.db.FutInternalPlayer;
 import com.petroandrushchak.exceptions.BrowserProcessFutAccountBlocked;
 import com.petroandrushchak.exceptions.ItemMappingException;
 import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
@@ -8,12 +8,12 @@ import com.petroandrushchak.model.fut.Club;
 import com.petroandrushchak.model.fut.Item;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
-import com.petroandrushchak.repository.mongo.FUTClubRepository;
 import com.petroandrushchak.repository.mongo.FUTLeagueRepository;
 import com.petroandrushchak.repository.mongo.FUTNationRepository;
-import com.petroandrushchak.repository.mongo.FUTPlayersRepository;
 import com.petroandrushchak.service.BrowserProcessService;
-import com.petroandrushchak.service.FutAccountService;
+import com.petroandrushchak.service.firebase.FutAccountServiceFirebase;
+import com.petroandrushchak.service.fut.FutClubServiceInternal;
+import com.petroandrushchak.service.fut.FutPlayerServiceInternal;
 import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.request.PlayerItemRequestBody;
 import com.petroandrushchak.view.request.SnippingRequestBody;
@@ -28,14 +28,16 @@ import java.util.Optional;
 @Component
 public class SnippingValidationsSteps {
 
-    @Autowired FutAccountService futAccountService;
+    @Autowired FutAccountServiceFirebase futAccountService;
 
     @Autowired BrowserProcessService browserProcessService;
 
-    @Autowired FUTPlayersRepository futPlayersRepository;
+    @Autowired FutPlayerServiceInternal futPlayerService;
+
     @Autowired FUTNationRepository futNationRepository;
     @Autowired FUTLeagueRepository futLeagueRepository;
-    @Autowired FUTClubRepository futClubRepository;
+
+    @Autowired FutClubServiceInternal futClubServiceInternal;
 
     public FutEaAccountView validateSnippingRequestFutAccount(SnippingRequestBody snippingRequestBody) {
 
@@ -58,7 +60,7 @@ public class SnippingValidationsSteps {
     public Item validateSnippingRequestItem(SnippingRequestBody snippingRequestBody) {
 
         //Step 1: Validate fields which are preset are valid from Mongo DB
-        FutEaDbPlayer futEaDbPlayer = validatePlayerNameRatingPlayerId(snippingRequestBody.getPlayer());
+        FutInternalPlayer futEaDbPlayer = validatePlayerNameRatingPlayerId(snippingRequestBody.getPlayer());
         Optional<Nation> nation = validatePlayerNation(snippingRequestBody.getPlayer());
         Optional<League> league = validatePlayerLeague(snippingRequestBody.getPlayer());
         Optional<Club> club = validatePlayerClub(snippingRequestBody.getPlayer());
@@ -81,26 +83,11 @@ public class SnippingValidationsSteps {
         var isClubMediumAbbreviationPresent = player.isClubMediumAbbreviationPresent();
 
         if (isClubIdPresent) {
-            var foundClubShortAbbreviationsResult = futClubRepository.getClubShortNamesById(player.getClubId());
-            var foundClubMediumAbbreviationsResult = futClubRepository.getClubMediumNamesById(player.getClubId());
-            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(player.getClubId());
 
-            if (foundClubShortAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
-            if (foundClubShortAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
-            if (foundClubMediumAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
-            if (foundClubMediumAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
-            if (foundClubLongAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " not found in DB");
-            if (foundClubLongAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Id", "Club with id: " + player.getClubId() + " found more than 1 in DB");
-
-            var clubShortAbbreviation = foundClubShortAbbreviationsResult.get(0);
-            var clubMediumAbbreviation = foundClubMediumAbbreviationsResult.get(0);
-            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
+            var club = futClubServiceInternal.getClubById(player.getClubId());
+            var clubShortAbbreviation = club.getClubShortAbbreviation();
+            var clubMediumAbbreviation = club.getClubMediumAbbreviation();
+            var clubLongAbbreviation = club.getClubLongAbbreviation();
 
             if (isClubShortAbbreviationPresent && !player.getClubShortAbbreviation().equals(clubShortAbbreviation)) {
                 throw new ItemMappingException("Club Short Abbreviation", "Club with id: " + player.getClubId() + " found in DB with short abbreviation: " + clubShortAbbreviation);
@@ -113,62 +100,19 @@ public class SnippingValidationsSteps {
             return Optional.of(new Club(player.getClubId(), clubShortAbbreviation, clubMediumAbbreviation, clubLongAbbreviation));
         } else if (isClubShortAbbreviationPresent) {
 
-            var foundClubIdsResult = futClubRepository.getClubIdsByShortName(player.getClubShortAbbreviation());
+            var club = futClubServiceInternal.getClubById(player.getClubId());
 
-            if (foundClubIdsResult.isEmpty())
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
-            if (foundClubIdsResult.size() > 1)
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
-
-            var clubId = foundClubIdsResult.get(0);
-
-            var foundClubMediumAbbreviationsResult = futClubRepository.getClubMediumNamesById(clubId);
-            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(clubId);
-
-            if (foundClubMediumAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
-            if (foundClubMediumAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
-            if (foundClubLongAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " not found in DB");
-            if (foundClubLongAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Short Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found more than 1 in DB");
-
-            var clubMediumAbbreviation = foundClubMediumAbbreviationsResult.get(0);
-            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
+            var clubMediumAbbreviation = club.getClubMediumAbbreviation();
 
             if (isClubMediumAbbreviationPresent && !player.getClubMediumAbbreviation().equals(clubMediumAbbreviation)) {
                 throw new ItemMappingException("Club Medium Abbreviation", "Club with short abbreviation: " + player.getClubShortAbbreviation() + " found in DB with medium abbreviation: " + clubMediumAbbreviation);
             }
 
-            return Optional.of(new Club(clubId, player.getClubShortAbbreviation(), clubMediumAbbreviation, clubLongAbbreviation));
+            return Optional.of(club);
         } else if (isClubMediumAbbreviationPresent) {
 
-            var foundClubIdsResult = futClubRepository.getClubIdsByMediumName(player.getClubMediumAbbreviation());
-
-            if (foundClubIdsResult.isEmpty())
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
-            if (foundClubIdsResult.size() > 1)
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
-
-            var clubId = foundClubIdsResult.get(0);
-
-            var foundClubShortAbbreviationsResult = futClubRepository.getClubShortNamesById(clubId);
-            var foundClubLongAbbreviationsResult = futClubRepository.getClubLongNamesById(clubId);
-
-            if (foundClubShortAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
-            if (foundClubShortAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
-            if (foundClubLongAbbreviationsResult.isEmpty())
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " not found in DB");
-            if (foundClubLongAbbreviationsResult.size() > 1)
-                throw new ItemMappingException("Club Medium Abbreviation", "Club with medium abbreviation: " + player.getClubMediumAbbreviation() + " found more than 1 in DB");
-
-            var clubShortAbbreviation = foundClubShortAbbreviationsResult.get(0);
-            var clubLongAbbreviation = foundClubLongAbbreviationsResult.get(0);
-
-            return Optional.of(new Club(clubId, clubShortAbbreviation, player.getClubMediumAbbreviation(), clubLongAbbreviation));
+            var club = futClubServiceInternal.getClubById(player.getClubId());
+            return Optional.of(club);
         }
 
         return Optional.empty();
@@ -338,13 +282,13 @@ public class SnippingValidationsSteps {
 
     }
 
-    private FutEaDbPlayer validatePlayerNameRatingPlayerId(PlayerItemRequestBody playerItem) {
+    private FutInternalPlayer validatePlayerNameRatingPlayerId(PlayerItemRequestBody playerItem) {
 
         var isPlayerIdPresent = playerItem.isPlayerIdPresent();
         var isPlayerRatingPresent = playerItem.isPlayerRatingPresent();
         var isPlayerNamePresent = playerItem.isPlayerNamePresent();
 
-        FutEaDbPlayer futEaDbPlayer = null;
+        FutInternalPlayer futEaDbPlayer = null;
 
         if (!isPlayerIdPresent && !isPlayerNamePresent) {
             throw new ItemMappingException("Player Id, Player Name", "All fields are not present");
@@ -352,15 +296,13 @@ public class SnippingValidationsSteps {
 
         if (isPlayerIdPresent) {
             var playerId = playerItem.getPlayerId();
-            var futPlayers = futPlayersRepository.findByPlayerId(playerId);
+            var futPlayers = futPlayerService.getPlayerByIdOptional(playerId);
 
             if (futPlayers.isEmpty()) {
                 throw new ItemMappingException("Player Id", "Player with id: " + playerId + " not found in DB");
-            } else if (futPlayers.size() > 1) {
-                throw new ItemMappingException("Player Id", "Player with id: " + playerId + " found more than 1 in DB");
             }
 
-            var futPlayer = futPlayers.get(0);
+            var futPlayer = futPlayers.get();
             if (isPlayerRatingPresent && !Objects.equals(futPlayer.getRating(), playerItem.getPlayerRating())) {
                 throw new ItemMappingException("Player Rating", "Player with id: " + playerId + " found in DB with rating: " + futPlayer.getRating());
             }
@@ -378,8 +320,8 @@ public class SnippingValidationsSteps {
         if (isPlayerNamePresent) {
             var playerName = playerItem.getPlayerName();
 
-            var futPlayersByNickName = futPlayersRepository.findByNickname(playerName);
-            var futPlayersByFirstLastName = futPlayersRepository.findByFullName(playerName);
+            var futPlayersByNickName = futPlayerService.findPlayersByNickname(playerName);
+            var futPlayersByFirstLastName = futPlayerService.findPlayersByFullName(playerName);
 
             if (futPlayersByFirstLastName.isEmpty() && futPlayersByNickName.isEmpty()) {
                 throw new ItemMappingException("Player Name", "Player with name: " + playerName + " not found in DB");
@@ -393,8 +335,8 @@ public class SnippingValidationsSteps {
                 var futPlayerByNickName = futPlayersByNickName.get(0);
                 var futPlayerByFirstLastName = futPlayersByFirstLastName.get(0);
 
-                if (!Objects.equals(futPlayerByNickName.getPlayerId(), futPlayerByFirstLastName.getPlayerId())) {
-                    throw new ItemMappingException("Player Name", "Player with name: " + playerName + " found in DB with different player ids: " + futPlayerByNickName.getPlayerId() + " and " + futPlayerByFirstLastName.getPlayerId());
+                if (!Objects.equals(futPlayerByNickName.getId(), futPlayerByFirstLastName.getId())) {
+                    throw new ItemMappingException("Player Name", "Player with name: " + playerName + " found in DB with different player ids: " + futPlayerByNickName.getId() + " and " + futPlayerByFirstLastName.getId());
                 }
             }
 

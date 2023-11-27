@@ -11,12 +11,12 @@ import java.util.Map;
 @Document("FUTClub")
 public class FutEaDbClub {
 
-    @Field("team_abbr_3_2023")
+    @Field("team_abbr_3_2024")
     Map<String, String> clubShortAbbreviationNames;
 
-    @Field("team_abbr_10_2023")
+    @Field("team_abbr_10_2024")
     Map<String, String> clubMediumAbbreviationNames;
 
-    @Field("team_abbr_15_2023")
+    @Field("team_abbr_15_2024")
     Map<String, String> clubLongAbbreviationNames;
 }

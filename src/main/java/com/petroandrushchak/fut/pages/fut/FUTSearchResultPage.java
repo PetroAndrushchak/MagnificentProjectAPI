@@ -1,5 +1,6 @@
 package com.petroandrushchak.fut.pages.fut;
 
+import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.SelenideElement;
 import com.petroandrushchak.aop.RealPerson;
 import com.petroandrushchak.fut.helper.FUTPriceHelper;
@@ -9,6 +10,7 @@ import com.petroandrushchak.fut.pages.helper.BrowserHelper;
 import com.petroandrushchak.helper.Waiter;
 import com.petroandrushchak.fut.model.SellPrices;
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -30,7 +32,7 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
     SelenideElement listOnTransferMarketButton = $(".accordian");
     SelenideElement listForTransferItemButton = $(".DetailView .panelActions > .btn-standard");
 
-    SelenideElement buyNowPriceInputField= $(".DetailView .panelActions .panelActionRow:nth-of-type(3) input");
+    SelenideElement buyNowPriceInputField = $(".DetailView .panelActions .panelActionRow:nth-of-type(3) input");
     SelenideElement startPriceInputField = $(".DetailView .panelActions .panelActionRow:nth-of-type(2) input");
 
     SelenideElement bidPriceForBoughtItem = $(".DetailView .ut-item-details--metadata .currency-coins");
@@ -59,10 +61,9 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
         log.info("Buy now button clicked");
     }
 
-    public SearchResultState buyDefaultSelectedItem() {
+    public void buyDefaultSelectedItem() {
         BrowserHelper.doActionUntilConditionWithNoWait(this::clickBuyNowButton, this::buyNowConfirmationModalWindowsPresent);
         BrowserHelper.doActionUntilConditionWithNoWait(this::clickOnButtonBuyNowModalWindow, () -> !buyNowConfirmationModalWindowsPresent());
-        return getBuyingItemResult();
     }
 
     public boolean buyNowConfirmationModalWindowsPresent() {
@@ -77,7 +78,7 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
         buyNowConfirmationModalOKButton.click();
     }
 
-    private SearchResultState getBuyingItemResult() {
+    public SearchResultState getBuyingItemResult() {
         LocalTime timeToFinish = LocalTime.now().plusSeconds(5);
         while (LocalTime.now().isBefore(timeToFinish)) {
             if (isErrorNotificationMessagePresent()) {
@@ -106,8 +107,18 @@ public class FUTSearchResultPage extends BasePage<FUTSearchResultPage> {
 
     @RealPerson
     public void closeErrorNotificationMessage() {
-        BrowserHelper.doActionUntilConditionIgnoringElementNotFound(notificationAlertCloseButton::click,
-                () -> !isErrorNotificationMessagePresent());
+        try {
+            BrowserHelper.doActionUntilConditionIgnoringElementNotFound(notificationAlertCloseButton::click,
+                    () -> !isErrorNotificationMessagePresent());
+        } catch (NoSuchElementException e) {
+            log.error("Error while closing notification message");
+            if (isErrorNotificationMessagePresent()) {
+                log.error("Notification message is present");
+                throw e;
+            } else {
+                log.info("Notification message is not present");
+            }
+        }
     }
 
     public long getItemBoughtPrice() {

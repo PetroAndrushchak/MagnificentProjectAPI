@@ -9,7 +9,7 @@ import lombok.Data;
 public class SnippingView {
 
     Long id;
-    Long futAccountId;
+    String futAccountId;
     String futEaAccountLogin;
     Status status;
 }

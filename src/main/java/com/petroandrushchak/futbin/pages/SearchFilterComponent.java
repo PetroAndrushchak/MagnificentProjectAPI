@@ -4,14 +4,13 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import com.petroandrushchak.aop.RealPerson;
-import com.petroandrushchak.futbin.models.Version;
+import com.petroandrushchak.futbin.models.search.page.Version;
 import com.petroandrushchak.helper.Waiter;
 import jakarta.validation.constraints.NotNull;
 import org.openqa.selenium.interactions.Actions;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
-import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;

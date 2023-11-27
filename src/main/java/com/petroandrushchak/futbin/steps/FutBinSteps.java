@@ -1,7 +1,7 @@
 package com.petroandrushchak.futbin.steps;
 
 import com.petroandrushchak.futbin.models.FutBinRawPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayersSearchFilter;
+import com.petroandrushchak.futbin.models.search.page.FutBinPlayersSearchFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

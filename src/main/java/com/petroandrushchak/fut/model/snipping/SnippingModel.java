@@ -21,8 +21,6 @@ public class SnippingModel {
     TransferMarketPrices searchPrices;
     SellPrices sellPrices;
 
-    SnippingResult snippingResult;
-
     public static SnippingModel playerModel(String playerName, int playerRating, long sellPrice) {
         PlayerItem playerItem = new PlayerItem();
         playerItem.setPlayerName(playerName);
@@ -38,7 +36,7 @@ public class SnippingModel {
     }
 
     public void updateSearchPrices() {
-        this.searchPrices = FUTPriceHelper.updateMinBidAndMinBuySearchPrices(searchPrices);
+        this.searchPrices = FUTPriceHelper.updatePrices(searchPrices);
     }
 
     @Override
@@ -47,9 +45,5 @@ public class SnippingModel {
                 ", \n searchPrices = " + searchPrices +
                 ", \n sellPrices = " + sellPrices +
                 '}';
-    }
-
-    public SnippingResult snippingResult() {
-        return snippingResult;
     }
 }

@@ -14,10 +14,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class LocalBrowserHelper {
 
     public static void connectToAlreadyOpenedBrowser() {
+
+       // WebDriverManager.chromedriver().browserVersion("118.0.5940.0").setup();
+
         Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 60000;
+        Configuration.timeout = 5000;
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-blink-features=AutomationControlled");
+     //   Configuration.browserVersion = "118.0.5993.117";
+
+        //set chrome driver path
+     //   System.setProperty("webdriver.chrome.driver", "/Users/pandrushchak.appwell/Workspace/MagnificentProjectAPI/chromedriver");
+
+        options.addArguments("--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage");
         options.setExperimentalOption("debuggerAddress", "localhost:9429");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 

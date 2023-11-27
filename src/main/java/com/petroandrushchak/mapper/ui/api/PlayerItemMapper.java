@@ -1,5 +1,6 @@
 package com.petroandrushchak.mapper.ui.api;
 
+import com.petroandrushchak.entity.local.db.FutInternalPlayer;
 import com.petroandrushchak.entity.mongo.FutEaDbPlayer;
 import com.petroandrushchak.exceptions.ItemMappingException;
 import com.petroandrushchak.model.fut.*;
@@ -16,7 +17,7 @@ public interface PlayerItemMapper {
     PlayerItemMapper INSTANCE = Mappers.getMapper(PlayerItemMapper.class);
 
     default PlayerItem playerItemRequestToView(PlayerItemRequestBody playerItemRequestBody,
-                                               FutEaDbPlayer futEaDbPlayer,
+                                               FutInternalPlayer futEaDbPlayer,
                                                Optional<Nation> nation,
                                                Optional<League> league,
                                                Optional<Club> club) {
@@ -38,10 +39,10 @@ public interface PlayerItemMapper {
             playerItem.setPlayerName(futEaDbPlayer.getFirstName() + " " + futEaDbPlayer.getLastName());
         }
 
-        if (isPlayerIDPresent && Objects.equals(playerItemRequestBody.getPlayerId(), futEaDbPlayer.getPlayerId())) {
+        if (isPlayerIDPresent && Objects.equals(playerItemRequestBody.getPlayerId(), futEaDbPlayer.getId())) {
             playerItem.setId(playerItemRequestBody.getPlayerId());
         } else if (!isPlayerIDPresent) {
-            playerItem.setId(futEaDbPlayer.getPlayerId());
+            playerItem.setId(futEaDbPlayer.getId());
         } else {
             throw new ItemMappingException("Player ID", "Player ID is not correct");
         }

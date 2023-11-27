@@ -41,14 +41,14 @@ public class BrowserHelper {
 
     public static void doActionUntilCondition(WebBrowserAction actionTodo, WebBrowserCondition untilCondition, Duration timeToSleep) {
         for (int i = 1; i <= 10; i++) {
-            log.info("Do action until condition ... try number " + i);
+            log.debug("Do action until condition ... try number " + i);
             actionTodo.doingSomethingOnWebPage();
             Waiter.waitFor(timeToSleep);
-            log.info("Checking is condition is present ... ");
+            log.debug("Checking is condition is present ... ");
             if (!untilCondition.isConditionPresent()) {
-                log.info("Condition is not present.. waiting for one second ... ");
+                log.debug("Condition is not present.. waiting for one second ... ");
             } else {
-                log.info("Condition is present, finishing doing actions ");
+                log.debug("Condition is present, finishing doing actions ");
                 return;
             }
         }
@@ -57,18 +57,18 @@ public class BrowserHelper {
 
     public static void doActionUntilConditionIgnoringElementNotFound(WebBrowserAction actionTodo, WebBrowserCondition untilCondition) {
         for (int i = 1; i <= 5; i++) {
-            log.info("Do action until condition ... try number " + i);
+            log.debug("Do action until condition ... try number " + i);
             try {
                 actionTodo.doingSomethingOnWebPage();
-            } catch (JsonException | TimeoutException | StaleElementReferenceException e) {
+            } catch (JsonException | TimeoutException | StaleElementReferenceException | NoSuchElementException e) {
                 log.error("Timeout waiting for element. continue to check if condition is met");
             }
             Waiter.waitFor(Duration.ofMillis(100));
-            log.info("Checking is condition is present ... ");
+            log.debug("Checking is condition is present ... ");
             if (!untilCondition.isConditionPresent()) {
-                log.info("Condition is not present.. waiting for one second ... ");
+                log.debug("Condition is not present.. waiting for one second ... ");
             } else {
-                log.info("Condition is present, finishing doing actions ");
+                log.debug("Condition is present, finishing doing actions ");
                 return;
             }
         }

@@ -2,7 +2,7 @@ package com.petroandrushchak.futbin.steps;
 
 import com.petroandrushchak.aop.RealPerson;
 import com.petroandrushchak.futbin.models.FutBinRawPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayersSearchFilter;
+import com.petroandrushchak.futbin.models.search.page.FutBinPlayersSearchFilter;
 import com.petroandrushchak.futbin.pages.PlayersPage;
 import com.petroandrushchak.futbin.pages.components.PrivacyModal;
 import com.petroandrushchak.helper.Waiter;
@@ -11,12 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.sound.sampled.*;
 import javax.speech.Central;
 import javax.speech.synthesis.Synthesizer;
 import javax.speech.synthesis.SynthesizerModeDesc;
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;

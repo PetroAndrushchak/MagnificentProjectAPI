@@ -1,17 +1,16 @@
 package com.petroandrushchak.steps;
 
-import com.petroandrushchak.aop.RetryStep;
 import com.petroandrushchak.fut.model.statistic.PlayerCsvStatisticItem;
 import com.petroandrushchak.futbin.models.FutBinNewRawPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayersAttributes;
 import com.petroandrushchak.fut.model.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.Position;
 import com.petroandrushchak.model.fut.Quality;
 import com.petroandrushchak.model.fut.Rarity;
-import com.petroandrushchak.service.FutClubService;
 import com.petroandrushchak.service.FutLeagueService;
 import com.petroandrushchak.service.FutNationService;
+import com.petroandrushchak.service.fut.FutClubServiceInternal;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +24,11 @@ import java.util.List;
 @Component
 public class FutBinMappingSteps {
 
-    @Autowired FutClubService futClubService;
+    @Autowired FutClubServiceInternal futClubService;
     @Autowired FutLeagueService futLeagueService;
     @Autowired FutNationService futNationService;
 
-    @RetryStep(value = 4)
-    public void doAction() {
-
-        log.info("doAction");
-        throw new RuntimeException();
-    }
-
-    public FutPlayersAttributes mapFutBinPlayersAttributesToPlayersAttributes(FutBinPlayersAttributes futBinPlayersUniqueAttributes) {
+    public FutPlayersAttributes mapFutBinPlayersAttributesToPlayersAttributes(ThirdPartySitePlayersAttributes futBinPlayersUniqueAttributes) {
 
         var playersAttributes = new FutPlayersAttributes();
 
@@ -57,51 +49,53 @@ public class FutBinMappingSteps {
         return playersAttributes;
     }
 
-    public List<PlayerCsvStatisticItem> mapFutBinPlayersToCsvStatisticItems(List<FutBinPlayer> futBinPlayers) {
-        return futBinPlayers.stream().map(futBinPlayer -> {
+    public List<PlayerCsvStatisticItem> mapFutBinPlayersToCsvStatisticItems(List<ThirdPartySitePlayer> thirdPartySitePlayers) {
+        return thirdPartySitePlayers.stream().map(futBinPlayer -> {
                     PlayerCsvStatisticItem playerCsvStatisticItem = new PlayerCsvStatisticItem();
                     var league = futLeagueService.getLeagueById(Math.toIntExact(futBinPlayer.getLeagueId()));
                     playerCsvStatisticItem.setLeagueName(league.getLeagueShortAbbreviation());
                     playerCsvStatisticItem.setPlayerName(futBinPlayer.getPlayerName());
                     playerCsvStatisticItem.setPlayerRating(futBinPlayer.getRating());
-                    playerCsvStatisticItem.setPlayerId(futBinPlayer.getId());
+                    playerCsvStatisticItem.setPlayerId(futBinPlayer.getFutId());
                     playerCsvStatisticItem.setPossibleSellPrice(futBinPlayer.getPrice());
                     return playerCsvStatisticItem;
                 }
         ).toList();
     }
 
-    public List<FutBinPlayer> mapNewRawPlayersToPlayers(List<FutBinNewRawPlayer> rawPlayers) {
+    public List<ThirdPartySitePlayer> mapNewRawPlayersToPlayers(List<FutBinNewRawPlayer> rawPlayers) {
 
-        var futBinPlayers = new ArrayList<FutBinPlayer>();
+        var futBinPlayers = new ArrayList<ThirdPartySitePlayer>();
 
         rawPlayers.forEach(rawPlayer -> {
-            FutBinPlayer futBinPlayer = new FutBinPlayer();
+            ThirdPartySitePlayer thirdPartySitePlayer = new ThirdPartySitePlayer();
             log.info("Mapping raw player: {}", rawPlayer);
 
-            futBinPlayer.setId(Long.parseLong(rawPlayer.getId()));
-            futBinPlayer.setPlayerName(rawPlayer.getName());
-            futBinPlayer.setRating(Integer.parseInt(rawPlayer.getRating()));
-            futBinPlayer.setClubId(Long.parseLong(rawPlayer.getClubId()));
-            futBinPlayer.setNationId(Long.parseLong(rawPlayer.getNationId()));
-            futBinPlayer.setLeagueId(Long.parseLong(rawPlayer.getLeagueId()));
+            thirdPartySitePlayer.setThirdPartySiteId(Long.parseLong(rawPlayer.getInternalId()));
+            thirdPartySitePlayer.setFutId(Long.parseLong(rawPlayer.getFutId()));
+
+            thirdPartySitePlayer.setPlayerName(rawPlayer.getName());
+            thirdPartySitePlayer.setRating(Integer.parseInt(rawPlayer.getRating()));
+            thirdPartySitePlayer.setClubId(Long.parseLong(rawPlayer.getClubId()));
+            thirdPartySitePlayer.setNationId(Long.parseLong(rawPlayer.getNationId()));
+            thirdPartySitePlayer.setLeagueId(Long.parseLong(rawPlayer.getLeagueId()));
 
             var qualityRarityPair = getPlayerQualityAndRarity(String.join(" ", rawPlayer.getQualityAndRarity()));
 
-            futBinPlayer.setQuality(qualityRarityPair.getLeft());
-            futBinPlayer.setRarity(qualityRarityPair.getRight());
+            thirdPartySitePlayer.setQuality(qualityRarityPair.getLeft());
+            thirdPartySitePlayer.setRarity(qualityRarityPair.getRight());
 
             var mainPositions = getPositions(rawPlayer.getMainPosition());
-            futBinPlayer.setMainPositions(mainPositions);
+            thirdPartySitePlayer.setMainPositions(mainPositions);
 
             var positions = getPositions(rawPlayer.getOtherPositions());
-            futBinPlayer.setOtherPositions(positions);
+            thirdPartySitePlayer.setOtherPositions(positions);
 
             var price = parsePrice(rawPlayer.getPriceText());
-            futBinPlayer.setPrice(price);
+            thirdPartySitePlayer.setPrice(price);
 
 
-            futBinPlayers.add(futBinPlayer);
+            futBinPlayers.add(thirdPartySitePlayer);
         });
 
 
@@ -207,7 +201,6 @@ public class FutBinMappingSteps {
             case "ucl_motm" -> Rarity.CHAMPIONS_LEAGUE_MAN_OF_THE_MATCH;
             case "trophy_titans_icon" -> Rarity.TROPHY_TITANS_ICON;
             case "trophy_titans" -> Rarity.TROPHY_TITANS;
-            case "conmebol_foundations" -> Rarity.CONMEBOL_FOUNDATIONS;
             case "bd_icon" -> Rarity.FUT_BIRTHDAY_ICON;
             case "fut-bd" -> Rarity.FUT_BIRTHDAY;
             case "futballers" -> Rarity.FUTBALLERS;
@@ -223,21 +216,8 @@ public class FutBinMappingSteps {
             case "uecl_rttf" -> Rarity.UECL_ROAD_TO_THE_FINAL;
             case "toty_icon" -> Rarity.TOTY_ICON;
             case "centurions" -> Rarity.FUT_CENTURIONS;
-            case "wc_hm" -> Rarity.WORLD_CUP_HISTORY_MAKERS;
-            case "wc_tott" -> Rarity.WORLD_CUP_TEAM_OF_THE_TOURNAMENT;
-            case "wc_phenoms" -> Rarity.WORLD_CUP_PHENOMS;
-            case "wc_stories" -> Rarity.WORLD_CUP_STORIES;
-            case "wc_rtwc" -> Rarity.WORLD_CUP_ROAD_TO_THE_WORLD_CUP;
-            case "wc_showdown_plus" -> Rarity.WORLD_CUP_SHOWDOWN_PLUS;
-            case "wc_showdown" -> Rarity.WORLD_CUP_SHOWDOWN;
-            case "wc_star" -> Rarity.WORLD_CUP_STAR;
-            case "wc_player" -> Rarity.WORLD_CUP_PLAYER;
-            case "wc_icon" -> Rarity.WORLD_CUP_ICON;
-            case "wc_ptg" -> Rarity.WORLD_CUP_PTG;
-            case "wc_heroes" -> Rarity.WORLD_CUP_HERO;
             case "heroes" -> Rarity.FUT_HEROES;
             case "otw" -> Rarity.ONE_TO_WATCH;
-            case "wc_token" -> Rarity.WORLD_CUP_TOKEN;
             case "sbc_premium" -> Rarity.SBC_PREMIUM;
             case "out_of_position" -> Rarity.OUT_OF_POSITION;
             case "halloween" -> Rarity.RULE_BREAKERS;
@@ -245,8 +225,7 @@ public class FutBinMappingSteps {
             case "dynamic_duo" -> Rarity.DYNAMIC_DUO;
             case "sbc_flashback" -> Rarity.FLASHBACK;
 
-            case "showdown_plus" -> Rarity.SHOWDOWN_PLUS;
-            case "showdown" -> Rarity.SHOWDOWN;
+            case "showdown_plus" -> Rarity.SHOWDOWN_PLUS_SBC;
             case "winter_wildcards" -> Rarity.WINTER_WILDCARDS;
 
             case "potm_epl" -> Rarity.POTM_EPL;
@@ -257,6 +236,7 @@ public class FutBinMappingSteps {
 
             case "libertadores_b" -> Rarity.CONMEBOL_LIBERTADORES;
             case "sudamericana" -> Rarity.CONMEBOL_SUDAMERICANA;
+            case "trailblazers" -> Rarity.TRAILBLAZERS;
 
             case "icon" -> Rarity.ICON;
             default -> throw new RuntimeException("Cannot parse special rarity: " + specialRarity);

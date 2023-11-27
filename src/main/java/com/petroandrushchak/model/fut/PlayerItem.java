@@ -9,7 +9,10 @@ public class PlayerItem extends Item {
 
     String playerName;
 
-    //Add Players name from FUT DB. First and Last names. We have mismatch between FutBin and FUT Web App. Need to handle this.
+    //This should be value from FUT Web App data
+    String playerFirstName;
+    String playerLastName;
+    String nickName;
 
     Integer rating;
     Long id;
@@ -24,6 +27,10 @@ public class PlayerItem extends Item {
 
     public boolean isPlayerNamePresent() {
         return playerName != null;
+    }
+
+    public boolean isPlayerNickNamePresent() {
+        return nickName != null && !nickName.isEmpty();
     }
 
     public boolean isRatingPresent() {

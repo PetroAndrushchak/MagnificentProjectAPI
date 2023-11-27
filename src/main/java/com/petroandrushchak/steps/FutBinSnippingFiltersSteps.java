@@ -1,8 +1,8 @@
 package com.petroandrushchak.steps;
 
 import com.petroandrushchak.fut.model.filters.*;
-import com.petroandrushchak.futbin.models.FutBinPlayer;
-import com.petroandrushchak.futbin.models.FutBinPlayersAttributes;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayersAttributes;
 import com.petroandrushchak.fut.model.FutPlayersAttributes;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.Nation;
@@ -15,15 +15,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.petroandrushchak.fut.model.filters.AttributeType.*;
+import static java.util.Comparator.comparing;
 
 @Slf4j
 @Component
 public class FutBinSnippingFiltersSteps {
 
-    public FutBinPlayersAttributes getUniquePlayersAttributes(List<FutBinPlayer> futBinPlayers) {
-        var futBinPlayersAttributes = new FutBinPlayersAttributes();
+    public ThirdPartySitePlayersAttributes getUniquePlayersAttributes(List<ThirdPartySitePlayer> thirdPartySitePlayers) {
+        var futBinPlayersAttributes = new ThirdPartySitePlayersAttributes();
 
-        futBinPlayers.forEach(futBinPlayer -> {
+        thirdPartySitePlayers.forEach(futBinPlayer -> {
             futBinPlayersAttributes
                     .addClubId(futBinPlayer.getClubId())
                     .addLeagueId(futBinPlayer.getLeagueId())
@@ -173,13 +174,13 @@ public class FutBinSnippingFiltersSteps {
         }
     }
 
-    public static List<PlayersMatchingAttributes> findAllPlayersMatchingAttributes(List<List<Attribute>> allPossibleAttributesCombinations, List<FutBinPlayer> futBinPlayers) {
+    public static List<PlayersMatchingAttributes> findAllPlayersMatchingAttributes(List<List<Attribute>> allPossibleAttributesCombinations, List<ThirdPartySitePlayer> thirdPartySitePlayers) {
 
         var foundPlayersToSnipe = new ArrayList<PlayersMatchingAttributes>();
 
         allPossibleAttributesCombinations.forEach(attributesList -> {
 
-            var playersMatchingAttributes = findPlayersMatchingAttributes(attributesList, futBinPlayers);
+            var playersMatchingAttributes = findPlayersMatchingAttributes(attributesList, thirdPartySitePlayers);
 
             if (arePlayersOkayToSnipe(playersMatchingAttributes)) {
                 foundPlayersToSnipe.add(new PlayersMatchingAttributes(attributesList, playersMatchingAttributes));
@@ -194,11 +195,24 @@ public class FutBinSnippingFiltersSteps {
 
     private static void printPlayersMatchingAttributes(ArrayList<PlayersMatchingAttributes> foundPlayersToSnipe) {
         log.info("Found players to snipe: ");
-        foundPlayersToSnipe.forEach(playersMatchingAttributes -> {
+
+        var sortedByPlayerPrice = foundPlayersToSnipe.stream()
+                                                     .map((playersMatchingAttributes -> {
+                                                         var sortedPlayersByPrice = playersMatchingAttributes.getPlayers().stream()
+                                                                                                             .sorted(comparing(ThirdPartySitePlayer::getPrice))
+                                                                                                             .collect(Collectors.toList());
+                                                         return new PlayersMatchingAttributes(playersMatchingAttributes.getAttributes(), sortedPlayersByPrice);
+                                                     })).collect(Collectors.toList());
+
+        var sortedByPlayersNumber = sortedByPlayerPrice.stream()
+                                                       .sorted(comparing(playersMatchingAttributes -> playersMatchingAttributes.getPlayers().size()))
+                                                       .collect(Collectors.toList());
+
+        sortedByPlayersNumber.forEach(playersMatchingAttributes -> {
             System.out.print("  Attributes: ");
             var string = playersMatchingAttributes.getAttributes().stream()
-                                     .map(Attribute::getShortStringRepresentation)
-                                     .collect(Collectors.joining(", "));
+                                                  .map(Attribute::getShortStringRepresentation)
+                                                  .collect(Collectors.joining(", "));
             System.out.println(string);
 
             System.out.println("      Players: ");
@@ -208,10 +222,10 @@ public class FutBinSnippingFiltersSteps {
         });
     }
 
-    public static List<FutBinPlayer> findPlayersMatchingAttributes(List<Attribute> attributes, List<FutBinPlayer> futBinPlayers) {
-        List<FutBinPlayer> playersMatchingAttributes = new ArrayList<>();
+    public static List<ThirdPartySitePlayer> findPlayersMatchingAttributes(List<Attribute> attributes, List<ThirdPartySitePlayer> thirdPartySitePlayers) {
+        List<ThirdPartySitePlayer> playersMatchingAttributes = new ArrayList<>();
 
-        futBinPlayers.forEach(futBinPlayer -> {
+        thirdPartySitePlayers.forEach(futBinPlayer -> {
             boolean isPlayerMatchingAttributes = true;
             for (Attribute attribute : attributes) {
                 if (!isPlayerHasAttribute(futBinPlayer, attribute)) {
@@ -226,7 +240,7 @@ public class FutBinSnippingFiltersSteps {
         return playersMatchingAttributes;
     }
 
-    public static boolean isPlayerHasAttribute(FutBinPlayer player, Attribute attribute) {
+    public static boolean isPlayerHasAttribute(ThirdPartySitePlayer player, Attribute attribute) {
 
         if (attribute instanceof PositionAttribute positionAttribute) {
             return player.isPlayerHasPosition(positionAttribute.getPosition());
@@ -237,20 +251,20 @@ public class FutBinSnippingFiltersSteps {
         } else if (attribute instanceof ClubAttribute clubAttribute) {
             return player.getClubId().equals(clubAttribute.getClubId());
         } else {
-            throw new RuntimeException("Unknown attribute"  + attribute);
+            throw new RuntimeException("Unknown attribute" + attribute);
         }
     }
 
-    public static boolean arePlayersOkayToSnipe(List<FutBinPlayer> players) {
+    public static boolean arePlayersOkayToSnipe(List<ThirdPartySitePlayer> players) {
 
         //Players Number should more than 2
         if (players.isEmpty() || players.size() == 1) {
             return false;
         }
 
-        //Min Players price should be more than 1000
+        //Min Players price should be more than 2000
         long minPrice = players.stream()
-                               .map(FutBinPlayer::getPrice)
+                               .map(ThirdPartySitePlayer::getPrice)
                                .min(Long::compareTo)
                                .orElse(0L);
 
@@ -270,27 +284,27 @@ public class FutBinSnippingFiltersSteps {
 
     private static long getPossibleDeviationForPlayerMinPrice(long minPrice) {
         if (minPrice < 1000) {
-            return 100;
-        } else if (minPrice <= 2_000) {
-            return 200;
-        } else if (minPrice <= 3_000) {
             return 300;
-        } else if (minPrice <= 4_000) {
-            return 400;
-        } else if (minPrice <= 5_000) {
+        } else if (minPrice <= 2_000) {
             return 500;
+        } else if (minPrice <= 3_000) {
+            return 600;
+        } else if (minPrice <= 4_000) {
+            return 700;
+        } else if (minPrice <= 5_000) {
+            return 900;
         } else if (minPrice <= 6_000) {
-            return 800;
-        } else if (minPrice <= 10_000) {
             return 1000;
-        } else if (minPrice <= 15_000) {
+        } else if (minPrice <= 10_000) {
             return 1200;
-        } else if (minPrice <= 20_000) {
-            return 1500;
-        } else if (minPrice <= 30_000) {
+        } else if (minPrice <= 15_000) {
             return 2000;
+        } else if (minPrice <= 20_000) {
+            return 2200;
+        } else if (minPrice <= 30_000) {
+            return 2500;
         } else if (minPrice <= 50_000) {
-            return 5000;
+            return 3000;
         } else if (minPrice <= 100_000) {
             return 7000;
         } else if (minPrice <= 500_000) {

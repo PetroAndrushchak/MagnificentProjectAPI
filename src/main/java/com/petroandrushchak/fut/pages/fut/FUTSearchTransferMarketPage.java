@@ -151,9 +151,6 @@ public class FUTSearchTransferMarketPage extends BasePage<FUTSearchTransferMarke
             case UEL_ROAD_TO_THE_FINAL -> "UEL Road to the Final";
             case UEL_ROAD_TO_THE_KNOCKOUTS -> "UEL Road to the Knockouts";
             case WINTER_WILDCARDS -> "WINTER WILDCARDS";
-            case WORLD_CUP_HERO -> "World Cup Hero";
-            case WORLD_CUP_ICON -> "World Cup Icon";
-            case WORLD_CUP_TEAM_OF_THE_TOURNAMENT -> "World Cup Team of the Tournament";
             default -> throw new IllegalStateException("Unexpected value: " + rarity);
         };
 
@@ -473,16 +470,16 @@ public class FUTSearchTransferMarketPage extends BasePage<FUTSearchTransferMarke
     }
 
     private boolean isMaxBuyNowPriceSetCorrect(long targetBuyNowPrice) {
-        log.info("Checking if max buy now price is set correctly");
+        log.debug("Checking if max buy now price is set correctly");
         String currentValue = getMaxBuyNowPrice();
 
         if (currentValue.isEmpty()) {
-            log.info("Max buy now price is empty");
+            log.debug("Max buy now price is empty");
             return false;
         } else {
             int currentBuyNowMaxPrice = Integer.parseInt(getMaxBuyNowPrice().replace(",", ""));
             var result = currentBuyNowMaxPrice == targetBuyNowPrice;
-            log.info("Max buy now price is set correctly: " + result);
+            log.debug("Max buy now price is set correctly: " + result);
             return result;
         }
     }

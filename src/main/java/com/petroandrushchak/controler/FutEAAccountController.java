@@ -2,15 +2,12 @@ package com.petroandrushchak.controler;
 
 import com.petroandrushchak.entity.Status;
 import com.petroandrushchak.exceptions.WarningException;
-import com.petroandrushchak.mapper.ui.api.PlayerItemMapper;
 import com.petroandrushchak.model.fut.Item;
-import com.petroandrushchak.model.fut.PlayerItem;
 import com.petroandrushchak.process.BrowserProcessHelper;
 import com.petroandrushchak.service.BrowserProcessService;
-import com.petroandrushchak.service.FutAccountService;
+import com.petroandrushchak.service.firebase.FutAccountServiceFirebase;
 import com.petroandrushchak.steps.SnippingSteps;
 import com.petroandrushchak.steps.SnippingValidationsSteps;
-import com.petroandrushchak.view.BrowserProcessView;
 import com.petroandrushchak.view.FutEaAccountView;
 import com.petroandrushchak.view.SnippingView;
 import com.petroandrushchak.view.request.SnippingRequestBody;
@@ -25,7 +22,7 @@ import java.util.List;
 @RestController
 public class FutEAAccountController {
 
-    @Autowired FutAccountService futAccountService;
+    @Autowired FutAccountServiceFirebase futAccountService;
     @Autowired BrowserProcessService browserProcessService;
 
     @Autowired SnippingValidationsSteps snippingValidationsSteps;
@@ -71,14 +68,13 @@ public class FutEAAccountController {
         return SnippingView.builder()
                            .id(entity.getId())
                            .status(entity.getStatus())
-                           .futAccountId(entity.getFutAccount().getId())
-                           .futEaAccountLogin(entity.getFutAccount().getEaLogin())
+                           .futAccountId(entity.getFutAccountId())
                            .build();
     }
 
     @CrossOrigin(origins = "*")
     @PutMapping("/resetBrowserProcess/{futAccountId}")
-    public void resetBrowserProcess(@PathVariable Long futAccountId) {
+    public void resetBrowserProcess(@PathVariable String futAccountId) {
         var futAccount = futAccountService.getFutAccountById(futAccountId);
         var futAccountBrowserProcesses = browserProcessService.getBrowserProcessEntitiesForFutAccount(futAccount, Status.IN_PROGRESS);
 

@@ -18,7 +18,7 @@ public class ScheduledTasks {
 
     @Scheduled(cron = "0 */10 * ? * *")
     public void cleanUpScheduledTasks() {
-        log.info("Deleting Completed Tasks at {}", DATE_FORMAT.format(new Date()));
+        log.debug("Deleting Completed Tasks at {}", DATE_FORMAT.format(new Date()));
         browserProcessHelper.deleteCompletedTasksFromMemory();
     }
 }

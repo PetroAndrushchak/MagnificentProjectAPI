@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder(builderMethodName = "anFutEaAccount", toBuilder = true, setterPrefix = "with")
 public class FutEaAccountView {
 
-    Long id;
+    String id;
 
     String username;
 

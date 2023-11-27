@@ -57,11 +57,11 @@ public class FutBinService {
     }
 
     @SneakyThrows
-    public List<FutBinNewRawPlayer> parsePlayersFromJsonFile() {
+    public List<FutBinNewRawPlayer> parsePlayersFromJsonFile(String fileName) {
         JsonMapper jsonMapper = new JsonMapper();
         TypeFactory typeFactory = jsonMapper.getTypeFactory();
 
-        List<FutBinNewRawPlayer> parsedPlayers = jsonMapper.readValue(Paths.get("/Users/pandrushchak.appwell/Workspace/MagnificentProjectAPI/players_data.json").toFile(), typeFactory.constructCollectionType(List.class, FutBinNewRawPlayer.class));
+        List<FutBinNewRawPlayer> parsedPlayers = jsonMapper.readValue(Paths.get("/Users/pandrushchak.appwell/Workspace/MagnificentProjectAPI/database/futbin_players/" + fileName).toFile(), typeFactory.constructCollectionType(List.class, FutBinNewRawPlayer.class));
 
         return parsedPlayers;
 

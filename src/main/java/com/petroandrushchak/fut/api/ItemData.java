@@ -3,7 +3,9 @@ package com.petroandrushchak.fut.api;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 
+@Getter
 public class ItemData {
 
     @JsonProperty("itemType")
@@ -44,6 +46,15 @@ public class ItemData {
 
     @JsonProperty("possiblePositions")
     private List<String> possiblePositions;
+
+    @JsonProperty("baseTraits")
+    List<Long> baseTraits;
+
+    @JsonProperty("iconTraits")
+    List<Long> iconTraits;
+
+    @JsonProperty("gender")
+    private Long gender;
 
     @JsonProperty("statsArray")
     private List<Integer> statsArray;

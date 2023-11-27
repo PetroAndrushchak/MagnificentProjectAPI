@@ -8,5 +8,5 @@
 
 ### Mongo DB Configs
 
-go to https://www.ea.com/ru-ru/fifa/ultimate-team/web-app/
-https://www.ea.com/ru-ru/fifa/ultimate-team/web-app/loc/en-US.json?_=22211
+go to https://www.ea.com/ea-sports-fc/ultimate-team/web-app/
+https://www.ea.com/ea-sports-fc/ultimate-team/web-app/loc/en-US.json?_=22211

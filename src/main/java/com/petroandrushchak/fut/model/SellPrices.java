@@ -2,13 +2,15 @@ package com.petroandrushchak.fut.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
 @AllArgsConstructor
 @Getter
+@Setter
 public class SellPrices {
 
-    private final long startPrice;
-    private final long buyNowPrice;
+    private long startPrice;
+    private long buyNowPrice;
 
     private SellPrices(){
         throw new UnsupportedOperationException();

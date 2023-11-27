@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvGenerator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.petroandrushchak.fut.model.statistic.PlayerCsvStatisticItem;
 import com.petroandrushchak.helper.ProjectHelper;
 import lombok.SneakyThrows;
@@ -26,10 +27,40 @@ public class FutAppearanceStatisticService {
 
     private static final String APPEARANCE_STATISTIC_FILE_NAME = "/database/apearance_players_statistic.csv";
 
+    Path filePath = Paths.get(ProjectHelper.getRootProjectFolderPath(), APPEARANCE_STATISTIC_FILE_NAME);
+
+    @SneakyThrows
+    public List<PlayerCsvStatisticItem> getPlayersWithoutAppearanceRating(int numberOfPlayers, long maxPrice) {
+        log.info("Getting players without appearance rating, with limit {}", numberOfPlayers);
+        var mapper = CsvMapper.builder()
+                              .enable(CsvGenerator.Feature.ALWAYS_QUOTE_EMPTY_STRINGS)
+                              .build();
+        var schema = mapper.schemaFor(PlayerCsvStatisticItem.class)
+                           .withHeader()
+                           .withColumnSeparator(',')
+                           .withComments();
+
+        List<PlayerCsvStatisticItem> playersWithoutAppearanceRating = new ArrayList<>();
+
+        try (Reader reader = Files.newBufferedReader(filePath)) {
+            try (MappingIterator<PlayerCsvStatisticItem> iterator = mapper.readerWithTypedSchemaFor(PlayerCsvStatisticItem.class)
+                                                                          .with(schema)
+                                                                          .readValues(reader)) {
+                var existingPlayers = iterator.readAll();
+                playersWithoutAppearanceRating.addAll(existingPlayers);
+            }
+        }
+
+        return playersWithoutAppearanceRating.stream()
+                                             .filter(playerCsvStatisticItem -> playerCsvStatisticItem.getPlayerAppearanceRating() == null)
+                                             .filter(playerCsvStatisticItem -> playerCsvStatisticItem.getPossibleSellPrice() <= maxPrice)
+                                             .limit(numberOfPlayers)
+                                             .toList();
+    }
+
     @SneakyThrows
     public void updateAppearanceStatistic(List<PlayerCsvStatisticItem> playerCsvStatisticItems) {
         log.info("Updating appearance statistic");
-        Path filePath = Paths.get(ProjectHelper.getRootProjectFolderPath(), APPEARANCE_STATISTIC_FILE_NAME);
         var mapper = CsvMapper.builder()
                               .enable(CsvGenerator.Feature.ALWAYS_QUOTE_EMPTY_STRINGS)
                               .build();
@@ -76,7 +107,8 @@ public class FutAppearanceStatisticService {
 
 
                 var sortedPlayers = updatedVersionOfPlayers.stream()
-                                                           .sorted(Comparator.comparing(PlayerCsvStatisticItem::getPlayerAppearanceRating, Comparator.nullsFirst(Comparator.naturalOrder())).reversed()
+                                                           .sorted(Comparator.comparing(PlayerCsvStatisticItem::getPlayerAppearanceRating, Comparator.nullsFirst(Comparator.naturalOrder()))
+                                                                             .reversed()
                                                                              .thenComparing(comparing(PlayerCsvStatisticItem::getPossibleSellPrice).reversed()))
                                                            .toList();
 
@@ -84,7 +116,5 @@ public class FutAppearanceStatisticService {
                 myObjectWriter.writeValue(filePath.toFile(), sortedPlayers);
             }
         }
-
-
     }
 }

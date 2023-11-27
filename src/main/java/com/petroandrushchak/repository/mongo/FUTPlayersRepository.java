@@ -5,26 +5,21 @@ import com.petroandrushchak.entity.mongo.FutEaDbPlayer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
-import org.springframework.data.mongodb.core.aggregation.StringOperators;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
-import org.springframework.data.mongodb.core.aggregation.Aggregation;
-import org.springframework.data.mongodb.core.aggregation.LookupOperation;
+import java.util.List;
 
 import static org.springframework.data.mongodb.core.aggregation.Aggregation.*;
 
-
-import java.util.List;
-
+@Deprecated
 @Slf4j
-@Component
 public class FUTPlayersRepository {
 
-    @Autowired
-    MongoTemplate mongoTemplate;
+    @Autowired MongoTemplate mongoTemplate;
 
     public List<FutEaDbPlayer> findAll() {
         return mongoTemplate.findAll(FutEaDbPlayer.class);

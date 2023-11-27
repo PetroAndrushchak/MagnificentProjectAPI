@@ -11,7 +11,7 @@ import lombok.Data;
 public class BrowserProcessView {
 
     Long id;
-    Long futEaAccountId;
+    String futEaAccountId;
     Item item;
     Status status;
 

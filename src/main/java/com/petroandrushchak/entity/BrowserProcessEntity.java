@@ -3,8 +3,6 @@ package com.petroandrushchak.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Entity
-@Table(name = "browser_process")
 @Data
 public class BrowserProcessEntity {
 
@@ -13,17 +11,14 @@ public class BrowserProcessEntity {
     @Column(name = "id", nullable = false)
     Long id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fut_account_id", referencedColumnName = "id")
-    @JoinColumn(name = "ea_login", referencedColumnName = "ea_login")
-    FutAccountEntity futAccount;
+    String futAccountId;
 
     @Enumerated(EnumType.STRING)
     Status status;
 
-    public static BrowserProcessEntity of(FutAccountEntity futAccount, Status status) {
+    public static BrowserProcessEntity of(String futAccountId, Status status) {
         var browserProcessEntity = new BrowserProcessEntity();
-        browserProcessEntity.setFutAccount(futAccount);
+        browserProcessEntity.setFutAccountId(futAccountId);
         browserProcessEntity.setStatus(status);
         return browserProcessEntity;
     }

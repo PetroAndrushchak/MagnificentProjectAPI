@@ -10,13 +10,13 @@ import java.util.Map;
 @Document("FUTLeague")
 public class FutEaDbLeague {
 
-    @Field("league_full_2023")
+    @Field("league_full_2024")
     Map<String, String> leagueFullNames;
 
-    @Field("league_abbr_5_2023")
+    @Field("league_abbr_5_2024")
     Map<String, String> leagueShortAbbreviations;
 
-    @Field("league_abbr_15_2023")
+    @Field("league_abbr_15_2024")
     Map<String, String> leagueFullAbbreviations;
 
 

@@ -20,14 +20,14 @@ public class RealPersonAspect {
     public void waitRandomTimeBeforeMethodExecution(JoinPoint joinPoint) {
         var randomSecondsToWait = RandomHelper.getRandomNumber(1000, 3000);
 
-        log.info("Waiting for {} seconds before method execution",  randomSecondsToWait / 1000);
+        log.debug("Waiting for {} seconds before method execution",  randomSecondsToWait / 1000);
         Waiter.waitFor(Duration.ofMillis(randomSecondsToWait));
     }
 
     @Before("@annotation(RealPerson)")
     public void waitRandomTimeAfterMethodExecution(JoinPoint joinPoint) {
         var randomSecondsToWait = RandomHelper.getRandomNumber(1000, 3000);
-        log.info("Waiting for {} seconds after method execution", randomSecondsToWait / 1000);
+        log.debug("Waiting for {} seconds after method execution", randomSecondsToWait / 1000);
         Waiter.waitFor(Duration.ofMillis(randomSecondsToWait));
     }
 

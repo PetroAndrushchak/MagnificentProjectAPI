@@ -1,6 +1,6 @@
 package com.petroandrushchak.fut.model.filters;
 
-import com.petroandrushchak.futbin.models.FutBinPlayer;
+import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -10,5 +10,5 @@ import java.util.List;
 @AllArgsConstructor
 public class PlayersMatchingAttributes {
     List<Attribute> attributes;
-    List<FutBinPlayer> players;
+    List<ThirdPartySitePlayer> players;
 }

@@ -44,5 +44,15 @@ public class TransferMarketPrices {
                 ", maxBuyNowPrice= " + maxBuyNowPrice +
                 " }";
     }
+
+    public TransferMarketPrices copy() {
+        TransferMarketPrices copy = new TransferMarketPrices();
+        copy.setMinBidPrice(this.minBidPrice);
+        copy.setMaxBidPrice(this.maxBidPrice);
+        copy.setMinBuyNowPrice(this.minBuyNowPrice);
+        copy.setMaxBuyNowPrice(this.maxBuyNowPrice);
+        return copy;
+    }
+
 }
 
