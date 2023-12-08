@@ -17,7 +17,7 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class FutClubServiceInternal {
+public class FutClubService {
 
     HashMap<Long, Club> clubsMap;
     List<Club> clubsList;

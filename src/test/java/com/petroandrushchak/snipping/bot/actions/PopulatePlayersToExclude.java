@@ -46,11 +46,11 @@ public class PopulatePlayersToExclude {
 
         List<ThirdPartySitePlayer> allPlayer = futBinMappingSteps.mapNewRawPlayersToPlayers(futBinRawPlayers);
 
-        var minPriceToBuy = 750;
-        var maxPriceToBuy = 750;
+        var minPriceToBuy = 500;
+        var maxPriceToBuy = 49000;
 
         //Filter players by price, it should be 600 or more
-        var rawPlayersToExclude = getPlayersToExclude(minPriceToBuy, allPlayer);
+        var rawPlayersToExclude = getPlayersToExcludeMoreThanPriceBuyLessThan(0, 1150, allPlayer);
         var rawPlayersNOTtoExclude = getPlayersToNOTExclude(minPriceToBuy, allPlayer);
 
         var playersToExclude = futPlayersMapperSteps.mapThirdPartyPlayers(rawPlayersToExclude);
@@ -114,16 +114,19 @@ public class PopulatePlayersToExclude {
 
     private List<PlayerItem> getPlayersToExclude(List<PlayerItem> playersToExclude, List<String> currentlyExcludedPlayersId) {
         return playersToExclude.stream()
+                               .filter(Objects::nonNull)
                                .filter(player -> !currentlyExcludedPlayersId.contains(String.valueOf(player.getId())))
                                .toList();
     }
 
     private List<PlayerItem> getPlayersToRemoveFromExclusion(List<PlayerItem> playersNotToExclude, List<String> currentlyExcludedPlayersId) {
 
-        return playersNotToExclude.stream().filter(player -> {
-            var stringId = String.valueOf(player.getId());
-            return currentlyExcludedPlayersId.contains(stringId);
-        }).collect(Collectors.toList());
+        return playersNotToExclude.stream()
+                                  .filter(Objects::nonNull)
+                                  .filter(player -> {
+                                      var stringId = String.valueOf(player.getId());
+                                      return currentlyExcludedPlayersId.contains(stringId);
+                                  }).collect(Collectors.toList());
 
     }
 
@@ -198,9 +201,9 @@ public class PopulatePlayersToExclude {
                                                 .filter(player -> allPlayers.stream()
                                                                             .filter(player1 -> Objects.equals(player1.getFutId(), player.getFutId()) ||
                                                                                     (player.getPlayerName().equals(player1.getPlayerName())
-                                                                                                   && player.getClubId().equals(player1.getClubId())
-                                                                                                   && player.getLeagueId().equals(player1.getLeagueId())
-                                                                                                   && player.getNationId().equals(player1.getNationId())))
+                                                                                            && player.getClubId().equals(player1.getClubId())
+                                                                                            && player.getLeagueId().equals(player1.getLeagueId())
+                                                                                            && player.getNationId().equals(player1.getNationId())))
                                                                             .count() == 1)
                                                 .toList();
 

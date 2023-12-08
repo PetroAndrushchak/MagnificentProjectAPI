@@ -14,11 +14,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Slf4j
 @Service
-public class FutLeagueServiceInternal {
+public class FutLeagueService {
 
     HashMap<Long, League> leaguesMap;
     List<League> leaguesList;

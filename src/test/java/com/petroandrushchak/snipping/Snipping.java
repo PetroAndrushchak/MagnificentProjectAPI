@@ -10,9 +10,8 @@ import com.petroandrushchak.model.fut.Club;
 import com.petroandrushchak.model.fut.League;
 import com.petroandrushchak.model.fut.PlayerItem;
 import com.petroandrushchak.model.fut.Position;
-import com.petroandrushchak.service.FutNationService;
-import com.petroandrushchak.service.fut.FutClubServiceInternal;
-import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
+import com.petroandrushchak.service.fut.FutClubService;
+import com.petroandrushchak.service.fut.FutLeagueService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,9 +29,8 @@ public class Snipping {
     @Autowired FUTWebAppNavigationSteps navigationSteps;
     @Autowired FUTSnippingSteps snippingSteps;
 
-    @Autowired FutNationService futNationService;
-    @Autowired FutLeagueServiceInternal futLeagueService;
-    @Autowired FutClubServiceInternal clubService;
+    @Autowired FutLeagueService futLeagueService;
+    @Autowired FutClubService clubService;
 
     @Test
     void snipping() {

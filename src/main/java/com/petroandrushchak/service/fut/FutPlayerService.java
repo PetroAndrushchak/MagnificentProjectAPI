@@ -20,7 +20,7 @@ import java.util.Optional;
 
 @Slf4j
 @Service
-public class FutPlayerServiceInternal {
+public class FutPlayerService {
 
     HashMap<Long, FutInternalPlayer> playersDBMap;
     List<ThirdPartySitePlayer> futWizAllPLayersDB;
@@ -77,6 +77,11 @@ public class FutPlayerServiceInternal {
         if (result.size() > 1) {
             throw new IllegalArgumentException("More than one player with futId " + futId + " found in FutWiz DB.");
         }
+
+        if (result.size() == 0) {
+            System.out.println("dsfsdf");
+        }
+
         var foundSpecialPlayer = result.get(0);
 
         var foundAllPlayersItems = futWizAllPLayersDB.stream()

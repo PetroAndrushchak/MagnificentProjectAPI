@@ -27,7 +27,7 @@ public class ParseAllPlayersFromFutWiz {
 
         //Store FutWiz players to json file
         JsonMapper jsonMapper = new JsonMapper();
-    //    jsonMapper.writeValue(FutWizDataRegistry.allPlayersFilePath().toFile(), players);
+        jsonMapper.writeValue(FutWizDataRegistry.allPlayersFilePath().toFile(), players);
 
         List<ThirdPartySitePlayer> parsedPlayers = jsonMapper.readValue(FutWizDataRegistry.allPlayersFilePath().toFile(),  new TypeReference<List<ThirdPartySitePlayer>>() { });
         System.out.println("dsfsdf");

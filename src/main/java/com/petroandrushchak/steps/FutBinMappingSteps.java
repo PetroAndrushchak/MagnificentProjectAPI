@@ -8,9 +8,9 @@ import com.petroandrushchak.model.fut.Quality;
 import com.petroandrushchak.model.fut.Rarity;
 import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
 import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayersAttributes;
-import com.petroandrushchak.service.FutNationService;
-import com.petroandrushchak.service.fut.FutClubServiceInternal;
-import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
+import com.petroandrushchak.service.fut.FutClubService;
+import com.petroandrushchak.service.fut.FutLeagueService;
+import com.petroandrushchak.service.fut.FutNationService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +24,8 @@ import java.util.List;
 @Component
 public class FutBinMappingSteps {
 
-    @Autowired FutClubServiceInternal futClubService;
-    @Autowired FutLeagueServiceInternal futLeagueServiceInternal;
+    @Autowired FutClubService futClubService;
+    @Autowired FutLeagueService futLeagueService;
     @Autowired FutNationService futNationService;
 
     public FutPlayersAttributes mapFutBinPlayersAttributesToPlayersAttributes(ThirdPartySitePlayersAttributes futBinPlayersUniqueAttributes) {
@@ -35,7 +35,7 @@ public class FutBinMappingSteps {
         playersAttributes.addClubs(futClubService.getClubsByIds(futBinPlayersUniqueAttributes.getClubIds()
                                                                                              .stream()
                                                                                              .toList()));
-        playersAttributes.addLeagues(futLeagueServiceInternal.getLeaguesByIds(futBinPlayersUniqueAttributes.getLeagueIds()
+        playersAttributes.addLeagues(futLeagueService.getLeaguesByIds(futBinPlayersUniqueAttributes.getLeagueIds()
                                                                                                    .stream()
                                                                                                    .toList()));
         playersAttributes.addNations(futNationService.getNationsByIds(futBinPlayersUniqueAttributes.getNationIds()
@@ -52,7 +52,7 @@ public class FutBinMappingSteps {
     public List<PlayerCsvStatisticItem> mapFutBinPlayersToCsvStatisticItems(List<ThirdPartySitePlayer> thirdPartySitePlayers) {
         return thirdPartySitePlayers.stream().map(futBinPlayer -> {
                     PlayerCsvStatisticItem playerCsvStatisticItem = new PlayerCsvStatisticItem();
-                    var league = futLeagueServiceInternal.getLeagueById(futBinPlayer.getLeagueId());
+                    var league = futLeagueService.getLeagueById(futBinPlayer.getLeagueId());
                     playerCsvStatisticItem.setLeagueName(league.getLeagueShortName());
                     playerCsvStatisticItem.setPlayerName(futBinPlayer.getPlayerName());
                     playerCsvStatisticItem.setPlayerRating(futBinPlayer.getRating());

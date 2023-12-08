@@ -4,7 +4,7 @@ import com.petroandrushchak.fut.model.statistic.PlayerCsvStatisticItem;
 import com.petroandrushchak.fut.model.statistic.PlayerStatisticItem;
 import com.petroandrushchak.model.fut.PlayerItem;
 import com.petroandrushchak.model.third.party.sites.ThirdPartySitePlayer;
-import com.petroandrushchak.service.fut.FutPlayerServiceInternal;
+import com.petroandrushchak.service.fut.FutPlayerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ import java.util.List;
 @Component
 public class FutPlayersMapperSteps {
 
-    @Autowired FutPlayerServiceInternal futPlayerServiceInternal;
+    @Autowired FutPlayerService futPlayerService;
 
     public List<PlayerStatisticItem> mapPlayers(List<PlayerCsvStatisticItem> playersToAnaliseCsvFile) {
         return playersToAnaliseCsvFile.stream()
@@ -30,7 +30,7 @@ public class FutPlayersMapperSteps {
         playerStatisticItem.setPossibleSellPrice(playerCsvStatisticItem.getPossibleSellPrice());
 
         var playerId = playerCsvStatisticItem.getPlayerId();
-        var player = futPlayerServiceInternal.getPlayerById(playerId);
+        var player = futPlayerService.getPlayerById(playerId);
 
         playerStatisticItem.setId(playerId);
         playerStatisticItem.setPlayerFirstName(player.getFirstName());
@@ -42,7 +42,7 @@ public class FutPlayersMapperSteps {
 
     public List<PlayerItem> mapThirdPartyPlayers(List<ThirdPartySitePlayer> thirdPartySitePlayers) {
         return thirdPartySitePlayers.stream()
-                                    .map(this::mapThirdPartyPlayerWithSpecialOption)
+                                    .map(this::mapThirdPartyPlayer)
                                     .toList();
     }
 
@@ -51,7 +51,15 @@ public class FutPlayersMapperSteps {
         playerItem.setRating(thirdPartySitePlayer.getRating());
         playerItem.setId(thirdPartySitePlayer.getFutId());
 
-        var playerFromDB = futPlayerServiceInternal.getPlayerById(thirdPartySitePlayer.getFutId());
+        var playerFromDBOptional = futPlayerService.getPlayerByIdOptional(thirdPartySitePlayer.getFutId());
+
+        if (playerFromDBOptional.isEmpty()) {
+            System.out.println(thirdPartySitePlayer.getFutId());
+            return null;
+        }
+
+        var playerFromDB = playerFromDBOptional.get();
+
 
         playerItem.setPlayerFirstName(playerFromDB.getFirstName());
         playerItem.setPlayerLastName(playerFromDB.getLastName());
@@ -68,7 +76,7 @@ public class FutPlayersMapperSteps {
     public PlayerItem mapThirdPartyPlayerWithSpecialOption(ThirdPartySitePlayer thirdPartySitePlayer) {
         var playerItem = new PlayerItem();
 
-        var playerFromDBOptional = futPlayerServiceInternal.getPlayerByIdOptional(thirdPartySitePlayer.getFutId());
+        var playerFromDBOptional = futPlayerService.getPlayerByIdOptional(thirdPartySitePlayer.getFutId());
 
         if (playerFromDBOptional.isPresent()) {
             log.info("This is simple player, mapping as a simple player");
@@ -85,7 +93,7 @@ public class FutPlayersMapperSteps {
         }
 
         //It can be a special player
-        var optionalSimplePlayerFromSpecial = futPlayerServiceInternal.findSimplePlayerBySpecialPlayer(thirdPartySitePlayer.getFutId());
+        var optionalSimplePlayerFromSpecial = futPlayerService.findSimplePlayerBySpecialPlayer(thirdPartySitePlayer.getFutId());
 
         if (optionalSimplePlayerFromSpecial.isPresent()) {
             log.info("This is special player, mapping as a special player");

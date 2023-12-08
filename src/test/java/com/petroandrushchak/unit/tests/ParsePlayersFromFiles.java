@@ -1,26 +1,30 @@
 package com.petroandrushchak.unit.tests;
 
-import com.petroandrushchak.service.fut.FutClubServiceInternal;
-import com.petroandrushchak.service.fut.FutLeagueServiceInternal;
-import com.petroandrushchak.service.fut.FutPlayerServiceInternal;
+import com.petroandrushchak.service.fut.FutClubService;
+import com.petroandrushchak.service.fut.FutLeagueService;
+import com.petroandrushchak.service.fut.FutNationService;
+import com.petroandrushchak.service.fut.FutPlayerService;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 @SpringBootTest
 public class ParsePlayersFromFiles {
 
-    @Autowired FutPlayerServiceInternal futPlayerServiceInternal;
-    @Autowired FutClubServiceInternal futClubServiceInternal;
-    @Autowired FutLeagueServiceInternal futLeagueServiceInternal;
+    @Autowired FutPlayerService futPlayerService;
+    @Autowired FutClubService futClubService;
+    @Autowired FutLeagueService futLeagueService;
+    @Autowired FutNationService futNationService;
 
     @SneakyThrows
     @Test
     void parsePlayersFromFile() {
         Long playerId = 265272L;
         var start = System.currentTimeMillis();
-        var player = futPlayerServiceInternal.getPlayerById(playerId);
+        var player = futPlayerService.getPlayerById(playerId);
         var end = System.currentTimeMillis();
         System.out.println("Time: " + (end - start));
         System.out.println(player);
@@ -31,7 +35,7 @@ public class ParsePlayersFromFiles {
     void parseClubFromFile() {
         Long clubId = 241L;
         var start = System.currentTimeMillis();
-        var club = futClubServiceInternal.getClubById(clubId);
+        var club = futClubService.getClubById(clubId);
         var end = System.currentTimeMillis();
         System.out.println("Time: " + (end - start));
         System.out.println(club);
@@ -42,9 +46,20 @@ public class ParsePlayersFromFiles {
     void parseLeagueFromFile() {
         Long leagueId = 2179L;
         var start = System.currentTimeMillis();
-        var league = futLeagueServiceInternal.getLeagueById(leagueId);
+        var league = futLeagueService.getLeagueById(leagueId);
         var end = System.currentTimeMillis();
         System.out.println("Time: " + (end - start));
         System.out.println(league);
+    }
+
+    @SneakyThrows
+    @Test
+    void parseNationsFromFile() {
+        Long nationId = 14L;
+        var start = System.currentTimeMillis();
+        var nation = futNationService.getNationsByIds(List.of(nationId));
+        var end = System.currentTimeMillis();
+        System.out.println("Time: " + (end - start));
+        System.out.println(nation);
     }
 }

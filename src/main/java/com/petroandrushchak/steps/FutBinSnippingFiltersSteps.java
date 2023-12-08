@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,24 +55,24 @@ public class FutBinSnippingFiltersSteps {
 
     private List<List<Attribute>> createListOfAttributesValues(List<AttributeType> attributeTypes, FutPlayersAttributes futPlayersAttributes) {
 
-        List<List<Attribute>> attributesForCombination = new ArrayList<>();
+        List<List<Attribute>> attributesForCombination = new LinkedList<>();
 
         attributeTypes.forEach(attributeType -> {
-            List<Attribute> newListOfAttributes = getAttributesValuesForType(attributeType, futPlayersAttributes);
+            List<Attribute> allAttributeTypeCombination = getAttributesValuesForType(attributeType, futPlayersAttributes);
 
             if (attributesForCombination.isEmpty()) {
-                newListOfAttributes.forEach(attribute -> {
-                    List<Attribute> attributeList = new ArrayList<>();
+                allAttributeTypeCombination.forEach(attribute -> {
+                    List<Attribute> attributeList = new LinkedList<>();
                     attributeList.add(attribute);
                     attributesForCombination.add(attributeList);
                 });
 
             } else {
-                List<List<Attribute>> newAttributesWithCombination = new ArrayList<>();
+                List<List<Attribute>> newAttributesWithCombination = new LinkedList<>();
 
-                for (Attribute newAttribute : newListOfAttributes) {
+                for (Attribute newAttribute : allAttributeTypeCombination) {
                     for (List<Attribute> attributeList : attributesForCombination) {
-                        List<Attribute> newAttributeList = new ArrayList<>(attributeList);
+                        List<Attribute> newAttributeList = new LinkedList<>(attributeList);
                         newAttributeList.add(newAttribute);
                         newAttributesWithCombination.add(newAttributeList);
                     }
@@ -86,7 +87,7 @@ public class FutBinSnippingFiltersSteps {
 
     //TODO Add All Possible Attributes
     private List<Attribute> getAttributesValuesForType(AttributeType attributeType, FutPlayersAttributes futPlayersAttributes) {
-        List<Attribute> attributes = new ArrayList<>();
+        List<Attribute> attributes = new LinkedList<>();
 
         if (attributeType == POSITION) {
             futPlayersAttributes.getPositions().forEach(position -> {
